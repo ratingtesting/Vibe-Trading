@@ -20,6 +20,10 @@ import pandas as pd
 
 REPO = Path(__file__).resolve().parents[2]
 FOUNDER = REPO / "wiki" / "founder"
+
+# Токены, упавшие в ноль: торговать их уже нельзя, а стратегия на них
+# показывает артефактные проценты из самого краха.
+DEAD_SYMBOLS = {"LUNAUSDT"}
 SCAN = FOUNDER / "scan5y"
 RESULTS = SCAN / "scan-results.jsonl"
 DEST = REPO / "frontend" / "public" / "scan5y.json"
@@ -81,9 +85,20 @@ def main() -> None:
             "trade_count": r.get("trade_count"),
         }
 
-    by_t = sorted([r for r in ok if (r.get("t_stat") or -99) >= 2.5],
+    # Мёртвые токены (цена упала в ноль) исключаются из лучших строк: на
+    # LUNAUSDT стратегия показывает артефактные 138%/год из краха Terra
+    # ($116 -> $0.043), а торговать там уже нечего. В пуле испытаний для DSR
+    # они остаются - пул обязан отражать всё, что было запущено.
+    tradable = [r for r in ok if r.get("symbol") not in DEAD_SYMBOLS]
+    # NaN в годовой доходности = счёт ушёл в минус (prod(1+r) < 0). Такие
+    # строки бессмысленны для сравнения, но остаются в пуле испытаний.
+    with_annual = [r for r in tradable
+                    if isinstance(r.get("annual_pct"), (int, float))
+                    and math.isfinite(r["annual_pct"])]
+
+    by_t = sorted([r for r in tradable if (r.get("t_stat") or -99) >= 2.5],
                   key=lambda r: -(r.get("t_stat") or 0))
-    by_dd = sorted([r for r in ok if (r.get("max_dd_pct") or 999) <= 20.0],
+    by_dd = sorted([r for r in with_annual if (r.get("max_dd_pct") or 999) <= 20.0],
                    key=lambda r: -(r.get("annual_pct") or -999))
 
     payload = {
