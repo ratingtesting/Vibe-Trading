@@ -134,7 +134,16 @@ def main() -> None:
     parser.add_argument("--workers", type=int, default=7)
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--end", default="")
+    parser.add_argument("--start", default=HOLD_START,
+                        help="начало окна; по умолчанию HOLD_START. Меняется "
+                             "только для ВАЛИДАЦИИ конвейера (сравнение с "
+                             "основным сканом на перекрывающемся окне).")
+    parser.add_argument("--out", default=str(RESULTS),
+                        help="куда писать результаты (для валидации - "
+                             "отдельный файл)")
     args = parser.parse_args()
+    start = args.start
+    results_path = Path(args.out)
 
     families = prereg_families()
     min_days = prereg_min_days()
@@ -176,7 +185,7 @@ def main() -> None:
         return
     newest = max(last_dates)
     end = args.end or newest
-    print(f"пар с данными: {len(symbols)}, самый свежий бар: {newest}, окно: {HOLD_START}..{end}")
+    print(f"пар с данными: {len(symbols)}, самый свежий бар: {newest}, окно: {start}..{end}")
 
     jobs = build_jobs(families, symbols)
     if args.limit:
@@ -186,9 +195,9 @@ def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     started = time.time()
     ok = err = 0
-    with RESULTS.open("w", encoding="utf-8") as sink, \
+    with results_path.open("w", encoding="utf-8") as sink, \
             ProcessPoolExecutor(max_workers=args.workers) as pool:
-        payloads = [(job, idx, HOLD_START, end) for idx, job in enumerate(jobs)]
+        payloads = [(job, idx, start, end) for idx, job in enumerate(jobs)]
         futures = {pool.submit(_worker, p): p[0] for p in payloads}
         for i, future in enumerate(as_completed(futures), start=1):
             row = future.result()
@@ -203,7 +212,7 @@ def main() -> None:
                       f"{time.time()-started:.0f}s", flush=True)
 
     print(f"\nготово: ok={ok} err={err} за {time.time()-started:.0f}s")
-    print(f"written: {RESULTS}")
+    print(f"written: {results_path}")
 
 
 if __name__ == "__main__":

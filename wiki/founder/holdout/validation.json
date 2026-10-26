@@ -1,0 +1,18 @@
+{
+ "date": "2026-10-27",
+ "n_common": 472,
+ "tolerances": {
+  "annual_pct": 0.05,
+  "t_stat": 1e-06,
+  "sharpe": 1e-06
+ },
+ "n_mismatch_annual": 0,
+ "n_mismatch_t": 0,
+ "n_mismatch_sharpe": 0,
+ "identical": true,
+ "mismatches": {
+  "annual_pct": [],
+  "t_stat": [],
+  "sharpe": []
+ }
+}
