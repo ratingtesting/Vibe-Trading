@@ -31,21 +31,21 @@ PY = REPO / ".venv" / "Scripts" / "python.exe"
 
 STEPS = [
     ("DSR по полному пулу (старые + новый 5-летний скан)",
-     "honest_dsr_final.py"),
+     ["honest_dsr_final.py"]),
     ("Достижим ли гейт DSR >= 0.95 при этом пуле",
-     "dsr_reachability.py"),
+     ["dsr_reachability.py"]),
     ("Панель: артефакт 5-летнего скана",
-     "build_scan5y_panel.py"),
+     ["build_scan5y_panel.py"]),
     ("Копилка по новым кандидатам (порог владельца)",
-     "kopilka_5y.py --top 40"),
+     ["kopilka_5y.py", "--top", "40"]),
     ("Пороговая сетка копилки по новым кандидатам",
-     "kopilka_thresholds.py --top 30"),
+     ["kopilka_thresholds.py", "--top", "30"]),
     ("Итоговый отчёт (только таблицы)",
-     "final_report.py"),
+     ["final_report.py"]),
     ("Jev-судья: новые кандидаты против 13",
-     "jev_judge_candidates.py --pairs 12"),
+     ["jev_judge_candidates.py", "--pairs", "12"]),
     ("НЕЗАВИСИМАЯ перепроверка чисел (второй код, без импорта основного)",
-     "independent_check.py"),
+     ["independent_check.py"]),
 ]
 
 
@@ -82,21 +82,20 @@ def main() -> None:
         return
 
     started = time.time()
-    for title, script in STEPS:
+    for title, script_args in STEPS:
         print(f"\n{'='*74}\n>> {title}\n{'='*74}", flush=True)
         result = subprocess.run(
-            [str(PY), str(FOUNDER / script.split(" --")[0])]
-            + script.split(" --")[1:],
+            [str(PY), str(FOUNDER / script_args[0])] + list(script_args[1:]),
             cwd=str(REPO), capture_output=True, text=True, encoding="utf-8",
             errors="replace")
         tail = "\n".join((result.stdout or "").strip().splitlines()[-14:])
         if tail:
             print(tail)
         if result.returncode != 0:
-            print(f"\n!! шаг упал (exit {result.returncode}): {script}")
+            print(f"\n!! шаг упал (exit {result.returncode}): {script_args[0]}")
             print((result.stderr or "")[-1500:])
         else:
-            print(f"[ok] {script}")
+            print(f"[ok] {script_args[0]}")
 
     print(f"\n{'='*74}")
     print(f"финальный проход завершён за {time.time()-started:.0f}s")

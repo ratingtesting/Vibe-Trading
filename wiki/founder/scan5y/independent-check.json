@@ -2,19 +2,19 @@
  "checks_total": 18,
  "checks_passed": 18,
  "all_passed": true,
- "pool": 29219,
+ "pool": 34125,
  "best": {
-  "family": "VolatilityBreakout",
-  "symbol": "DASHUSDT",
-  "risk": "vol10",
-  "sharpe_per_obs": 0.07342461493242247,
-  "t_stat": 3.1375601773322694,
-  "annual_pct": 8.461990934759566,
-  "max_dd_pct": 4.806426834885813
+  "family": "ft_rsi35_65",
+  "symbol": "REQUSDT",
+  "risk": "raw",
+  "sharpe_per_obs": 0.07995841640251912,
+  "t_stat": 3.4167607603798,
+  "annual_pct": 114.16843020233843,
+  "max_dd_pct": 53.92678139983954
  },
- "dsr_best": 0.3065656592814845,
- "expected_maximum_sharpe": 0.08465532956667886,
- "trial_sharpe_std": 0.02057100832439887,
+ "dsr_best": 0.39496733875301737,
+ "expected_maximum_sharpe": 0.08592299211802269,
+ "trial_sharpe_std": 0.020699576201526196,
  "details": [
   {
    "what": "пар",
@@ -24,8 +24,8 @@
   },
   {
    "what": "прогонов с метриками",
-   "independent": 29219,
-   "recorded": 29960,
+   "independent": 34125,
+   "recorded": 34992,
    "ok": true
   },
   {
@@ -36,8 +36,20 @@
   },
   {
    "what": "строк без сделок",
-   "independent": 729,
+   "independent": 855,
    "recorded": "-",
+   "ok": true
+  },
+  {
+   "what": "годовая idx=30580",
+   "independent": 114.16842837479857,
+   "recorded": 114.16843020233843,
+   "ok": true
+  },
+  {
+   "what": "Sharpe idx=30580",
+   "independent": 0.07995841567306951,
+   "recorded": 0.07995841640251912,
    "ok": true
   },
   {
@@ -89,38 +101,26 @@
    "ok": true
   },
   {
-   "what": "годовая idx=10441",
-   "independent": 45.421576592492244,
-   "recorded": 45.42157744004896,
-   "ok": true
-  },
-  {
-   "what": "Sharpe idx=10441",
-   "independent": 0.069853260848764,
-   "recorded": 0.06985326185120536,
-   "ok": true
-  },
-  {
    "what": "DSR лучшей",
-   "independent": 0.306566,
+   "independent": 0.394967,
    "recorded": "см. reachability",
    "ok": true
   },
   {
    "what": "порог SR*",
-   "independent": 0.084655,
+   "independent": 0.085923,
    "recorded": "см. reachability",
    "ok": true
   },
   {
    "what": "t>=2.5",
-   "independent": 37,
+   "independent": 65,
    "recorded": "-",
    "ok": true
   },
   {
    "what": "DD<=20",
-   "independent": 16298,
+   "independent": 19025,
    "recorded": "-",
    "ok": true
   }

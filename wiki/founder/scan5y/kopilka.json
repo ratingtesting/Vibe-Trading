@@ -14,8 +14,8 @@
   "cost_per_leg": 0.001,
   "start_capital": 100.0
  },
- "n_selected": 30,
- "n_computed": 30,
+ "n_selected": 40,
+ "n_computed": 40,
  "honest_limits": [
   "Наложение применяется к реализованной дневной доходности стратегии, а не к повторному прогону движка со смешанным BTC-рукавом.",
   "Отбор кандидатов сделан на том же 5-летнем окне, которое идёт в скан: поздний срез не является неприкосновенной проверкой.",
@@ -23,6 +23,36 @@
   "Цены актива и BTC — из локальных биржевых CSV, тот же источник, что и доходность."
  ],
  "rows": [
+  {
+   "idx": 30580,
+   "family": "ft_rsi35_65",
+   "symbol": "REQUSDT",
+   "risk": "raw",
+   "params": {},
+   "base": {
+    "annual_pct": 114.16842837479857,
+    "max_dd_pct": -53.926780019311,
+    "t_stat": 3.4167607292092192,
+    "final_value": null
+   },
+   "kopilka": {
+    "annual_pct": 63.285307943977244,
+    "max_dd_pct": -51.51249603686934,
+    "t_stat": 2.8590811323607865,
+    "final_value": 1160.7415963968729,
+    "final_btc_units": 0.00928520715730882,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 766.8974787909714,
+    "final_asset_value": 393.8441176059015,
+    "final_cash": 0.0,
+    "btc_share_pct": 66.06961283816688,
+    "asset_share_pct": 33.93038716183313,
+    "locks": 13,
+    "returns_to_asset": 2
+   },
+   "delta_annual_pct": -50.88312043082132,
+   "delta_dd_pct": 2.414283982441667
+  },
   {
    "idx": 11494,
    "family": "VolatilityBreakout",
@@ -156,6 +186,36 @@
    "delta_dd_pct": 2.498115243651881
   },
   {
+   "idx": 30586,
+   "family": "ft_bb_ride",
+   "symbol": "RAYUSDT",
+   "risk": "raw",
+   "params": {},
+   "base": {
+    "annual_pct": 150.75655564821497,
+    "max_dd_pct": -62.18363104281634,
+    "t_stat": 3.057620235264887,
+    "final_value": null
+   },
+   "kopilka": {
+    "annual_pct": 83.55762977019285,
+    "max_dd_pct": -41.81756564399846,
+    "t_stat": 3.2967084309856545,
+    "final_value": 2083.8296140880384,
+    "final_btc_units": 0.01858358738658062,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 1534.882967305925,
+    "final_asset_value": 548.9466467821137,
+    "final_cash": 0.0,
+    "btc_share_pct": 73.65683628494007,
+    "asset_share_pct": 26.34316371505994,
+    "locks": 17,
+    "returns_to_asset": 2
+   },
+   "delta_annual_pct": -67.19892587802212,
+   "delta_dd_pct": 20.366065398817874
+  },
+  {
    "idx": 10441,
    "family": "ft_bb_rsi",
    "symbol": "AVAUSDT",
@@ -188,6 +248,36 @@
   {
    "idx": 723,
    "family": "ft_ema_adx",
+   "symbol": "SUPERUSDT",
+   "risk": "raw",
+   "params": {},
+   "base": {
+    "annual_pct": 133.4021839329014,
+    "max_dd_pct": -70.27422440175266,
+    "t_stat": 2.9831900650848664,
+    "final_value": null
+   },
+   "kopilka": {
+    "annual_pct": 76.413546602857,
+    "max_dd_pct": -53.662484727065554,
+    "t_stat": 2.8406841171859436,
+    "final_value": 1708.6757481109762,
+    "final_btc_units": 0.014893230984576055,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 1230.0836265276528,
+    "final_asset_value": 478.59212158332343,
+    "final_cash": -2.842170943040401e-14,
+    "btc_share_pct": 71.99046559229097,
+    "asset_share_pct": 28.009534407709026,
+    "locks": 19,
+    "returns_to_asset": 5
+   },
+   "delta_annual_pct": -56.98863733004441,
+   "delta_dd_pct": 16.611739674687108
+  },
+  {
+   "idx": 34964,
+   "family": "ft_ema21_50",
    "symbol": "SUPERUSDT",
    "risk": "raw",
    "params": {},
@@ -249,6 +339,168 @@
    "delta_dd_pct": -0.6595096364391155
   },
   {
+   "idx": 34323,
+   "family": "VolatilityBreakout",
+   "symbol": "XRPUSDT",
+   "risk": "raw",
+   "params": {
+    "atr_period": 7,
+    "quantile": 0.7
+   },
+   "base": {
+    "annual_pct": 71.84421468341027,
+    "max_dd_pct": -34.33958617585957,
+    "t_stat": 2.902776461169823,
+    "final_value": null
+   },
+   "kopilka": {
+    "annual_pct": 49.216979068609405,
+    "max_dd_pct": -43.729532508732625,
+    "t_stat": 2.5841474140065688,
+    "final_value": 739.7606338948613,
+    "final_btc_units": 0.006034535058744233,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 498.4131903383401,
+    "final_asset_value": 241.34744355652123,
+    "final_cash": -7.105427357601002e-15,
+    "btc_share_pct": 67.37492744297302,
+    "asset_share_pct": 32.62507255702698,
+    "locks": 10,
+    "returns_to_asset": 1
+   },
+   "delta_annual_pct": -22.627235614800867,
+   "delta_dd_pct": -9.389946332873052
+  },
+  {
+   "idx": 34324,
+   "family": "VolatilityBreakout",
+   "symbol": "XRPUSDT",
+   "risk": "vol10",
+   "params": {
+    "atr_period": 7,
+    "quantile": 0.7
+   },
+   "base": {
+    "annual_pct": 9.417451659068465,
+    "max_dd_pct": -6.40759696004195,
+    "t_stat": 2.889180395632974,
+    "final_value": null
+   },
+   "kopilka": {
+    "annual_pct": 9.834977505453569,
+    "max_dd_pct": -16.38231559130533,
+    "t_stat": 2.3060274463351185,
+    "final_value": 159.8465720306511,
+    "final_btc_units": 0.0003664429447329409,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 30.265794362511812,
+    "final_asset_value": 129.58077766813926,
+    "final_cash": -3.552713678800501e-15,
+    "btc_share_pct": 18.93427802549826,
+    "asset_share_pct": 81.06572197450174,
+    "locks": 1,
+    "returns_to_asset": 0
+   },
+   "delta_annual_pct": 0.4175258463851037,
+   "delta_dd_pct": -9.974718631263379
+  },
+  {
+   "idx": 33121,
+   "family": "VolatilityBreakout",
+   "symbol": "UNIUSDT",
+   "risk": "vol10",
+   "params": {
+    "atr_period": 14,
+    "quantile": 0.7
+   },
+   "base": {
+    "annual_pct": 7.630689882013764,
+    "max_dd_pct": -4.175135459924828,
+    "t_stat": 2.876440904029428,
+    "final_value": null
+   },
+   "kopilka": {
+    "annual_pct": 6.4877100821033595,
+    "max_dd_pct": -11.780576523301933,
+    "t_stat": 2.1794080359727306,
+    "final_value": 136.92963175545,
+    "final_btc_units": 0.0002136849849866917,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 17.64898439694877,
+    "final_asset_value": 119.28064735850124,
+    "final_cash": -3.552713678800501e-15,
+    "btc_share_pct": 12.889090674302725,
+    "asset_share_pct": 87.11090932569728,
+    "locks": 1,
+    "returns_to_asset": 0
+   },
+   "delta_annual_pct": -1.142979799910404,
+   "delta_dd_pct": -7.605441063377105
+  },
+  {
+   "idx": 33122,
+   "family": "VolatilityBreakout",
+   "symbol": "UNIUSDT",
+   "risk": "vol12dd820",
+   "params": {
+    "atr_period": 14,
+    "quantile": 0.7
+   },
+   "base": {
+    "annual_pct": 2.2665426968937474,
+    "max_dd_pct": -1.2648877234998523,
+    "t_stat": 2.8757751386100954,
+    "final_value": null
+   },
+   "kopilka": {
+    "annual_pct": 2.267798615226746,
+    "max_dd_pct": -1.2648877234998523,
+    "t_stat": 2.875778277234729,
+    "final_value": 111.86508006496771,
+    "final_btc_units": 0.0,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 0.0,
+    "final_asset_value": 111.86508006496771,
+    "final_cash": 0.0,
+    "btc_share_pct": 0.0,
+    "asset_share_pct": 100.0,
+    "locks": 0,
+    "returns_to_asset": 0
+   },
+   "delta_annual_pct": 0.0012559183329985402,
+   "delta_dd_pct": 0.0
+  },
+  {
+   "idx": 30587,
+   "family": "ft_bb_ride",
+   "symbol": "RAYUSDT",
+   "risk": "vol10",
+   "params": {},
+   "base": {
+    "annual_pct": 14.386644299341489,
+    "max_dd_pct": -8.268611165686035,
+    "t_stat": 2.8731752211830694,
+    "final_value": null
+   },
+   "kopilka": {
+    "annual_pct": 20.40186693713999,
+    "max_dd_pct": -29.801612818911316,
+    "t_stat": 2.5670969916874,
+    "final_value": 253.0265567049953,
+    "final_btc_units": 0.0014631999480534314,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 120.85076101355264,
+    "final_asset_value": 132.17579569144266,
+    "final_cash": 0.0,
+    "btc_share_pct": 47.762085761793394,
+    "asset_share_pct": 52.237914238206606,
+    "locks": 3,
+    "returns_to_asset": 1
+   },
+   "delta_annual_pct": 6.0152226377985,
+   "delta_dd_pct": -21.53300165322528
+  },
+  {
    "idx": 792,
    "family": "VolatilityBreakout",
    "symbol": "ZECUSDT",
@@ -282,6 +534,72 @@
    "delta_dd_pct": -3.552713678800501e-14
   },
   {
+   "idx": 32875,
+   "family": "VolatilityBreakout",
+   "symbol": "UNIUSDT",
+   "risk": "vol10",
+   "params": {
+    "atr_period": 14,
+    "quantile": 0.6
+   },
+   "base": {
+    "annual_pct": 8.905874600366204,
+    "max_dd_pct": -6.790514013005621,
+    "t_stat": 2.862095597582241,
+    "final_value": null
+   },
+   "kopilka": {
+    "annual_pct": 7.981116512228037,
+    "max_dd_pct": -11.390973360059053,
+    "t_stat": 2.15826240809106,
+    "final_value": 146.80439870852683,
+    "final_btc_units": 0.00024360832741038808,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 20.120457081720065,
+    "final_asset_value": 126.68394162680677,
+    "final_cash": 0.0,
+    "btc_share_pct": 13.705622759756864,
+    "asset_share_pct": 86.29437724024314,
+    "locks": 1,
+    "returns_to_asset": 0
+   },
+   "delta_annual_pct": -0.9247580881381667,
+   "delta_dd_pct": -4.600459347053432
+  },
+  {
+   "idx": 32876,
+   "family": "VolatilityBreakout",
+   "symbol": "UNIUSDT",
+   "risk": "vol12dd820",
+   "params": {
+    "atr_period": 14,
+    "quantile": 0.6
+   },
+   "base": {
+    "annual_pct": 2.6418485117466695,
+    "max_dd_pct": -2.0807717029719175,
+    "t_stat": 2.861217248027928,
+    "final_value": null
+   },
+   "kopilka": {
+    "annual_pct": 2.6433150657955373,
+    "max_dd_pct": -2.0807717029719064,
+    "t_stat": 2.8612203348901692,
+    "final_value": 113.93400131711411,
+    "final_btc_units": 0.0,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 0.0,
+    "final_asset_value": 113.93400131711411,
+    "final_cash": 0.0,
+    "btc_share_pct": 0.0,
+    "asset_share_pct": 100.0,
+    "locks": 0,
+    "returns_to_asset": 0
+   },
+   "delta_annual_pct": 0.001466554048867863,
+   "delta_dd_pct": 1.1102230246251565e-14
+  },
+  {
    "idx": 15787,
    "family": "ft_bb_rsi",
    "symbol": "CTKUSDT",
@@ -310,6 +628,39 @@
    },
    "delta_annual_pct": -9.233707776652,
    "delta_dd_pct": -0.31669795403441725
+  },
+  {
+   "idx": 34326,
+   "family": "VolatilityBreakout",
+   "symbol": "XRPUSDT",
+   "risk": "raw",
+   "params": {
+    "atr_period": 7,
+    "quantile": 0.8
+   },
+   "base": {
+    "annual_pct": 63.93009007483774,
+    "max_dd_pct": -31.629252659403228,
+    "t_stat": 2.8498347788806093,
+    "final_value": null
+   },
+   "kopilka": {
+    "annual_pct": 44.491152457234875,
+    "max_dd_pct": -43.39747613112348,
+    "t_stat": 2.5382113540664424,
+    "final_value": 629.8052477813094,
+    "final_btc_units": 0.004910120789118335,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 405.5439140924216,
+    "final_asset_value": 224.26133368888782,
+    "final_cash": -1.4210854715202004e-14,
+    "btc_share_pct": 64.39195537367779,
+    "asset_share_pct": 35.60804462632221,
+    "locks": 8,
+    "returns_to_asset": 1
+   },
+   "delta_annual_pct": -19.438937617602868,
+   "delta_dd_pct": -11.768223471720255
   },
   {
    "idx": 786,
@@ -411,6 +762,36 @@
    "delta_dd_pct": -6.521214406264306
   },
   {
+   "idx": 30581,
+   "family": "ft_rsi35_65",
+   "symbol": "REQUSDT",
+   "risk": "vol10",
+   "params": {},
+   "base": {
+    "annual_pct": 11.192670665897285,
+    "max_dd_pct": -8.438065242454051,
+    "t_stat": 2.8225557791437974,
+    "final_value": null
+   },
+   "kopilka": {
+    "annual_pct": 11.065504761088718,
+    "max_dd_pct": -16.19908162996436,
+    "t_stat": 2.418251102958251,
+    "final_value": 169.00360688721904,
+    "final_btc_units": 0.0006401445927024078,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 52.87176321302854,
+    "final_asset_value": 116.1318436741905,
+    "final_cash": 0.0,
+    "btc_share_pct": 31.284399301792053,
+    "asset_share_pct": 68.71560069820795,
+    "locks": 2,
+    "returns_to_asset": 0
+   },
+   "delta_annual_pct": -0.12716590480856738,
+   "delta_dd_pct": -7.76101638751031
+  },
+  {
    "idx": 15788,
    "family": "ft_bb_rsi",
    "symbol": "CTKUSDT",
@@ -439,6 +820,168 @@
    },
    "delta_annual_pct": 0.00247029548383626,
    "delta_dd_pct": 2.220446049250313e-14
+  },
+  {
+   "idx": 34325,
+   "family": "VolatilityBreakout",
+   "symbol": "XRPUSDT",
+   "risk": "vol12dd820",
+   "params": {
+    "atr_period": 7,
+    "quantile": 0.7
+   },
+   "base": {
+    "annual_pct": 4.0083916997064595,
+    "max_dd_pct": -3.873084678934302,
+    "t_stat": 2.7906057260547428,
+    "final_value": null
+   },
+   "kopilka": {
+    "annual_pct": 4.010631545925136,
+    "max_dd_pct": -3.873084678934302,
+    "t_stat": 2.7906085695474245,
+    "final_value": 121.72748998064415,
+    "final_btc_units": 0.0,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 0.0,
+    "final_asset_value": 121.72748998064415,
+    "final_cash": 0.0,
+    "btc_share_pct": 0.0,
+    "asset_share_pct": 100.0,
+    "locks": 0,
+    "returns_to_asset": 0
+   },
+   "delta_annual_pct": 0.0022398462186767887,
+   "delta_dd_pct": 0.0
+  },
+  {
+   "idx": 34570,
+   "family": "VolatilityBreakout",
+   "symbol": "XRPUSDT",
+   "risk": "vol10",
+   "params": {
+    "atr_period": 7,
+    "quantile": 0.8
+   },
+   "base": {
+    "annual_pct": 7.5612129609422984,
+    "max_dd_pct": -5.78963265350988,
+    "t_stat": 2.7709601090143794,
+    "final_value": null
+   },
+   "kopilka": {
+    "annual_pct": 6.626323665739142,
+    "max_dd_pct": -13.741963477221708,
+    "t_stat": 1.9649510011187301,
+    "final_value": 137.8231519616011,
+    "final_btc_units": 0.00023408178350814307,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 19.33362676372631,
+    "final_asset_value": 118.4895251978748,
+    "final_cash": 0.0,
+    "btc_share_pct": 14.027851263416796,
+    "asset_share_pct": 85.97214873658321,
+    "locks": 1,
+    "returns_to_asset": 0
+   },
+   "delta_annual_pct": -0.9348892952031562,
+   "delta_dd_pct": -7.9523308237118275
+  },
+  {
+   "idx": 21940,
+   "family": "VolatilityBreakout",
+   "symbol": "NEARUSDT",
+   "risk": "vol10",
+   "params": {
+    "atr_period": 14,
+    "quantile": 0.6
+   },
+   "base": {
+    "annual_pct": 8.45233397567946,
+    "max_dd_pct": -8.515314830472276,
+    "t_stat": 2.7609156969060353,
+    "final_value": null
+   },
+   "kopilka": {
+    "annual_pct": 7.4881171698858,
+    "max_dd_pct": -11.11899082643788,
+    "t_stat": 2.0458619965075298,
+    "final_value": 143.4836043920813,
+    "final_btc_units": 0.0002360327132269042,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 19.494760818924913,
+    "final_asset_value": 123.98884357315639,
+    "final_cash": 0.0,
+    "btc_share_pct": 13.586751532707389,
+    "asset_share_pct": 86.41324846729262,
+    "locks": 1,
+    "returns_to_asset": 0
+   },
+   "delta_annual_pct": -0.9642168057936606,
+   "delta_dd_pct": -2.603675995965604
+  },
+  {
+   "idx": 34489,
+   "family": "ft_donchian55",
+   "symbol": "SOLUSDT",
+   "risk": "vol10",
+   "params": {},
+   "base": {
+    "annual_pct": 6.662614716139537,
+    "max_dd_pct": -5.647326757802906,
+    "t_stat": 2.755071210345836,
+    "final_value": null
+   },
+   "kopilka": {
+    "annual_pct": 7.180267149581088,
+    "max_dd_pct": -13.39269080187131,
+    "t_stat": 2.067459477505407,
+    "final_value": 141.44062801427955,
+    "final_btc_units": 0.00033206148861011746,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 27.426110597675077,
+    "final_asset_value": 114.01451741660448,
+    "final_cash": -3.552713678800501e-15,
+    "btc_share_pct": 19.390546395839102,
+    "asset_share_pct": 80.60945360416089,
+    "locks": 1,
+    "returns_to_asset": 0
+   },
+   "delta_annual_pct": 0.5176524334415511,
+   "delta_dd_pct": -7.745364044068404
+  },
+  {
+   "idx": 21941,
+   "family": "VolatilityBreakout",
+   "symbol": "NEARUSDT",
+   "risk": "vol12dd820",
+   "params": {
+    "atr_period": 14,
+    "quantile": 0.6
+   },
+   "base": {
+    "annual_pct": 2.5018055946194773,
+    "max_dd_pct": -2.6092376835513575,
+    "t_stat": 2.747473087349549,
+    "final_value": null
+   },
+   "kopilka": {
+    "annual_pct": 2.5031934631855712,
+    "max_dd_pct": -2.6092376835513464,
+    "t_stat": 2.7474757883676864,
+    "final_value": 113.15844731648197,
+    "final_btc_units": 0.0,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 0.0,
+    "final_asset_value": 113.15844731648197,
+    "final_cash": 0.0,
+    "btc_share_pct": 0.0,
+    "asset_share_pct": 100.0,
+    "locks": 0,
+    "returns_to_asset": 0
+   },
+   "delta_annual_pct": 0.0013878685660939638,
+   "delta_dd_pct": 1.1102230246251565e-14
   },
   {
    "idx": 1041,
@@ -573,6 +1116,36 @@
    "delta_dd_pct": 0.0
   },
   {
+   "idx": 31582,
+   "family": "ft_bb_rsi",
+   "symbol": "REQUSDT",
+   "risk": "raw",
+   "params": {},
+   "base": {
+    "annual_pct": 56.000200498637874,
+    "max_dd_pct": -29.648115921857677,
+    "t_stat": 2.7157683059094317,
+    "final_value": null
+   },
+   "kopilka": {
+    "annual_pct": 46.035012337896866,
+    "max_dd_pct": -40.17776048481061,
+    "t_stat": 2.5174020265029893,
+    "final_value": 664.1787224046469,
+    "final_btc_units": 0.005277285162742822,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 435.8692937704444,
+    "final_asset_value": 228.30942863420248,
+    "final_cash": -1.4210854715202004e-14,
+    "btc_share_pct": 65.62530220666926,
+    "asset_share_pct": 34.374697793330746,
+    "locks": 8,
+    "returns_to_asset": 1
+   },
+   "delta_annual_pct": -9.965188160741008,
+   "delta_dd_pct": -10.529644562952935
+  },
+  {
    "idx": 13690,
    "family": "VolatilityBreakout",
    "symbol": "DUSKUSDT",
@@ -639,6 +1212,39 @@
    "delta_dd_pct": 5.551115123125783e-14
   },
   {
+   "idx": 32874,
+   "family": "VolatilityBreakout",
+   "symbol": "UNIUSDT",
+   "risk": "raw",
+   "params": {
+    "atr_period": 14,
+    "quantile": 0.6
+   },
+   "base": {
+    "annual_pct": 78.30642536572722,
+    "max_dd_pct": -43.858983678522556,
+    "t_stat": 2.678928739418698,
+    "final_value": null
+   },
+   "kopilka": {
+    "annual_pct": 48.208130354043654,
+    "max_dd_pct": -43.85898367852258,
+    "t_stat": 2.3161848614074936,
+    "final_value": 715.0890756595088,
+    "final_btc_units": 0.006151662311713953,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 508.08713659267704,
+    "final_asset_value": 207.0019390668318,
+    "final_cash": -1.4210854715202004e-14,
+    "btc_share_pct": 71.05228619582546,
+    "asset_share_pct": 28.947713804174548,
+    "locks": 11,
+    "returns_to_asset": 1
+   },
+   "delta_annual_pct": -30.098295011683568,
+   "delta_dd_pct": -2.1316282072803006e-14
+  },
+  {
    "idx": 13438,
    "family": "VolatilityBreakout",
    "symbol": "DUSKUSDT",
@@ -703,303 +1309,6 @@
    },
    "delta_annual_pct": 0.001157429374765151,
    "delta_dd_pct": -2.220446049250313e-14
-  },
-  {
-   "idx": 11517,
-   "family": "ZScoreMeanReversion",
-   "symbol": "CTKUSDT",
-   "risk": "raw",
-   "params": {
-    "period": 5,
-    "entry_z": -1.5
-   },
-   "base": {
-    "annual_pct": 48.80846269273753,
-    "max_dd_pct": -47.68345362837824,
-    "t_stat": 2.6643291314123254,
-    "final_value": null
-   },
-   "kopilka": {
-    "annual_pct": 41.36496354335062,
-    "max_dd_pct": -47.68345362837826,
-    "t_stat": 2.455372488860707,
-    "final_value": 564.5584701897317,
-    "final_btc_units": 0.0042855036652677,
-    "final_btc_price": 82593.47,
-    "final_btc_value": 353.9546184121778,
-    "final_asset_value": 210.6038517775538,
-    "final_cash": 0.0,
-    "btc_share_pct": 62.695829945341885,
-    "asset_share_pct": 37.30417005465811,
-    "locks": 8,
-    "returns_to_asset": 1
-   },
-   "delta_annual_pct": -7.443499149386909,
-   "delta_dd_pct": -2.1316282072803006e-14
-  },
-  {
-   "idx": 11518,
-   "family": "ZScoreMeanReversion",
-   "symbol": "CTKUSDT",
-   "risk": "vol10",
-   "params": {
-    "period": 5,
-    "entry_z": -1.5
-   },
-   "base": {
-    "annual_pct": 6.1112536304284815,
-    "max_dd_pct": -5.770513311479874,
-    "t_stat": 2.6496216239745887,
-    "final_value": null
-   },
-   "kopilka": {
-    "annual_pct": 4.958233129845269,
-    "max_dd_pct": -9.788325969156775,
-    "t_stat": 1.8976929214712828,
-    "final_value": 127.37451865548239,
-    "final_btc_units": 0.00019753464470118517,
-    "final_btc_price": 82593.47,
-    "final_btc_value": 16.315071751088,
-    "final_asset_value": 111.05944690439439,
-    "final_cash": 0.0,
-    "btc_share_pct": 12.808740651822493,
-    "asset_share_pct": 87.19125934817751,
-    "locks": 1,
-    "returns_to_asset": 0
-   },
-   "delta_annual_pct": -1.1530205005832128,
-   "delta_dd_pct": -4.017812657676901
-  },
-  {
-   "idx": 11519,
-   "family": "ZScoreMeanReversion",
-   "symbol": "CTKUSDT",
-   "risk": "vol12dd820",
-   "params": {
-    "period": 5,
-    "entry_z": -1.5
-   },
-   "base": {
-    "annual_pct": 1.8225159736739105,
-    "max_dd_pct": -1.7584071938323675,
-    "t_stat": 2.648306052260743,
-    "final_value": null
-   },
-   "kopilka": {
-    "annual_pct": 1.8235236629407847,
-    "max_dd_pct": -1.7584071938323786,
-    "t_stat": 2.648308443055364,
-    "final_value": 109.45626130850192,
-    "final_btc_units": 0.0,
-    "final_btc_price": 82593.47,
-    "final_btc_value": 0.0,
-    "final_asset_value": 109.45626130850192,
-    "final_cash": 0.0,
-    "btc_share_pct": 0.0,
-    "asset_share_pct": 100.0,
-    "locks": 0,
-    "returns_to_asset": 0
-   },
-   "delta_annual_pct": 0.0010076892668742232,
-   "delta_dd_pct": -1.1102230246251565e-14
-  },
-  {
-   "idx": 160,
-   "family": "RegimeSwitching",
-   "symbol": "TRXUSDT",
-   "risk": "vol10",
-   "params": {
-    "regime_period": 50,
-    "trend_lookback": 14
-   },
-   "base": {
-    "annual_pct": 13.149877543468813,
-    "max_dd_pct": -10.91699065711208,
-    "t_stat": 2.6010208838184004,
-    "final_value": null
-   },
-   "kopilka": {
-    "annual_pct": 12.419923275796773,
-    "max_dd_pct": -18.21502176206661,
-    "t_stat": 2.0708024461686305,
-    "final_value": 179.56282227644834,
-    "final_btc_units": 0.0006548785600237199,
-    "final_btc_price": 82593.47,
-    "final_btc_value": 54.08869270096231,
-    "final_asset_value": 125.47412957548605,
-    "final_cash": -3.552713678800501e-15,
-    "btc_share_pct": 30.122434040209807,
-    "asset_share_pct": 69.8775659597902,
-    "locks": 2,
-    "returns_to_asset": 0
-   },
-   "delta_annual_pct": -0.7299542676720403,
-   "delta_dd_pct": -7.298031104954529
-  },
-  {
-   "idx": 4204,
-   "family": "VolatilityBreakout",
-   "symbol": "ARUSDT",
-   "risk": "vol10",
-   "params": {
-    "atr_period": 14,
-    "quantile": 0.7
-   },
-   "base": {
-    "annual_pct": 7.138130326574532,
-    "max_dd_pct": -6.45135882612321,
-    "t_stat": 2.587478508337528,
-    "final_value": null
-   },
-   "kopilka": {
-    "annual_pct": 6.302650555861966,
-    "max_dd_pct": -12.35759826898235,
-    "t_stat": 1.8728286673074868,
-    "final_value": 135.74394511346554,
-    "final_btc_units": 0.00023251316019514754,
-    "final_btc_price": 82593.47,
-    "final_btc_value": 19.204068721183113,
-    "final_asset_value": 116.53987639228242,
-    "final_cash": -3.552713678800501e-15,
-    "btc_share_pct": 14.147274639123559,
-    "asset_share_pct": 85.85272536087643,
-    "locks": 1,
-    "returns_to_asset": 0
-   },
-   "delta_annual_pct": -0.8354797707125661,
-   "delta_dd_pct": -5.906239442859141
-  },
-  {
-   "idx": 4205,
-   "family": "VolatilityBreakout",
-   "symbol": "ARUSDT",
-   "risk": "vol12dd820",
-   "params": {
-    "atr_period": 14,
-    "quantile": 0.7
-   },
-   "base": {
-    "annual_pct": 2.1294776300054385,
-    "max_dd_pct": -1.9629885537211345,
-    "t_stat": 2.5868502776400866,
-    "final_value": null
-   },
-   "kopilka": {
-    "annual_pct": 2.1306568103773627,
-    "max_dd_pct": -1.962988553721201,
-    "t_stat": 2.586852488012443,
-    "final_value": 111.11702991906742,
-    "final_btc_units": 0.0,
-    "final_btc_price": 82593.47,
-    "final_btc_value": 0.0,
-    "final_asset_value": 111.11702991906742,
-    "final_cash": 0.0,
-    "btc_share_pct": 0.0,
-    "asset_share_pct": 100.0,
-    "locks": 0,
-    "returns_to_asset": 0
-   },
-   "delta_annual_pct": 0.0011791803719241045,
-   "delta_dd_pct": -6.661338147750939e-14
-  },
-  {
-   "idx": 790,
-   "family": "VolatilityBreakout",
-   "symbol": "ZECUSDT",
-   "risk": "vol10",
-   "params": {
-    "atr_period": 7,
-    "quantile": 0.7
-   },
-   "base": {
-    "annual_pct": 7.461541265490235,
-    "max_dd_pct": -10.141687365666074,
-    "t_stat": 2.5824574691936566,
-    "final_value": null
-   },
-   "kopilka": {
-    "annual_pct": 6.050848444890677,
-    "max_dd_pct": -10.14168736566613,
-    "t_stat": 2.00722750036424,
-    "final_value": 134.14384080323936,
-    "final_btc_units": 0.0001905201945678578,
-    "final_btc_price": 82593.47,
-    "final_btc_value": 15.735723974434526,
-    "final_asset_value": 118.40811682880482,
-    "final_cash": -3.552713678800501e-15,
-    "btc_share_pct": 11.730485634085507,
-    "asset_share_pct": 88.26951436591447,
-    "locks": 1,
-    "returns_to_asset": 0
-   },
-   "delta_annual_pct": -1.4106928205995573,
-   "delta_dd_pct": -5.5067062021407764e-14
-  },
-  {
-   "idx": 13192,
-   "family": "VolatilityBreakout",
-   "symbol": "DUSKUSDT",
-   "risk": "vol10",
-   "params": {
-    "atr_period": 14,
-    "quantile": 0.6
-   },
-   "base": {
-    "annual_pct": 7.750398007216863,
-    "max_dd_pct": -7.5469714465768885,
-    "t_stat": 2.5747767800218995,
-    "final_value": null
-   },
-   "kopilka": {
-    "annual_pct": 10.773509021053606,
-    "max_dd_pct": -20.944622515535105,
-    "t_stat": 2.018229291522538,
-    "final_value": 166.79367063887543,
-    "final_btc_units": 0.00040138608824850236,
-    "final_btc_price": 82593.47,
-    "final_btc_value": 33.151869838170036,
-    "final_asset_value": 133.6418008007054,
-    "final_cash": 0.0,
-    "btc_share_pct": 19.875975935529993,
-    "asset_share_pct": 80.12402406447,
-    "locks": 1,
-    "returns_to_asset": 1
-   },
-   "delta_annual_pct": 3.0231110138367425,
-   "delta_dd_pct": -13.397651068958217
-  },
-  {
-   "idx": 13193,
-   "family": "VolatilityBreakout",
-   "symbol": "DUSKUSDT",
-   "risk": "vol12dd820",
-   "params": {
-    "atr_period": 14,
-    "quantile": 0.6
-   },
-   "base": {
-    "annual_pct": 2.3117352305377814,
-    "max_dd_pct": -2.3147075257036076,
-    "t_stat": 2.574040829378102,
-    "final_value": null
-   },
-   "kopilka": {
-    "annual_pct": 2.3130164726827607,
-    "max_dd_pct": -2.3147075257035743,
-    "t_stat": 2.5740430032596695,
-    "final_value": 112.11260540336055,
-    "final_btc_units": 0.0,
-    "final_btc_price": 82593.47,
-    "final_btc_value": 0.0,
-    "final_asset_value": 112.11260540336055,
-    "final_cash": 0.0,
-    "btc_share_pct": 0.0,
-    "asset_share_pct": 100.0,
-    "locks": 0,
-    "returns_to_asset": 0
-   },
-   "delta_annual_pct": 0.0012812421449792666,
-   "delta_dd_pct": 3.3306690738754696e-14
   }
  ]
 }

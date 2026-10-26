@@ -2,8 +2,8 @@
 
 | Показатель | Значение |
 |---|---|
-| Прогонов в 5-летнем скане | 31444 |
-| Успешных | 31432 |
+| Прогонов в 5-летнем скане | 34992 |
+| Успешных | 34980 |
 | Ошибок | 12 |
 | Окно | 2021-10-20 .. 2026-10-19 (5 лет, 1826 дневных баров) |
 | Семейств стратегий | 26 |
@@ -11,9 +11,9 @@
 | Вариантов (параметры x риск) | 243 |
 | Исполнение размера | position_adjustment=rebalance |
 | Доходность | в годовых: (prod(1+r))^(365/n)-1 |
-| Пул испытаний для DSR | 31444 |
-| Разброс Sharpe по пулу (попериодный) | 0.020625 |
-| Ожидаемые ложные срабатывания при 5% | 1572 |
+| Пул испытаний для DSR | 34992 |
+| Разброс Sharpe по пулу (попериодный) | 0.020700 |
+| Ожидаемые ложные срабатывания при 5% | 1750 |
 | Прошли ЭТАЛОН (t>=3, DSR>=0.95, |DD|<=20%) | 0 |
 | Прошли КАНДИДАТ (t>=2.5, DSR>=0.95, |DD|<=20%) | 0 |
 
@@ -34,13 +34,13 @@
 
 | Пул испытаний | Порог максимального Sharpe (попериодный) | Разброс пула / порог |
 |---|---|---|
-| 20 | 0.03920 | 0.53x |
-| 50 | 0.04695 | 0.44x |
-| 100 | 0.05219 | 0.40x |
-| 200 | 0.05704 | 0.36x |
-| 1000 | 0.06714 | 0.31x |
-| 8174 | 0.07860 | 0.26x |
-| 31444 | 0.08523 | 0.24x |
+| 20 | 0.03934 | 0.53x |
+| 50 | 0.04712 | 0.44x |
+| 100 | 0.05238 | 0.40x |
+| 200 | 0.05725 | 0.36x |
+| 1000 | 0.06738 | 0.31x |
+| 8174 | 0.07889 | 0.26x |
+| 34992 | 0.08604 | 0.24x |
 
 Лучший измеренный периодный Sharpe = 0.07996. Пока он ниже порога, ни одна строка не проходит DSR — это арифметика перебора, а не признак отсутствия края.
 
@@ -78,94 +78,116 @@
 
 | # | Стратегия | Пара | Параметры | Риск | Годовая % | t | DSR | Просадка % | Sharpe/набл | DD-прошёл | DSR-прошёл |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | ft_rsi35_65 | REQUSDT |  | raw | 114.17 | 3.417 | 0.4070 | 53.93 | 0.07996 | нет | нет |
-| 2 | VolatilityBreakout | DASHUSDT | atr_period=14, quantile=0.7 | vol10 | 8.46 | 3.138 | 0.2976 | 4.81 | 0.07342 | да | нет |
-| 3 | VolatilityBreakout | DASHUSDT | atr_period=14, quantile=0.7 | vol12dd820 | 2.50 | 3.137 | 0.2973 | 1.44 | 0.07341 | да | нет |
-| 4 | VolatilityBreakout | ZECUSDT | atr_period=7, quantile=0.7 | raw | 114.80 | 3.107 | 0.2726 | 48.63 | 0.07270 | нет | нет |
-| 5 | VolatilityBreakout | ZECUSDT | atr_period=14, quantile=0.7 | raw | 114.49 | 3.091 | 0.2686 | 44.69 | 0.07235 | нет | нет |
-| 6 | ft_bb_ride | RAYUSDT |  | raw | 150.76 | 3.058 | 0.2578 | 62.18 | 0.07155 | нет | нет |
-| 7 | ft_bb_rsi | AVAUSDT |  | raw | 45.42 | 2.985 | 0.2389 | 40.33 | 0.06985 | нет | нет |
-| 8 | ft_ema_adx | SUPERUSDT |  | raw | 133.40 | 2.983 | 0.2394 | 70.27 | 0.06981 | нет | нет |
-| 9 | VolatilityBreakout | ZECUSDT | atr_period=14, quantile=0.7 | vol10 | 8.22 | 2.905 | 0.2072 | 6.83 | 0.06799 | да | нет |
-| 10 | ft_bb_ride | RAYUSDT |  | vol10 | 14.39 | 2.873 | 0.1946 | 8.27 | 0.06724 | да | нет |
-| 11 | VolatilityBreakout | ZECUSDT | atr_period=7, quantile=0.8 | raw | 91.05 | 2.865 | 0.1839 | 47.30 | 0.06704 | нет | нет |
-| 12 | ft_bb_rsi | CTKUSDT |  | raw | 40.54 | 2.860 | 0.2146 | 32.84 | 0.06693 | нет | нет |
-| 13 | VolatilityBreakout | ZECUSDT | atr_period=7, quantile=0.6 | raw | 103.00 | 2.846 | 0.1898 | 51.55 | 0.06660 | нет | нет |
-| 14 | RegimeSwitching | TRXUSDT | regime_period=100, trend_lookback=14 | vol10 | 13.81 | 2.830 | 0.1564 | 10.34 | 0.06623 | да | нет |
-| 15 | RegimeSwitching | TRXUSDT | regime_period=50, trend_lookback=90 | vol10 | 14.39 | 2.825 | 0.1591 | 10.07 | 0.06611 | да | нет |
-| 16 | ft_rsi35_65 | REQUSDT |  | vol10 | 11.19 | 2.823 | 0.1682 | 8.44 | 0.06605 | да | нет |
-| 17 | ft_bb_rsi | CTKUSDT |  | vol10 | 4.41 | 2.813 | 0.1969 | 4.00 | 0.06582 | да | нет |
-| 18 | VolatilityBreakout | NEARUSDT | atr_period=14, quantile=0.6 | vol10 | 8.45 | 2.761 | 0.1760 | 8.52 | 0.06461 | да | нет |
-| 19 | VolatilityBreakout | NEARUSDT | atr_period=14, quantile=0.6 | vol12dd820 | 2.50 | 2.747 | 0.1724 | 2.61 | 0.06430 | да | нет |
-| 20 | VolatilityBreakout | ZECUSDT | atr_period=14, quantile=0.6 | raw | 98.05 | 2.744 | 0.1644 | 55.55 | 0.06421 | нет | нет |
-| 21 | VolatilityBreakout | ZECUSDT | atr_period=7, quantile=0.9 | raw | 73.87 | 2.740 | 0.1300 | 43.95 | 0.06412 | нет | нет |
-| 22 | VolatilityBreakout | ATMUSDT | atr_period=7, quantile=0.8 | vol10 | 8.72 | 2.720 | 0.1198 | 4.64 | 0.06365 | да | нет |
-| 23 | VolatilityBreakout | ATMUSDT | atr_period=7, quantile=0.8 | vol12dd820 | 2.59 | 2.719 | 0.1196 | 1.41 | 0.06363 | да | нет |
-| 24 | VolatilityBreakout | DUSKUSDT | atr_period=21, quantile=0.6 | vol10 | 7.59 | 2.687 | 0.1537 | 7.62 | 0.06288 | да | нет |
-| 25 | VolatilityBreakout | DUSKUSDT | atr_period=21, quantile=0.6 | vol12dd820 | 2.26 | 2.686 | 0.1536 | 2.34 | 0.06286 | да | нет |
-| 26 | VolatilityBreakout | DUSKUSDT | atr_period=14, quantile=0.7 | vol10 | 7.02 | 2.669 | 0.1484 | 4.98 | 0.06246 | да | нет |
-| 27 | VolatilityBreakout | DUSKUSDT | atr_period=14, quantile=0.7 | vol12dd820 | 2.09 | 2.668 | 0.1482 | 1.52 | 0.06244 | да | нет |
-| 28 | ZScoreMeanReversion | CTKUSDT | entry_z=-1.5, period=5 | raw | 48.81 | 2.664 | 0.1546 | 47.68 | 0.06235 | нет | нет |
-| 29 | ZScoreMeanReversion | CTKUSDT | entry_z=-1.5, period=5 | vol10 | 6.11 | 2.650 | 0.1513 | 5.77 | 0.06201 | да | нет |
-| 30 | ZScoreMeanReversion | CTKUSDT | entry_z=-1.5, period=5 | vol12dd820 | 1.82 | 2.648 | 0.1510 | 1.76 | 0.06198 | да | нет |
-| 31 | RegimeSwitching | TRXUSDT | regime_period=50, trend_lookback=14 | vol10 | 13.15 | 2.601 | 0.1073 | 10.92 | 0.06087 | да | нет |
-| 32 | VolatilityBreakout | ARUSDT | atr_period=14, quantile=0.7 | vol10 | 7.14 | 2.587 | 0.1297 | 6.45 | 0.06055 | да | нет |
-| 33 | VolatilityBreakout | ARUSDT | atr_period=14, quantile=0.7 | vol12dd820 | 2.13 | 2.587 | 0.1296 | 1.96 | 0.06054 | да | нет |
-| 34 | VolatilityBreakout | ZECUSDT | atr_period=7, quantile=0.7 | vol10 | 7.46 | 2.582 | 0.1256 | 10.14 | 0.06043 | да | нет |
-| 35 | VolatilityBreakout | DUSKUSDT | atr_period=14, quantile=0.6 | vol10 | 7.75 | 2.575 | 0.1308 | 7.55 | 0.06025 | да | нет |
-| 36 | VolatilityBreakout | DUSKUSDT | atr_period=14, quantile=0.6 | vol12dd820 | 2.31 | 2.574 | 0.1306 | 2.31 | 0.06024 | да | нет |
-| 37 | ft_rsi35_65 | AVAUSDT |  | raw | 61.78 | 2.561 | 0.1353 | 56.93 | 0.05993 | нет | нет |
-| 38 | VolatilityBreakout | ZECUSDT | atr_period=14, quantile=0.7 | vol12dd820 | 2.93 | 2.550 | 0.1307 | 2.62 | 0.05968 | да | нет |
-| 39 | VolatilityBreakout | ZECUSDT | atr_period=7, quantile=0.8 | vol10 | 6.58 | 2.536 | 0.1079 | 7.58 | 0.05935 | да | нет |
-| 40 | ft_rsi25_75 | GTCUSDT |  | raw | 46.54 | 2.508 | 0.1140 | 47.58 | 0.05870 | нет | нет |
-| 41 | ft_ema9_21 | RAYUSDT |  | raw | 96.32 | 2.507 | 0.1110 | 74.14 | 0.05867 | нет | нет |
-| 42 | ft_roc30 | RAYUSDT |  | raw | 92.50 | 2.503 | 0.1153 | 84.83 | 0.05858 | нет | нет |
-| 43 | ft_roc10 | CAKEUSDT |  | vol10 | 13.00 | 2.503 | 0.1218 | 11.46 | 0.05858 | да | нет |
+| 1 | ft_rsi35_65 | REQUSDT |  | raw | 114.17 | 3.417 | 0.3929 | 53.93 | 0.07996 | нет | нет |
+| 2 | VolatilityBreakout | DASHUSDT | atr_period=14, quantile=0.7 | vol10 | 8.46 | 3.138 | 0.2850 | 4.81 | 0.07342 | да | нет |
+| 3 | VolatilityBreakout | DASHUSDT | atr_period=14, quantile=0.7 | vol12dd820 | 2.50 | 3.137 | 0.2847 | 1.44 | 0.07341 | да | нет |
+| 4 | VolatilityBreakout | ZECUSDT | atr_period=7, quantile=0.7 | raw | 114.80 | 3.107 | 0.2597 | 48.63 | 0.07270 | нет | нет |
+| 5 | VolatilityBreakout | ZECUSDT | atr_period=14, quantile=0.7 | raw | 114.49 | 3.091 | 0.2559 | 44.69 | 0.07235 | нет | нет |
+| 6 | ft_bb_ride | RAYUSDT |  | raw | 150.76 | 3.058 | 0.2454 | 62.18 | 0.07155 | нет | нет |
+| 7 | ft_bb_rsi | AVAUSDT |  | raw | 45.42 | 2.985 | 0.2273 | 40.33 | 0.06985 | нет | нет |
+| 8 | ft_ema_adx | SUPERUSDT |  | raw | 133.40 | 2.983 | 0.2279 | 70.27 | 0.06981 | нет | нет |
+| 9 | ft_ema21_50 | SUPERUSDT |  | raw | 133.40 | 2.983 | 0.2279 | 70.27 | 0.06981 | нет | нет |
+| 10 | VolatilityBreakout | ZECUSDT | atr_period=14, quantile=0.7 | vol10 | 8.22 | 2.905 | 0.1963 | 6.83 | 0.06799 | да | нет |
+| 11 | VolatilityBreakout | XRPUSDT | atr_period=7, quantile=0.7 | raw | 71.84 | 2.903 | 0.2009 | 34.34 | 0.06793 | нет | нет |
+| 12 | VolatilityBreakout | XRPUSDT | atr_period=7, quantile=0.7 | vol10 | 9.42 | 2.889 | 0.1895 | 6.41 | 0.06761 | да | нет |
+| 13 | VolatilityBreakout | UNIUSDT | atr_period=14, quantile=0.7 | vol10 | 7.63 | 2.876 | 0.1849 | 4.18 | 0.06731 | да | нет |
+| 14 | VolatilityBreakout | UNIUSDT | atr_period=14, quantile=0.7 | vol12dd820 | 2.27 | 2.876 | 0.1847 | 1.26 | 0.06730 | да | нет |
+| 15 | ft_bb_ride | RAYUSDT |  | vol10 | 14.39 | 2.873 | 0.1840 | 8.27 | 0.06724 | да | нет |
+| 16 | VolatilityBreakout | ZECUSDT | atr_period=7, quantile=0.8 | raw | 91.05 | 2.865 | 0.1733 | 47.30 | 0.06704 | нет | нет |
+| 17 | VolatilityBreakout | UNIUSDT | atr_period=14, quantile=0.6 | vol10 | 8.91 | 2.862 | 0.1849 | 6.79 | 0.06698 | да | нет |
+| 18 | VolatilityBreakout | UNIUSDT | atr_period=14, quantile=0.6 | vol12dd820 | 2.64 | 2.861 | 0.1847 | 2.08 | 0.06696 | да | нет |
+| 19 | ft_bb_rsi | CTKUSDT |  | raw | 40.54 | 2.860 | 0.2045 | 32.84 | 0.06693 | нет | нет |
+| 20 | VolatilityBreakout | XRPUSDT | atr_period=7, quantile=0.8 | raw | 63.93 | 2.850 | 0.1847 | 31.63 | 0.06669 | нет | нет |
+| 21 | VolatilityBreakout | ZECUSDT | atr_period=7, quantile=0.6 | raw | 103.00 | 2.846 | 0.1795 | 51.55 | 0.06660 | нет | нет |
+| 22 | RegimeSwitching | TRXUSDT | regime_period=100, trend_lookback=14 | vol10 | 13.81 | 2.830 | 0.1462 | 10.34 | 0.06623 | да | нет |
+| 23 | RegimeSwitching | TRXUSDT | regime_period=50, trend_lookback=90 | vol10 | 14.39 | 2.825 | 0.1490 | 10.07 | 0.06611 | да | нет |
+| 24 | ft_rsi35_65 | REQUSDT |  | vol10 | 11.19 | 2.823 | 0.1581 | 8.44 | 0.06605 | да | нет |
+| 25 | ft_bb_rsi | CTKUSDT |  | vol10 | 4.41 | 2.813 | 0.1871 | 4.00 | 0.06582 | да | нет |
+| 26 | VolatilityBreakout | XRPUSDT | atr_period=7, quantile=0.7 | vol12dd820 | 4.01 | 2.791 | 0.1513 | 3.87 | 0.06531 | да | нет |
+| 27 | VolatilityBreakout | XRPUSDT | atr_period=7, quantile=0.8 | vol10 | 7.56 | 2.771 | 0.1708 | 5.79 | 0.06485 | да | нет |
+| 28 | VolatilityBreakout | NEARUSDT | atr_period=14, quantile=0.6 | vol10 | 8.45 | 2.761 | 0.1666 | 8.52 | 0.06461 | да | нет |
+| 29 | ft_donchian55 | SOLUSDT |  | vol10 | 6.66 | 2.755 | 0.1483 | 5.65 | 0.06447 | да | нет |
+| 30 | VolatilityBreakout | NEARUSDT | atr_period=14, quantile=0.6 | vol12dd820 | 2.50 | 2.747 | 0.1632 | 2.61 | 0.06430 | да | нет |
+| 31 | VolatilityBreakout | ZECUSDT | atr_period=14, quantile=0.6 | raw | 98.05 | 2.744 | 0.1552 | 55.55 | 0.06421 | нет | нет |
+| 32 | VolatilityBreakout | ZECUSDT | atr_period=7, quantile=0.9 | raw | 73.87 | 2.740 | 0.1210 | 43.95 | 0.06412 | нет | нет |
+| 33 | VolatilityBreakout | ATMUSDT | atr_period=7, quantile=0.8 | vol10 | 8.72 | 2.720 | 0.1112 | 4.64 | 0.06365 | да | нет |
+| 34 | VolatilityBreakout | ATMUSDT | atr_period=7, quantile=0.8 | vol12dd820 | 2.59 | 2.719 | 0.1109 | 1.41 | 0.06363 | да | нет |
+| 35 | ft_bb_rsi | REQUSDT |  | raw | 56.00 | 2.716 | 0.1391 | 29.65 | 0.06355 | нет | нет |
+| 36 | VolatilityBreakout | DUSKUSDT | atr_period=21, quantile=0.6 | vol10 | 7.59 | 2.687 | 0.1451 | 7.62 | 0.06288 | да | нет |
+| 37 | VolatilityBreakout | DUSKUSDT | atr_period=21, quantile=0.6 | vol12dd820 | 2.26 | 2.686 | 0.1449 | 2.34 | 0.06286 | да | нет |
+| 38 | VolatilityBreakout | UNIUSDT | atr_period=14, quantile=0.6 | raw | 78.31 | 2.679 | 0.1434 | 43.86 | 0.06269 | нет | нет |
+| 39 | VolatilityBreakout | DUSKUSDT | atr_period=14, quantile=0.7 | vol10 | 7.02 | 2.669 | 0.1399 | 4.98 | 0.06246 | да | нет |
+| 40 | VolatilityBreakout | DUSKUSDT | atr_period=14, quantile=0.7 | vol12dd820 | 2.09 | 2.668 | 0.1398 | 1.52 | 0.06244 | да | нет |
+| 41 | ZScoreMeanReversion | CTKUSDT | entry_z=-1.5, period=5 | raw | 48.81 | 2.664 | 0.1461 | 47.68 | 0.06235 | нет | нет |
+| 42 | ZScoreMeanReversion | CTKUSDT | entry_z=-1.5, period=5 | vol10 | 6.11 | 2.650 | 0.1430 | 5.77 | 0.06201 | да | нет |
+| 43 | ZScoreMeanReversion | CTKUSDT | entry_z=-1.5, period=5 | vol12dd820 | 1.82 | 2.648 | 0.1427 | 1.76 | 0.06198 | да | нет |
+| 44 | RegimeSwitching | TRXUSDT | regime_period=50, trend_lookback=10 | vol10 | 12.84 | 2.612 | 0.0979 | 7.75 | 0.06112 | да | нет |
+| 45 | VolatilityBreakout | UNIUSDT | atr_period=21, quantile=0.7 | vol10 | 6.27 | 2.607 | 0.1203 | 5.38 | 0.06102 | да | нет |
+| 46 | VolatilityBreakout | UNIUSDT | atr_period=21, quantile=0.7 | vol12dd820 | 1.87 | 2.607 | 0.1201 | 1.63 | 0.06100 | да | нет |
+| 47 | RegimeSwitching | TRXUSDT | regime_period=50, trend_lookback=14 | vol10 | 13.15 | 2.601 | 0.0999 | 10.92 | 0.06087 | да | нет |
+| 48 | VolatilityBreakout | ARUSDT | atr_period=14, quantile=0.7 | vol10 | 7.14 | 2.587 | 0.1220 | 6.45 | 0.06055 | да | нет |
+| 49 | VolatilityBreakout | ARUSDT | atr_period=14, quantile=0.7 | vol12dd820 | 2.13 | 2.587 | 0.1219 | 1.96 | 0.06054 | да | нет |
+| 50 | VolatilityBreakout | UNIUSDT | atr_period=14, quantile=0.7 | raw | 64.19 | 2.584 | 0.1237 | 38.67 | 0.06047 | нет | нет |
+| 51 | VolatilityBreakout | ZECUSDT | atr_period=7, quantile=0.7 | vol10 | 7.46 | 2.582 | 0.1179 | 10.14 | 0.06043 | да | нет |
+| 52 | ft_ema9_21 | SCUSDT |  | vol10 | 13.57 | 2.582 | 0.1343 | 11.41 | 0.06042 | да | нет |
+| 53 | VolatilityBreakout | DUSKUSDT | atr_period=14, quantile=0.6 | vol10 | 7.75 | 2.575 | 0.1232 | 7.55 | 0.06025 | да | нет |
+| 54 | VolatilityBreakout | DUSKUSDT | atr_period=14, quantile=0.6 | vol12dd820 | 2.31 | 2.574 | 0.1230 | 2.31 | 0.06024 | да | нет |
+| 55 | ft_rsi35_65 | AVAUSDT |  | raw | 61.78 | 2.561 | 0.1277 | 56.93 | 0.05993 | нет | нет |
+| 56 | ft_donchian55 | SOLUSDT |  | raw | 51.27 | 2.560 | 0.0896 | 40.94 | 0.05991 | нет | нет |
+| 57 | VolatilityBreakout | XRPUSDT | atr_period=7, quantile=0.8 | vol12dd820 | 3.38 | 2.560 | 0.0984 | 3.67 | 0.05991 | да | нет |
+| 58 | VolatilityBreakout | ZECUSDT | atr_period=14, quantile=0.7 | vol12dd820 | 2.93 | 2.550 | 0.1232 | 2.62 | 0.05968 | да | нет |
+| 59 | VolatilityBreakout | ZECUSDT | atr_period=7, quantile=0.8 | vol10 | 6.58 | 2.536 | 0.1008 | 7.58 | 0.05935 | да | нет |
+| 60 | ft_ema21_50 | SCUSDT |  | vol10 | 13.24 | 2.526 | 0.1229 | 12.43 | 0.05912 | да | нет |
+| 61 | ft_ema_adx | SCUSDT |  | vol10 | 13.24 | 2.526 | 0.1229 | 12.43 | 0.05912 | да | нет |
+| 62 | ft_rsi25_75 | GTCUSDT |  | raw | 46.54 | 2.508 | 0.1070 | 47.58 | 0.05870 | нет | нет |
+| 63 | ft_ema9_21 | RAYUSDT |  | raw | 96.32 | 2.507 | 0.1040 | 74.14 | 0.05867 | нет | нет |
+| 64 | ft_roc30 | RAYUSDT |  | raw | 92.50 | 2.503 | 0.1084 | 84.83 | 0.05858 | нет | нет |
+| 65 | ft_roc10 | CAKEUSDT |  | vol10 | 13.00 | 2.503 | 0.1148 | 11.46 | 0.05858 | да | нет |
 
 ### 4.1 Лучшие при просадке <= 20%
 
 | # | Стратегия | Пара | Параметры | Риск | Годовая % | t | DSR | Просадка % | Sharpe/набл |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | ft_bb_rsi | TRXUSDT |  | raw | 19.12 | 1.917 | 0.0258 | 19.31 | 0.04487 |
+| 1 | ft_bb_rsi | TRXUSDT |  | raw | 19.12 | 1.917 | 0.0235 | 19.31 | 0.04487 |
 | 2 | ft_rsi_macd | HBARUSDT |  | raw | 18.85 | 1.355 | 0.0000 | 18.22 | 0.03172 |
-| 3 | ZScoreMeanReversion | NMRUSDT | entry_z=-2.5, period=10 | raw | 14.98 | 1.887 | 0.0296 | 18.55 | 0.04417 |
-| 4 | RegimeSwitching | TRXUSDT | regime_period=50, trend_lookback=90 | vol10 | 14.39 | 2.825 | 0.1591 | 10.07 | 0.06611 |
-| 5 | ft_bb_ride | RAYUSDT |  | vol10 | 14.39 | 2.873 | 0.1946 | 8.27 | 0.06724 |
-| 6 | RegimeSwitching | TRXUSDT | regime_period=100, trend_lookback=14 | vol10 | 13.81 | 2.830 | 0.1564 | 10.34 | 0.06623 |
-| 7 | ft_rsi_macd | TFUELUSDT |  | raw | 13.46 | 2.105 | 0.0446 | 9.83 | 0.04925 |
-| 8 | ft_roc30 | RAYUSDT |  | vol10 | 13.26 | 2.437 | 0.1036 | 14.17 | 0.05703 |
-| 9 | ft_macd_cross | PUNDIXUSDT |  | vol10 | 13.20 | 1.886 | 0.0104 | 16.81 | 0.04415 |
-| 10 | RegimeSwitching | TRXUSDT | regime_period=50, trend_lookback=14 | vol10 | 13.15 | 2.601 | 0.1073 | 10.92 | 0.06087 |
-| 11 | ft_ema9_21 | RAYUSDT |  | vol10 | 13.11 | 2.412 | 0.0937 | 9.58 | 0.05644 |
-| 12 | ft_roc10 | CAKEUSDT |  | vol10 | 13.00 | 2.503 | 0.1218 | 11.46 | 0.05858 |
-| 13 | ft_roc10 | PUNDIXUSDT |  | vol10 | 12.91 | 1.851 | 0.0090 | 14.77 | 0.04331 |
-| 14 | ft_ema21_50 | RAYUSDT |  | vol10 | 12.45 | 2.303 | 0.0811 | 13.98 | 0.05390 |
-| 15 | ft_ema_adx | RAYUSDT |  | vol10 | 12.45 | 2.303 | 0.0811 | 13.98 | 0.05390 |
-| 16 | ft_macd_cross | NEARUSDT |  | vol10 | 12.39 | 2.486 | 0.1217 | 10.84 | 0.05818 |
-| 17 | RegimeSwitching | OGUSDT | regime_period=20, trend_lookback=90 | vol10 | 12.34 | 2.022 | 0.0245 | 12.44 | 0.04732 |
-| 18 | ft_roc10 | LSKUSDT |  | vol10 | 12.19 | 2.063 | 0.0406 | 13.00 | 0.04828 |
-| 19 | RegimeSwitching | TRXUSDT | regime_period=100, trend_lookback=90 | vol10 | 11.97 | 2.338 | 0.0621 | 11.26 | 0.05471 |
-| 20 | ft_roc30 | BARUSDT |  | vol10 | 11.93 | 2.285 | 0.0833 | 14.77 | 0.05348 |
-| 21 | RegimeSwitching | JSTUSDT | regime_period=50, trend_lookback=14 | vol10 | 11.67 | 2.371 | 0.0783 | 12.46 | 0.05549 |
-| 22 | ft_rsi_macd | NEARUSDT |  | raw | 11.67 | 1.766 | 0.0178 | 12.63 | 0.04132 |
-| 23 | RegimeSwitching | OGUSDT | regime_period=50, trend_lookback=30 | vol10 | 11.62 | 1.880 | 0.0185 | 12.70 | 0.04398 |
-| 24 | ft_roc10 | RAYUSDT |  | vol10 | 11.60 | 2.162 | 0.0576 | 13.28 | 0.05059 |
-| 25 | ft_roc10 | FLOWUSDT |  | vol10 | 11.56 | 2.247 | 0.0772 | 16.41 | 0.05259 |
-| 26 | ft_macd_cross | TWTUSDT |  | vol10 | 11.50 | 2.255 | 0.0774 | 10.72 | 0.05278 |
-| 27 | ft_ema21_50 | SUPERUSDT |  | vol10 | 11.34 | 2.195 | 0.0716 | 11.97 | 0.05137 |
-| 28 | ft_ema_adx | SUPERUSDT |  | vol10 | 11.34 | 2.195 | 0.0716 | 11.97 | 0.05137 |
-| 29 | ft_roc30 | IOSTUSDT |  | vol10 | 11.34 | 2.103 | 0.0514 | 11.76 | 0.04921 |
-| 30 | RegimeSwitching | OGUSDT | regime_period=100, trend_lookback=30 | vol10 | 11.32 | 1.862 | 0.0169 | 12.44 | 0.04356 |
-| 31 | TSMOM | TRXUSDT | lookback=90 | vol10 | 11.31 | 2.253 | 0.0499 | 10.13 | 0.05274 |
-| 32 | ft_roc10 | AUDIOUSDT |  | vol10 | 11.23 | 2.032 | 0.0419 | 13.12 | 0.04754 |
-| 33 | ft_rsi35_65 | REQUSDT |  | vol10 | 11.19 | 2.823 | 0.1682 | 8.44 | 0.06605 |
-| 34 | ft_ema9_21 | FLOWUSDT |  | vol10 | 11.15 | 2.170 | 0.0651 | 16.40 | 0.05079 |
-| 35 | ft_ema9_21 | ONGUSDT |  | vol10 | 11.14 | 1.869 | 0.0247 | 15.31 | 0.04375 |
-| 36 | RegimeSwitching | OGUSDT | regime_period=50, trend_lookback=90 | vol10 | 11.05 | 1.829 | 0.0155 | 13.15 | 0.04279 |
-| 37 | ft_roc30 | AXSUSDT |  | vol10 | 11.00 | 2.105 | 0.0551 | 13.46 | 0.04925 |
-| 38 | RegimeSwitching | TRXUSDT | regime_period=200, trend_lookback=14 | vol10 | 10.94 | 2.330 | 0.0532 | 11.86 | 0.05452 |
-| 39 | RegimeSwitching | JSTUSDT | regime_period=50, trend_lookback=30 | vol10 | 10.94 | 2.241 | 0.0602 | 11.73 | 0.05245 |
-| 40 | RegimeSwitching | OGUSDT | regime_period=20, trend_lookback=60 | vol10 | 10.93 | 1.826 | 0.0147 | 12.44 | 0.04274 |
+| 3 | ZScoreMeanReversion | NMRUSDT | entry_z=-2.5, period=10 | raw | 14.98 | 1.887 | 0.0272 | 18.55 | 0.04417 |
+| 4 | RegimeSwitching | TRXUSDT | regime_period=50, trend_lookback=90 | vol10 | 14.39 | 2.825 | 0.1490 | 10.07 | 0.06611 |
+| 5 | ft_bb_ride | RAYUSDT |  | vol10 | 14.39 | 2.873 | 0.1840 | 8.27 | 0.06724 |
+| 6 | RegimeSwitching | TRXUSDT | regime_period=100, trend_lookback=14 | vol10 | 13.81 | 2.830 | 0.1462 | 10.34 | 0.06623 |
+| 7 | ft_ema9_21 | SCUSDT |  | vol10 | 13.57 | 2.582 | 0.1343 | 11.41 | 0.06042 |
+| 8 | ft_rsi_macd | TFUELUSDT |  | raw | 13.46 | 2.105 | 0.0411 | 9.83 | 0.04925 |
+| 9 | ft_roc30 | RAYUSDT |  | vol10 | 13.26 | 2.437 | 0.0972 | 14.17 | 0.05703 |
+| 10 | ft_ema21_50 | SCUSDT |  | vol10 | 13.24 | 2.526 | 0.1229 | 12.43 | 0.05912 |
+| 11 | ft_ema_adx | SCUSDT |  | vol10 | 13.24 | 2.526 | 0.1229 | 12.43 | 0.05912 |
+| 12 | ft_macd_cross | PUNDIXUSDT |  | vol10 | 13.20 | 1.886 | 0.0092 | 16.81 | 0.04415 |
+| 13 | RegimeSwitching | TRXUSDT | regime_period=50, trend_lookback=14 | vol10 | 13.15 | 2.601 | 0.0999 | 10.92 | 0.06087 |
+| 14 | ft_ema9_21 | RAYUSDT |  | vol10 | 13.11 | 2.412 | 0.0876 | 9.58 | 0.05644 |
+| 15 | ft_roc10 | CAKEUSDT |  | vol10 | 13.00 | 2.503 | 0.1148 | 11.46 | 0.05858 |
+| 16 | ft_roc30 | SCUSDT |  | vol10 | 12.96 | 2.481 | 0.1121 | 10.43 | 0.05806 |
+| 17 | ft_roc10 | PUNDIXUSDT |  | vol10 | 12.91 | 1.851 | 0.0079 | 14.77 | 0.04331 |
+| 18 | RegimeSwitching | TRXUSDT | regime_period=50, trend_lookback=10 | vol10 | 12.84 | 2.612 | 0.0979 | 7.75 | 0.06112 |
+| 19 | ft_ema21_50 | RAYUSDT |  | vol10 | 12.45 | 2.303 | 0.0758 | 13.98 | 0.05390 |
+| 20 | ft_ema_adx | RAYUSDT |  | vol10 | 12.45 | 2.303 | 0.0758 | 13.98 | 0.05390 |
+| 21 | ft_macd_cross | NEARUSDT |  | vol10 | 12.39 | 2.486 | 0.1148 | 10.84 | 0.05818 |
+| 22 | RegimeSwitching | OGUSDT | regime_period=20, trend_lookback=90 | vol10 | 12.34 | 2.022 | 0.0222 | 12.44 | 0.04732 |
+| 23 | ft_roc10 | LSKUSDT |  | vol10 | 12.19 | 2.063 | 0.0373 | 13.00 | 0.04828 |
+| 24 | RegimeSwitching | TRXUSDT | regime_period=100, trend_lookback=90 | vol10 | 11.97 | 2.338 | 0.0572 | 11.26 | 0.05471 |
+| 25 | ft_roc30 | BARUSDT |  | vol10 | 11.93 | 2.285 | 0.0780 | 14.77 | 0.05348 |
+| 26 | RegimeSwitching | JSTUSDT | regime_period=50, trend_lookback=14 | vol10 | 11.67 | 2.371 | 0.0728 | 12.46 | 0.05549 |
+| 27 | ft_rsi_macd | NEARUSDT |  | raw | 11.67 | 1.766 | 0.0161 | 12.63 | 0.04132 |
+| 28 | RegimeSwitching | OGUSDT | regime_period=50, trend_lookback=30 | vol10 | 11.62 | 1.880 | 0.0168 | 12.70 | 0.04398 |
+| 29 | ft_roc10 | RAYUSDT |  | vol10 | 11.60 | 2.162 | 0.0534 | 13.28 | 0.05059 |
+| 30 | ft_roc10 | FLOWUSDT |  | vol10 | 11.56 | 2.247 | 0.0722 | 16.41 | 0.05259 |
+| 31 | ft_macd_cross | TWTUSDT |  | vol10 | 11.50 | 2.255 | 0.0724 | 10.72 | 0.05278 |
+| 32 | ft_ema21_50 | SUPERUSDT |  | vol10 | 11.34 | 2.195 | 0.0669 | 11.97 | 0.05137 |
+| 33 | ft_ema_adx | SUPERUSDT |  | vol10 | 11.34 | 2.195 | 0.0669 | 11.97 | 0.05137 |
+| 34 | ft_roc30 | IOSTUSDT |  | vol10 | 11.34 | 2.103 | 0.0476 | 11.76 | 0.04921 |
+| 35 | RegimeSwitching | OGUSDT | regime_period=100, trend_lookback=30 | vol10 | 11.32 | 1.862 | 0.0152 | 12.44 | 0.04356 |
+| 36 | TSMOM | TRXUSDT | lookback=90 | vol10 | 11.31 | 2.253 | 0.0457 | 10.13 | 0.05274 |
+| 37 | ft_roc10 | AUDIOUSDT |  | vol10 | 11.23 | 2.032 | 0.0386 | 13.12 | 0.04754 |
+| 38 | ft_rsi35_65 | REQUSDT |  | vol10 | 11.19 | 2.823 | 0.1581 | 8.44 | 0.06605 |
+| 39 | ft_ema9_21 | FLOWUSDT |  | vol10 | 11.15 | 2.170 | 0.0607 | 16.40 | 0.05079 |
+| 40 | ft_ema9_21 | ONGUSDT |  | vol10 | 11.14 | 1.869 | 0.0226 | 15.31 | 0.04375 |
 
 ## 5. Мнение Jev (вероятности)
 
@@ -227,7 +249,7 @@
 | $1 000 000 | миллион | 5 | 531.0% | 19.1% | +511.8 п.п. |
 | $1 000 000 | миллион | 10 | 151.2% | 19.1% | +132.1 п.п. |
 
-Опорная строка: ft_bb_rsi / TRXUSDT / raw — 19.12%/год, просадка 19.31%, t=1.917, DSR=0.0258.
+Опорная строка: ft_bb_rsi / TRXUSDT / raw — 19.12%/год, просадка 19.31%, t=1.917, DSR=0.0235.
 
 Мёртвые токены (цена упала в ноль) исключены из лучших строк: LUNAUSDT за 5 лет рухнул с $116 до $0.043, и стратегия на нём показывает артефактные проценты, которые нельзя заработать - торговать уже нечего. В пуле испытаний для DSR они остаются: пул обязан отражать всё, что было запущено.
 
