@@ -128,6 +128,38 @@ def main() -> None:
                 "а не отсутствие края."),
         }
 
+    # Что переносится: семейство, а не строка - практический вывод.
+    fvp_path = SCAN / "family-vs-pair-effect.json"
+    frt_path = SCAN / "family-reverse-test.json"
+    family_effect = None
+    if fvp_path.exists() and frt_path.exists():
+        fvp = json.loads(fvp_path.read_text(encoding="utf-8"))
+        frt = json.loads(frt_path.read_text(encoding="utf-8"))
+        family_effect = {
+            "corr_raw_rows": fvp["corr_raw_cells"],
+            "corr_family": fvp["corr_family_residuals"],
+            "corr_pair": fvp["corr_pair_residuals"],
+            "var_family_new": fvp["var_share_by_family"]["new_block"],
+            "var_family_holdout": fvp["var_share_by_family"]["holdout"],
+            "var_pair_new": fvp["var_share_by_pair"]["new_block"],
+            "var_pair_holdout": fvp["var_share_by_pair"]["holdout"],
+            "reverse_corr": frt["pearson_corr_family_ranking_old_to_new"],
+            "reverse_spearman": frt["spearman_corr_family_ranking_old_to_new"],
+            "top3_new_mean_t": sum(r["new_mean_t"] for r in frt["family_check"][:3]) / 3,
+            "bottom_new_mean_t": sum(
+                r["new_mean_t"] for r in frt["family_check"][len(frt["family_check"]) // 2:]
+            ) / (len(frt["family_check"]) // 2),
+            "pairs_table": frt["pairs_inside_family"],
+            "family_ranking": frt["family_check"][:12],
+            "conclusion": (
+                "Устойчивый уровень - семейство (правило + параметры): оно "
+                "объясняет 35-52% дисперсии t, конкретная пара - только 3-4%. "
+                "Поэтому ранжировать надо семейства, и только потом выбирать "
+                "пару внутри выигравшего семейства. Ранжирование строк "
+                "(именно это делает DSR-гейт) не переносится - walk-forward "
+                "это показал прямо."),
+        }
+
     payload = {
         "date": "2026-10-25",
         "period": {"start": "2021-10-20", "end": "2026-10-19", "years": 5,
@@ -153,6 +185,7 @@ def main() -> None:
         "top_by_t": [slim(r) for r in by_t[:MAX_LIST]],
         "top_by_annual_with_dd20": [slim(r) for r in by_dd[:MAX_LIST]],
         "walk_forward": walk_forward,
+        "family_effect": family_effect,
         "honest_limits": [
             "Период один и тот же для всех строк: 5 лет дневных баров (1826 наблюдений).",
             "Доходность в годовых = (prod(1+r))^(365/n)-1 из дневной доходности.",

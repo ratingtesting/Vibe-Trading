@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { AlertTriangle, ArrowLeftRight, FlaskConical, Loader2, SlidersHorizontal } from "lucide-react";
+import { AlertTriangle, ArrowLeftRight, FlaskConical, Layers, Loader2, SlidersHorizontal } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface CandidateRow {
@@ -118,6 +118,32 @@ interface Scan5yPayload {
       random_test_sharpe_mean: number;
       advantage: number;
       z_score: number;
+    }>;
+  } | null;
+  family_effect: {
+    corr_raw_rows: number;
+    corr_family: number;
+    corr_pair: number;
+    var_family_new: number;
+    var_family_holdout: number;
+    var_pair_new: number;
+    var_pair_holdout: number;
+    reverse_corr: number;
+    reverse_spearman: number;
+    top3_new_mean_t: number;
+    bottom_new_mean_t: number;
+    conclusion: string;
+    pairs_table: Record<string, {
+      mean_t_on_new: number;
+      rows_t_ge_2_5: number;
+      mean_family_profitable: number;
+    }>;
+    family_ranking: Array<{
+      rank_old: number;
+      family: string;
+      old_mean_t: number;
+      new_mean_t: number;
+      new_profitable_share: number;
     }>;
   } | null;
   honest_limits: string[];
@@ -282,6 +308,7 @@ export function Founder() {
   }, []);
 
   const walkForward = scan5y?.walk_forward ?? null;
+  const familyEffect = scan5y?.family_effect ?? null;
 
   const totals = useMemo(() => {
     if (!data) return null;
@@ -595,6 +622,110 @@ export function Founder() {
                   </tbody>
                 </table>
               </div>
+            </div>
+          </section>
+        ) : null}
+
+        {familyEffect ? (
+          <section className="rounded-lg border bg-card">
+            <div className="flex items-center justify-between border-b px-4 py-3">
+              <div className="flex items-center gap-2">
+                <Layers className="h-4 w-4 text-muted-foreground" />
+                <h2 className="text-sm font-medium">Что переносится: семейство, а не строка</h2>
+              </div>
+              <div className="text-xs text-muted-foreground">
+                Эффект пары убран — остаётся вклад семейства
+              </div>
+            </div>
+            <div className="grid gap-3 p-4 sm:grid-cols-2 lg:grid-cols-4">
+              <Stat
+                label="Корреляция: семейство"
+                value={familyEffect.corr_family.toFixed(4)}
+                hint={`сырые строки: ${familyEffect.corr_raw_rows.toFixed(4)}`}
+              />
+              <Stat
+                label="Корреляция: пара"
+                value={familyEffect.corr_pair.toFixed(4)}
+                hint="вклад конкретной пары — почти нулевой"
+              />
+              <Stat
+                label="Дисперсия t: семейство"
+                value={`${(familyEffect.var_family_new * 100).toFixed(1)}%`}
+                hint={`holdout: ${(familyEffect.var_family_holdout * 100).toFixed(1)}%`}
+              />
+              <Stat
+                label="Обратная проверка (старый → новый)"
+                value={familyEffect.reverse_corr.toFixed(4)}
+                hint={`топ-3 на новом: ${familyEffect.top3_new_mean_t >= 0 ? "+" : ""}${familyEffect.top3_new_mean_t.toFixed(3)}, низ: ${familyEffect.bottom_new_mean_t.toFixed(3)}`}
+              />
+            </div>
+            <div className="px-4 pb-4">
+              <p className="mb-3 text-xs text-muted-foreground">
+                {familyEffect.conclusion}
+              </p>
+              <div className="grid gap-4 lg:grid-cols-2">
+                <div className="overflow-x-auto">
+                  <table className="w-full text-sm">
+                    <thead className="border-b bg-muted/40 text-left text-xs text-muted-foreground">
+                      <tr>
+                        <th className="px-3 py-2">Отбор пар внутри семейства</th>
+                        <th className="px-3 py-2 text-right">средний t на новом</th>
+                        <th className="px-3 py-2 text-right">строк t≥2.5</th>
+                        <th className="px-3 py-2 text-right">прибыльных</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {Object.entries(familyEffect.pairs_table).map(([label, data]) => (
+                        <tr key={label} className="border-b border-border/50 last:border-0">
+                          <td className="px-3 py-2">{label.replace(/_/g, " ")}</td>
+                          <td className="px-3 py-2 text-right font-mono">
+                            {data.mean_t_on_new.toFixed(3)}
+                          </td>
+                          <td className="px-3 py-2 text-right">{data.rows_t_ge_2_5}</td>
+                          <td className="px-3 py-2 text-right">
+                            {(data.mean_family_profitable * 100).toFixed(0)}%
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                <div className="overflow-x-auto">
+                  <table className="w-full text-sm">
+                    <thead className="border-b bg-muted/40 text-left text-xs text-muted-foreground">
+                      <tr>
+                        <th className="px-3 py-2">Ранг</th>
+                        <th className="px-3 py-2">Семейство</th>
+                        <th className="px-3 py-2 text-right">t старый</th>
+                        <th className="px-3 py-2 text-right">t новый</th>
+                        <th className="px-3 py-2 text-right">прибыльных</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {familyEffect.family_ranking.map((row) => (
+                        <tr key={row.family} className="border-b border-border/50 last:border-0">
+                          <td className="px-3 py-2">{row.rank_old}</td>
+                          <td className="px-3 py-2">{row.family}</td>
+                          <td className="px-3 py-2 text-right font-mono">
+                            {row.old_mean_t.toFixed(3)}
+                          </td>
+                          <td className="px-3 py-2 text-right font-mono">
+                            {row.new_mean_t.toFixed(3)}
+                          </td>
+                          <td className="px-3 py-2 text-right">
+                            {(row.new_profitable_share * 100).toFixed(0)}%
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <p className="mt-3 text-xs text-muted-foreground">
+                Даже семейство выбрано по одному из периодов, поэтому это гипотеза,
+                а не готовый кандидат: подтвердить можно только следующим holdout,
+                а данные заканчиваются 2026-10-19.
+              </p>
             </div>
           </section>
         ) : null}

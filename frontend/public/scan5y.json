@@ -2507,6 +2507,128 @@
   ],
   "conclusion": "Отбор по статистике почти не переносится: преимущество над случайной выборкой в пределах шума, топ-200 по train на test прибыльны реже случайных. Нулевой DSR-гейт - точный ответ, а не отсутствие края."
  },
+ "family_effect": {
+  "corr_raw_rows": 0.5298894252744824,
+  "corr_family": 0.8704128925705981,
+  "corr_pair": 0.10104519616300504,
+  "var_family_new": 0.35310464193705704,
+  "var_family_holdout": 0.5233750667317065,
+  "var_pair_new": 0.03536643427814622,
+  "var_pair_holdout": 0.023679082474638038,
+  "reverse_corr": 0.870412892570598,
+  "reverse_spearman": 0.8857142857142857,
+  "top3_new_mean_t": 0.44606666445091253,
+  "bottom_new_mean_t": -0.5529783935832271,
+  "pairs_table": {
+   "top_5_pairs": {
+    "mean_t_on_new": 0.44243556001444045,
+    "rows_t_ge_2_5": 0,
+    "mean_family_profitable": 0.5428571428571428
+   },
+   "top_10_pairs": {
+    "mean_t_on_new": 0.3106237842579056,
+    "rows_t_ge_2_5": 1,
+    "mean_family_profitable": 0.4809523809523809
+   },
+   "top_20_pairs": {
+    "mean_t_on_new": 0.2357075119195056,
+    "rows_t_ge_2_5": 2,
+    "mean_family_profitable": 0.4666666666666666
+   },
+   "top_30_pairs": {
+    "mean_t_on_new": 0.15578766366483002,
+    "rows_t_ge_2_5": 2,
+    "mean_family_profitable": 0.43650793650793646
+   }
+  },
+  "family_ranking": [
+   {
+    "rank_old": 1,
+    "family": "roc30",
+    "old_mean_t": 1.6219021307098676,
+    "new_mean_t": 0.5075826384358895,
+    "new_profitable_share": 0.5833333333333334
+   },
+   {
+    "rank_old": 2,
+    "family": "ema9_21",
+    "old_mean_t": 1.5918980750990026,
+    "new_mean_t": 0.7314639766360089,
+    "new_profitable_share": 0.6333333333333333
+   },
+   {
+    "rank_old": 3,
+    "family": "roc10",
+    "old_mean_t": 1.5108417214342889,
+    "new_mean_t": 0.09915337828083924,
+    "new_profitable_share": 0.26666666666666666
+   },
+   {
+    "rank_old": 4,
+    "family": "bb_ride",
+    "old_mean_t": 1.1919509514552418,
+    "new_mean_t": 0.5879729693282787,
+    "new_profitable_share": 0.5833333333333334
+   },
+   {
+    "rank_old": 5,
+    "family": "ema21_50",
+    "old_mean_t": 1.1820369244668003,
+    "new_mean_t": 0.6235395639739428,
+    "new_profitable_share": 0.6
+   },
+   {
+    "rank_old": 6,
+    "family": "ema_adx",
+    "old_mean_t": 1.1820369244668003,
+    "new_mean_t": 0.6235395639739428,
+    "new_profitable_share": 0.6
+   },
+   {
+    "rank_old": 7,
+    "family": "macd_cross",
+    "old_mean_t": 1.06875049313412,
+    "new_mean_t": 0.20841590368862362,
+    "new_profitable_share": 0.36666666666666664
+   },
+   {
+    "rank_old": 8,
+    "family": "donchian55",
+    "old_mean_t": 0.593869128054678,
+    "new_mean_t": 0.47721885490050336,
+    "new_profitable_share": 0.65
+   },
+   {
+    "rank_old": 9,
+    "family": "donchian20",
+    "old_mean_t": 0.484546865018815,
+    "new_mean_t": 0.5826000479258013,
+    "new_profitable_share": 0.6666666666666666
+   },
+   {
+    "rank_old": 10,
+    "family": "ema50_200",
+    "old_mean_t": 0.22906123441238554,
+    "new_mean_t": 0.2922514102504069,
+    "new_profitable_share": 0.4
+   },
+   {
+    "rank_old": 11,
+    "family": "donchian_vol",
+    "old_mean_t": 0.20419642491799087,
+    "new_mean_t": 0.37511264605608974,
+    "new_profitable_share": 0.5166666666666667
+   },
+   {
+    "rank_old": 12,
+    "family": "stoch_ema",
+    "old_mean_t": 0.1526037442639349,
+    "new_mean_t": -0.38362206397102067,
+    "new_profitable_share": 0.26666666666666666
+   }
+  ],
+  "conclusion": "Устойчивый уровень - семейство (правило + параметры): оно объясняет 35-52% дисперсии t, конкретная пара - только 3-4%. Поэтому ранжировать надо семейства, и только потом выбирать пару внутри выигравшего семейства. Ранжирование строк (именно это делает DSR-гейт) не переносится - walk-forward это показал прямо."
+ },
  "honest_limits": [
   "Период один и тот же для всех строк: 5 лет дневных баров (1826 наблюдений).",
   "Доходность в годовых = (prod(1+r))^(365/n)-1 из дневной доходности.",
