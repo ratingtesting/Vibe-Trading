@@ -213,3 +213,7 @@ wiki/founder/combo-overlay/*/run_card.*
 wiki/founder/combo-overlay/*/*/artifacts/
 wiki/founder/combo-overlay/*/*/run_card.*
 *.log
+
+# Full pool DSR dump (42k rows, 20 MB) - regenerable by
+# honest_dsr_final.py, and the panel reads founder-results.json instead.
+wiki/founder/honest-dsr-final.json
