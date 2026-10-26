@@ -1,0 +1,1087 @@
+{
+ "date": "2026-10-26",
+ "method": "отбор по train (первые 3 года), проверка по test (последние 2 года); DSR на test считается по ПОЛНОМУ пулу",
+ "train_period": "2021-10-20 .. 2024-10-19 (1096 баров)",
+ "test_period": "2024-10-20 .. 2026-10-19 (730 баров)",
+ "pool_size": 33291,
+ "n_train_pool": 32472,
+ "n_test_pool": 32270,
+ "train_sharpe_std": 0.025450175353466165,
+ "test_sharpe_std": 0.03309274421853651,
+ "n_selected_by_train": 40,
+ "n_positive_on_test": 22,
+ "n_survivors_dsr95_t25_dd20_on_test": 0,
+ "selected": [
+  {
+   "idx": 17699,
+   "family": "ft_rsi25_75",
+   "symbol": "DYDXUSDT",
+   "risk": "raw",
+   "params": {},
+   "train": {
+    "annual_pct": 74.1731970904455,
+    "sharpe_per_obs": 0.08888930647273971,
+    "t_stat": 2.942759665773658,
+    "max_dd_pct": 19.64148313001769,
+    "n_obs": 1096,
+    "dsr": 0.3116515321252397,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": -3.6045063205310535,
+    "sharpe_per_obs": 0.010413587854738136,
+    "t_stat": 0.28135965020964754,
+    "max_dd_pct": 43.49156420525602,
+    "n_obs": 730,
+    "dsr": 0.00034327975615934336,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 10433,
+   "family": "ft_roc10",
+   "symbol": "AVAXUSDT",
+   "risk": "raw",
+   "params": {},
+   "train": {
+    "annual_pct": 188.71505125813462,
+    "sharpe_per_obs": 0.08636817560823301,
+    "t_stat": 2.859295382896362,
+    "max_dd_pct": 54.431107348330634,
+    "n_obs": 1096,
+    "dsr": 0.25782986161577576,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": -21.99087764825556,
+    "sharpe_per_obs": 0.004519085259492172,
+    "t_stat": 0.12209896009085573,
+    "max_dd_pct": 75.55675100840307,
+    "n_obs": 730,
+    "dsr": 0.00016692486872391736,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 13690,
+   "family": "VolatilityBreakout",
+   "symbol": "DUSKUSDT",
+   "risk": "vol10",
+   "params": {
+    "atr_period": 21,
+    "quantile": 0.6
+   },
+   "train": {
+    "annual_pct": 11.295905893482484,
+    "sharpe_per_obs": 0.08572852396873545,
+    "t_stat": 2.8381191456238093,
+    "max_dd_pct": 4.812581541982864,
+    "n_obs": 1096,
+    "dsr": 0.23787434179005829,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": 2.259601374815756,
+    "sharpe_per_obs": 0.0224764096484566,
+    "t_stat": 0.6072791476744612,
+    "max_dd_pct": 7.622342405380644,
+    "n_obs": 730,
+    "dsr": 0.0007425763855562419,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 13691,
+   "family": "VolatilityBreakout",
+   "symbol": "DUSKUSDT",
+   "risk": "vol12dd820",
+   "params": {
+    "atr_period": 21,
+    "quantile": 0.6
+   },
+   "train": {
+    "annual_pct": 3.310221457936824,
+    "sharpe_per_obs": 0.08571247989056888,
+    "t_stat": 2.8375879921254117,
+    "max_dd_pct": 1.4623875439442546,
+    "n_obs": 1096,
+    "dsr": 0.23769841206219766,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": 0.7046316137959252,
+    "sharpe_per_obs": 0.0224580913760922,
+    "t_stat": 0.6067842152096097,
+    "max_dd_pct": 2.3407619184788175,
+    "n_obs": 730,
+    "dsr": 0.0007414419435086794,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 16309,
+   "family": "TSMOM",
+   "symbol": "INJUSDT",
+   "risk": "vol10",
+   "params": {
+    "lookback": 126
+   },
+   "train": {
+    "annual_pct": 13.111663503011828,
+    "sharpe_per_obs": 0.08460057063714695,
+    "t_stat": 2.800777245897191,
+    "max_dd_pct": 6.576886193134001,
+    "n_obs": 1096,
+    "dsr": 0.24275214419603386,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": -0.0752257000229628,
+    "sharpe_per_obs": 0.001388678442012756,
+    "t_stat": 0.037520025388810864,
+    "max_dd_pct": 10.759988138760823,
+    "n_obs": 730,
+    "dsr": 0.00012226734072211346,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 34489,
+   "family": "ft_donchian55",
+   "symbol": "SOLUSDT",
+   "risk": "vol10",
+   "params": {},
+   "train": {
+    "annual_pct": 8.593781028326175,
+    "sharpe_per_obs": 0.08338847888203217,
+    "t_stat": 2.7606498687164227,
+    "max_dd_pct": 3.578931455965051,
+    "n_obs": 1096,
+    "dsr": 0.1965985743297971,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": 3.8275144105269776,
+    "sharpe_per_obs": 0.037265831978468764,
+    "t_stat": 1.0068673349178876,
+    "max_dd_pct": 5.647326757802961,
+    "n_obs": 730,
+    "dsr": 0.0018106586769051245,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 19669,
+   "family": "ft_roc30",
+   "symbol": "FETUSDT",
+   "risk": "raw",
+   "params": {},
+   "train": {
+    "annual_pct": 213.61430811739456,
+    "sharpe_per_obs": 0.0830658565970311,
+    "t_stat": 2.749969170607117,
+    "max_dd_pct": 61.694002395069994,
+    "n_obs": 1096,
+    "dsr": 0.22099459154369971,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": -14.459386797033591,
+    "sharpe_per_obs": 0.013592253822981949,
+    "t_stat": 0.3672424753640409,
+    "max_dd_pct": 74.4739233479728,
+    "n_obs": 730,
+    "dsr": 0.00039134910675603103,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 723,
+   "family": "ft_ema_adx",
+   "symbol": "SUPERUSDT",
+   "risk": "raw",
+   "params": {},
+   "train": {
+    "annual_pct": 218.14662066980458,
+    "sharpe_per_obs": 0.08231480359261867,
+    "t_stat": 2.7251048919222467,
+    "max_dd_pct": 70.27422440175266,
+    "n_obs": 1096,
+    "dsr": 0.20215262218649527,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": 46.60103600893972,
+    "sharpe_per_obs": 0.04612089309918249,
+    "t_stat": 1.2461179115935779,
+    "max_dd_pct": 63.59027443421795,
+    "n_obs": 730,
+    "dsr": 0.004844319588178949,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 34964,
+   "family": "ft_ema21_50",
+   "symbol": "SUPERUSDT",
+   "risk": "raw",
+   "params": {},
+   "train": {
+    "annual_pct": 218.14662066980458,
+    "sharpe_per_obs": 0.08231480359261867,
+    "t_stat": 2.7251048919222467,
+    "max_dd_pct": 70.27422440175266,
+    "n_obs": 1096,
+    "dsr": 0.20215262218649527,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": 46.60103600893972,
+    "sharpe_per_obs": 0.04612089309918249,
+    "t_stat": 1.2461179115935779,
+    "max_dd_pct": 63.59027443421795,
+    "n_obs": 730,
+    "dsr": 0.004844319588178949,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 20551,
+   "family": "ZScoreMeanReversion",
+   "symbol": "IOTXUSDT",
+   "risk": "vol10",
+   "params": {
+    "period": 40,
+    "entry_z": -2.5
+   },
+   "train": {
+    "annual_pct": 4.698425958729779,
+    "sharpe_per_obs": 0.08221122049500956,
+    "t_stat": 2.721675681212931,
+    "max_dd_pct": 2.9033999440962632,
+    "n_obs": 1096,
+    "dsr": 0.3449275810662533,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": -8.140379050684421,
+    "sharpe_per_obs": -0.045536911917893476,
+    "t_stat": -1.2303396089385776,
+    "max_dd_pct": 19.20151925311847,
+    "n_obs": 730,
+    "dsr": 1.5906692581179867e-13,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 20552,
+   "family": "ZScoreMeanReversion",
+   "symbol": "IOTXUSDT",
+   "risk": "vol12dd820",
+   "params": {
+    "period": 40,
+    "entry_z": -2.5
+   },
+   "train": {
+    "annual_pct": 1.395989463704006,
+    "sharpe_per_obs": 0.08219739048192846,
+    "t_stat": 2.721217826311288,
+    "max_dd_pct": 0.8775095180204695,
+    "n_obs": 1096,
+    "dsr": 0.3448230361221142,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": -2.421753261165571,
+    "sharpe_per_obs": -0.04554707211779196,
+    "t_stat": -1.2306141224232068,
+    "max_dd_pct": 6.028389101462295,
+    "n_obs": 730,
+    "dsr": 1.584776143922883e-13,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 418,
+   "family": "RegimeSwitching",
+   "symbol": "TRXUSDT",
+   "risk": "vol10",
+   "params": {
+    "regime_period": 100,
+    "trend_lookback": 14
+   },
+   "train": {
+    "annual_pct": 14.339166405638458,
+    "sharpe_per_obs": 0.08195703250009714,
+    "t_stat": 2.713260561232424,
+    "max_dd_pct": 5.112894298056614,
+    "n_obs": 1096,
+    "dsr": 0.1643734183730452,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": 13.01064655501516,
+    "sharpe_per_obs": 0.05263632176028969,
+    "t_stat": 1.4221551001808856,
+    "max_dd_pct": 10.342063029678206,
+    "n_obs": 730,
+    "dsr": 0.0027824754174984884,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 13389,
+   "family": "TSMOM",
+   "symbol": "FETUSDT",
+   "risk": "raw",
+   "params": {
+    "lookback": 90
+   },
+   "train": {
+    "annual_pct": 165.36148292633692,
+    "sharpe_per_obs": 0.08066029195507941,
+    "t_stat": 2.670330810464014,
+    "max_dd_pct": 55.47478815346769,
+    "n_obs": 1096,
+    "dsr": 0.18829053904316534,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": -33.43237258909922,
+    "sharpe_per_obs": -0.017455687586743047,
+    "t_stat": -0.4716267075367573,
+    "max_dd_pct": 70.97228464667411,
+    "n_obs": 730,
+    "dsr": 2.0638947095071366e-05,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 13693,
+   "family": "VolatilityBreakout",
+   "symbol": "DUSKUSDT",
+   "risk": "vol10",
+   "params": {
+    "atr_period": 21,
+    "quantile": 0.7
+   },
+   "train": {
+    "annual_pct": 8.887869415149607,
+    "sharpe_per_obs": 0.08014597796348008,
+    "t_stat": 2.6533039876651916,
+    "max_dd_pct": 4.2245918981899555,
+    "n_obs": 1096,
+    "dsr": 0.18151301720190105,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": -0.17459679342782808,
+    "sharpe_per_obs": -0.00084224043185379,
+    "t_stat": -0.022756083359971216,
+    "max_dd_pct": 7.063026124357574,
+    "n_obs": 730,
+    "dsr": 9.850101452780027e-05,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 13694,
+   "family": "VolatilityBreakout",
+   "symbol": "DUSKUSDT",
+   "risk": "vol12dd820",
+   "params": {
+    "atr_period": 21,
+    "quantile": 0.7
+   },
+   "train": {
+    "annual_pct": 2.621439892948829,
+    "sharpe_per_obs": 0.08013350069625583,
+    "t_stat": 2.65289091662005,
+    "max_dd_pct": 1.2817497353964646,
+    "n_obs": 1096,
+    "dsr": 0.18139759233109898,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": -0.031389654602476114,
+    "sharpe_per_obs": -0.0008569843013430647,
+    "t_stat": -0.0231544407772327,
+    "max_dd_pct": 2.151234624017495,
+    "n_obs": 730,
+    "dsr": 9.837147838126434e-05,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 13390,
+   "family": "TSMOM",
+   "symbol": "FETUSDT",
+   "risk": "vol10",
+   "params": {
+    "lookback": 90
+   },
+   "train": {
+    "annual_pct": 10.587323407417347,
+    "sharpe_per_obs": 0.07973752594462087,
+    "t_stat": 2.6397818197667244,
+    "max_dd_pct": 6.518107031694953,
+    "n_obs": 1096,
+    "dsr": 0.1840527310625078,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": -2.0883829911511387,
+    "sharpe_per_obs": -0.015786446213853552,
+    "t_stat": -0.4265262891849816,
+    "max_dd_pct": 10.573844072546335,
+    "n_obs": 730,
+    "dsr": 2.2630598283122878e-05,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 16312,
+   "family": "TSMOM",
+   "symbol": "INJUSDT",
+   "risk": "vol10",
+   "params": {
+    "lookback": 180
+   },
+   "train": {
+    "annual_pct": 13.054972834388789,
+    "sharpe_per_obs": 0.07934761006645247,
+    "t_stat": 2.6268733073162354,
+    "max_dd_pct": 7.347791366305756,
+    "n_obs": 1096,
+    "dsr": 0.18889007402847474,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": -6.117233825803192,
+    "sharpe_per_obs": -0.04954710412963891,
+    "t_stat": -1.3386890360245338,
+    "max_dd_pct": 19.657783961574328,
+    "n_obs": 730,
+    "dsr": 4.588893896907749e-07,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 9712,
+   "family": "ft_bb_rsi",
+   "symbol": "ATMUSDT",
+   "risk": "raw",
+   "params": {},
+   "train": {
+    "annual_pct": 41.57306629494904,
+    "sharpe_per_obs": 0.07906917222449028,
+    "t_stat": 2.6176553745494555,
+    "max_dd_pct": 19.778349999742318,
+    "n_obs": 1096,
+    "dsr": 0.22651838452026263,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": -5.088968228159841,
+    "sharpe_per_obs": 0.005943967163195875,
+    "t_stat": 0.1605971491500397,
+    "max_dd_pct": 48.05385472463135,
+    "n_obs": 730,
+    "dsr": 0.00021893762419843973,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 9439,
+   "family": "ft_rsi35_65",
+   "symbol": "AVAUSDT",
+   "risk": "raw",
+   "params": {},
+   "train": {
+    "annual_pct": 93.89351617363566,
+    "sharpe_per_obs": 0.07892410916997027,
+    "t_stat": 2.6128529329198056,
+    "max_dd_pct": 38.034847682492725,
+    "n_obs": 1096,
+    "dsr": 0.18413529340409351,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": 23.268617878678533,
+    "sharpe_per_obs": 0.03395734581288216,
+    "t_stat": 0.9174769611813889,
+    "max_dd_pct": 56.933308161288366,
+    "n_obs": 730,
+    "dsr": 0.0023903945690650886,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 13192,
+   "family": "VolatilityBreakout",
+   "symbol": "DUSKUSDT",
+   "risk": "vol10",
+   "params": {
+    "atr_period": 14,
+    "quantile": 0.6
+   },
+   "train": {
+    "annual_pct": 11.056038483592756,
+    "sharpe_per_obs": 0.07843301323343733,
+    "t_stat": 2.5965947645146144,
+    "max_dd_pct": 5.260428000337958,
+    "n_obs": 1096,
+    "dsr": 0.17009090762902984,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": 2.9712450959754166,
+    "sharpe_per_obs": 0.027685875108008094,
+    "t_stat": 0.7480311536040744,
+    "max_dd_pct": 7.546971446576878,
+    "n_obs": 730,
+    "dsr": 0.0012119547070397957,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 13193,
+   "family": "VolatilityBreakout",
+   "symbol": "DUSKUSDT",
+   "risk": "vol12dd820",
+   "params": {
+    "atr_period": 14,
+    "quantile": 0.6
+   },
+   "train": {
+    "annual_pct": 3.2506275153644903,
+    "sharpe_per_obs": 0.07841356396253348,
+    "t_stat": 2.5959508790775945,
+    "max_dd_pct": 1.6026881820355277,
+    "n_obs": 1096,
+    "dsr": 0.16992310093441215,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": 0.9181177693953213,
+    "sharpe_per_obs": 0.027672810263414838,
+    "t_stat": 0.7476781609414034,
+    "max_dd_pct": 2.3147075257036964,
+    "n_obs": 730,
+    "dsr": 0.0012106884541132333,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 13391,
+   "family": "TSMOM",
+   "symbol": "FETUSDT",
+   "risk": "vol12dd820",
+   "params": {
+    "lookback": 90
+   },
+   "train": {
+    "annual_pct": 5.83633164030688,
+    "sharpe_per_obs": 0.07833227057741822,
+    "t_stat": 2.5932595891541577,
+    "max_dd_pct": 2.9538842944534904,
+    "n_obs": 1096,
+    "dsr": 0.10475579032686277,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": -0.5903668065726064,
+    "sharpe_per_obs": -0.015813159052859266,
+    "t_stat": -0.4272480303508118,
+    "max_dd_pct": 3.259777429336519,
+    "n_obs": 730,
+    "dsr": 6.423123157127114e-05,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 30580,
+   "family": "ft_rsi35_65",
+   "symbol": "REQUSDT",
+   "risk": "raw",
+   "params": {},
+   "train": {
+    "annual_pct": 122.25364025854817,
+    "sharpe_per_obs": 0.07824270328896289,
+    "t_stat": 2.590294384290962,
+    "max_dd_pct": 53.926780019311,
+    "n_obs": 1096,
+    "dsr": 0.17289040746600498,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": 102.57845476705496,
+    "sharpe_per_obs": 0.08655508255928482,
+    "t_stat": 2.338589551694903,
+    "max_dd_pct": 39.926097512230264,
+    "n_obs": 730,
+    "dsr": 0.07647306607723206,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 8465,
+   "family": "ft_rsi25_75",
+   "symbol": "ASRUSDT",
+   "risk": "raw",
+   "params": {},
+   "train": {
+    "annual_pct": 66.69327433973962,
+    "sharpe_per_obs": 0.07803723561712946,
+    "t_stat": 2.5834921940018827,
+    "max_dd_pct": 16.913995146751404,
+    "n_obs": 1096,
+    "dsr": 0.28780517313639054,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": -58.90992677521587,
+    "sharpe_per_obs": -0.009987506386319657,
+    "t_stat": -0.26984756286882866,
+    "max_dd_pct": 93.7110284502101,
+    "n_obs": 730,
+    "dsr": 1.2242359387472414e-05,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 12607,
+   "family": "ft_ema9_21",
+   "symbol": "CAKEUSDT",
+   "risk": "vol10",
+   "params": {},
+   "train": {
+    "annual_pct": 17.93196990161161,
+    "sharpe_per_obs": 0.07797056546312134,
+    "t_stat": 2.5812850191693717,
+    "max_dd_pct": 11.586098024679515,
+    "n_obs": 1096,
+    "dsr": 0.1791178810814627,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": -2.3127031100644513,
+    "sharpe_per_obs": -0.007614966901628689,
+    "t_stat": -0.20574507592265073,
+    "max_dd_pct": 19.407206410176304,
+    "n_obs": 730,
+    "dsr": 4.736881322844894e-05,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 31486,
+   "family": "ZScoreMeanReversion",
+   "symbol": "SNXUSDT",
+   "risk": "vol10",
+   "params": {
+    "period": 40,
+    "entry_z": -2.5
+   },
+   "train": {
+    "annual_pct": 6.447129807906515,
+    "sharpe_per_obs": 0.07773742686778079,
+    "t_stat": 2.573566758310697,
+    "max_dd_pct": 3.048549824764557,
+    "n_obs": 1096,
+    "dsr": 0.13687754720244943,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": 1.402323444412823,
+    "sharpe_per_obs": 0.018849568547230078,
+    "t_stat": 0.5092872972342914,
+    "max_dd_pct": 3.9274321872636353,
+    "n_obs": 730,
+    "dsr": 0.0004015644989882697,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 31487,
+   "family": "ZScoreMeanReversion",
+   "symbol": "SNXUSDT",
+   "risk": "vol12dd820",
+   "params": {
+    "period": 40,
+    "entry_z": -2.5
+   },
+   "train": {
+    "annual_pct": 1.9111166978916128,
+    "sharpe_per_obs": 0.07772669183730618,
+    "t_stat": 2.5732113655649878,
+    "max_dd_pct": 0.9193457112290693,
+    "n_obs": 1096,
+    "dsr": 0.13681109388646395,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": 0.4355525805123772,
+    "sharpe_per_obs": 0.018824867826895884,
+    "t_stat": 0.5086199205212797,
+    "max_dd_pct": 1.1900278522954166,
+    "n_obs": 730,
+    "dsr": 0.0004009598575346653,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 470,
+   "family": "ft_roc10",
+   "symbol": "SUPERUSDT",
+   "risk": "raw",
+   "params": {},
+   "train": {
+    "annual_pct": 193.9543916809648,
+    "sharpe_per_obs": 0.07738528347184286,
+    "t_stat": 2.561908737528945,
+    "max_dd_pct": 69.96905264915381,
+    "n_obs": 1096,
+    "dsr": 0.16297301183239937,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": -47.610854944137095,
+    "sharpe_per_obs": -0.012286865829379025,
+    "t_stat": -0.3319728339694201,
+    "max_dd_pct": 87.23942262205956,
+    "n_obs": 730,
+    "dsr": 3.254017586742085e-05,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 17700,
+   "family": "ft_rsi25_75",
+   "symbol": "DYDXUSDT",
+   "risk": "vol10",
+   "params": {},
+   "train": {
+    "annual_pct": 5.4078167033739355,
+    "sharpe_per_obs": 0.0766193411449595,
+    "t_stat": 2.5365515345615393,
+    "max_dd_pct": 2.4959583700220556,
+    "n_obs": 1096,
+    "dsr": 0.22255703384651182,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": -0.5607012443265225,
+    "sharpe_per_obs": -0.00405162837879432,
+    "t_stat": -0.10946897066973632,
+    "max_dd_pct": 6.139982355021512,
+    "n_obs": 730,
+    "dsr": 5.869533293972525e-05,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 18911,
+   "family": "RegimeSwitching",
+   "symbol": "FETUSDT",
+   "risk": "vol12dd820",
+   "params": {
+    "regime_period": 200,
+    "trend_lookback": 90
+   },
+   "train": {
+    "annual_pct": 6.057758604752128,
+    "sharpe_per_obs": 0.07621706501786453,
+    "t_stat": 2.523233825060884,
+    "max_dd_pct": 3.400159124150315,
+    "n_obs": 1096,
+    "dsr": 0.10851249152816228,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": -0.3969915667694446,
+    "sharpe_per_obs": -0.008637498115519586,
+    "t_stat": -0.23337234797162926,
+    "max_dd_pct": 3.705010568354461,
+    "n_obs": 730,
+    "dsr": 6.923202590869961e-05,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 34488,
+   "family": "ft_donchian55",
+   "symbol": "SOLUSDT",
+   "risk": "raw",
+   "params": {},
+   "train": {
+    "annual_pct": 83.72642312400285,
+    "sharpe_per_obs": 0.07589233647402248,
+    "t_stat": 2.512483397376572,
+    "max_dd_pct": 28.077170436247723,
+    "n_obs": 1096,
+    "dsr": 0.11012935382991612,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": 12.980847488856861,
+    "sharpe_per_obs": 0.02772160749673155,
+    "t_stat": 0.7489965895837413,
+    "max_dd_pct": 36.14076210040121,
+    "n_obs": 730,
+    "dsr": 0.0006068538793428933,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 17408,
+   "family": "RegimeSwitching",
+   "symbol": "FETUSDT",
+   "risk": "vol12dd820",
+   "params": {
+    "regime_period": 20,
+    "trend_lookback": 90
+   },
+   "train": {
+    "annual_pct": 5.961462017130237,
+    "sharpe_per_obs": 0.07555309170472237,
+    "t_stat": 2.501252397118659,
+    "max_dd_pct": 3.58708540367354,
+    "n_obs": 1096,
+    "dsr": 0.10511665782765306,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": -0.43176356201203303,
+    "sharpe_per_obs": -0.008637724791240494,
+    "t_stat": -0.23337847241235377,
+    "max_dd_pct": 3.8996507247919143,
+    "n_obs": 730,
+    "dsr": 6.839679203608026e-05,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 31652,
+   "family": "VolatilityBreakout",
+   "symbol": "TRBUSDT",
+   "risk": "vol12dd820",
+   "params": {
+    "atr_period": 7,
+    "quantile": 0.7
+   },
+   "train": {
+    "annual_pct": 3.1063875106501104,
+    "sharpe_per_obs": 0.07545723939485958,
+    "t_stat": 2.49807912102361,
+    "max_dd_pct": 1.3245843649442257,
+    "n_obs": 1096,
+    "dsr": 0.11540562839056095,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": -0.3536787856728285,
+    "sharpe_per_obs": -0.009261314644966365,
+    "t_stat": -0.2502269424657145,
+    "max_dd_pct": 2.4412118487687207,
+    "n_obs": 730,
+    "dsr": 5.9215904649481026e-05,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 31650,
+   "family": "VolatilityBreakout",
+   "symbol": "TRBUSDT",
+   "risk": "raw",
+   "params": {
+    "atr_period": 7,
+    "quantile": 0.7
+   },
+   "train": {
+    "annual_pct": 165.31336470520043,
+    "sharpe_per_obs": 0.07523332305975965,
+    "t_stat": 2.490666171304601,
+    "max_dd_pct": 49.67929021148662,
+    "n_obs": 1096,
+    "dsr": 0.13176579958295925,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": -40.41475539181033,
+    "sharpe_per_obs": -0.020231016716225226,
+    "t_stat": -0.5466119714035677,
+    "max_dd_pct": 76.37788186999698,
+    "n_obs": 730,
+    "dsr": 2.047306555388839e-05,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 13237,
+   "family": "ZScoreMeanReversion",
+   "symbol": "DEXEUSDT",
+   "risk": "vol10",
+   "params": {
+    "period": 10,
+    "entry_z": -2.5
+   },
+   "train": {
+    "annual_pct": 2.0398603462703058,
+    "sharpe_per_obs": 0.07510468470196262,
+    "t_stat": 2.486407483889681,
+    "max_dd_pct": 0.3889685496687889,
+    "n_obs": 1096,
+    "dsr": 0.12430482519166858,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": 1.7904978528366033,
+    "sharpe_per_obs": 0.025889384162887937,
+    "t_stat": 0.6994926411360757,
+    "max_dd_pct": 5.092677427731185,
+    "n_obs": 730,
+    "dsr": 0.0004902268249031271,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 13238,
+   "family": "ZScoreMeanReversion",
+   "symbol": "DEXEUSDT",
+   "risk": "vol12dd820",
+   "params": {
+    "period": 10,
+    "entry_z": -2.5
+   },
+   "train": {
+    "annual_pct": 0.6096949814518249,
+    "sharpe_per_obs": 0.07509832954403853,
+    "t_stat": 2.4861970907259727,
+    "max_dd_pct": 0.11668825754895806,
+    "n_obs": 1096,
+    "dsr": 0.12427434159536488,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": 0.5480217458936121,
+    "sharpe_per_obs": 0.025875645197040723,
+    "t_stat": 0.699121434720099,
+    "max_dd_pct": 1.5435011332683657,
+    "n_obs": 730,
+    "dsr": 0.0004899030205322674,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 27671,
+   "family": "ft_bb_ride",
+   "symbol": "ONEUSDT",
+   "risk": "vol10",
+   "params": {},
+   "train": {
+    "annual_pct": 14.441146037286256,
+    "sharpe_per_obs": 0.07504845217805316,
+    "t_stat": 2.484545856098534,
+    "max_dd_pct": 6.783953264357279,
+    "n_obs": 1096,
+    "dsr": 0.1615648536182483,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": -3.4201104756899636,
+    "sharpe_per_obs": -0.013804977561389133,
+    "t_stat": -0.372989954279514,
+    "max_dd_pct": 17.58834721681547,
+    "n_obs": 730,
+    "dsr": 2.258115674030631e-05,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 13337,
+   "family": "ft_ema21_50",
+   "symbol": "CFXUSDT",
+   "risk": "raw",
+   "params": {},
+   "train": {
+    "annual_pct": 204.0502516630974,
+    "sharpe_per_obs": 0.0748967382051764,
+    "t_stat": 2.4795232298926146,
+    "max_dd_pct": 59.438725615188496,
+    "n_obs": 1096,
+    "dsr": 0.10603134093538663,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": -17.924265954971318,
+    "sharpe_per_obs": 0.013848728714178308,
+    "t_stat": 0.37417204533369663,
+    "max_dd_pct": 58.74164294196991,
+    "n_obs": 730,
+    "dsr": 0.0002553195061015503,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 14088,
+   "family": "ft_ema_adx",
+   "symbol": "CFXUSDT",
+   "risk": "raw",
+   "params": {},
+   "train": {
+    "annual_pct": 204.0502516630974,
+    "sharpe_per_obs": 0.0748967382051764,
+    "t_stat": 2.4795232298926146,
+    "max_dd_pct": 59.438725615188496,
+    "n_obs": 1096,
+    "dsr": 0.10603134093538663,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": -17.924265954971318,
+    "sharpe_per_obs": 0.013848728714178308,
+    "t_stat": 0.37417204533369663,
+    "max_dd_pct": 58.74164294196991,
+    "n_obs": 730,
+    "dsr": 0.0002553195061015503,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  },
+  {
+   "idx": 17406,
+   "family": "RegimeSwitching",
+   "symbol": "FETUSDT",
+   "risk": "raw",
+   "params": {
+    "regime_period": 20,
+    "trend_lookback": 90
+   },
+   "train": {
+    "annual_pct": 155.92171580008238,
+    "sharpe_per_obs": 0.07472610962566668,
+    "t_stat": 2.473874418786597,
+    "max_dd_pct": 65.27659800014814,
+    "n_obs": 1096,
+    "dsr": 0.13982091856390055,
+    "expected_max_sharpe": 0.10549822618405713
+   },
+   "test": {
+    "annual_pct": -33.027349290775696,
+    "sharpe_per_obs": -0.003589234890704111,
+    "t_stat": -0.09697578658341915,
+    "max_dd_pct": 81.67233420790076,
+    "n_obs": 730,
+    "dsr": 7.610326021579493e-05,
+    "expected_max_sharpe": 0.13717885107392114
+   }
+  }
+ ],
+ "survivors": [],
+ "honest_limits": [
+  "Отбор сделан только по train; test не участвовал в выборе.",
+  "DSR на test посчитан по полному пулу - как и положено.",
+  "Мёртвый токен LUNAUSDT исключён.",
+  "Это проверка устойчивости, а не новый независимый тест: те же данные, что уже смотрели."
+ ]
+}

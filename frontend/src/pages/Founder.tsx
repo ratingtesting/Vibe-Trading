@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { AlertTriangle, FlaskConical, Loader2, SlidersHorizontal } from "lucide-react";
+import { AlertTriangle, ArrowLeftRight, FlaskConical, Loader2, SlidersHorizontal } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface CandidateRow {
@@ -100,6 +100,26 @@ interface Scan5yPayload {
     n_obs: number;
     trade_count: number | null;
   }>;
+  walk_forward: {
+    train_period: string;
+    test_period: string;
+    pool_size: number;
+    n_selected_by_train: number;
+    n_positive_on_test: number;
+    n_survivors_on_test: number;
+    pearson_corr: number;
+    spearman_corr: number;
+    top200_positive_rate: number;
+    base_positive_rate: number;
+    conclusion: string;
+    transfer_table: Array<{
+      n: number;
+      selected_test_sharpe_mean: number;
+      random_test_sharpe_mean: number;
+      advantage: number;
+      z_score: number;
+    }>;
+  } | null;
   honest_limits: string[];
 }
 
@@ -260,6 +280,8 @@ export function Founder() {
       cancelled = true;
     };
   }, []);
+
+  const walkForward = scan5y?.walk_forward ?? null;
 
   const totals = useMemo(() => {
     if (!data) return null;
@@ -504,6 +526,78 @@ export function Founder() {
             />
           </section>
         )}
+
+        {walkForward ? (
+          <section className="rounded-lg border bg-card">
+            <div className="flex items-center justify-between border-b px-4 py-3">
+              <div className="flex items-center gap-2">
+                <ArrowLeftRight className="h-4 w-4 text-muted-foreground" />
+                <h2 className="text-sm font-medium">Walk-forward: переносится ли отбор на будущее</h2>
+              </div>
+              <div className="text-xs text-muted-foreground">
+                Train {walkForward.train_period.split(" (")[0]} → test{" "}
+                {walkForward.test_period.split(" (")[0]}; отбор только по train
+              </div>
+            </div>
+            <div className="grid gap-3 p-4 sm:grid-cols-2 lg:grid-cols-4">
+              <Stat
+                label="Корреляция train ↔ test"
+                value={walkForward.pearson_corr.toFixed(4)}
+                hint={`ранговая (Спирмен) ${walkForward.spearman_corr.toFixed(4)}`}
+              />
+              <Stat
+                label="Прибыльны на test"
+                value={`${walkForward.n_positive_on_test} / ${walkForward.n_selected_by_train}`}
+                hint={`случайная база: ${(walkForward.base_positive_rate * 100).toFixed(1)}%`}
+              />
+              <Stat
+                label="Прошли гейт на test"
+                value={String(walkForward.n_survivors_on_test)}
+                hint="DSR≥0.95, t≥2.5, |DD|≤20%"
+              />
+              <Stat
+                label="Топ-200 по train на test"
+                value={`${(walkForward.top200_positive_rate * 100).toFixed(1)}%`}
+                hint={`случайные строки: ${(walkForward.base_positive_rate * 100).toFixed(1)}%`}
+              />
+            </div>
+            <div className="px-4 pb-4">
+              <p className="mb-3 text-xs text-muted-foreground">
+                {walkForward.conclusion}
+              </p>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead className="border-b bg-muted/40 text-left text-xs text-muted-foreground">
+                    <tr>
+                      <th className="px-3 py-2">Отобрано на train</th>
+                      <th className="px-3 py-2 text-right">test-Sharpe отобранных</th>
+                      <th className="px-3 py-2 text-right">случайных</th>
+                      <th className="px-3 py-2 text-right">Преимущество</th>
+                      <th className="px-3 py-2 text-right">z</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {walkForward.transfer_table.map((row) => (
+                      <tr key={row.n} className="border-b border-border/50 last:border-0">
+                        <td className="px-3 py-2">{row.n}</td>
+                        <td className="px-3 py-2 text-right font-mono">
+                          {row.selected_test_sharpe_mean.toFixed(5)}
+                        </td>
+                        <td className="px-3 py-2 text-right font-mono">
+                          {row.random_test_sharpe_mean.toFixed(5)}
+                        </td>
+                        <td className="px-3 py-2 text-right font-mono">
+                          {row.advantage.toFixed(5)}
+                        </td>
+                        <td className="px-3 py-2 text-right">{row.z_score.toFixed(2)}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        ) : null}
 
         <section className="rounded-lg border bg-card">
           <div className="flex items-center justify-between border-b px-4 py-3">

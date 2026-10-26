@@ -46,6 +46,10 @@ STEPS = [
      ["jev_judge_candidates.py", "--pairs", "12"]),
     ("НЕЗАВИСИМАЯ перепроверка чисел (второй код, без импорта основного)",
      ["independent_check.py"]),
+    ("Walk-forward: переносится ли отбор с train на test",
+     ["walk_forward.py", "--workers", "7", "--top", "40"]),
+    ("Walk-forward: перенос vs случайная выборка",
+     ["walk_forward_transfer.py"]),
 ]
 
 

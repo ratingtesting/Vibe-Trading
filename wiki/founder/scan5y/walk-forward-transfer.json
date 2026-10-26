@@ -1,0 +1,81 @@
+{
+ "date": "2026-10-26",
+ "n_with_metrics": 32264,
+ "n_alive": 32264,
+ "pearson_corr_train_test_sharpe": 0.03210432686867887,
+ "spearman_corr_train_test_sharpe": 0.018926403420102173,
+ "base_positive_rate_on_test": 0.5465844284651624,
+ "top200_positive_rate_on_test": 0.52,
+ "transfer_table": [
+  {
+   "n": 10,
+   "selected_test_sharpe_mean": 0.01588188111782074,
+   "random_test_sharpe_mean": 0.003851631889772875,
+   "random_std": 0.00987776564239384,
+   "advantage": 0.012030249228047865,
+   "z_score": 1.217911991798621
+  },
+  {
+   "n": 25,
+   "selected_test_sharpe_mean": 0.009192761965095997,
+   "random_test_sharpe_mean": 0.0022832575729216844,
+   "random_std": 0.006357239077940968,
+   "advantage": 0.0069095043921743125,
+   "z_score": 1.0868718806171147
+  },
+  {
+   "n": 50,
+   "selected_test_sharpe_mean": 0.006986034102737904,
+   "random_test_sharpe_mean": 0.0024770717418687127,
+   "random_std": 0.004397777394919806,
+   "advantage": 0.0045089623608691905,
+   "z_score": 1.0252820813708812
+  },
+  {
+   "n": 100,
+   "selected_test_sharpe_mean": 0.0016047965036705136,
+   "random_test_sharpe_mean": 0.0027025050388328965,
+   "random_std": 0.0031363668421273273,
+   "advantage": -0.001097708535162383,
+   "z_score": -0.3499936679657765
+  },
+  {
+   "n": 250,
+   "selected_test_sharpe_mean": 0.004600453656166792,
+   "random_test_sharpe_mean": 0.0027324967217919036,
+   "random_std": 0.0021864076141065903,
+   "advantage": 0.0018679569343748883,
+   "z_score": 0.8543498121406665
+  },
+  {
+   "n": 500,
+   "selected_test_sharpe_mean": 0.004300218541175127,
+   "random_test_sharpe_mean": 0.0028384910930981276,
+   "random_std": 0.0014951019583137987,
+   "advantage": 0.0014617274480769995,
+   "z_score": 0.9776774352737524
+  },
+  {
+   "n": 1000,
+   "selected_test_sharpe_mean": 0.004171126987785101,
+   "random_test_sharpe_mean": 0.0030043414604733697,
+   "random_std": 0.0010021135917080155,
+   "advantage": 0.0011667855273117312,
+   "z_score": 1.164324620448513
+  },
+  {
+   "n": 2000,
+   "selected_test_sharpe_mean": 0.0035429014824330807,
+   "random_test_sharpe_mean": 0.0028514437424018977,
+   "random_std": 0.0007067363820930058,
+   "advantage": 0.000691457740031183,
+   "z_score": 0.9783814128592404
+  }
+ ],
+ "honest_limits": [
+  "Отбор делался по train; test не участвовал в выборе.",
+  "Базовая линия - 200 случайных выборок того же размера.",
+  "Мёртвый токен LUNAUSDT исключён.",
+  "Тот же набор данных, что уже смотрели - это проверка переноса, а не независимый тест."
+ ]
+}

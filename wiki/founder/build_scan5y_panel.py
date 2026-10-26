@@ -101,6 +101,33 @@ def main() -> None:
     by_dd = sorted([r for r in with_annual if (r.get("max_dd_pct") or 999) <= 20.0],
                    key=lambda r: -(r.get("annual_pct") or -999))
 
+    # Walk-forward: переносится ли отбор с train на test. Это главный вывод
+    # исследования, поэтому он идёт в артефакт панели.
+    wf_path = SCAN / "walk-forward.json"
+    tr_path = SCAN / "walk-forward-transfer.json"
+    walk_forward = None
+    if wf_path.exists() and tr_path.exists():
+        wf = json.loads(wf_path.read_text(encoding="utf-8"))
+        tr = json.loads(tr_path.read_text(encoding="utf-8"))
+        walk_forward = {
+            "train_period": wf["train_period"],
+            "test_period": wf["test_period"],
+            "pool_size": wf["pool_size"],
+            "n_selected_by_train": wf["n_selected_by_train"],
+            "n_positive_on_test": wf["n_positive_on_test"],
+            "n_survivors_on_test": wf["n_survivors_dsr95_t25_dd20_on_test"],
+            "pearson_corr": tr["pearson_corr_train_test_sharpe"],
+            "spearman_corr": tr["spearman_corr_train_test_sharpe"],
+            "top200_positive_rate": tr["top200_positive_rate_on_test"],
+            "base_positive_rate": tr["base_positive_rate_on_test"],
+            "transfer_table": tr["transfer_table"],
+            "conclusion": (
+                "Отбор по статистике почти не переносится: преимущество над "
+                "случайной выборкой в пределах шума, топ-200 по train на test "
+                "прибыльны реже случайных. Нулевой DSR-гейт - точный ответ, "
+                "а не отсутствие края."),
+        }
+
     payload = {
         "date": "2026-10-25",
         "period": {"start": "2021-10-20", "end": "2026-10-19", "years": 5,
@@ -125,6 +152,7 @@ def main() -> None:
                             and (r.get("max_dd_pct") or 999) <= 20.0]),
         "top_by_t": [slim(r) for r in by_t[:MAX_LIST]],
         "top_by_annual_with_dd20": [slim(r) for r in by_dd[:MAX_LIST]],
+        "walk_forward": walk_forward,
         "honest_limits": [
             "Период один и тот же для всех строк: 5 лет дневных баров (1826 наблюдений).",
             "Доходность в годовых = (prod(1+r))^(365/n)-1 из дневной доходности.",

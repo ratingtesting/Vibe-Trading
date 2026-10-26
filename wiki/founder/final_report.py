@@ -344,8 +344,80 @@ def main() -> None:
             "торговать уже нечего. В пуле испытаний для DSR они остаются: "
             "пул обязан отражать всё, что было запущено.\n")
 
-    # --- 7. Оговорки ------------------------------------------------------
-    parts.append("## 7. Оговорки к числам\n")
+    # --- 7. Walk-forward: переносится ли отбор на будущее -----------------
+    wf_path = FOUNDER / "scan5y" / "walk-forward.json"
+    tr_path = FOUNDER / "scan5y" / "walk-forward-transfer.json"
+    if wf_path.exists() and tr_path.exists():
+        wf = json.loads(wf_path.read_text(encoding="utf-8"))
+        tr = json.loads(tr_path.read_text(encoding="utf-8"))
+        parts.append("\n## 7. Walk-forward: переносится ли отбор на будущее\n")
+        parts.append(
+            f"Каждый из {wf['pool_size']} прогонов разрезан на train "
+            f"({wf['train_period']}) и test ({wf['test_period']}). "
+            "Отбор кандидатов сделан ТОЛЬКО по train; test в выборе не "
+            "участвовал, DSR на test посчитан по полному пулу.\n")
+        parts.append(_table(
+            ["Показатель", "Значение", "Что значит"],
+            [
+                ["Корреляция train-Sharpe ↔ test-Sharpe (Пирсон)",
+                 f"{tr['pearson_corr_train_test_sharpe']:.4f}",
+                 "почти нет связи: красивая строка на train не гарантирует ничего на test"],
+                ["То же рангом (Спирмен)",
+                 f"{tr['spearman_corr_train_test_sharpe']:.4f}",
+                 "то же самое, устойчивее к выбросам"],
+                ["Отобрано на train (топ-N)", str(wf["n_selected_by_train"]),
+                 "сколько строк взяли в работу"],
+                ["Из них прибыльны на test",
+                 f"{wf['n_positive_on_test']} ({wf['n_positive_on_test']*100//max(wf['n_selected_by_train'],1)}%)",
+                 "пережили смену периода"],
+                ["Прошли гейт на test (DSR≥0.95, t≥2.5, DD≤20%)",
+                 str(wf["n_survivors_dsr95_t25_dd20_on_test"]),
+                 "ни один не прошёл"],
+                ["Доля прибыльных на test: топ-200 по train",
+                 f"{tr['top200_positive_rate_on_test']*100:.1f}%",
+                 "отобранные на train"],
+                ["Доля прибыльных на test: случайная база",
+                 f"{tr['base_positive_rate_on_test']*100:.1f}%",
+                 "просто случайные строки того же размера"],
+            ]))
+        parts.append("\n### 7.1 Преимущество отбора над случайной выборкой\n")
+        parts.append(_table(
+            ["Отобрано на train", "test-Sharpe отобранных", "test-Sharpe случайных",
+             "Преимущество", "z"],
+            [[str(row["n"]), f"{row['selected_test_sharpe_mean']:+.5f}",
+              f"{row['random_test_sharpe_mean']:+.5f}",
+              f"{row['advantage']:+.5f}", f"{row['z_score']:+.2f}"]
+             for row in tr["transfer_table"]]))
+        parts.append(
+            "\n**Вывод.** Отбор по статистике почти не переносится: преимущество "
+            "над случайной выборкой в пределах шума (|z| ≈ 1) на любом "
+            "размере, а топ-200 по train на test прибыльны реже, чем случайные "
+            "строки. Поэтому нулевой DSR-гейт — это не «края нет вообще», а "
+            "точный ответ: строка, которая красиво выглядит на 3 годах, "
+            "не вероятнее случайной устоит на следующих 2. Гейт показал "
+            "именно то, что должен был.\n")
+
+        survivors = wf.get("selected", [])
+        strong = [m for m in survivors if (m["test"]["t_stat"] or 0) >= 1.5]
+        if strong:
+            parts.append("### 7.2 Что всё-таки удержалось\n")
+            parts.append(_table(
+                ["Стратегия", "Пара", "Риск", "train %/год", "train t",
+                 "test %/год", "test t", "test DSR", "test DD %"],
+                [[str(m["family"]), str(m["symbol"]), str(m["risk"]),
+                  f"{m['train']['annual_pct']:.2f}", f"{m['train']['t_stat']:.3f}",
+                  f"{m['test']['annual_pct']:.2f}", f"{m['test']['t_stat']:.3f}",
+                  f"{m['test']['dsr']:.4f}", f"{m['test']['max_dd_pct']:.2f}"]
+                 for m in strong]))
+            parts.append(
+                "\nЕдиничная строка, удержавшаяся с t ≥ 1.5 на test. Её "
+                "дневные движения совпадают с реальными скачками цены "
+                "(день 203: −25.04% против цены −25.00%), то есть это "
+                "настоящий шорт на мемкоине, а не артефакт движка. Но это "
+                "одна строка из 40 с просадкой под 40% — не торгуемый край.\n")
+
+    # --- 8. Оговорки ------------------------------------------------------
+    parts.append("## 8. Оговорки к числам\n")
     limits = [
         "Период один и тот же для всех строк 5-летнего скана: 1826 дневных баров.",
         "Доходность в годовых считается из дневной доходности, а не делением на глаз.",
