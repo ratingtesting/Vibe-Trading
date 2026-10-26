@@ -99,6 +99,18 @@ def _target_annual(start: float, end: float, years: int) -> float:
     return ((end / start) ** (1.0 / years) - 1.0) * 100.0
 
 
+# Мёртвые токены: цена упала в ноль, торговать их уже нельзя. Стратегия на
+# таком токене может показать огромную «доходность» - это артефакт краха
+# (LUNAUSDT: $116 -> $0.043 за 5 лет), а не торговая возможность. Поэтому
+# они исключаются из «лучших строк», но остаются в пуле испытаний для DSR:
+# пул должен отражать всё, что было запущено.
+DEAD_SYMBOLS = {"LUNAUSDT"}
+
+
+def _tradable(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    return [r for r in rows if r.get("symbol") not in DEAD_SYMBOLS]
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--out", default=str(OUT))
@@ -213,7 +225,8 @@ def main() -> None:
 
     # --- 4. Новые кандидаты ----------------------------------------------
     parts.append("\n## 4. Новые кандидаты из 5-летнего скана: полная таблица\n")
-    by_t = sorted([r for r in ok if (r.get("t_stat") or -99) >= 2.5],
+    tradable = _tradable(ok)
+    by_t = sorted([r for r in tradable if (r.get("t_stat") or -99) >= 2.5],
                    key=lambda r: -(r.get("t_stat") or 0))
     parts.append(_table(
         ["#", "Стратегия", "Пара", "Параметры", "Риск", "Годовая %", "t", "DSR",
@@ -228,7 +241,7 @@ def main() -> None:
          for i, r in enumerate(by_t, start=1)]))
 
     parts.append("\n### 4.1 Лучшие при просадке <= 20%\n")
-    by_dd = sorted([r for r in ok if (r.get("max_dd_pct") or 999) <= 20.0],
+    by_dd = sorted([r for r in tradable if (r.get("max_dd_pct") or 999) <= 20.0],
                    key=lambda r: -(r.get("annual_pct") or -999))[:40]
     parts.append(_table(
         ["#", "Стратегия", "Пара", "Параметры", "Риск", "Годовая %", "t", "DSR",
@@ -271,8 +284,8 @@ def main() -> None:
                               f"{_target_annual(100.0, end, years):.1f}%"])
     parts.append(_table(["Цель", "Название", "Лет", "Нужно %/год"], rows_goal))
 
-    max_ann = max((r["annual_pct"] for r in ok), default=0.0)
-    max_ann_dd20 = max((r["annual_pct"] for r in ok
+    max_ann = max((r["annual_pct"] for r in tradable), default=0.0)
+    max_ann_dd20 = max((r["annual_pct"] for r in tradable
                          if (r.get("max_dd_pct") or 999) <= 20.0), default=0.0)
     kop_best = 0.0
     if CAND13.exists():
@@ -310,6 +323,12 @@ def main() -> None:
             f"\nОпорная строка: {top['family']} / {top['symbol']} / {top['risk']} — "
             f"{top['annual_pct']:.2f}%/год, просадка {top['max_dd_pct']:.2f}%, "
             f"t={top['t_stat']:.3f}, DSR={top['dsr']:.4f}.\n")
+        parts.append(
+            "Мёртвые токены (цена упала в ноль) исключены из лучших строк: "
+            "LUNAUSDT за 5 лет рухнул с $116 до $0.043, и стратегия на нём "
+            "показывает артефактные проценты, которые нельзя заработать - "
+            "торговать уже нечего. В пуле испытаний для DSR они остаются: "
+            "пул обязан отражать всё, что было запущено.\n")
 
     # --- 7. Оговорки ------------------------------------------------------
     parts.append("## 7. Оговорки к числам\n")
