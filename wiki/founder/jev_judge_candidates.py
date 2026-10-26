@@ -186,14 +186,30 @@ def main() -> None:
     candidates = _load_candidates()
     if len(candidates) < 2:
         raise SystemExit("нужно минимум 2 кандидата")
-    print(f"кандидатов к суду: {len(candidates)}")
 
-    # Пары: каждый кандидат из «сильного» списка против следующего по t,
-    # чтобы судья сравнивал близких, а не лучшего с худшим.
+    from_13 = [c for c in candidates if c["source"] == "13-кандидаты"]
+    from_scan = [c for c in candidates if c["source"] == "скан-5лет"]
+    print(f"кандидатов к суду: {len(candidates)} "
+          f"(из 13-кандидатов: {len(from_13)}, из 5-летнего скана: {len(from_scan)})")
+
+    # Пары строятся ТРИМЯ способами — так суд охватывает всё, что важно:
+    #   1) новый из скана vs лучший из 13-кандидатов (главный вопрос: что
+    #      лучше — проверенное или только что найденное);
+    #   2) новый из скана vs следующий новый (сравнение внутри новых);
+    #   3) 13-кандидаты между собой (сравнение внутри проверенных).
+    pairs: list[tuple[dict[str, Any], dict[str, Any]]] = []
+    for i, scan_row in enumerate(from_scan):
+        if i < len(from_13):
+            pairs.append((from_13[i], scan_row))
+    for i in range(len(from_scan) - 1):
+        pairs.append((from_scan[i], from_scan[i + 1]))
+    for i in range(len(from_13) - 1):
+        pairs.append((from_13[i], from_13[i + 1]))
+    pairs = pairs[: args.pairs]
+
     judged: list[dict[str, Any]] = []
-    pairs = min(args.pairs, len(candidates) - 1)
-    for i in range(pairs):
-        pair = {"a": candidates[i], "b": candidates[i + 1]}
+    for i, (a_row, b_row) in enumerate(pairs):
+        pair = {"a": a_row, "b": b_row}
         payload = {
             "state": _state_text(pair),
             "questions": _questions(),
@@ -214,7 +230,7 @@ def main() -> None:
                 "latency_ms": response.get("latency_ms"),
                 "elapsed_s": round(time.time() - started, 2),
             })
-            print(f"  пара {i+1}: {response.get('choice')} "
+            print(f"  пара {i+1}: [{pair['a']['source']}] {response.get('choice')} "
                   f"conf={response.get('confidence')} "
                   f"({response.get('provider_name')})")
         except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, OSError) as exc:

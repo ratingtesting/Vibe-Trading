@@ -2,187 +2,259 @@
  "date": "2026-10-25",
  "role": "Второе мнение с распределением вероятностей. НЕ заменяет статистический гейт (t>=3, DSR>=0.95, |DD|<=20%) и не является доказательством прибыльности.",
  "n_candidates_loaded": 23,
- "n_pairs": 10,
+ "n_pairs": 14,
  "judgements": [
   {
    "a": "TSMOM-154",
-   "b": "TSMOM-94",
+   "b": "VolatilityBreakout/ZECUSDT/raw",
    "a_source": "13-кандидаты",
-   "b_source": "13-кандидаты",
-   "choice": "a_better",
+   "b_source": "скан-5лет",
+   "choice": "b_better",
    "probabilities": {
-    "a_better": 0.61,
-    "b_better": 0.34,
-    "equal": 0.05
+    "a_better": 0.18,
+    "b_better": 0.8,
+    "equal": 0.02
    },
-   "confidence": 0.41,
+   "confidence": 0.7,
    "provider": "openrouter-typesafe",
    "model": "~typesafe/jev-latest",
-   "cost_usd": 4.7166e-05,
-   "latency_ms": 1696,
-   "elapsed_s": 2.16
+   "cost_usd": 4.4142e-05,
+   "latency_ms": 1162,
+   "elapsed_s": 1.83
   },
   {
    "a": "TSMOM-94",
-   "b": "RegimeSwitching-864",
+   "b": "VolatilityBreakout/ZECUSDT/raw",
    "a_source": "13-кандидаты",
-   "b_source": "13-кандидаты",
-   "choice": "a_better",
+   "b_source": "скан-5лет",
+   "choice": "b_better",
    "probabilities": {
-    "a_better": 1.0,
-    "b_better": 0.0,
+    "a_better": 0.03,
+    "b_better": 0.96,
+    "equal": 0.01
+   },
+   "confidence": 0.94,
+   "provider": "openrouter-typesafe",
+   "model": "~typesafe/jev-latest",
+   "cost_usd": 4.4142e-05,
+   "latency_ms": 1827,
+   "elapsed_s": 2.77
+  },
+  {
+   "a": "RegimeSwitching-864",
+   "b": "ft_ema_adx/SUPERUSDT/raw",
+   "a_source": "13-кандидаты",
+   "b_source": "скан-5лет",
+   "choice": "b_better",
+   "probabilities": {
+    "a_better": 0.18,
+    "b_better": 0.81,
+    "equal": 0.01
+   },
+   "confidence": 0.72,
+   "provider": "openrouter-typesafe",
+   "model": "~typesafe/jev-latest",
+   "cost_usd": 4.4226e-05,
+   "latency_ms": 969,
+   "elapsed_s": 1.31
+  },
+  {
+   "a": "RegimeSwitching-935",
+   "b": "VolatilityBreakout/ZECUSDT/vol10",
+   "a_source": "13-кандидаты",
+   "b_source": "скан-5лет",
+   "choice": "b_better",
+   "probabilities": {
+    "a_better": 0.01,
+    "b_better": 0.99,
+    "equal": 0.0
+   },
+   "confidence": 0.98,
+   "provider": "openrouter-typesafe",
+   "model": "~typesafe/jev-latest",
+   "cost_usd": 4.4184e-05,
+   "latency_ms": 1046,
+   "elapsed_s": 1.18
+  },
+  {
+   "a": "MARegimeFilter-214",
+   "b": "VolatilityBreakout/ZECUSDT/raw",
+   "a_source": "13-кандидаты",
+   "b_source": "скан-5лет",
+   "choice": "b_better",
+   "probabilities": {
+    "a_better": 0.01,
+    "b_better": 0.99,
+    "equal": 0.0
+   },
+   "confidence": 0.98,
+   "provider": "openrouter-typesafe",
+   "model": "~typesafe/jev-latest",
+   "cost_usd": 4.4184e-05,
+   "latency_ms": 1233,
+   "elapsed_s": 1.59
+  },
+  {
+   "a": "RegimeSwitching-905",
+   "b": "VolatilityBreakout/ZECUSDT/raw",
+   "a_source": "13-кандидаты",
+   "b_source": "скан-5лет",
+   "choice": "b_better",
+   "probabilities": {
+    "a_better": 0.07,
+    "b_better": 0.92,
+    "equal": 0.01
+   },
+   "confidence": 0.88,
+   "provider": "openrouter-typesafe",
+   "model": "~typesafe/jev-latest",
+   "cost_usd": 4.4226e-05,
+   "latency_ms": 1303,
+   "elapsed_s": 1.73
+  },
+  {
+   "a": "RegimeSwitching-875",
+   "b": "RegimeSwitching/TRXUSDT/vol10",
+   "a_source": "13-кандидаты",
+   "b_source": "скан-5лет",
+   "choice": "b_better",
+   "probabilities": {
+    "a_better": 0.0,
+    "b_better": 1.0,
     "equal": 0.0
    },
    "confidence": 1.0,
    "provider": "openrouter-typesafe",
    "model": "~typesafe/jev-latest",
-   "cost_usd": 4.7292e-05,
-   "latency_ms": 947,
-   "elapsed_s": 1.52
+   "cost_usd": 4.41e-05,
+   "latency_ms": 976,
+   "elapsed_s": 1.33
   },
   {
-   "a": "RegimeSwitching-864",
-   "b": "RegimeSwitching-935",
+   "a": "TSMOM-4",
+   "b": "RegimeSwitching/TRXUSDT/vol10",
    "a_source": "13-кандидаты",
-   "b_source": "13-кандидаты",
+   "b_source": "скан-5лет",
+   "choice": "b_better",
+   "probabilities": {
+    "a_better": 0.0,
+    "b_better": 1.0,
+    "equal": 0.0
+   },
+   "confidence": 1.0,
+   "provider": "openrouter-typesafe",
+   "model": "~typesafe/jev-latest",
+   "cost_usd": 4.41e-05,
+   "latency_ms": 1126,
+   "elapsed_s": 1.24
+  },
+  {
+   "a": "TSMOM-SOLUSDT-ddthrottle-16",
+   "b": "VolatilityBreakout/ZECUSDT/raw",
+   "a_source": "13-кандидаты",
+   "b_source": "скан-5лет",
+   "choice": "b_better",
+   "probabilities": {
+    "a_better": 0.05,
+    "b_better": 0.93,
+    "equal": 0.01
+   },
+   "confidence": 0.89,
+   "provider": "openrouter-typesafe",
+   "model": "~typesafe/jev-latest",
+   "cost_usd": 4.41e-05,
+   "latency_ms": 1674,
+   "elapsed_s": 2.09
+  },
+  {
+   "a": "RegimeSwitching-993",
+   "b": "VolatilityBreakout/ZECUSDT/raw",
+   "a_source": "13-кандидаты",
+   "b_source": "скан-5лет",
+   "choice": "b_better",
+   "probabilities": {
+    "a_better": 0.07,
+    "b_better": 0.92,
+    "equal": 0.01
+   },
+   "confidence": 0.88,
+   "provider": "openrouter-typesafe",
+   "model": "~typesafe/jev-latest",
+   "cost_usd": 4.4184e-05,
+   "latency_ms": 1336,
+   "elapsed_s": 2.72
+  },
+  {
+   "a": "VolatilityBreakout/ZECUSDT/raw",
+   "b": "VolatilityBreakout/ZECUSDT/raw",
+   "a_source": "скан-5лет",
+   "b_source": "скан-5лет",
+   "choice": "b_better",
+   "probabilities": {
+    "a_better": 0.3,
+    "b_better": 0.46,
+    "equal": 0.24
+   },
+   "confidence": 0.19,
+   "provider": "openrouter-typesafe",
+   "model": "~typesafe/jev-latest",
+   "cost_usd": 4.1118e-05,
+   "latency_ms": 967,
+   "elapsed_s": 1.69
+  },
+  {
+   "a": "VolatilityBreakout/ZECUSDT/raw",
+   "b": "ft_ema_adx/SUPERUSDT/raw",
+   "a_source": "скан-5лет",
+   "b_source": "скан-5лет",
+   "choice": "a_better",
+   "probabilities": {
+    "a_better": 0.95,
+    "b_better": 0.04,
+    "equal": 0.01
+   },
+   "confidence": 0.92,
+   "provider": "openrouter-typesafe",
+   "model": "~typesafe/jev-latest",
+   "cost_usd": 4.1076e-05,
+   "latency_ms": 1383,
+   "elapsed_s": 2.22
+  },
+  {
+   "a": "ft_ema_adx/SUPERUSDT/raw",
+   "b": "VolatilityBreakout/ZECUSDT/vol10",
+   "a_source": "скан-5лет",
+   "b_source": "скан-5лет",
+   "choice": "b_better",
+   "probabilities": {
+    "a_better": 0.13,
+    "b_better": 0.85,
+    "equal": 0.02
+   },
+   "confidence": 0.77,
+   "provider": "openrouter-typesafe",
+   "model": "~typesafe/jev-latest",
+   "cost_usd": 4.1034e-05,
+   "latency_ms": 1178,
+   "elapsed_s": 1.6
+  },
+  {
+   "a": "VolatilityBreakout/ZECUSDT/vol10",
+   "b": "VolatilityBreakout/ZECUSDT/raw",
+   "a_source": "скан-5лет",
+   "b_source": "скан-5лет",
    "choice": "a_better",
    "probabilities": {
     "a_better": 0.62,
-    "b_better": 0.29,
-    "equal": 0.09
+    "b_better": 0.35,
+    "equal": 0.03
    },
    "confidence": 0.43,
    "provider": "openrouter-typesafe",
    "model": "~typesafe/jev-latest",
-   "cost_usd": 4.7376e-05,
-   "latency_ms": 1299,
-   "elapsed_s": 1.74
-  },
-  {
-   "a": "RegimeSwitching-935",
-   "b": "MARegimeFilter-214",
-   "a_source": "13-кандидаты",
-   "b_source": "13-кандидаты",
-   "choice": "a_better",
-   "probabilities": {
-    "a_better": 0.64,
-    "b_better": 0.32,
-    "equal": 0.04
-   },
-   "confidence": 0.46,
-   "provider": "openrouter-typesafe",
-   "model": "~typesafe/jev-latest",
-   "cost_usd": 4.7334e-05,
-   "latency_ms": 901,
-   "elapsed_s": 1.14
-  },
-  {
-   "a": "MARegimeFilter-214",
-   "b": "RegimeSwitching-905",
-   "a_source": "13-кандидаты",
-   "b_source": "13-кандидаты",
-   "choice": "b_better",
-   "probabilities": {
-    "a_better": 0.08,
-    "b_better": 0.84,
-    "equal": 0.08
-   },
-   "confidence": 0.76,
-   "provider": "openrouter-typesafe",
-   "model": "~typesafe/jev-latest",
-   "cost_usd": 4.7334e-05,
-   "latency_ms": 869,
-   "elapsed_s": 1.05
-  },
-  {
-   "a": "RegimeSwitching-905",
-   "b": "RegimeSwitching-875",
-   "a_source": "13-кандидаты",
-   "b_source": "13-кандидаты",
-   "choice": "a_better",
-   "probabilities": {
-    "a_better": 1.0,
-    "b_better": 0.0,
-    "equal": 0.0
-   },
-   "confidence": 1.0,
-   "provider": "openrouter-typesafe",
-   "model": "~typesafe/jev-latest",
-   "cost_usd": 4.7208e-05,
-   "latency_ms": 921,
-   "elapsed_s": 1.16
-  },
-  {
-   "a": "RegimeSwitching-875",
-   "b": "TSMOM-4",
-   "a_source": "13-кандидаты",
-   "b_source": "13-кандидаты",
-   "choice": "b_better",
-   "probabilities": {
-    "a_better": 0.43,
-    "b_better": 0.54,
-    "equal": 0.03
-   },
-   "confidence": 0.31,
-   "provider": "openrouter-typesafe",
-   "model": "~typesafe/jev-latest",
-   "cost_usd": 4.7082e-05,
-   "latency_ms": 1147,
-   "elapsed_s": 2.27
-  },
-  {
-   "a": "TSMOM-4",
-   "b": "TSMOM-SOLUSDT-ddthrottle-16",
-   "a_source": "13-кандидаты",
-   "b_source": "13-кандидаты",
-   "choice": "a_better",
-   "probabilities": {
-    "a_better": 0.52,
-    "b_better": 0.44,
-    "equal": 0.04
-   },
-   "confidence": 0.28,
-   "provider": "openrouter-typesafe",
-   "model": "~typesafe/jev-latest",
-   "cost_usd": 4.7124e-05,
-   "latency_ms": 1025,
-   "elapsed_s": 2.21
-  },
-  {
-   "a": "TSMOM-SOLUSDT-ddthrottle-16",
-   "b": "RegimeSwitching-993",
-   "a_source": "13-кандидаты",
-   "b_source": "13-кандидаты",
-   "choice": "b_better",
-   "probabilities": {
-    "a_better": 0.01,
-    "b_better": 0.98,
-    "equal": 0.01
-   },
-   "confidence": 0.97,
-   "provider": "openrouter-typesafe",
-   "model": "~typesafe/jev-latest",
-   "cost_usd": 4.725e-05,
-   "latency_ms": 903,
-   "elapsed_s": 1.41
-  },
-  {
-   "a": "RegimeSwitching-993",
-   "b": "RegimeSwitching-ADAUSDT-ddthrottle-36",
-   "a_source": "13-кандидаты",
-   "b_source": "13-кандидаты",
-   "choice": "b_better",
-   "probabilities": {
-    "a_better": 0.47,
-    "b_better": 0.48,
-    "equal": 0.05
-   },
-   "confidence": 0.22,
-   "provider": "openrouter-typesafe",
-   "model": "~typesafe/jev-latest",
-   "cost_usd": 4.7334e-05,
-   "latency_ms": 885,
-   "elapsed_s": 1.26
+   "cost_usd": 4.1034e-05,
+   "latency_ms": 974,
+   "elapsed_s": 2.79
   }
  ]
 }
