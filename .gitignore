@@ -208,3 +208,8 @@ wiki/founder/last-year/*/artifacts/
 wiki/founder/last-year/*/run_card.*
 wiki/founder/candidates-13-5y/runs/*/artifacts/
 wiki/founder/candidates-13-5y/runs/*/run_card.*
+wiki/founder/combo-overlay/*/artifacts/
+wiki/founder/combo-overlay/*/run_card.*
+wiki/founder/combo-overlay/*/*/artifacts/
+wiki/founder/combo-overlay/*/*/run_card.*
+*.log
