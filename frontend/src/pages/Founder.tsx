@@ -60,6 +60,49 @@ interface FounderPayload {
   };
 }
 
+interface Scan5yPayload {
+  date: string;
+  period: { start: string; end: string; years: number; bars: number };
+  n_runs: number;
+  n_ok: number;
+  n_errors: number;
+  n_families: number;
+  n_symbols: number;
+  n_variants: number;
+  n_trials_pooled: number;
+  trial_sharpe_std: number;
+  expected_false_positives_5pct: number;
+  n_reference: number;
+  n_candidate: number;
+  top_by_t: Array<{
+    family: string;
+    symbol: string;
+    risk: string;
+    params: string;
+    annual_pct: number;
+    t_stat: number;
+    dsr: number | null;
+    max_dd_pct: number;
+    sharpe_per_obs: number;
+    n_obs: number;
+    trade_count: number | null;
+  }>;
+  top_by_annual_with_dd20: Array<{
+    family: string;
+    symbol: string;
+    risk: string;
+    params: string;
+    annual_pct: number;
+    t_stat: number;
+    dsr: number | null;
+    max_dd_pct: number;
+    sharpe_per_obs: number;
+    n_obs: number;
+    trade_count: number | null;
+  }>;
+  honest_limits: string[];
+}
+
 interface KopilkaConfig {
   lock_threshold: number;
   lock_share_of_gain: number;
@@ -143,6 +186,7 @@ export function Founder() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [kopilka, setKopilka] = useState<BtcKopilkaJson | null>(null);
+  const [scan5y, setScan5y] = useState<Scan5yPayload | null>(null);
   const [cfg, setCfg] = useState<KopilkaConfig>({
     lock_threshold: 0.3,
     lock_share_of_gain: 0.75,
@@ -196,6 +240,21 @@ export function Founder() {
       })
       .catch(() => {
         if (!cancelled) setKopilka(null);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+    fetch("/scan5y.json")
+      .then((res) => (res.ok ? res.json() : null))
+      .then((payload: Scan5yPayload | null) => {
+        if (!cancelled) setScan5y(payload);
+      })
+      .catch(() => {
+        if (!cancelled) setScan5y(null);
       });
     return () => {
       cancelled = true;
@@ -359,6 +418,64 @@ export function Founder() {
             </div>
             <div className="border-t px-4 py-3 text-xs text-muted-foreground">
               {data.honest_dsr_recheck.limitation}
+            </div>
+          </section>
+        ) : null}
+
+        {scan5y ? (
+          <section className="rounded-lg border bg-card">
+            <div className="border-b px-4 py-3">
+              <h2 className="text-sm font-medium">5-летний скан: {scan5y.n_ok} прогонов</h2>
+              <p className="mt-1 text-xs text-muted-foreground">
+                Окно {scan5y.period.start} .. {scan5y.period.end} ({scan5y.period.years} года,{" "}
+                {scan5y.period.bars} дневных баров). Доходность в годовых. Пул испытаний:{" "}
+                {scan5y.n_trials_pooled}; ожидается {scan5y.expected_false_positives_5pct.toFixed(0)}{" "}
+                ложных срабатываний при 5%.
+              </p>
+            </div>
+            <div className="grid gap-3 p-4 sm:grid-cols-2 lg:grid-cols-4">
+              <Stat label="Прогонов" value={String(scan5y.n_ok)} hint={`${scan5y.n_families} семейств, ${scan5y.n_symbols} пар, ${scan5y.n_variants} вариантов`} />
+              <Stat label="Прошли ЭТАЛОН" value={String(scan5y.n_reference)} hint="t>=3 + DSR>=0.95 + |DD|<=20%" />
+              <Stat label="Прошли КАНДИДАТ" value={String(scan5y.n_candidate)} hint="t>=2.5 + DSR>=0.95 + |DD|<=20%" />
+              <Stat label="Разброс Sharpe по пулу" value={scan5y.trial_sharpe_std.toFixed(5)} hint="Периодическая шкала" />
+            </div>
+            <div className="overflow-x-auto border-t">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b bg-muted/40 text-xs uppercase tracking-wide text-muted-foreground">
+                    <th className="px-3 py-2 text-left">Стратегия</th>
+                    <th className="px-3 py-2 text-left">Пара</th>
+                    <th className="px-3 py-2 text-left">Параметры</th>
+                    <th className="px-3 py-2 text-left">Риск</th>
+                    <th className="px-3 py-2 text-right">Годовая %</th>
+                    <th className="px-3 py-2 text-right">t</th>
+                    <th className="px-3 py-2 text-right">DSR</th>
+                    <th className="px-3 py-2 text-right">Просадка %</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {scan5y.top_by_t.map((row, index) => (
+                    <tr key={`${row.family}-${row.symbol}-${row.risk}-${row.params}-${index}`} className="border-b border-border/50 last:border-0">
+                      <td className="px-3 py-2">{row.family}</td>
+                      <td className="px-3 py-2">{row.symbol}</td>
+                      <td className="px-3 py-2 text-[11px] text-muted-foreground">{row.params}</td>
+                      <td className="px-3 py-2">{row.risk}</td>
+                      <td className="px-3 py-2 text-right">{row.annual_pct.toFixed(2)}%</td>
+                      <td className="px-3 py-2 text-right">{row.t_stat.toFixed(3)}</td>
+                      <td className="px-3 py-2 text-right font-mono">{row.dsr !== null ? row.dsr.toFixed(4) : "—"}</td>
+                      <td className="px-3 py-2 text-right">{row.max_dd_pct.toFixed(2)}%</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <div className="border-t px-4 py-3 text-xs text-muted-foreground">
+              <div className="mb-1 font-medium text-foreground">Ограничения</div>
+              <ul className="list-disc space-y-1 ps-5">
+                {scan5y.honest_limits.map((limit) => (
+                  <li key={limit}>{limit}</li>
+                ))}
+              </ul>
             </div>
           </section>
         ) : null}

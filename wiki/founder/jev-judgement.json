@@ -1,0 +1,188 @@
+{
+ "date": "2026-10-25",
+ "role": "Второе мнение с распределением вероятностей. НЕ заменяет статистический гейт (t>=3, DSR>=0.95, |DD|<=20%) и не является доказательством прибыльности.",
+ "n_candidates_loaded": 23,
+ "n_pairs": 10,
+ "judgements": [
+  {
+   "a": "TSMOM-154",
+   "b": "TSMOM-94",
+   "a_source": "13-кандидаты",
+   "b_source": "13-кандидаты",
+   "choice": "a_better",
+   "probabilities": {
+    "a_better": 0.61,
+    "b_better": 0.34,
+    "equal": 0.05
+   },
+   "confidence": 0.41,
+   "provider": "openrouter-typesafe",
+   "model": "~typesafe/jev-latest",
+   "cost_usd": 4.7166e-05,
+   "latency_ms": 1696,
+   "elapsed_s": 2.16
+  },
+  {
+   "a": "TSMOM-94",
+   "b": "RegimeSwitching-864",
+   "a_source": "13-кандидаты",
+   "b_source": "13-кандидаты",
+   "choice": "a_better",
+   "probabilities": {
+    "a_better": 1.0,
+    "b_better": 0.0,
+    "equal": 0.0
+   },
+   "confidence": 1.0,
+   "provider": "openrouter-typesafe",
+   "model": "~typesafe/jev-latest",
+   "cost_usd": 4.7292e-05,
+   "latency_ms": 947,
+   "elapsed_s": 1.52
+  },
+  {
+   "a": "RegimeSwitching-864",
+   "b": "RegimeSwitching-935",
+   "a_source": "13-кандидаты",
+   "b_source": "13-кандидаты",
+   "choice": "a_better",
+   "probabilities": {
+    "a_better": 0.62,
+    "b_better": 0.29,
+    "equal": 0.09
+   },
+   "confidence": 0.43,
+   "provider": "openrouter-typesafe",
+   "model": "~typesafe/jev-latest",
+   "cost_usd": 4.7376e-05,
+   "latency_ms": 1299,
+   "elapsed_s": 1.74
+  },
+  {
+   "a": "RegimeSwitching-935",
+   "b": "MARegimeFilter-214",
+   "a_source": "13-кандидаты",
+   "b_source": "13-кандидаты",
+   "choice": "a_better",
+   "probabilities": {
+    "a_better": 0.64,
+    "b_better": 0.32,
+    "equal": 0.04
+   },
+   "confidence": 0.46,
+   "provider": "openrouter-typesafe",
+   "model": "~typesafe/jev-latest",
+   "cost_usd": 4.7334e-05,
+   "latency_ms": 901,
+   "elapsed_s": 1.14
+  },
+  {
+   "a": "MARegimeFilter-214",
+   "b": "RegimeSwitching-905",
+   "a_source": "13-кандидаты",
+   "b_source": "13-кандидаты",
+   "choice": "b_better",
+   "probabilities": {
+    "a_better": 0.08,
+    "b_better": 0.84,
+    "equal": 0.08
+   },
+   "confidence": 0.76,
+   "provider": "openrouter-typesafe",
+   "model": "~typesafe/jev-latest",
+   "cost_usd": 4.7334e-05,
+   "latency_ms": 869,
+   "elapsed_s": 1.05
+  },
+  {
+   "a": "RegimeSwitching-905",
+   "b": "RegimeSwitching-875",
+   "a_source": "13-кандидаты",
+   "b_source": "13-кандидаты",
+   "choice": "a_better",
+   "probabilities": {
+    "a_better": 1.0,
+    "b_better": 0.0,
+    "equal": 0.0
+   },
+   "confidence": 1.0,
+   "provider": "openrouter-typesafe",
+   "model": "~typesafe/jev-latest",
+   "cost_usd": 4.7208e-05,
+   "latency_ms": 921,
+   "elapsed_s": 1.16
+  },
+  {
+   "a": "RegimeSwitching-875",
+   "b": "TSMOM-4",
+   "a_source": "13-кандидаты",
+   "b_source": "13-кандидаты",
+   "choice": "b_better",
+   "probabilities": {
+    "a_better": 0.43,
+    "b_better": 0.54,
+    "equal": 0.03
+   },
+   "confidence": 0.31,
+   "provider": "openrouter-typesafe",
+   "model": "~typesafe/jev-latest",
+   "cost_usd": 4.7082e-05,
+   "latency_ms": 1147,
+   "elapsed_s": 2.27
+  },
+  {
+   "a": "TSMOM-4",
+   "b": "TSMOM-SOLUSDT-ddthrottle-16",
+   "a_source": "13-кандидаты",
+   "b_source": "13-кандидаты",
+   "choice": "a_better",
+   "probabilities": {
+    "a_better": 0.52,
+    "b_better": 0.44,
+    "equal": 0.04
+   },
+   "confidence": 0.28,
+   "provider": "openrouter-typesafe",
+   "model": "~typesafe/jev-latest",
+   "cost_usd": 4.7124e-05,
+   "latency_ms": 1025,
+   "elapsed_s": 2.21
+  },
+  {
+   "a": "TSMOM-SOLUSDT-ddthrottle-16",
+   "b": "RegimeSwitching-993",
+   "a_source": "13-кандидаты",
+   "b_source": "13-кандидаты",
+   "choice": "b_better",
+   "probabilities": {
+    "a_better": 0.01,
+    "b_better": 0.98,
+    "equal": 0.01
+   },
+   "confidence": 0.97,
+   "provider": "openrouter-typesafe",
+   "model": "~typesafe/jev-latest",
+   "cost_usd": 4.725e-05,
+   "latency_ms": 903,
+   "elapsed_s": 1.41
+  },
+  {
+   "a": "RegimeSwitching-993",
+   "b": "RegimeSwitching-ADAUSDT-ddthrottle-36",
+   "a_source": "13-кандидаты",
+   "b_source": "13-кандидаты",
+   "choice": "b_better",
+   "probabilities": {
+    "a_better": 0.47,
+    "b_better": 0.48,
+    "equal": 0.05
+   },
+   "confidence": 0.22,
+   "provider": "openrouter-typesafe",
+   "model": "~typesafe/jev-latest",
+   "cost_usd": 4.7334e-05,
+   "latency_ms": 885,
+   "elapsed_s": 1.26
+  }
+ ]
+}
