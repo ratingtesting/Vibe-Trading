@@ -363,7 +363,7 @@ export function Founder() {
               <p className="mt-1 text-xs text-muted-foreground">
                 Шкала: {data.honest_dsr_recheck.scale}. Пул испытаний:{" "}
                 {data.honest_dsr_recheck.n_trials_pooled}; при 5% ложных срабатываний ожидается{" "}
-                {data.honest_dsr_recheck.expected_false_positives_5pct} ложных кандидатов.
+                {Math.round(data.honest_dsr_recheck.expected_false_positives_5pct)} ложных кандидатов.
               </p>
             </div>
             <div className="grid gap-3 p-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -378,7 +378,7 @@ export function Founder() {
                 }
                 hint={
                   data.honest_dsr_recheck.best_by_dsr[0]
-                    ? `${data.honest_dsr_recheck.best_by_dsr[0].name} (бар 0.95)`
+                    ? `${data.honest_dsr_recheck.best_by_dsr[0].name} (порог 0.95)`
                     : undefined
                 }
               />
