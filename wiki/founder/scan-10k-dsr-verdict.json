@@ -1,0 +1,11 @@
+{
+ "date": "2026-10-23",
+ "n_runs_block1": 5850,
+ "n_trials_pooled": 6914,
+ "trial_sharpe_std": 0.3548,
+ "expected_false_positives_5pct": 345.7,
+ "reference_edges": [],
+ "n_candidates": 0,
+ "candidates_top50": [],
+ "limitation": "DSR assumes independent trials; same-symbol strategies are correlated."
+}

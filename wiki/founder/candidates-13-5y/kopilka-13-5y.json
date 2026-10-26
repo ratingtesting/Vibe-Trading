@@ -1,0 +1,542 @@
+{
+ "date": "2026-10-25",
+ "period": {
+  "start": "2021-10-20",
+  "end": "2026-10-19",
+  "years": 5
+ },
+ "position_adjustment": "rebalance",
+ "start_capital": 100.0,
+ "declared_parameters": {
+  "lock_threshold": 0.3,
+  "lock_share_of_gain": 0.75,
+  "return_share_of_btc": 0.3,
+  "drawdown_trigger": 0.1,
+  "ma_window": 50,
+  "cost_per_leg": 0.001
+ },
+ "n_candidates": 13,
+ "honest_limits": [
+  "Период 5 лет (2021-10-20..2026-10-19) одинаков для всех 13 — сопоставимо.",
+  "Выбор 13 сделан на полной истории 2020-2026: этот срез НЕ является независимой проверкой.",
+  "Наложение копилки — к реализованной дневной доходности стратегии, а не повторный прогон движка со смешанным BTC-рукавом.",
+  "Комиссия движка уже учтена в доходности; в копилке — только комиссия переводов 10 bps на ногу."
+ ],
+ "rows": [
+  {
+   "id": "TSMOM-154",
+   "family": "TSMOM",
+   "symbol": "SOLUSDT",
+   "parameters": {
+    "lookback": 126
+   },
+   "risk": "raw",
+   "period_start": "2021-10-20",
+   "period_end": "2026-10-19",
+   "base": {
+    "annual_pct": 30.714644345159737,
+    "max_dd_pct": 51.57365316317974,
+    "t_stat": 1.6929336276879423,
+    "sharpe_per_obs": 0.03961772609723249,
+    "n_obs": 1826,
+    "trade_count": 727,
+    "dropped_target_adjustment_count": 0
+   },
+   "kopilka": {
+    "status": "OK",
+    "n_obs": 1825,
+    "annual_pct": 35.097316653509345,
+    "max_dd_pct": -48.05640659817478,
+    "t_stat": 1.999543698576953,
+    "final_value": 450.02186490037974,
+    "final_btc_units": 0.0034993835992449232,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 289.0262343227276,
+    "final_asset_value": 160.99563057765215,
+    "final_cash": -7.105427357601002e-15,
+    "btc_share_pct": 64.22493146787627,
+    "asset_share_pct": 35.77506853212374,
+    "locks": 10,
+    "returns_to_asset": 3
+   },
+   "delta_annual_pct": 4.382672308349608,
+   "delta_dd_pct": -99.63005976135452
+  },
+  {
+   "id": "TSMOM-94",
+   "family": "TSMOM",
+   "symbol": "SOLUSDT",
+   "parameters": {
+    "lookback": 30
+   },
+   "risk": "raw",
+   "period_start": "2021-10-20",
+   "period_end": "2026-10-19",
+   "base": {
+    "annual_pct": 33.4889711191978,
+    "max_dd_pct": 54.162795726679526,
+    "t_stat": 1.7306291863502332,
+    "sharpe_per_obs": 0.04049987073287647,
+    "n_obs": 1826,
+    "trade_count": 813,
+    "dropped_target_adjustment_count": 0
+   },
+   "kopilka": {
+    "status": "OK",
+    "n_obs": 1825,
+    "annual_pct": 36.29240216387804,
+    "max_dd_pct": -54.162795726679526,
+    "t_stat": 1.886223024831363,
+    "final_value": 470.2818634408409,
+    "final_btc_units": 0.003873442728770709,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 319.9210758154417,
+    "final_asset_value": 150.36078762539915,
+    "final_cash": -7.105427357601002e-15,
+    "btc_share_pct": 68.02751725842097,
+    "asset_share_pct": 31.97248274157904,
+    "locks": 9,
+    "returns_to_asset": 2
+   },
+   "delta_annual_pct": 2.803431044680238,
+   "delta_dd_pct": -108.32559145335905
+  },
+  {
+   "id": "RegimeSwitching-864",
+   "family": "RegimeSwitching",
+   "symbol": "ZILUSDT",
+   "parameters": {
+    "regime_period": 50,
+    "trend_lookback": 14
+   },
+   "risk": "raw",
+   "period_start": "2021-10-20",
+   "period_end": "2026-10-19",
+   "base": {
+    "annual_pct": 23.89351240144537,
+    "max_dd_pct": 72.06817815926607,
+    "t_stat": 1.376254210421198,
+    "sharpe_per_obs": 0.03220685173765134,
+    "n_obs": 1826,
+    "trade_count": 836,
+    "dropped_target_adjustment_count": 0
+   },
+   "kopilka": {
+    "status": "OK",
+    "n_obs": 1825,
+    "annual_pct": 31.36539078557885,
+    "max_dd_pct": -65.04615320074225,
+    "t_stat": 1.5161442141519657,
+    "final_value": 391.20537257725414,
+    "final_btc_units": 0.002632912245844922,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 217.46135858982518,
+    "final_asset_value": 173.74401398742893,
+    "final_cash": -7.105427357601002e-15,
+    "btc_share_pct": 55.5875184323757,
+    "asset_share_pct": 44.41248156762429,
+    "locks": 6,
+    "returns_to_asset": 3
+   },
+   "delta_annual_pct": 7.471878384133479,
+   "delta_dd_pct": -137.11433136000832
+  },
+  {
+   "id": "RegimeSwitching-935",
+   "family": "RegimeSwitching",
+   "symbol": "ADAUSDT",
+   "parameters": {
+    "regime_period": 100,
+    "trend_lookback": 30
+   },
+   "risk": "raw",
+   "period_start": "2021-10-20",
+   "period_end": "2026-10-19",
+   "base": {
+    "annual_pct": 15.129436548670071,
+    "max_dd_pct": 55.70257814068983,
+    "t_stat": 1.161486422144014,
+    "sharpe_per_obs": 0.027180894859416577,
+    "n_obs": 1826,
+    "trade_count": 805,
+    "dropped_target_adjustment_count": 0
+   },
+   "kopilka": {
+    "status": "OK",
+    "n_obs": 1825,
+    "annual_pct": 16.802187628172337,
+    "max_dd_pct": -49.9005792167293,
+    "t_stat": 1.233261752680064,
+    "final_value": 217.39766968459534,
+    "final_btc_units": 0.001573059494087262,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 129.92444213311146,
+    "final_asset_value": 87.47322755148389,
+    "final_cash": -7.105427357601002e-15,
+    "btc_share_pct": 59.763493473323926,
+    "asset_share_pct": 40.23650652667607,
+    "locks": 5,
+    "returns_to_asset": 2
+   },
+   "delta_annual_pct": 1.672751079502266,
+   "delta_dd_pct": -105.60315735741912
+  },
+  {
+   "id": "MARegimeFilter-214",
+   "family": "MARegimeFilter",
+   "symbol": "SOLUSDT",
+   "parameters": {
+    "ma_period": 50
+   },
+   "risk": "raw",
+   "period_start": "2021-10-20",
+   "period_end": "2026-10-19",
+   "base": {
+    "annual_pct": 14.86350703729249,
+    "max_dd_pct": 67.50864533087193,
+    "t_stat": 1.1692279933395666,
+    "sharpe_per_obs": 0.027362061706226747,
+    "n_obs": 1826,
+    "trade_count": 785,
+    "dropped_target_adjustment_count": 0
+   },
+   "kopilka": {
+    "status": "OK",
+    "n_obs": 1825,
+    "annual_pct": 22.236669744829697,
+    "max_dd_pct": -66.80408154483773,
+    "t_stat": 1.4446698523909127,
+    "final_value": 272.9025204262082,
+    "final_btc_units": 0.0018914054401449163,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 156.21773847844594,
+    "final_asset_value": 116.68478194776222,
+    "final_cash": 0.0,
+    "btc_share_pct": 57.24305449230419,
+    "asset_share_pct": 42.75694550769579,
+    "locks": 7,
+    "returns_to_asset": 4
+   },
+   "delta_annual_pct": 7.373162707537208,
+   "delta_dd_pct": -134.31272687570964
+  },
+  {
+   "id": "RegimeSwitching-905",
+   "family": "RegimeSwitching",
+   "symbol": "ADAUSDT",
+   "parameters": {
+    "regime_period": 100,
+    "trend_lookback": 14
+   },
+   "risk": "raw",
+   "period_start": "2021-10-20",
+   "period_end": "2026-10-19",
+   "base": {
+    "annual_pct": 19.15086595846096,
+    "max_dd_pct": 65.55654079654956,
+    "t_stat": 1.2759476818745783,
+    "sharpe_per_obs": 0.029859496526123627,
+    "n_obs": 1826,
+    "trade_count": 741,
+    "dropped_target_adjustment_count": 0
+   },
+   "kopilka": {
+    "status": "OK",
+    "n_obs": 1825,
+    "annual_pct": 21.498619131785766,
+    "max_dd_pct": -55.91161852291581,
+    "t_stat": 1.392047752901599,
+    "final_value": 264.7626445749724,
+    "final_btc_units": 0.002266180648506218,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 187.17172340697886,
+    "final_asset_value": 77.59092116799356,
+    "final_cash": -7.105427357601002e-15,
+    "btc_share_pct": 70.69415842535058,
+    "asset_share_pct": 29.305841574649428,
+    "locks": 5,
+    "returns_to_asset": 1
+   },
+   "delta_annual_pct": 2.3477531733248043,
+   "delta_dd_pct": -121.46815931946537
+  },
+  {
+   "id": "RegimeSwitching-875",
+   "family": "RegimeSwitching",
+   "symbol": "ADAUSDT",
+   "parameters": {
+    "regime_period": 50,
+    "trend_lookback": 30
+   },
+   "risk": "raw",
+   "period_start": "2021-10-20",
+   "period_end": "2026-10-19",
+   "base": {
+    "annual_pct": 4.406287051450408,
+    "max_dd_pct": 65.52848446980512,
+    "t_stat": 0.8584130849078493,
+    "sharpe_per_obs": 0.020088427520106245,
+    "n_obs": 1826,
+    "trade_count": 902,
+    "dropped_target_adjustment_count": 0
+   },
+   "kopilka": {
+    "status": "OK",
+    "n_obs": 1825,
+    "annual_pct": 5.814914342273347,
+    "max_dd_pct": -65.52848446980512,
+    "t_stat": 0.8687157802792522,
+    "final_value": 132.65829877744866,
+    "final_btc_units": 0.0007244459396194066,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 59.83450398057727,
+    "final_asset_value": 72.8237947968714,
+    "final_cash": -3.552713678800501e-15,
+    "btc_share_pct": 45.104229838615176,
+    "asset_share_pct": 54.895770161384824,
+    "locks": 3,
+    "returns_to_asset": 1
+   },
+   "delta_annual_pct": 1.4086272908229391,
+   "delta_dd_pct": -131.05696893961024
+  },
+  {
+   "id": "TSMOM-4",
+   "family": "TSMOM",
+   "symbol": "SOLUSDT",
+   "parameters": {
+    "lookback": 7
+   },
+   "risk": "raw",
+   "period_start": "2021-10-20",
+   "period_end": "2026-10-19",
+   "base": {
+    "annual_pct": 7.8032153970643,
+    "max_dd_pct": 81.851586713399,
+    "t_stat": 0.9320353929198751,
+    "sharpe_per_obs": 0.021811323436262037,
+    "n_obs": 1826,
+    "trade_count": 757,
+    "dropped_target_adjustment_count": 0
+   },
+   "kopilka": {
+    "status": "OK",
+    "n_obs": 1825,
+    "annual_pct": 11.378607863961765,
+    "max_dd_pct": -81.85158671339902,
+    "t_stat": 1.0403368084463946,
+    "final_value": 171.3992536260822,
+    "final_btc_units": 0.0005389214656200745,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 44.51139390304766,
+    "final_asset_value": 126.88785972303457,
+    "final_cash": 0.0,
+    "btc_share_pct": 25.969421080532797,
+    "asset_share_pct": 74.03057891946722,
+    "locks": 3,
+    "returns_to_asset": 4
+   },
+   "delta_annual_pct": 3.5753924668974646,
+   "delta_dd_pct": -163.703173426798
+  },
+  {
+   "id": "TSMOM-SOLUSDT-ddthrottle-16",
+   "family": "TSMOM",
+   "symbol": "SOLUSDT",
+   "parameters": {
+    "lookback": 126
+   },
+   "risk": "ddthrottle",
+   "period_start": "2021-10-20",
+   "period_end": "2026-10-19",
+   "base": {
+    "annual_pct": -2.8403100667493963,
+    "max_dd_pct": 53.41990241824066,
+    "t_stat": 0.03899276476130413,
+    "sharpe_per_obs": 0.0009125016177963993,
+    "n_obs": 1826,
+    "trade_count": 393,
+    "dropped_target_adjustment_count": 0
+   },
+   "kopilka": {
+    "status": "OK",
+    "n_obs": 1825,
+    "annual_pct": 3.7215631401073868,
+    "max_dd_pct": -49.60390440392407,
+    "t_stat": 0.6071385196210823,
+    "final_value": 120.0453289462532,
+    "final_btc_units": 0.0004535729173791276,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 37.46216114436545,
+    "final_asset_value": 82.58316780188775,
+    "final_cash": 0.0,
+    "btc_share_pct": 31.20667957112937,
+    "asset_share_pct": 68.79332042887063,
+    "locks": 2,
+    "returns_to_asset": 2
+   },
+   "delta_annual_pct": 6.561873206856783,
+   "delta_dd_pct": -103.02380682216473
+  },
+  {
+   "id": "RegimeSwitching-993",
+   "family": "RegimeSwitching",
+   "symbol": "BNBUSDT",
+   "parameters": {
+    "regime_period": 200,
+    "trend_lookback": 30
+   },
+   "risk": "raw",
+   "period_start": "2021-10-20",
+   "period_end": "2026-10-19",
+   "base": {
+    "annual_pct": 19.980219474072648,
+    "max_dd_pct": 50.02982569775148,
+    "t_stat": 1.426673521920788,
+    "sharpe_per_obs": 0.033386755332413504,
+    "n_obs": 1826,
+    "trade_count": 782,
+    "dropped_target_adjustment_count": 0
+   },
+   "kopilka": {
+    "status": "OK",
+    "n_obs": 1825,
+    "annual_pct": 17.43215004552816,
+    "max_dd_pct": -49.20562611130978,
+    "t_stat": 1.3423620929647762,
+    "final_value": 223.32382717692383,
+    "final_btc_units": 0.0007709853716477927,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 63.678357163630814,
+    "final_asset_value": 159.64547001329302,
+    "final_cash": 0.0,
+    "btc_share_pct": 28.513910928627833,
+    "asset_share_pct": 71.48608907137218,
+    "locks": 4,
+    "returns_to_asset": 3
+   },
+   "delta_annual_pct": -2.548069428544487,
+   "delta_dd_pct": -99.23545180906126
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-36",
+   "family": "RegimeSwitching",
+   "symbol": "ADAUSDT",
+   "parameters": {
+    "regime_period": 100,
+    "trend_lookback": 14
+   },
+   "risk": "ddthrottle",
+   "period_start": "2021-10-20",
+   "period_end": "2026-10-19",
+   "base": {
+    "annual_pct": 7.136639277962997,
+    "max_dd_pct": 21.20982035350687,
+    "t_stat": 1.0822727137499588,
+    "sharpe_per_obs": 0.025327150004346204,
+    "n_obs": 1826,
+    "trade_count": 437,
+    "dropped_target_adjustment_count": 0
+   },
+   "kopilka": {
+    "status": "OK",
+    "n_obs": 1825,
+    "annual_pct": 6.303984628432913,
+    "max_dd_pct": -26.78650561625734,
+    "t_stat": 0.9626889948781737,
+    "final_value": 135.7524630957684,
+    "final_btc_units": 0.0002847238576113156,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 23.516331391904465,
+    "final_asset_value": 112.23613170386395,
+    "final_cash": -3.552713678800501e-15,
+    "btc_share_pct": 17.32295006339189,
+    "asset_share_pct": 82.67704993660811,
+    "locks": 1,
+    "returns_to_asset": 0
+   },
+   "delta_annual_pct": -0.8326546495300846,
+   "delta_dd_pct": -47.996325969764214
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-40",
+   "family": "RegimeSwitching",
+   "symbol": "ADAUSDT",
+   "parameters": {
+    "regime_period": 100,
+    "trend_lookback": 30
+   },
+   "risk": "ddthrottle",
+   "period_start": "2021-10-20",
+   "period_end": "2026-10-19",
+   "base": {
+    "annual_pct": 6.272871373827993,
+    "max_dd_pct": 19.57811350823373,
+    "t_stat": 0.9726956947491409,
+    "sharpe_per_obs": 0.02276284845446558,
+    "n_obs": 1826,
+    "trade_count": 453,
+    "dropped_target_adjustment_count": 0
+   },
+   "kopilka": {
+    "status": "OK",
+    "n_obs": 1825,
+    "annual_pct": 5.5750869564596295,
+    "max_dd_pct": -21.907601656000274,
+    "t_stat": 0.8726243171578156,
+    "final_value": 131.1617610185902,
+    "final_btc_units": 0.00019626699888094455,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 16.210372484063328,
+    "final_asset_value": 114.95138853452688,
+    "final_cash": 0.0,
+    "btc_share_pct": 12.359068952852617,
+    "asset_share_pct": 87.64093104714739,
+    "locks": 1,
+    "returns_to_asset": 1
+   },
+   "delta_annual_pct": -0.6977844173683634,
+   "delta_dd_pct": -41.48571516423401
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-28",
+   "family": "RegimeSwitching",
+   "symbol": "ADAUSDT",
+   "parameters": {
+    "regime_period": 50,
+    "trend_lookback": 14
+   },
+   "risk": "ddthrottle",
+   "period_start": "2021-10-20",
+   "period_end": "2026-10-19",
+   "base": {
+    "annual_pct": 2.2977272132513438,
+    "max_dd_pct": 28.660052154555814,
+    "t_stat": 0.48170155866958775,
+    "sharpe_per_obs": 0.011272692620587195,
+    "n_obs": 1826,
+    "trade_count": 480,
+    "dropped_target_adjustment_count": 0
+   },
+   "kopilka": {
+    "status": "OK",
+    "n_obs": 1825,
+    "annual_pct": 2.7552145914561565,
+    "max_dd_pct": -28.660052154555725,
+    "t_stat": 0.5318882658938506,
+    "final_value": 114.55639882718128,
+    "final_btc_units": 0.00028283617426707545,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 23.360421074242467,
+    "final_asset_value": 91.19597775293882,
+    "final_cash": -3.552713678800501e-15,
+    "btc_share_pct": 20.392070031359648,
+    "asset_share_pct": 79.60792996864036,
+    "locks": 1,
+    "returns_to_asset": 0
+   },
+   "delta_annual_pct": 0.4574873782048128,
+   "delta_dd_pct": -57.32010430911154
+  }
+ ]
+}

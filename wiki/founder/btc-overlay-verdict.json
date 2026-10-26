@@ -1,0 +1,25 @@
+{
+ "date": "2026-10-24",
+ "prereg": "preregistration_btc_overlay.py (R1-R4, объявлено до прогона)",
+ "baseline": {
+  "annual_pct": 20.07201426137588,
+  "t_stat": 3.3236713230802093,
+  "max_dd_pct": -20.409834316198673,
+  "days": 2260,
+  "btc_accumulated": 0.0
+ },
+ "with_overlay": {
+  "annual_pct": 22.339501332878807,
+  "t_stat": 2.0902407224740265,
+  "max_dd_pct": -44.65704897348929,
+  "days": 2259,
+  "btc_accumulated": 2.5083157261645164e-05,
+  "final_value": 3.4824807742242645,
+  "final_portfolio_value": 1.3107757774292925,
+  "final_cash": 0.1
+ },
+ "btc_price_start": 7418.78,
+ "btc_price_end": 82593.47,
+ "acceptance": "принять если overlay улучшает доходность ИЛИ уменьшает DD без t<2.5",
+ "honest_note": "10 bps на перелив, транши R2/R3, коридор 20-30% ежемесячно"
+}

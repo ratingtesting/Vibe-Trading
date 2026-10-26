@@ -1,0 +1,45 @@
+{
+  "wiring": [
+    {
+      "file": "agent/api_server.py",
+      "matches": [
+        {
+          "line": 318,
+          "text": "from jev_module import jev_router  # noqa: E402"
+        }
+      ]
+    }
+  ],
+  "test_files": [],
+  "providers": {
+    "version": "1.0.0",
+    "providers": [
+      {
+        "name": "opencode-zen",
+        "label": "OpenCode Zen (Free)",
+        "base_url": "http://127.0.0.1:8933/v1",
+        "model": "jev-1.13-free",
+        "api_key_env": "",
+        "tier": "free",
+        "enabled": true,
+        "order": 0,
+        "transport": "systemone"
+      },
+      {
+        "name": "openrouter-typesafe",
+        "label": "OpenRouter (Typesafe/jev-1.14)",
+        "base_url": "https://openrouter.ai/api",
+        "model": "~typesafe/jev-latest",
+        "api_key_env": "OPENROUTER_API_KEY",
+        "tier": "paid",
+        "enabled": true,
+        "order": 1,
+        "transport": "decisions"
+      }
+    ],
+    "fallback_order": [
+      "opencode-zen",
+      "openrouter-typesafe"
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+ "date": "2026-10-23",
+ "n_survivors": 13,
+ "weights_dev": {
+  "TSMOM-4": 0.07076164448538128,
+  "TSMOM-94": 0.07145610310390277,
+  "TSMOM-154": 0.06920183481624578,
+  "MARegimeFilter-214": 0.07012073286508094,
+  "RegimeSwitching-864": 0.05226974655327832,
+  "RegimeSwitching-875": 0.07265402653518123,
+  "RegimeSwitching-905": 0.07915285245291251,
+  "RegimeSwitching-935": 0.07455725499534138,
+  "RegimeSwitching-993": 0.07403987783917947,
+  "TSMOM-SOLUSDT-ddthrottle-16": 0.07238363622226521,
+  "RegimeSwitching-ADAUSDT-ddthrottle-28": 0.10130781474498501,
+  "RegimeSwitching-ADAUSDT-ddthrottle-36": 0.10119951599209795,
+  "RegimeSwitching-ADAUSDT-ddthrottle-40": 0.09089495939414809
+ },
+ "dev": {
+  "annual_pct": 254.6529079263352,
+  "t_stat": 3.554575864256689,
+  "max_dd_pct": -35.859682459849175,
+  "days": 872
+ },
+ "eval": {
+  "annual_pct": 42.355791067093506,
+  "t_stat": 2.288454143084595,
+  "max_dd_pct": -31.68994980014058,
+  "days": 1388
+ },
+ "full": {
+  "annual_pct": 102.45725685738343,
+  "t_stat": 4.219343092351709,
+  "max_dd_pct": -35.859682459849175,
+  "days": 2260
+ },
+ "eval_voltarget15": {
+  "annual_pct": 19.5615071711148,
+  "t_stat": 2.1524317866427163,
+  "max_dd_pct": -24.11754406089769,
+  "days": 1388
+ },
+ "full_voltarget15": {
+  "annual_pct": 25.275523475732655,
+  "t_stat": 3.3493656449391653,
+  "max_dd_pct": -24.1175440608976,
+  "days": 2260
+ },
+ "eval_voltarget12": {
+  "annual_pct": 15.803818655539814,
+  "t_stat": 2.1483304642450656,
+  "max_dd_pct": -20.409834316198605,
+  "days": 1388
+ },
+ "full_voltarget12": {
+  "annual_pct": 20.07201426137588,
+  "t_stat": 3.3236713230802093,
+  "max_dd_pct": -20.409834316198673,
+  "days": 2260
+ },
+ "selection_bias_note": "Survivor selection used the full sample, so the EVAL window still carries selection bias. The honest next step is forward-PAPER."
+}

@@ -1,0 +1,1127 @@
+{
+  "generatedAt": "2026-10-15T21:36:28.665Z",
+  "purpose": "transfer test: do the candidates work on a DIFFERENT equity slice (small/mid caps)?",
+  "design": {
+    "slice": "liquidity ranks 1001..3000 by trailing 88d dollar volume (outside the top-1000 of phases 1/1b)",
+    "value": "(equity/shares)/price, decile long-short, dollar-neutral, quarterly",
+    "momentum": "12-1 (231d, 21d skip), decile long-short, dollar-neutral, monthly",
+    "shortLeg": "easy_to_borrow only",
+    "costs": "5bp/side + 1%/yr borrow",
+    "gates": "DEV t>=3 & mean>0; EVAL sign-consistent",
+    "trials": 2,
+    "symbolsPrepped": 9999
+  },
+  "results": {
+    "value": {
+      "dev": {
+        "t": -1.1136344372214406,
+        "mean": -0.011565084051390825,
+        "n": 19
+      },
+      "eval": {
+        "t": -2.310589327964329,
+        "mean": -0.02815291861230259,
+        "n": 15
+      },
+      "ci": {
+        "lo": -0.029508220860549817,
+        "hi": -0.000807674919024248,
+        "mean": -0.011565084051390825,
+        "resamples": 1000,
+        "blockSize": 4
+      },
+      "dsr": -1.3763395106041414,
+      "gateDev": false,
+      "gateEval": true
+    },
+    "momentum": {
+      "dev": {
+        "t": 0.22568773366866468,
+        "mean": 0.0018139041456319849,
+        "n": 72
+      },
+      "eval": {
+        "t": -1.2537930219703255,
+        "mean": -0.03510664435843797,
+        "n": 46
+      },
+      "ci": {
+        "lo": -0.01568259457161445,
+        "hi": 0.016687557749276813,
+        "mean": 0.0018139041456319849,
+        "resamples": 1000,
+        "blockSize": 12
+      },
+      "dsr": -0.7379789875293932,
+      "gateDev": false,
+      "gateEval": false
+    }
+  },
+  "cells": [
+    {
+      "period": "2018-06-30",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 71,
+      "netRet": -0.012051628849675868
+    },
+    {
+      "period": "2018-09-30",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 84,
+      "netRet": 0.02600691939898987
+    },
+    {
+      "period": "2018-12-31",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 88,
+      "netRet": -0.00999178755450245
+    },
+    {
+      "period": "2019-03-31",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 91,
+      "netRet": 0.025637269046584758
+    },
+    {
+      "period": "2019-06-30",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 87,
+      "netRet": -0.046182712930119496
+    },
+    {
+      "period": "2019-09-30",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 87,
+      "netRet": 0.03577706396396813
+    },
+    {
+      "period": "2019-12-31",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 89,
+      "netRet": -0.044885301358124706
+    },
+    {
+      "period": "2020-03-31",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 100,
+      "netRet": 0.04566274171428744
+    },
+    {
+      "period": "2020-06-30",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 99,
+      "netRet": -0.04900443558591172
+    },
+    {
+      "period": "2020-09-30",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 101,
+      "netRet": 0.022154402552127393
+    },
+    {
+      "period": "2020-12-31",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 112,
+      "netRet": -0.026761291569885156
+    },
+    {
+      "period": "2021-03-31",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 114,
+      "netRet": -0.1045085950650888
+    },
+    {
+      "period": "2021-06-30",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 113,
+      "netRet": -0.06064341062157316
+    },
+    {
+      "period": "2021-09-30",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 117,
+      "netRet": -0.013582423873599116
+    },
+    {
+      "period": "2021-12-31",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 116,
+      "netRet": -0.07954122548329487
+    },
+    {
+      "period": "2022-03-31",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 120,
+      "netRet": 0.07274597155399307
+    },
+    {
+      "period": "2022-06-30",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 116,
+      "netRet": -0.009113017763116151
+    },
+    {
+      "period": "2022-09-30",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 124,
+      "netRet": -0.005804055353391093
+    },
+    {
+      "period": "2022-12-31",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 126,
+      "netRet": 0.014348920801906254
+    },
+    {
+      "period": "2023-03-31",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 126,
+      "netRet": 0.038672932633875765
+    },
+    {
+      "period": "2023-06-30",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 121,
+      "netRet": -0.02422467359018469
+    },
+    {
+      "period": "2023-09-30",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 123,
+      "netRet": -0.03858376802837821
+    },
+    {
+      "period": "2023-12-31",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 131,
+      "netRet": 0.016703123006290167
+    },
+    {
+      "period": "2024-03-31",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 128,
+      "netRet": -0.021583970510626212
+    },
+    {
+      "period": "2024-06-30",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 124,
+      "netRet": -0.044946864290140644
+    },
+    {
+      "period": "2024-09-30",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 124,
+      "netRet": 0.00419761293742139
+    },
+    {
+      "period": "2024-12-31",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 120,
+      "netRet": -0.030709113862496248
+    },
+    {
+      "period": "2025-03-31",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 130,
+      "netRet": -0.03702171872087833
+    },
+    {
+      "period": "2025-06-30",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 133,
+      "netRet": 0.04897885725375001
+    },
+    {
+      "period": "2025-09-30",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 139,
+      "netRet": -0.04856047093686751
+    },
+    {
+      "period": "2025-12-31",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 132,
+      "netRet": -0.05075914027865969
+    },
+    {
+      "period": "2026-03-31",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 134,
+      "netRet": -0.07543332451389699
+    },
+    {
+      "period": "2026-06-30",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 140,
+      "netRet": -0.013445762734481177
+    },
+    {
+      "period": "2026-09-30",
+      "factor": "value",
+      "nLong": 200,
+      "nShort": 150,
+      "netRet": -0.14557749754926647
+    },
+    {
+      "period": "2017-01-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 141,
+      "netRet": -0.034769663486447645
+    },
+    {
+      "period": "2017-02-28",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 132,
+      "netRet": 0.03297058784745047
+    },
+    {
+      "period": "2017-03-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 145,
+      "netRet": -0.030380202451788487
+    },
+    {
+      "period": "2017-04-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 142,
+      "netRet": -0.02089716204937786
+    },
+    {
+      "period": "2017-05-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 142,
+      "netRet": 0.011270042054028397
+    },
+    {
+      "period": "2017-06-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 138,
+      "netRet": 0.03301484599059025
+    },
+    {
+      "period": "2017-07-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 150,
+      "netRet": -0.08354742474301466
+    },
+    {
+      "period": "2017-08-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 151,
+      "netRet": 0.04418439572332664
+    },
+    {
+      "period": "2017-09-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 149,
+      "netRet": 0.04085667639928122
+    },
+    {
+      "period": "2017-10-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 146,
+      "netRet": -0.021964847962712634
+    },
+    {
+      "period": "2017-11-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 150,
+      "netRet": 0.04585238541846366
+    },
+    {
+      "period": "2017-12-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 148,
+      "netRet": -0.03926390584622449
+    },
+    {
+      "period": "2018-01-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 138,
+      "netRet": 0.008602213941242082
+    },
+    {
+      "period": "2018-02-28",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 135,
+      "netRet": -0.006525883680652122
+    },
+    {
+      "period": "2018-03-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 136,
+      "netRet": 0.009954557549609777
+    },
+    {
+      "period": "2018-04-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 143,
+      "netRet": -0.004062335716817301
+    },
+    {
+      "period": "2018-05-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 151,
+      "netRet": -0.004043863617131512
+    },
+    {
+      "period": "2018-06-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 140,
+      "netRet": 0.00860237685363948
+    },
+    {
+      "period": "2018-07-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 140,
+      "netRet": 0.013267052095145507
+    },
+    {
+      "period": "2018-08-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 132,
+      "netRet": -0.01085458702563705
+    },
+    {
+      "period": "2018-09-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 138,
+      "netRet": 0.11113166778973779
+    },
+    {
+      "period": "2018-10-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 150,
+      "netRet": -0.02716001874916205
+    },
+    {
+      "period": "2018-11-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 150,
+      "netRet": -0.029490984233856966
+    },
+    {
+      "period": "2018-12-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 146,
+      "netRet": -0.008753748071139045
+    },
+    {
+      "period": "2019-01-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 148,
+      "netRet": 0.02958436764760595
+    },
+    {
+      "period": "2019-02-28",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 154,
+      "netRet": -0.07833313321344892
+    },
+    {
+      "period": "2019-03-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 156,
+      "netRet": -0.050057421780952314
+    },
+    {
+      "period": "2019-04-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 158,
+      "netRet": 0.027244557056766552
+    },
+    {
+      "period": "2019-05-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 152,
+      "netRet": -0.02162159666369199
+    },
+    {
+      "period": "2019-06-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 154,
+      "netRet": 0.11497863812336857
+    },
+    {
+      "period": "2019-07-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 151,
+      "netRet": -0.002275843956489076
+    },
+    {
+      "period": "2019-08-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 158,
+      "netRet": 0.04797490377725315
+    },
+    {
+      "period": "2019-09-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 165,
+      "netRet": 0.052170848863157517
+    },
+    {
+      "period": "2019-10-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 161,
+      "netRet": -0.12283699977682519
+    },
+    {
+      "period": "2019-11-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 168,
+      "netRet": 0.02394630902804135
+    },
+    {
+      "period": "2019-12-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 159,
+      "netRet": -0.04227162425305262
+    },
+    {
+      "period": "2020-01-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 162,
+      "netRet": -0.0692612184957723
+    },
+    {
+      "period": "2020-02-29",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 168,
+      "netRet": 0.0882678601664761
+    },
+    {
+      "period": "2020-03-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 166,
+      "netRet": -0.0003256977054549243
+    },
+    {
+      "period": "2020-04-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 168,
+      "netRet": 0.10781467865141174
+    },
+    {
+      "period": "2020-05-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 166,
+      "netRet": -0.21474349899740341
+    },
+    {
+      "period": "2020-06-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 161,
+      "netRet": -0.028284450093231724
+    },
+    {
+      "period": "2020-07-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 153,
+      "netRet": -0.06639624167338726
+    },
+    {
+      "period": "2020-08-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 144,
+      "netRet": 0.07346111974836027
+    },
+    {
+      "period": "2020-09-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 148,
+      "netRet": -0.06697431782154488
+    },
+    {
+      "period": "2020-10-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 153,
+      "netRet": 0.11119763924529003
+    },
+    {
+      "period": "2020-11-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 151,
+      "netRet": -0.021480737842103352
+    },
+    {
+      "period": "2020-12-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 148,
+      "netRet": -0.2951557978614826
+    },
+    {
+      "period": "2021-01-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 149,
+      "netRet": 0.05614347851305585
+    },
+    {
+      "period": "2021-02-28",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 132,
+      "netRet": -0.02531154134943437
+    },
+    {
+      "period": "2021-03-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 122,
+      "netRet": 0.008881394192028859
+    },
+    {
+      "period": "2021-04-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 143,
+      "netRet": -0.08632389470914513
+    },
+    {
+      "period": "2021-05-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 136,
+      "netRet": -0.0142154709238127
+    },
+    {
+      "period": "2021-06-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 129,
+      "netRet": 0.021844146119910843
+    },
+    {
+      "period": "2021-07-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 130,
+      "netRet": -0.00217111748480621
+    },
+    {
+      "period": "2021-08-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 128,
+      "netRet": 0.019680455583550922
+    },
+    {
+      "period": "2021-09-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 142,
+      "netRet": 0.028912658517958344
+    },
+    {
+      "period": "2021-10-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 125,
+      "netRet": 0.03413508832475121
+    },
+    {
+      "period": "2021-11-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 135,
+      "netRet": 0.009533349010901637
+    },
+    {
+      "period": "2021-12-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 136,
+      "netRet": 0.049875043466551555
+    },
+    {
+      "period": "2022-01-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 131,
+      "netRet": 0.014892377506428762
+    },
+    {
+      "period": "2022-02-28",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 129,
+      "netRet": 0.11286866368946886
+    },
+    {
+      "period": "2022-03-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 132,
+      "netRet": 0.013646040175271996
+    },
+    {
+      "period": "2022-04-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 139,
+      "netRet": 0.023468090507880013
+    },
+    {
+      "period": "2022-05-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 155,
+      "netRet": 0.11937740538318442
+    },
+    {
+      "period": "2022-06-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 151,
+      "netRet": 0.06587767460673195
+    },
+    {
+      "period": "2022-07-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 153,
+      "netRet": -0.06597395646788505
+    },
+    {
+      "period": "2022-08-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 153,
+      "netRet": -0.007745108373443548
+    },
+    {
+      "period": "2022-09-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 158,
+      "netRet": 0.018783362300212242
+    },
+    {
+      "period": "2022-10-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 158,
+      "netRet": 0.054588352572881645
+    },
+    {
+      "period": "2022-11-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 154,
+      "netRet": 0.07912946327867719
+    },
+    {
+      "period": "2022-12-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 156,
+      "netRet": -0.033909372156860594
+    },
+    {
+      "period": "2023-01-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 159,
+      "netRet": -0.0039635642589582335
+    },
+    {
+      "period": "2023-02-28",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 155,
+      "netRet": -0.1938286452496318
+    },
+    {
+      "period": "2023-03-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 157,
+      "netRet": 0.051941485570596684
+    },
+    {
+      "period": "2023-04-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 150,
+      "netRet": 0.02959864485574437
+    },
+    {
+      "period": "2023-05-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 147,
+      "netRet": -0.005046782439427997
+    },
+    {
+      "period": "2023-06-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 155,
+      "netRet": 0.018005874975116725
+    },
+    {
+      "period": "2023-07-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 155,
+      "netRet": -0.00865562966077301
+    },
+    {
+      "period": "2023-08-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 152,
+      "netRet": -0.057026505472713804
+    },
+    {
+      "period": "2023-09-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 149,
+      "netRet": 0.03254268746580558
+    },
+    {
+      "period": "2023-10-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 149,
+      "netRet": 0.005107380989309108
+    },
+    {
+      "period": "2023-11-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 158,
+      "netRet": 0.039168051460585364
+    },
+    {
+      "period": "2023-12-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 157,
+      "netRet": 0.002404358931397391
+    },
+    {
+      "period": "2024-01-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 155,
+      "netRet": -0.05507741926073267
+    },
+    {
+      "period": "2024-02-29",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 161,
+      "netRet": 0.06782410194032723
+    },
+    {
+      "period": "2024-03-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 152,
+      "netRet": 0.05017126194462156
+    },
+    {
+      "period": "2024-04-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 153,
+      "netRet": 0.038819959007852706
+    },
+    {
+      "period": "2024-05-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 145,
+      "netRet": 0.0055457756055832036
+    },
+    {
+      "period": "2024-06-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 142,
+      "netRet": -0.06717269507255469
+    },
+    {
+      "period": "2024-07-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 140,
+      "netRet": 0.01677937012055291
+    },
+    {
+      "period": "2024-08-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 135,
+      "netRet": -0.07367731622983116
+    },
+    {
+      "period": "2024-09-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 135,
+      "netRet": 0.09278903505747578
+    },
+    {
+      "period": "2024-10-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 140,
+      "netRet": -0.017483755145732624
+    },
+    {
+      "period": "2024-11-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 138,
+      "netRet": 0.03078999618348189
+    },
+    {
+      "period": "2024-12-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 137,
+      "netRet": -0.04962535415871374
+    },
+    {
+      "period": "2025-01-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 146,
+      "netRet": -0.011925361806928977
+    },
+    {
+      "period": "2025-02-28",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 139,
+      "netRet": -0.006449560164932659
+    },
+    {
+      "period": "2025-03-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 147,
+      "netRet": 0.0077599033283640905
+    },
+    {
+      "period": "2025-04-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 133,
+      "netRet": 0.011004247933174373
+    },
+    {
+      "period": "2025-05-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 143,
+      "netRet": 0.07330154258502526
+    },
+    {
+      "period": "2025-06-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 149,
+      "netRet": -0.07793295344651589
+    },
+    {
+      "period": "2025-07-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 154,
+      "netRet": -0.022645153312875643
+    },
+    {
+      "period": "2025-08-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 148,
+      "netRet": -1.2271673195807733
+    },
+    {
+      "period": "2025-09-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 136,
+      "netRet": -0.03409127636550907
+    },
+    {
+      "period": "2025-10-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 141,
+      "netRet": -0.05169302972592096
+    },
+    {
+      "period": "2025-11-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 143,
+      "netRet": -0.059177582934826264
+    },
+    {
+      "period": "2025-12-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 148,
+      "netRet": -0.05578138237126288
+    },
+    {
+      "period": "2026-01-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 140,
+      "netRet": -0.03098688610037435
+    },
+    {
+      "period": "2026-02-28",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 140,
+      "netRet": 0.01766038261019988
+    },
+    {
+      "period": "2026-03-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 139,
+      "netRet": 0.06475011066532219
+    },
+    {
+      "period": "2026-04-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 144,
+      "netRet": -0.07103317217988317
+    },
+    {
+      "period": "2026-05-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 142,
+      "netRet": 0.0888563196156083
+    },
+    {
+      "period": "2026-06-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 143,
+      "netRet": -0.01592043780413109
+    },
+    {
+      "period": "2026-07-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 135,
+      "netRet": 0.009197177688324829
+    },
+    {
+      "period": "2026-08-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 135,
+      "netRet": -0.19461634403428676
+    },
+    {
+      "period": "2026-09-30",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 132,
+      "netRet": -0.06752878742722088
+    },
+    {
+      "period": "2026-10-31",
+      "factor": "momentum",
+      "nLong": 200,
+      "nShort": 121,
+      "netRet": 0.08958360518189536
+    }
+  ],
+  "caveat": "the slice is thinner and noisier than the top-1000; the survivorship caveat of every equity test here applies"
+}

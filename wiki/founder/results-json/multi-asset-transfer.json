@@ -1,0 +1,643 @@
+{
+  "generatedAt": "2026-10-12T16:31:08.027Z",
+  "walk": {
+    "warmup": 300,
+    "window": 180,
+    "step": 105
+  },
+  "cells": [
+    {
+      "asset": "BTC/USD",
+      "arm": "tsmom-7",
+      "medianAlpha": -0.5053093552868404,
+      "positive": 5,
+      "windowCount": 16,
+      "fills": 1394
+    },
+    {
+      "asset": "BTC/USD",
+      "arm": "tsmom-14",
+      "medianAlpha": -0.3219692680403915,
+      "positive": 4,
+      "windowCount": 16,
+      "fills": 1444
+    },
+    {
+      "asset": "BTC/USD",
+      "arm": "tsmom-21",
+      "medianAlpha": -0.4451314907898958,
+      "positive": 6,
+      "windowCount": 16,
+      "fills": 1386
+    },
+    {
+      "asset": "BTC/USD",
+      "arm": "tsmom-30",
+      "medianAlpha": -0.24561378640950693,
+      "positive": 5,
+      "windowCount": 16,
+      "fills": 1453
+    },
+    {
+      "asset": "BTC/USD",
+      "arm": "tsmom-7xvol",
+      "medianAlpha": -0.7560231846255316,
+      "positive": 2,
+      "windowCount": 16,
+      "fills": 513
+    },
+    {
+      "asset": "BTC/USD",
+      "arm": "tsmom-14xvol",
+      "medianAlpha": -0.5201084602910035,
+      "positive": 4,
+      "windowCount": 16,
+      "fills": 572
+    },
+    {
+      "asset": "BTC/USD",
+      "arm": "tsmom-21xvol",
+      "medianAlpha": -0.3573183066644783,
+      "positive": 6,
+      "windowCount": 16,
+      "fills": 555
+    },
+    {
+      "asset": "BTC/USD",
+      "arm": "tsmom-30xvol",
+      "medianAlpha": -1.2081724698266552,
+      "positive": 5,
+      "windowCount": 16,
+      "fills": 613
+    },
+    {
+      "asset": "BTC/USD",
+      "arm": "tsmom-252",
+      "medianAlpha": -0.35237975578949055,
+      "positive": 1,
+      "windowCount": 16,
+      "fills": 1858
+    },
+    {
+      "asset": "ETH/USD",
+      "arm": "tsmom-7",
+      "medianAlpha": -0.08858406444342926,
+      "positive": 7,
+      "windowCount": 16,
+      "fills": 1203
+    },
+    {
+      "asset": "ETH/USD",
+      "arm": "tsmom-14",
+      "medianAlpha": -0.03958901088195077,
+      "positive": 7,
+      "windowCount": 16,
+      "fills": 1208
+    },
+    {
+      "asset": "ETH/USD",
+      "arm": "tsmom-21",
+      "medianAlpha": 0.37026892236335307,
+      "positive": 9,
+      "windowCount": 16,
+      "fills": 1270
+    },
+    {
+      "asset": "ETH/USD",
+      "arm": "tsmom-30",
+      "medianAlpha": 0.0028034911313850053,
+      "positive": 8,
+      "windowCount": 16,
+      "fills": 1215
+    },
+    {
+      "asset": "ETH/USD",
+      "arm": "tsmom-7xvol",
+      "medianAlpha": -0.5715159713146263,
+      "positive": 7,
+      "windowCount": 16,
+      "fills": 504
+    },
+    {
+      "asset": "ETH/USD",
+      "arm": "tsmom-14xvol",
+      "medianAlpha": 0.71174906833263,
+      "positive": 8,
+      "windowCount": 16,
+      "fills": 502
+    },
+    {
+      "asset": "ETH/USD",
+      "arm": "tsmom-21xvol",
+      "medianAlpha": -0.1345054608923264,
+      "positive": 7,
+      "windowCount": 16,
+      "fills": 530
+    },
+    {
+      "asset": "ETH/USD",
+      "arm": "tsmom-30xvol",
+      "medianAlpha": 0.14674029612300732,
+      "positive": 9,
+      "windowCount": 16,
+      "fills": 525
+    },
+    {
+      "asset": "ETH/USD",
+      "arm": "tsmom-252",
+      "medianAlpha": -1.1808896245685947,
+      "positive": 4,
+      "windowCount": 16,
+      "fills": 1563
+    },
+    {
+      "asset": "SOL/USD",
+      "arm": "tsmom-7",
+      "medianAlpha": -1.634682142999102,
+      "positive": 3,
+      "windowCount": 12,
+      "fills": 820
+    },
+    {
+      "asset": "SOL/USD",
+      "arm": "tsmom-14",
+      "medianAlpha": -1.3130207490637598,
+      "positive": 4,
+      "windowCount": 12,
+      "fills": 868
+    },
+    {
+      "asset": "SOL/USD",
+      "arm": "tsmom-21",
+      "medianAlpha": -0.8138709050929394,
+      "positive": 4,
+      "windowCount": 12,
+      "fills": 894
+    },
+    {
+      "asset": "SOL/USD",
+      "arm": "tsmom-30",
+      "medianAlpha": -2.3117357973541406,
+      "positive": 4,
+      "windowCount": 12,
+      "fills": 865
+    },
+    {
+      "asset": "SOL/USD",
+      "arm": "tsmom-7xvol",
+      "medianAlpha": -0.608902933745064,
+      "positive": 4,
+      "windowCount": 12,
+      "fills": 383
+    },
+    {
+      "asset": "SOL/USD",
+      "arm": "tsmom-14xvol",
+      "medianAlpha": -1.3058253942342852,
+      "positive": 5,
+      "windowCount": 12,
+      "fills": 385
+    },
+    {
+      "asset": "SOL/USD",
+      "arm": "tsmom-21xvol",
+      "medianAlpha": -0.46562624629135474,
+      "positive": 5,
+      "windowCount": 12,
+      "fills": 343
+    },
+    {
+      "asset": "SOL/USD",
+      "arm": "tsmom-30xvol",
+      "medianAlpha": -1.6406443153099675,
+      "positive": 5,
+      "windowCount": 12,
+      "fills": 345
+    },
+    {
+      "asset": "SOL/USD",
+      "arm": "tsmom-252",
+      "medianAlpha": 0,
+      "positive": 2,
+      "windowCount": 12,
+      "fills": 753
+    },
+    {
+      "asset": "XRP/USD",
+      "arm": "tsmom-7",
+      "medianAlpha": 1.2906019832663747,
+      "positive": 3,
+      "windowCount": 6,
+      "fills": 408
+    },
+    {
+      "asset": "XRP/USD",
+      "arm": "tsmom-14",
+      "medianAlpha": 1.4121827865078558,
+      "positive": 3,
+      "windowCount": 6,
+      "fills": 410
+    },
+    {
+      "asset": "XRP/USD",
+      "arm": "tsmom-21",
+      "medianAlpha": -0.5083234021162903,
+      "positive": 2,
+      "windowCount": 6,
+      "fills": 401
+    },
+    {
+      "asset": "XRP/USD",
+      "arm": "tsmom-30",
+      "medianAlpha": 2.12968187082676,
+      "positive": 3,
+      "windowCount": 6,
+      "fills": 390
+    },
+    {
+      "asset": "XRP/USD",
+      "arm": "tsmom-7xvol",
+      "medianAlpha": 0.8797583075130873,
+      "positive": 3,
+      "windowCount": 6,
+      "fills": 180
+    },
+    {
+      "asset": "XRP/USD",
+      "arm": "tsmom-14xvol",
+      "medianAlpha": 0.07542967088753993,
+      "positive": 3,
+      "windowCount": 6,
+      "fills": 171
+    },
+    {
+      "asset": "XRP/USD",
+      "arm": "tsmom-21xvol",
+      "medianAlpha": -0.20294466075631945,
+      "positive": 2,
+      "windowCount": 6,
+      "fills": 171
+    },
+    {
+      "asset": "XRP/USD",
+      "arm": "tsmom-30xvol",
+      "medianAlpha": 0.9835592592582443,
+      "positive": 3,
+      "windowCount": 6,
+      "fills": 166
+    },
+    {
+      "asset": "XRP/USD",
+      "arm": "tsmom-252",
+      "medianAlpha": 0,
+      "positive": 2,
+      "windowCount": 6,
+      "fills": 521
+    },
+    {
+      "asset": "ADA/USD",
+      "arm": "tsmom-7",
+      "medianAlpha": null,
+      "positive": 0,
+      "windowCount": 0,
+      "fills": 0
+    },
+    {
+      "asset": "ADA/USD",
+      "arm": "tsmom-14",
+      "medianAlpha": null,
+      "positive": 0,
+      "windowCount": 0,
+      "fills": 0
+    },
+    {
+      "asset": "ADA/USD",
+      "arm": "tsmom-21",
+      "medianAlpha": null,
+      "positive": 0,
+      "windowCount": 0,
+      "fills": 0
+    },
+    {
+      "asset": "ADA/USD",
+      "arm": "tsmom-30",
+      "medianAlpha": null,
+      "positive": 0,
+      "windowCount": 0,
+      "fills": 0
+    },
+    {
+      "asset": "ADA/USD",
+      "arm": "tsmom-7xvol",
+      "medianAlpha": null,
+      "positive": 0,
+      "windowCount": 0,
+      "fills": 0
+    },
+    {
+      "asset": "ADA/USD",
+      "arm": "tsmom-14xvol",
+      "medianAlpha": null,
+      "positive": 0,
+      "windowCount": 0,
+      "fills": 0
+    },
+    {
+      "asset": "ADA/USD",
+      "arm": "tsmom-21xvol",
+      "medianAlpha": null,
+      "positive": 0,
+      "windowCount": 0,
+      "fills": 0
+    },
+    {
+      "asset": "ADA/USD",
+      "arm": "tsmom-30xvol",
+      "medianAlpha": null,
+      "positive": 0,
+      "windowCount": 0,
+      "fills": 0
+    },
+    {
+      "asset": "ADA/USD",
+      "arm": "tsmom-252",
+      "medianAlpha": null,
+      "positive": 0,
+      "windowCount": 0,
+      "fills": 0
+    },
+    {
+      "asset": "DOGE/USD",
+      "arm": "tsmom-7",
+      "medianAlpha": 1.4506450043720718,
+      "positive": 11,
+      "windowCount": 16,
+      "fills": 1275
+    },
+    {
+      "asset": "DOGE/USD",
+      "arm": "tsmom-14",
+      "medianAlpha": 2.432889082803206,
+      "positive": 10,
+      "windowCount": 16,
+      "fills": 1204
+    },
+    {
+      "asset": "DOGE/USD",
+      "arm": "tsmom-21",
+      "medianAlpha": 1.167050958616339,
+      "positive": 10,
+      "windowCount": 16,
+      "fills": 1219
+    },
+    {
+      "asset": "DOGE/USD",
+      "arm": "tsmom-30",
+      "medianAlpha": 0.1911758864362545,
+      "positive": 9,
+      "windowCount": 16,
+      "fills": 1273
+    },
+    {
+      "asset": "DOGE/USD",
+      "arm": "tsmom-7xvol",
+      "medianAlpha": 2.329599378727381,
+      "positive": 14,
+      "windowCount": 16,
+      "fills": 517
+    },
+    {
+      "asset": "DOGE/USD",
+      "arm": "tsmom-14xvol",
+      "medianAlpha": 1.1077373988031578,
+      "positive": 13,
+      "windowCount": 16,
+      "fills": 500
+    },
+    {
+      "asset": "DOGE/USD",
+      "arm": "tsmom-21xvol",
+      "medianAlpha": 1.672296982421941,
+      "positive": 11,
+      "windowCount": 16,
+      "fills": 462
+    },
+    {
+      "asset": "DOGE/USD",
+      "arm": "tsmom-30xvol",
+      "medianAlpha": 0.7273060101870024,
+      "positive": 12,
+      "windowCount": 16,
+      "fills": 460
+    },
+    {
+      "asset": "DOGE/USD",
+      "arm": "tsmom-252",
+      "medianAlpha": 0,
+      "positive": 4,
+      "windowCount": 16,
+      "fills": 1250
+    },
+    {
+      "asset": "LINK/USD",
+      "arm": "tsmom-7",
+      "medianAlpha": 0.14839845209784253,
+      "positive": 9,
+      "windowCount": 16,
+      "fills": 1276
+    },
+    {
+      "asset": "LINK/USD",
+      "arm": "tsmom-14",
+      "medianAlpha": 0.5060548357299297,
+      "positive": 10,
+      "windowCount": 16,
+      "fills": 1326
+    },
+    {
+      "asset": "LINK/USD",
+      "arm": "tsmom-21",
+      "medianAlpha": -0.6368209604004358,
+      "positive": 7,
+      "windowCount": 16,
+      "fills": 1283
+    },
+    {
+      "asset": "LINK/USD",
+      "arm": "tsmom-30",
+      "medianAlpha": -0.5216257848874823,
+      "positive": 6,
+      "windowCount": 16,
+      "fills": 1288
+    },
+    {
+      "asset": "LINK/USD",
+      "arm": "tsmom-7xvol",
+      "medianAlpha": -0.03740644496525225,
+      "positive": 7,
+      "windowCount": 16,
+      "fills": 494
+    },
+    {
+      "asset": "LINK/USD",
+      "arm": "tsmom-14xvol",
+      "medianAlpha": -0.09569188038039744,
+      "positive": 7,
+      "windowCount": 16,
+      "fills": 517
+    },
+    {
+      "asset": "LINK/USD",
+      "arm": "tsmom-21xvol",
+      "medianAlpha": -0.46150428924510734,
+      "positive": 6,
+      "windowCount": 16,
+      "fills": 508
+    },
+    {
+      "asset": "LINK/USD",
+      "arm": "tsmom-30xvol",
+      "medianAlpha": -1.1241533203717315,
+      "positive": 3,
+      "windowCount": 16,
+      "fills": 451
+    },
+    {
+      "asset": "LINK/USD",
+      "arm": "tsmom-252",
+      "medianAlpha": -0.7919997421992361,
+      "positive": 2,
+      "windowCount": 16,
+      "fills": 1214
+    },
+    {
+      "asset": "AVAX/USD",
+      "arm": "tsmom-7",
+      "medianAlpha": 0.5576789500733232,
+      "positive": 8,
+      "windowCount": 13,
+      "fills": 1011
+    },
+    {
+      "asset": "AVAX/USD",
+      "arm": "tsmom-14",
+      "medianAlpha": 0.8580763571254848,
+      "positive": 10,
+      "windowCount": 13,
+      "fills": 970
+    },
+    {
+      "asset": "AVAX/USD",
+      "arm": "tsmom-21",
+      "medianAlpha": 0.5975336456466396,
+      "positive": 9,
+      "windowCount": 13,
+      "fills": 986
+    },
+    {
+      "asset": "AVAX/USD",
+      "arm": "tsmom-30",
+      "medianAlpha": 0.2380854071024361,
+      "positive": 7,
+      "windowCount": 13,
+      "fills": 1005
+    },
+    {
+      "asset": "AVAX/USD",
+      "arm": "tsmom-7xvol",
+      "medianAlpha": 0.10494281019621754,
+      "positive": 8,
+      "windowCount": 13,
+      "fills": 389
+    },
+    {
+      "asset": "AVAX/USD",
+      "arm": "tsmom-14xvol",
+      "medianAlpha": 0.5480113814158689,
+      "positive": 8,
+      "windowCount": 13,
+      "fills": 399
+    },
+    {
+      "asset": "AVAX/USD",
+      "arm": "tsmom-21xvol",
+      "medianAlpha": 0.5165049433446378,
+      "positive": 7,
+      "windowCount": 13,
+      "fills": 397
+    },
+    {
+      "asset": "AVAX/USD",
+      "arm": "tsmom-30xvol",
+      "medianAlpha": 0.274425926332325,
+      "positive": 8,
+      "windowCount": 13,
+      "fills": 355
+    },
+    {
+      "asset": "AVAX/USD",
+      "arm": "tsmom-252",
+      "medianAlpha": -1.858887064947551,
+      "positive": 0,
+      "windowCount": 13,
+      "fills": 577
+    }
+  ],
+  "verdicts": [
+    {
+      "arm": "tsmom-7",
+      "assetsPositive": 3,
+      "assetsMeasured": 6,
+      "transfers": false
+    },
+    {
+      "arm": "tsmom-14",
+      "assetsPositive": 3,
+      "assetsMeasured": 6,
+      "transfers": false
+    },
+    {
+      "arm": "tsmom-21",
+      "assetsPositive": 3,
+      "assetsMeasured": 6,
+      "transfers": false
+    },
+    {
+      "arm": "tsmom-30",
+      "assetsPositive": 3,
+      "assetsMeasured": 6,
+      "transfers": false
+    },
+    {
+      "arm": "tsmom-7xvol",
+      "assetsPositive": 2,
+      "assetsMeasured": 6,
+      "transfers": false
+    },
+    {
+      "arm": "tsmom-14xvol",
+      "assetsPositive": 3,
+      "assetsMeasured": 6,
+      "transfers": false
+    },
+    {
+      "arm": "tsmom-21xvol",
+      "assetsPositive": 2,
+      "assetsMeasured": 6,
+      "transfers": false
+    },
+    {
+      "arm": "tsmom-30xvol",
+      "assetsPositive": 3,
+      "assetsMeasured": 6,
+      "transfers": false
+    },
+    {
+      "arm": "tsmom-252",
+      "assetsPositive": 0,
+      "assetsMeasured": 6,
+      "transfers": false
+    }
+  ],
+  "anyTransfers": false
+}

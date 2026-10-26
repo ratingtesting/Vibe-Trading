@@ -1,0 +1,62 @@
+{
+  "generatedAt": "2026-10-16T10:28:23.466Z",
+  "design": {
+    "carryTop": 10,
+    "carryLookback": 30,
+    "costPerRebalance": 0.003,
+    "capitalDivisor": 2,
+    "overlapMonths": 85,
+    "overlapFrom": "2019-09",
+    "overlapTo": "2026-09"
+  },
+  "correlation": 0.10422628286780883,
+  "ensembleJustified": true,
+  "carryAlone": {
+    "n": 85,
+    "mean": 0.005543181387042807,
+    "sd": 0.009308821025396525,
+    "t": 5.490019315362514,
+    "sharpeAnnual": 2.0627900722840007,
+    "annualized": 0.06858409232110785,
+    "maxDrawdown": 0.005671409304572217
+  },
+  "blendAlone": {
+    "n": 85,
+    "mean": 0.014243335792175104,
+    "sd": 0.08963580972416038,
+    "t": 1.4650067641516966,
+    "sharpeAnnual": 0.5504536933895069,
+    "annualized": 0.18496617522856162,
+    "maxDrawdown": 0.37854021395494797
+  },
+  "combos": {
+    "50/50": {
+      "n": 85,
+      "mean": 0.00989325858960896,
+      "sd": 0.04553890130437081,
+      "t": 2.002932323394462,
+      "sharpeAnnual": 0.752570924585537,
+      "annualized": 0.1253968043456697,
+      "maxDrawdown": 0.19707525369999968
+    },
+    "70/30": {
+      "n": 85,
+      "mean": 0.008153227708582496,
+      "sd": 0.028321346055338637,
+      "t": 2.654148047300845,
+      "sharpeAnnual": 0.9972551876136032,
+      "annualized": 0.10234754384128797,
+      "maxDrawdown": 0.11961420379956289
+    },
+    "30/70": {
+      "n": 85,
+      "mean": 0.011633289470635412,
+      "sd": 0.06309729262651015,
+      "t": 1.6998134942800718,
+      "sharpeAnnual": 0.6386787002595052,
+      "annualized": 0.14888707871561757,
+      "maxDrawdown": 0.2717505517156037
+    }
+  },
+  "conclusion": "ensemble does not improve on the best single leg"
+}

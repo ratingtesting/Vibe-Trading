@@ -1,0 +1,223 @@
+{
+  "generatedAt": "2026-10-17T12:37:38.829Z",
+  "design": {
+    "r2Thresholds": [
+      0.7,
+      0.8,
+      0.9
+    ],
+    "verdictR2": 0.8,
+    "regWindowDays": 90,
+    "topHold": 10,
+    "riskPerTrade": 0.005,
+    "atrWindow": 20,
+    "maExit": 100,
+    "leverage": "none — exposure capped at 100% of equity",
+    "trials": 3
+  },
+  "markets": {
+    "crypto": {
+      "note": "top-150 of 354 pairs with >=300 daily bars by 24h turnover",
+      "costRate": 0.0015,
+      "thresholds": {
+        "0.7": {
+          "dev": {
+            "n": 1614,
+            "mean": 0.000882132806779586,
+            "sd": 0.011969455681783462,
+            "t": 2.9608154482923044
+          },
+          "eval": {
+            "n": 1384,
+            "mean": 0.000292839953763913,
+            "sd": 0.012525372362285318,
+            "t": 0.8697766190137416
+          },
+          "ci": {
+            "lo": 0.0001523652666955536,
+            "hi": 0.0018457736284705412
+          },
+          "sharpeDev": 1.408010861810301,
+          "sharpeEval": 0.4466693124381597,
+          "dsr": 1,
+          "rebalances": 415,
+          "nonEmptyRebalances": 289,
+          "maxDrawdown": 0.27597758553217233,
+          "symbols": 150,
+          "axisN": 3000
+        },
+        "0.8": {
+          "dev": {
+            "n": 1614,
+            "mean": 0.0007813819716260917,
+            "sd": 0.008546208877731741,
+            "t": 3.6731752450652624
+          },
+          "eval": {
+            "n": 1384,
+            "mean": 0.00010460624208710737,
+            "sd": 0.008987220911765159,
+            "t": 0.43301229568133104
+          },
+          "ci": {
+            "lo": 0.0002743079081259085,
+            "hi": 0.0016353235390281827
+          },
+          "sharpeDev": 1.7467723783215063,
+          "sharpeEval": 0.22237123896083197,
+          "dsr": 1,
+          "rebalances": 415,
+          "nonEmptyRebalances": 243,
+          "maxDrawdown": 0.1958109789139808,
+          "symbols": 150,
+          "axisN": 3000
+        },
+        "0.9": {
+          "dev": {
+            "n": 1614,
+            "mean": 0.0002943190424557515,
+            "sd": 0.004436106310153824,
+            "t": 2.665435525031182
+          },
+          "eval": {
+            "n": 1384,
+            "mean": -0.000030902171915594916,
+            "sd": 0.0036314176007883683,
+            "t": -0.3165780904331761
+          },
+          "ci": {
+            "lo": 0.00008294290474268577,
+            "hi": 0.0006099381553816461
+          },
+          "sharpeDev": 1.2675434305990014,
+          "sharpeEval": -0.16257705127451608,
+          "dsr": 1,
+          "rebalances": 415,
+          "nonEmptyRebalances": 118,
+          "maxDrawdown": 0.12926851031029785,
+          "symbols": 150,
+          "axisN": 3000
+        }
+      },
+      "costStress": {
+        "dev": {
+          "n": 1614,
+          "mean": 0.0007712768812761549,
+          "sd": 0.008548187147478728,
+          "t": 3.6248334531017528
+        }
+      }
+    },
+    "equities": {
+      "note": "top-1000 of 10647 symbols with >=300 daily bars by trailing 88d dollar volume",
+      "costRate": 0.0005,
+      "thresholds": {
+        "0.7": {
+          "dev": {
+            "n": 1760,
+            "mean": 0.0007894043710513771,
+            "sd": 0.016765715253683214,
+            "t": 1.975303234285793
+          },
+          "eval": {
+            "n": 948,
+            "mean": 0.0016941439141672102,
+            "sd": 0.021275354304442797,
+            "t": 2.451758374737437
+          },
+          "ci": {
+            "lo": 0.00001180467958625354,
+            "hi": 0.0015415457670544233
+          },
+          "sharpeDev": 0.8995470282420647,
+          "sharpeEval": 1.5213177449750195,
+          "dsr": 1,
+          "rebalances": 541,
+          "nonEmptyRebalances": 541,
+          "maxDrawdown": 0.4799557554844468,
+          "symbols": 1000,
+          "axisN": 2710
+        },
+        "0.8": {
+          "dev": {
+            "n": 1760,
+            "mean": 0.000597299927926897,
+            "sd": 0.015826975037864326,
+            "t": 1.5832550387484692
+          },
+          "eval": {
+            "n": 948,
+            "mean": 0.0016540462346141993,
+            "sd": 0.02058564447543308,
+            "t": 2.473929649932718
+          },
+          "ci": {
+            "lo": -0.00015450007158430542,
+            "hi": 0.0013593243076692881
+          },
+          "sharpeDev": 0.721009483675761,
+          "sharpeEval": 1.5350750363667203,
+          "dsr": 0.9999999165913463,
+          "rebalances": 541,
+          "nonEmptyRebalances": 541,
+          "maxDrawdown": 0.47067541513485045,
+          "symbols": 1000,
+          "axisN": 2710
+        },
+        "0.9": {
+          "dev": {
+            "n": 1760,
+            "mean": 0.00020694658739676874,
+            "sd": 0.012096455282605344,
+            "t": 0.7177223637488643
+          },
+          "eval": {
+            "n": 948,
+            "mean": 0.0009110429681347532,
+            "sd": 0.017964764614258076,
+            "t": 1.5614263277241403
+          },
+          "ci": {
+            "lo": -0.0003020264266682484,
+            "hi": 0.0008047118690111423
+          },
+          "sharpeDev": 0.32684856087252784,
+          "sharpeEval": 0.9688661021061274,
+          "dsr": 0,
+          "rebalances": 541,
+          "nonEmptyRebalances": 533,
+          "maxDrawdown": 0.3575476611699949,
+          "symbols": 1000,
+          "axisN": 2710
+        }
+      },
+      "costStress": {
+        "dev": {
+          "n": 1760,
+          "mean": 0.000541057816845102,
+          "sd": 0.015835496234931565,
+          "t": 1.4334030768849366
+        }
+      }
+    }
+  },
+  "verdict": {
+    "gates": {
+      "G1_crypto_dev_t3_positive": true,
+      "G2_crypto_n_ge_500": true,
+      "G3_crypto_eval_sign": true,
+      "G4_crypto_cost_stress": true,
+      "G5_crypto_dsr": true,
+      "G6_crypto_filled": true,
+      "G1_equities_dev_t3_positive": false,
+      "G2_equities_n_ge_500": true,
+      "G3_equities_eval_sign": true,
+      "G4_equities_cost_stress": true,
+      "G5_equities_dsr": true,
+      "G6_equities_filled": true,
+      "G7_transfer_both_markets": false
+    },
+    "allPassed": false,
+    "nearMiss": true
+  }
+}

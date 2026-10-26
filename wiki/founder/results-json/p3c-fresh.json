@@ -1,0 +1,57 @@
+{
+ "status": "done",
+ "verdict": "КЭРРИ С БАЗИСОМ НА ДЛИННОЙ ИСТОРИИ — УБЫТОК: -1.3%/год, t=-1.32. Funding 3.6%/год, базис стоит 4.8 п.п./год.",
+ "date": "2026-10-19",
+ "axis": {
+  "universe": 48,
+  "days": 1200,
+  "from": "2023-07-08",
+  "to": "2026-10-19",
+  "minHistoryRequired": 1000
+ },
+ "headline": {
+  "full": {
+   "annual": -0.012597665534800235,
+   "t": -1.3236643946747795,
+   "dd": 0.057016224944743676,
+   "total": -0.04100772816081333
+  },
+  "dev": {
+   "annual": -0.0032468894545328976,
+   "t": -0.3106833781144789,
+   "dd": 0.02469693393374685,
+   "total": -0.007722143069403664
+  },
+  "eval": {
+   "annual": -0.03439016867742323,
+   "t": -1.6970625954579301,
+   "dd": 0.035216772090456816,
+   "total": -0.03354462145751391
+  },
+  "fresh12m": {
+   "annual": -0.03307329524757428,
+   "t": -1.64743186934583,
+   "dd": 0.03521677209045565,
+   "total": -0.032728497244316146
+  },
+  "fundingOnly": {
+   "annual": 0.03584397972616079,
+   "t": 28.99843330642766,
+   "dd": 0.00019394399999986923,
+   "total": 0.12494146695633379
+  }
+ },
+ "gate": {
+  "tRequired": 3,
+  "devPasses": false,
+  "evalPasses": false,
+  "freshPasses": false
+ },
+ "interpretation": "carry-with-basis does not survive on the long history either: funding-only is positive but the basis bill exceeds it",
+ "limitations": [
+  "The long axis costs universe size: only 48 symbols have 1000+ days of history over all three series, so this is a narrower claim than the 68-coin 900-day run.",
+  "Basis is close-to-close on daily bars; intraday path not modelled.",
+  "Costs charged only on rebalance days (every 30).",
+  "Funding accrued daily although it is paid 3x/day; the daily accrual is an approximation of the payment stream."
+ ]
+}

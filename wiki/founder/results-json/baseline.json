@@ -1,0 +1,606 @@
+{
+  "protocol": {
+    "instrument": "BTC/USD",
+    "timeframe": "1Day",
+    "periodsPerYear": 365,
+    "startingCash": 10000,
+    "devRange": [
+      "2021-01-01T00:00:00.000Z",
+      "2024-12-31T00:00:00.000Z"
+    ],
+    "devBars": 1461,
+    "evalRange": [
+      "2025-01-01T00:00:00.000Z",
+      "2026-09-26T00:00:00.000Z"
+    ],
+    "evalBars": 634,
+    "walkForward": {
+      "trainBlocks": 730,
+      "valBlocks": 365,
+      "stepBlocks": 180
+    },
+    "costs": {
+      "feeBps": 1,
+      "slippageBps": 1,
+      "spreadBps": 0,
+      "venueCostPerOrder": 0
+    },
+    "note": "Strategy params are SHIPPED DEFAULTS (no tuning). The registry documents them as calibrated to a SYNTHETIC tick feed."
+  },
+  "dev": {
+    "buy-and-hold": {
+      "totalReturnPct": 217.69,
+      "maxDrawdownPct": 76.68,
+      "sharpe": 0.775,
+      "sortino": 0.816,
+      "profitFactor": 1.125,
+      "winRate": 0.498,
+      "periods": 1460,
+      "finalEquity": 31938.91
+    },
+    "ma-cross": {
+      "totalReturnPct": 1.21,
+      "maxDrawdownPct": 11.55,
+      "sharpe": 0.083,
+      "sortino": 0.024,
+      "profitFactor": 1.049,
+      "winRate": 0.031,
+      "periods": 1460,
+      "finalEquity": 10121.39,
+      "fees": 5.41,
+      "venueCosts": 0,
+      "counters": {
+        "blocks": 1461,
+        "decisions": 1461,
+        "lateHolds": 0,
+        "noTrade": 1367,
+        "decisionErrors": 0,
+        "fills": 95
+      },
+      "walkForward": [
+        {
+          "index": 0,
+          "from": "2021-01-01",
+          "to": "2023-12-31",
+          "returnPct": 1.21,
+          "maxDdPct": 11.55,
+          "sharpe": 0.096,
+          "fills": 95
+        },
+        {
+          "index": 1,
+          "from": "2021-06-30",
+          "to": "2024-06-28",
+          "returnPct": -5.06,
+          "maxDdPct": 11.41,
+          "sharpe": -0.335,
+          "fills": 82
+        },
+        {
+          "index": 2,
+          "from": "2021-12-27",
+          "to": "2024-12-25",
+          "returnPct": -10.5,
+          "maxDdPct": 10.53,
+          "sharpe": -0.886,
+          "fills": 58
+        }
+      ]
+    },
+    "mean-reversion": {
+      "totalReturnPct": -7.54,
+      "maxDrawdownPct": 10.9,
+      "sharpe": -0.521,
+      "sortino": -0.061,
+      "profitFactor": 0.553,
+      "winRate": 0.01,
+      "periods": 1460,
+      "finalEquity": 9246.43,
+      "fees": 1.23,
+      "venueCosts": 0,
+      "counters": {
+        "blocks": 1461,
+        "decisions": 1461,
+        "lateHolds": 0,
+        "noTrade": 1446,
+        "decisionErrors": 0,
+        "fills": 16
+      },
+      "walkForward": [
+        {
+          "index": 0,
+          "from": "2021-01-01",
+          "to": "2023-12-31",
+          "returnPct": -7.54,
+          "maxDdPct": 10.9,
+          "sharpe": -0.602,
+          "fills": 16
+        },
+        {
+          "index": 1,
+          "from": "2021-06-30",
+          "to": "2024-06-28",
+          "returnPct": -7.04,
+          "maxDdPct": 10.85,
+          "sharpe": -0.366,
+          "fills": 59
+        },
+        {
+          "index": 2,
+          "from": "2021-12-27",
+          "to": "2024-12-25",
+          "returnPct": 16.97,
+          "maxDdPct": 11.62,
+          "sharpe": 0.549,
+          "fills": 204
+        }
+      ]
+    },
+    "momentum-breakout": {
+      "totalReturnPct": -3.51,
+      "maxDrawdownPct": 11.45,
+      "sharpe": -0.088,
+      "sortino": -0.028,
+      "profitFactor": 0.961,
+      "winRate": 0.051,
+      "periods": 1460,
+      "finalEquity": 9649.26,
+      "fees": 3.41,
+      "venueCosts": 0,
+      "counters": {
+        "blocks": 1461,
+        "decisions": 1461,
+        "lateHolds": 0,
+        "noTrade": 1426,
+        "decisionErrors": 0,
+        "fills": 36
+      },
+      "walkForward": [
+        {
+          "index": 0,
+          "from": "2021-01-01",
+          "to": "2023-12-31",
+          "returnPct": -3.51,
+          "maxDdPct": 11.45,
+          "sharpe": -0.101,
+          "fills": 36
+        },
+        {
+          "index": 1,
+          "from": "2021-06-30",
+          "to": "2024-06-28",
+          "returnPct": 2.07,
+          "maxDdPct": 11.36,
+          "sharpe": 0.117,
+          "fills": 96
+        },
+        {
+          "index": 2,
+          "from": "2021-12-27",
+          "to": "2024-12-25",
+          "returnPct": -9.81,
+          "maxDdPct": 11.36,
+          "sharpe": -0.381,
+          "fills": 55
+        }
+      ]
+    },
+    "vol-momentum": {
+      "totalReturnPct": 12.63,
+      "maxDrawdownPct": 11.75,
+      "sharpe": 0.366,
+      "sortino": 0.198,
+      "profitFactor": 1.106,
+      "winRate": 0.129,
+      "periods": 1460,
+      "finalEquity": 11262.6,
+      "fees": 18.26,
+      "venueCosts": 0,
+      "counters": {
+        "blocks": 1461,
+        "decisions": 1461,
+        "lateHolds": 0,
+        "noTrade": 1139,
+        "decisionErrors": 0,
+        "fills": 323
+      },
+      "walkForward": [
+        {
+          "index": 0,
+          "from": "2021-01-01",
+          "to": "2023-12-31",
+          "returnPct": 12.63,
+          "maxDdPct": 11.75,
+          "sharpe": 0.423,
+          "fills": 323
+        },
+        {
+          "index": 1,
+          "from": "2021-06-30",
+          "to": "2024-06-28",
+          "returnPct": 2.12,
+          "maxDdPct": 11.75,
+          "sharpe": 0.13,
+          "fills": 224
+        },
+        {
+          "index": 2,
+          "from": "2021-12-27",
+          "to": "2024-12-25",
+          "returnPct": -10.46,
+          "maxDdPct": 10.69,
+          "sharpe": -0.875,
+          "fills": 51
+        }
+      ]
+    },
+    "range-mean-reversion": {
+      "totalReturnPct": -6.85,
+      "maxDrawdownPct": 10.44,
+      "sharpe": -0.479,
+      "sortino": -0.054,
+      "profitFactor": 0.579,
+      "winRate": 0.011,
+      "periods": 1460,
+      "finalEquity": 9315.42,
+      "fees": 1.33,
+      "venueCosts": 0,
+      "counters": {
+        "blocks": 1461,
+        "decisions": 1461,
+        "lateHolds": 0,
+        "noTrade": 1432,
+        "decisionErrors": 0,
+        "fills": 30
+      },
+      "walkForward": [
+        {
+          "index": 0,
+          "from": "2021-01-01",
+          "to": "2023-12-31",
+          "returnPct": -6.85,
+          "maxDdPct": 10.44,
+          "sharpe": -0.553,
+          "fills": 30
+        },
+        {
+          "index": 1,
+          "from": "2021-06-30",
+          "to": "2024-06-28",
+          "returnPct": -9.5,
+          "maxDdPct": 10.99,
+          "sharpe": -1.008,
+          "fills": 48
+        },
+        {
+          "index": 2,
+          "from": "2021-12-27",
+          "to": "2024-12-25",
+          "returnPct": -4.71,
+          "maxDdPct": 12.41,
+          "sharpe": -0.21,
+          "fills": 149
+        }
+      ]
+    },
+    "ensemble": {
+      "totalReturnPct": 18.36,
+      "maxDrawdownPct": 13.33,
+      "sharpe": 0.573,
+      "sortino": 0.243,
+      "profitFactor": 1.249,
+      "winRate": 0.069,
+      "periods": 1460,
+      "finalEquity": 11835.58,
+      "fees": 5.34,
+      "venueCosts": 0,
+      "counters": {
+        "blocks": 1461,
+        "decisions": 1461,
+        "lateHolds": 0,
+        "noTrade": 1425,
+        "decisionErrors": 0,
+        "fills": 37
+      },
+      "walkForward": [
+        {
+          "index": 0,
+          "from": "2021-01-01",
+          "to": "2023-12-31",
+          "returnPct": 18.36,
+          "maxDdPct": 13.33,
+          "sharpe": 0.662,
+          "fills": 37
+        },
+        {
+          "index": 1,
+          "from": "2021-06-30",
+          "to": "2024-06-28",
+          "returnPct": -11.2,
+          "maxDdPct": 11.2,
+          "sharpe": -0.938,
+          "fills": 24
+        },
+        {
+          "index": 2,
+          "from": "2021-12-27",
+          "to": "2024-12-25",
+          "returnPct": -10.09,
+          "maxDdPct": 10.32,
+          "sharpe": -0.849,
+          "fills": 37
+        }
+      ]
+    },
+    "mom-trend": {
+      "totalReturnPct": -6.68,
+      "maxDrawdownPct": 10.64,
+      "sharpe": -0.287,
+      "sortino": -0.093,
+      "profitFactor": 0.884,
+      "winRate": 0.053,
+      "periods": 1460,
+      "finalEquity": 9332.32,
+      "fees": 2.53,
+      "venueCosts": 0,
+      "counters": {
+        "blocks": 1461,
+        "decisions": 1461,
+        "lateHolds": 0,
+        "noTrade": 1376,
+        "decisionErrors": 0,
+        "fills": 86
+      },
+      "walkForward": [
+        {
+          "index": 0,
+          "from": "2021-01-01",
+          "to": "2023-12-31",
+          "returnPct": -6.68,
+          "maxDdPct": 10.64,
+          "sharpe": -0.332,
+          "fills": 86
+        },
+        {
+          "index": 1,
+          "from": "2021-06-30",
+          "to": "2024-06-28",
+          "returnPct": -6.68,
+          "maxDdPct": 10.64,
+          "sharpe": -0.332,
+          "fills": 86
+        },
+        {
+          "index": 2,
+          "from": "2021-12-27",
+          "to": "2024-12-25",
+          "returnPct": 2.65,
+          "maxDdPct": 10.3,
+          "sharpe": 0.146,
+          "fills": 100
+        }
+      ]
+    },
+    "mr-range": {
+      "totalReturnPct": -10.14,
+      "maxDrawdownPct": 11.81,
+      "sharpe": -0.524,
+      "sortino": -0.094,
+      "profitFactor": 0.66,
+      "winRate": 0.016,
+      "periods": 1460,
+      "finalEquity": 8985.68,
+      "fees": 0.66,
+      "venueCosts": 0,
+      "counters": {
+        "blocks": 1461,
+        "decisions": 1461,
+        "lateHolds": 0,
+        "noTrade": 1446,
+        "decisionErrors": 0,
+        "fills": 16
+      },
+      "walkForward": [
+        {
+          "index": 0,
+          "from": "2021-01-01",
+          "to": "2023-12-31",
+          "returnPct": -10.14,
+          "maxDdPct": 11.81,
+          "sharpe": -0.605,
+          "fills": 16
+        },
+        {
+          "index": 1,
+          "from": "2021-06-30",
+          "to": "2024-06-28",
+          "returnPct": -0.7,
+          "maxDdPct": 10.49,
+          "sharpe": -0.011,
+          "fills": 34
+        },
+        {
+          "index": 2,
+          "from": "2021-12-27",
+          "to": "2024-12-25",
+          "returnPct": -10.16,
+          "maxDdPct": 12.84,
+          "sharpe": -0.782,
+          "fills": 13
+        }
+      ]
+    }
+  },
+  "eval": {
+    "buy-and-hold": {
+      "totalReturnPct": -10.64,
+      "maxDrawdownPct": 53.07,
+      "sharpe": 0.071,
+      "sortino": 0.073,
+      "profitFactor": 1.011,
+      "winRate": 0.498,
+      "periods": 633,
+      "finalEquity": 9035.7
+    },
+    "ma-cross": {
+      "totalReturnPct": 4.76,
+      "maxDrawdownPct": 8.34,
+      "sharpe": 0.303,
+      "sortino": 0.313,
+      "profitFactor": 1.047,
+      "winRate": 0.494,
+      "periods": 633,
+      "finalEquity": 10475.75,
+      "fees": 35.12,
+      "venueCosts": 0,
+      "counters": {
+        "blocks": 634,
+        "decisions": 634,
+        "lateHolds": 0,
+        "noTrade": 17,
+        "decisionErrors": 0,
+        "fills": 616
+      }
+    },
+    "mean-reversion": {
+      "totalReturnPct": 2.28,
+      "maxDrawdownPct": 13.03,
+      "sharpe": 0.192,
+      "sortino": 0.143,
+      "profitFactor": 1.039,
+      "winRate": 0.316,
+      "periods": 633,
+      "finalEquity": 10227.87,
+      "fees": 8.65,
+      "venueCosts": 0,
+      "counters": {
+        "blocks": 634,
+        "decisions": 634,
+        "lateHolds": 0,
+        "noTrade": 509,
+        "decisionErrors": 0,
+        "fills": 126
+      }
+    },
+    "momentum-breakout": {
+      "totalReturnPct": -9.18,
+      "maxDrawdownPct": 12.77,
+      "sharpe": -0.755,
+      "sortino": -0.482,
+      "profitFactor": 0.838,
+      "winRate": 0.201,
+      "periods": 633,
+      "finalEquity": 9081.87,
+      "fees": 6.18,
+      "venueCosts": 0,
+      "counters": {
+        "blocks": 634,
+        "decisions": 634,
+        "lateHolds": 0,
+        "noTrade": 578,
+        "decisionErrors": 0,
+        "fills": 58
+      }
+    },
+    "vol-momentum": {
+      "totalReturnPct": 10.83,
+      "maxDrawdownPct": 7.83,
+      "sharpe": 0.612,
+      "sortino": 0.618,
+      "profitFactor": 1.098,
+      "winRate": 0.488,
+      "periods": 633,
+      "finalEquity": 11082.55,
+      "fees": 40.09,
+      "venueCosts": 0,
+      "counters": {
+        "blocks": 634,
+        "decisions": 634,
+        "lateHolds": 0,
+        "noTrade": 35,
+        "decisionErrors": 0,
+        "fills": 598
+      }
+    },
+    "range-mean-reversion": {
+      "totalReturnPct": -9.37,
+      "maxDrawdownPct": 10.64,
+      "sharpe": -0.994,
+      "sortino": -0.406,
+      "profitFactor": 0.703,
+      "winRate": 0.088,
+      "periods": 633,
+      "finalEquity": 9062.7,
+      "fees": 7.69,
+      "venueCosts": 0,
+      "counters": {
+        "blocks": 634,
+        "decisions": 634,
+        "lateHolds": 0,
+        "noTrade": 516,
+        "decisionErrors": 0,
+        "fills": 119
+      }
+    },
+    "ensemble": {
+      "totalReturnPct": 13.88,
+      "maxDrawdownPct": 10.05,
+      "sharpe": 0.757,
+      "sortino": 0.752,
+      "profitFactor": 1.122,
+      "winRate": 0.494,
+      "periods": 633,
+      "finalEquity": 11387.69,
+      "fees": 40.57,
+      "venueCosts": 0,
+      "counters": {
+        "blocks": 634,
+        "decisions": 634,
+        "lateHolds": 0,
+        "noTrade": 257,
+        "decisionErrors": 0,
+        "fills": 376
+      }
+    },
+    "mom-trend": {
+      "totalReturnPct": -0.87,
+      "maxDrawdownPct": 10.47,
+      "sharpe": 0,
+      "sortino": 0,
+      "profitFactor": 1,
+      "winRate": 0.453,
+      "periods": 633,
+      "finalEquity": 9913.1,
+      "fees": 8.93,
+      "venueCosts": 0,
+      "counters": {
+        "blocks": 634,
+        "decisions": 634,
+        "lateHolds": 0,
+        "noTrade": 400,
+        "decisionErrors": 0,
+        "fills": 233
+      }
+    },
+    "mr-range": {
+      "totalReturnPct": -4.71,
+      "maxDrawdownPct": 12,
+      "sharpe": -0.285,
+      "sortino": -0.207,
+      "profitFactor": 0.945,
+      "winRate": 0.291,
+      "periods": 633,
+      "finalEquity": 9529.31,
+      "fees": 4.78,
+      "venueCosts": 0,
+      "counters": {
+        "blocks": 634,
+        "decisions": 634,
+        "lateHolds": 0,
+        "noTrade": 571,
+        "decisionErrors": 0,
+        "fills": 64
+      }
+    }
+  }
+}

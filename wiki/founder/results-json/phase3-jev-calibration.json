@@ -1,0 +1,6048 @@
+{
+  "status": "done",
+  "provider": "openrouter",
+  "requestedModel": "jev-1.13",
+  "nSampled": 500,
+  "errorKinds": {},
+  "nAnswered": 386,
+  "nAbstained": 114,
+  "callErrors": 0,
+  "cache": {
+    "hits": 0,
+    "misses": 500
+  },
+  "horizonBars": 5,
+  "flatSkipped": 0,
+  "strengthMinForConditional": 0.05,
+  "allDirectional": {
+    "n": 386,
+    "brier": 0.4671212206182699,
+    "logLoss": 9.423680768457773,
+    "ece": 0.45349387919200956,
+    "upRate": 0.5284974093264249,
+    "brierNoInfo": 0.249187897661684
+  },
+  "conditional": {
+    "n": 269,
+    "brier": 0.45116857514575387,
+    "logLoss": 7.738474096170256,
+    "ece": 0.4390556259310099,
+    "upRate": 0.5278810408921933,
+    "brierNoInfo": 0.24922264755876675
+  },
+  "pUpBuckets": [
+    108,
+    2,
+    0,
+    0,
+    0,
+    1,
+    7,
+    21,
+    30,
+    100
+  ],
+  "seconds": 364.2,
+  "records": [
+    {
+      "ts": 1631923200000,
+      "barIdx": 260,
+      "mid": 48299.95,
+      "pUp": 1,
+      "probs": {
+        "up": 0.02,
+        "down": 0,
+        "neutral": 0.98
+      },
+      "answered": true
+    },
+    {
+      "ts": 1632096000000,
+      "barIdx": 262,
+      "mid": 43002.87,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.11,
+        "neutral": 0.89
+      },
+      "answered": true
+    },
+    {
+      "ts": 1632355200000,
+      "barIdx": 265,
+      "mid": 44889.72,
+      "pUp": 0.1,
+      "probs": {
+        "up": 0.01,
+        "down": 0.09,
+        "neutral": 0.9
+      },
+      "answered": true
+    },
+    {
+      "ts": 1632528000000,
+      "barIdx": 267,
+      "mid": 42702.82,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.12,
+        "neutral": 0.88
+      },
+      "answered": true
+    },
+    {
+      "ts": 1632787200000,
+      "barIdx": 270,
+      "mid": 41025.86,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.36,
+        "neutral": 0.64
+      },
+      "answered": true
+    },
+    {
+      "ts": 1632960000000,
+      "barIdx": 272,
+      "mid": 43829.22,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.02,
+        "neutral": 0.98
+      },
+      "answered": true
+    },
+    {
+      "ts": 1633132800000,
+      "barIdx": 274,
+      "mid": 47668.12,
+      "pUp": 1,
+      "probs": {
+        "up": 0.04,
+        "down": 0,
+        "neutral": 0.96
+      },
+      "answered": true
+    },
+    {
+      "ts": 1633392000000,
+      "barIdx": 277,
+      "mid": 51466.01,
+      "pUp": 1,
+      "probs": {
+        "up": 0.04,
+        "down": 0,
+        "neutral": 0.96
+      },
+      "answered": true
+    },
+    {
+      "ts": 1633564800000,
+      "barIdx": 279,
+      "mid": 53798.27,
+      "pUp": 0.9090909090909092,
+      "probs": {
+        "up": 0.1,
+        "down": 0.01,
+        "neutral": 0.89
+      },
+      "answered": true
+    },
+    {
+      "ts": 1633824000000,
+      "barIdx": 282,
+      "mid": 54692.08,
+      "pUp": 1,
+      "probs": {
+        "up": 0.03,
+        "down": 0,
+        "neutral": 0.97
+      },
+      "answered": true
+    },
+    {
+      "ts": 1633996800000,
+      "barIdx": 284,
+      "mid": 56010.89,
+      "pUp": 0.9166666666666667,
+      "probs": {
+        "up": 0.11,
+        "down": 0.01,
+        "neutral": 0.88
+      },
+      "answered": true
+    },
+    {
+      "ts": 1634169600000,
+      "barIdx": 286,
+      "mid": 57361.13,
+      "pUp": 1,
+      "probs": {
+        "up": 0.03,
+        "down": 0,
+        "neutral": 0.97
+      },
+      "answered": true
+    },
+    {
+      "ts": 1634428800000,
+      "barIdx": 289,
+      "mid": 61532.44,
+      "pUp": 0.7999999999999999,
+      "probs": {
+        "up": 0.04,
+        "down": 0.01,
+        "neutral": 0.95
+      },
+      "answered": true
+    },
+    {
+      "ts": 1634601600000,
+      "barIdx": 291,
+      "mid": 64296.08,
+      "pUp": 0.6666666666666667,
+      "probs": {
+        "up": 0.04,
+        "down": 0.02,
+        "neutral": 0.94
+      },
+      "answered": true
+    },
+    {
+      "ts": 1634860800000,
+      "barIdx": 294,
+      "mid": 60691.2,
+      "pUp": 0.8750000000000001,
+      "probs": {
+        "up": 0.14,
+        "down": 0.02,
+        "neutral": 0.84
+      },
+      "answered": true
+    },
+    {
+      "ts": 1635033600000,
+      "barIdx": 296,
+      "mid": 60864.31,
+      "pUp": 0.9811320754716981,
+      "probs": {
+        "up": 0.52,
+        "down": 0.01,
+        "neutral": 0.47
+      },
+      "answered": true
+    },
+    {
+      "ts": 1635206400000,
+      "barIdx": 298,
+      "mid": 60303.01,
+      "pUp": 0.9629629629629629,
+      "probs": {
+        "up": 0.26,
+        "down": 0.01,
+        "neutral": 0.73
+      },
+      "answered": true
+    },
+    {
+      "ts": 1635465600000,
+      "barIdx": 301,
+      "mid": 62288.98,
+      "pUp": 1,
+      "probs": {
+        "up": 0.41,
+        "down": 0,
+        "neutral": 0.59
+      },
+      "answered": true
+    },
+    {
+      "ts": 1635638400000,
+      "barIdx": 303,
+      "mid": 61346.16,
+      "pUp": 1,
+      "probs": {
+        "up": 0.29,
+        "down": 0,
+        "neutral": 0.71
+      },
+      "answered": true
+    },
+    {
+      "ts": 1635897600000,
+      "barIdx": 306,
+      "mid": 62911.42,
+      "pUp": 1,
+      "probs": {
+        "up": 0.3,
+        "down": 0,
+        "neutral": 0.7
+      },
+      "answered": true
+    },
+    {
+      "ts": 1636070400000,
+      "barIdx": 308,
+      "mid": 61031.3,
+      "pUp": 0.9473684210526315,
+      "probs": {
+        "up": 0.18,
+        "down": 0.01,
+        "neutral": 0.8099999999999999
+      },
+      "answered": true
+    },
+    {
+      "ts": 1636243200000,
+      "barIdx": 310,
+      "mid": 63293.65,
+      "pUp": 1,
+      "probs": {
+        "up": 0.38,
+        "down": 0,
+        "neutral": 0.62
+      },
+      "answered": true
+    },
+    {
+      "ts": 1636502400000,
+      "barIdx": 313,
+      "mid": 64936.66,
+      "pUp": 0.923076923076923,
+      "probs": {
+        "up": 0.12,
+        "down": 0.01,
+        "neutral": 0.87
+      },
+      "answered": true
+    },
+    {
+      "ts": 1636675200000,
+      "barIdx": 315,
+      "mid": 64147.7,
+      "pUp": 1,
+      "probs": {
+        "up": 0.27,
+        "down": 0,
+        "neutral": 0.73
+      },
+      "answered": true
+    },
+    {
+      "ts": 1636848000000,
+      "barIdx": 317,
+      "mid": 65512.69,
+      "pUp": 1,
+      "probs": {
+        "up": 0.6,
+        "down": 0,
+        "neutral": 0.4
+      },
+      "answered": true
+    },
+    {
+      "ts": 1637107200000,
+      "barIdx": 320,
+      "mid": 60392.66,
+      "pUp": 0.8750000000000001,
+      "probs": {
+        "up": 0.07,
+        "down": 0.01,
+        "neutral": 0.92
+      },
+      "answered": true
+    },
+    {
+      "ts": 1637280000000,
+      "barIdx": 322,
+      "mid": 58104.45,
+      "pUp": 0.9692307692307692,
+      "probs": {
+        "up": 0.63,
+        "down": 0.02,
+        "neutral": 0.35
+      },
+      "answered": true
+    },
+    {
+      "ts": 1637539200000,
+      "barIdx": 325,
+      "mid": 56279.99,
+      "pUp": 0.9705882352941176,
+      "probs": {
+        "up": 0.66,
+        "down": 0.02,
+        "neutral": 0.32
+      },
+      "answered": true
+    },
+    {
+      "ts": 1637712000000,
+      "barIdx": 327,
+      "mid": 57160.32,
+      "pUp": 0.8333333333333333,
+      "probs": {
+        "up": 0.05,
+        "down": 0.01,
+        "neutral": 0.94
+      },
+      "answered": true
+    },
+    {
+      "ts": 1637884800000,
+      "barIdx": 329,
+      "mid": 53779.26,
+      "pUp": 0.9767441860465116,
+      "probs": {
+        "up": 0.42,
+        "down": 0.01,
+        "neutral": 0.57
+      },
+      "answered": true
+    },
+    {
+      "ts": 1638144000000,
+      "barIdx": 332,
+      "mid": 57842.83,
+      "pUp": 1,
+      "probs": {
+        "up": 0.04,
+        "down": 0,
+        "neutral": 0.96
+      },
+      "answered": true
+    },
+    {
+      "ts": 1638316800000,
+      "barIdx": 334,
+      "mid": 57228.53,
+      "pUp": 1,
+      "probs": {
+        "up": 0.03,
+        "down": 0,
+        "neutral": 0.97
+      },
+      "answered": true
+    },
+    {
+      "ts": 1638576000000,
+      "barIdx": 337,
+      "mid": 49237.14,
+      "pUp": 0.9753086419753086,
+      "probs": {
+        "up": 0.79,
+        "down": 0.02,
+        "neutral": 0.19
+      },
+      "answered": true
+    },
+    {
+      "ts": 1638748800000,
+      "barIdx": 339,
+      "mid": 50527.82,
+      "pUp": 0.9885057471264368,
+      "probs": {
+        "up": 0.86,
+        "down": 0.01,
+        "neutral": 0.13
+      },
+      "answered": true
+    },
+    {
+      "ts": 1638921600000,
+      "barIdx": 341,
+      "mid": 50506.86,
+      "pUp": 0.9583333333333333,
+      "probs": {
+        "up": 0.23,
+        "down": 0.01,
+        "neutral": 0.76
+      },
+      "answered": true
+    },
+    {
+      "ts": 1639180800000,
+      "barIdx": 344,
+      "mid": 49405.28,
+      "pUp": 0.9583333333333333,
+      "probs": {
+        "up": 0.23,
+        "down": 0.01,
+        "neutral": 0.76
+      },
+      "answered": true
+    },
+    {
+      "ts": 1639353600000,
+      "barIdx": 346,
+      "mid": 46744.7,
+      "pUp": 0.0196078431372549,
+      "probs": {
+        "up": 0.01,
+        "down": 0.5,
+        "neutral": 0.49
+      },
+      "answered": true
+    },
+    {
+      "ts": 1639612800000,
+      "barIdx": 349,
+      "mid": 47627.83,
+      "pUp": 0.875,
+      "probs": {
+        "up": 0.21,
+        "down": 0.03,
+        "neutral": 0.76
+      },
+      "answered": true
+    },
+    {
+      "ts": 1639785600000,
+      "barIdx": 351,
+      "mid": 46849.78,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.26,
+        "neutral": 0.74
+      },
+      "answered": true
+    },
+    {
+      "ts": 1639958400000,
+      "barIdx": 353,
+      "mid": 46908.29,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.77,
+        "neutral": 0.23
+      },
+      "answered": true
+    },
+    {
+      "ts": 1640217600000,
+      "barIdx": 356,
+      "mid": 50846.87,
+      "pUp": 1,
+      "probs": {
+        "up": 0.03,
+        "down": 0,
+        "neutral": 0.97
+      },
+      "answered": true
+    },
+    {
+      "ts": 1640390400000,
+      "barIdx": 358,
+      "mid": 50431.42,
+      "pUp": 1,
+      "probs": {
+        "up": 0.02,
+        "down": 0,
+        "neutral": 0.98
+      },
+      "answered": true
+    },
+    {
+      "ts": 1640649600000,
+      "barIdx": 361,
+      "mid": 47545.37,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.98,
+        "neutral": 0.02
+      },
+      "answered": true
+    },
+    {
+      "ts": 1640822400000,
+      "barIdx": 363,
+      "mid": 47134.28,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.49,
+        "neutral": 0.51
+      },
+      "answered": true
+    },
+    {
+      "ts": 1640995200000,
+      "barIdx": 365,
+      "mid": 47727.8,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.21,
+        "neutral": 0.79
+      },
+      "answered": true
+    },
+    {
+      "ts": 1641254400000,
+      "barIdx": 368,
+      "mid": 45830.46,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.43,
+        "neutral": 0.57
+      },
+      "answered": true
+    },
+    {
+      "ts": 1641427200000,
+      "barIdx": 370,
+      "mid": 43088.07,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.41,
+        "neutral": 0.59
+      },
+      "answered": true
+    },
+    {
+      "ts": 1641686400000,
+      "barIdx": 373,
+      "mid": 41876.34,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.31,
+        "neutral": 0.69
+      },
+      "answered": true
+    },
+    {
+      "ts": 1641859200000,
+      "barIdx": 375,
+      "mid": 42728.93,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.51,
+        "neutral": 0.49
+      },
+      "answered": true
+    },
+    {
+      "ts": 1642032000000,
+      "barIdx": 377,
+      "mid": 42580.84,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.47,
+        "neutral": 0.53
+      },
+      "answered": true
+    },
+    {
+      "ts": 1642291200000,
+      "barIdx": 380,
+      "mid": 43107.83,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.63,
+        "neutral": 0.37
+      },
+      "answered": true
+    },
+    {
+      "ts": 1642464000000,
+      "barIdx": 382,
+      "mid": 42358.97,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.73,
+        "neutral": 0.27
+      },
+      "answered": true
+    },
+    {
+      "ts": 1642723200000,
+      "barIdx": 385,
+      "mid": 36458.86,
+      "pUp": 0.02380952380952381,
+      "probs": {
+        "up": 0.01,
+        "down": 0.41,
+        "neutral": 0.58
+      },
+      "answered": true
+    },
+    {
+      "ts": 1642896000000,
+      "barIdx": 387,
+      "mid": 36277.58,
+      "pUp": 0.022727272727272728,
+      "probs": {
+        "up": 0.01,
+        "down": 0.43,
+        "neutral": 0.56
+      },
+      "answered": true
+    },
+    {
+      "ts": 1643068800000,
+      "barIdx": 389,
+      "mid": 36977.91,
+      "pUp": 0.02380952380952381,
+      "probs": {
+        "up": 0.01,
+        "down": 0.41,
+        "neutral": 0.58
+      },
+      "answered": true
+    },
+    {
+      "ts": 1643328000000,
+      "barIdx": 392,
+      "mid": 37778.91,
+      "pUp": 0.041666666666666664,
+      "probs": {
+        "up": 0.01,
+        "down": 0.23,
+        "neutral": 0.76
+      },
+      "answered": true
+    },
+    {
+      "ts": 1643500800000,
+      "barIdx": 394,
+      "mid": 37911.28,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.73,
+        "neutral": 0.27
+      },
+      "answered": true
+    },
+    {
+      "ts": 1643760000000,
+      "barIdx": 397,
+      "mid": 36931,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.74,
+        "neutral": 0.26
+      },
+      "answered": true
+    },
+    {
+      "ts": 1643932800000,
+      "barIdx": 399,
+      "mid": 41580.92,
+      "pUp": 0.03571428571428571,
+      "probs": {
+        "up": 0.01,
+        "down": 0.27,
+        "neutral": 0.72
+      },
+      "answered": true
+    },
+    {
+      "ts": 1644105600000,
+      "barIdx": 401,
+      "mid": 42401.99,
+      "pUp": 0.03571428571428571,
+      "probs": {
+        "up": 0.01,
+        "down": 0.27,
+        "neutral": 0.72
+      },
+      "answered": true
+    },
+    {
+      "ts": 1644364800000,
+      "barIdx": 404,
+      "mid": 44412.03,
+      "pUp": 0.02,
+      "probs": {
+        "up": 0.01,
+        "down": 0.49,
+        "neutral": 0.5
+      },
+      "answered": true
+    },
+    {
+      "ts": 1644537600000,
+      "barIdx": 406,
+      "mid": 42404.06,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.02,
+        "neutral": 0.98
+      },
+      "answered": true
+    },
+    {
+      "ts": 1644710400000,
+      "barIdx": 408,
+      "mid": 42075.13,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.01,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1644969600000,
+      "barIdx": 411,
+      "mid": 43886.41,
+      "pUp": 0.33333333333333337,
+      "probs": {
+        "up": 0.01,
+        "down": 0.02,
+        "neutral": 0.97
+      },
+      "answered": true
+    },
+    {
+      "ts": 1645142400000,
+      "barIdx": 413,
+      "mid": 39990.89,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1645401600000,
+      "barIdx": 416,
+      "mid": 37040.02,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1645574400000,
+      "barIdx": 418,
+      "mid": 37262.9,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1645747200000,
+      "barIdx": 420,
+      "mid": 39250.54,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.01,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1646006400000,
+      "barIdx": 423,
+      "mid": 43189.19,
+      "pUp": 0.33333333333333337,
+      "probs": {
+        "up": 0.01,
+        "down": 0.02,
+        "neutral": 0.97
+      },
+      "answered": true
+    },
+    {
+      "ts": 1646179200000,
+      "barIdx": 425,
+      "mid": 43938.21,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1646438400000,
+      "barIdx": 428,
+      "mid": 39414.71,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1646611200000,
+      "barIdx": 430,
+      "mid": 38002.88,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.01,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1646784000000,
+      "barIdx": 432,
+      "mid": 41972.23,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1647043200000,
+      "barIdx": 435,
+      "mid": 38838.02,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1647216000000,
+      "barIdx": 437,
+      "mid": 39686.63,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1647475200000,
+      "barIdx": 440,
+      "mid": 40943.81,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1647648000000,
+      "barIdx": 442,
+      "mid": 42228.92,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1647820800000,
+      "barIdx": 444,
+      "mid": 41012.45,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1648080000000,
+      "barIdx": 447,
+      "mid": 44013.99,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1648252800000,
+      "barIdx": 449,
+      "mid": 44546.27,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1648512000000,
+      "barIdx": 452,
+      "mid": 47455.46,
+      "pUp": 0.019230769230769232,
+      "probs": {
+        "up": 0.01,
+        "down": 0.51,
+        "neutral": 0.48
+      },
+      "answered": true
+    },
+    {
+      "ts": 1648684800000,
+      "barIdx": 454,
+      "mid": 45538.09,
+      "pUp": 0.03571428571428571,
+      "probs": {
+        "up": 0.01,
+        "down": 0.27,
+        "neutral": 0.72
+      },
+      "answered": true
+    },
+    {
+      "ts": 1648857600000,
+      "barIdx": 456,
+      "mid": 45819.19,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.3,
+        "neutral": 0.7
+      },
+      "answered": true
+    },
+    {
+      "ts": 1649116800000,
+      "barIdx": 459,
+      "mid": 45510.88,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0.01,
+        "down": 0.01,
+        "neutral": 0.98
+      },
+      "answered": true
+    },
+    {
+      "ts": 1649289600000,
+      "barIdx": 461,
+      "mid": 43452.64,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1649548800000,
+      "barIdx": 464,
+      "mid": 42159.82,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1649721600000,
+      "barIdx": 466,
+      "mid": 40080.65,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1649894400000,
+      "barIdx": 468,
+      "mid": 39946.93,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1650153600000,
+      "barIdx": 471,
+      "mid": 39681.76,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1650326400000,
+      "barIdx": 473,
+      "mid": 41496.82,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1650585600000,
+      "barIdx": 476,
+      "mid": 39700.53,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.05,
+        "neutral": 0.95
+      },
+      "answered": true
+    },
+    {
+      "ts": 1650758400000,
+      "barIdx": 478,
+      "mid": 39464.48,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.08,
+        "neutral": 0.92
+      },
+      "answered": true
+    },
+    {
+      "ts": 1650931200000,
+      "barIdx": 480,
+      "mid": 38114.88,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.42,
+        "neutral": 0.58
+      },
+      "answered": true
+    },
+    {
+      "ts": 1651190400000,
+      "barIdx": 483,
+      "mid": 38595.67,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.11,
+        "neutral": 0.89
+      },
+      "answered": true
+    },
+    {
+      "ts": 1651363200000,
+      "barIdx": 485,
+      "mid": 38469.55,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.06,
+        "neutral": 0.9400000000000001
+      },
+      "answered": true
+    },
+    {
+      "ts": 1651622400000,
+      "barIdx": 488,
+      "mid": 39689.62,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.94,
+        "neutral": 0.06
+      },
+      "answered": true
+    },
+    {
+      "ts": 1651795200000,
+      "barIdx": 490,
+      "mid": 36004.58,
+      "pUp": 0.022222222222222223,
+      "probs": {
+        "up": 0.01,
+        "down": 0.44,
+        "neutral": 0.55
+      },
+      "answered": true
+    },
+    {
+      "ts": 1651968000000,
+      "barIdx": 492,
+      "mid": 34033.74,
+      "pUp": 0.0196078431372549,
+      "probs": {
+        "up": 0.01,
+        "down": 0.5,
+        "neutral": 0.49
+      },
+      "answered": true
+    },
+    {
+      "ts": 1652227200000,
+      "barIdx": 495,
+      "mid": 28977.8,
+      "pUp": 0.021739130434782608,
+      "probs": {
+        "up": 0.01,
+        "down": 0.45,
+        "neutral": 0.54
+      },
+      "answered": true
+    },
+    {
+      "ts": 1652400000000,
+      "barIdx": 497,
+      "mid": 29232.45,
+      "pUp": 0.022727272727272728,
+      "probs": {
+        "up": 0.01,
+        "down": 0.43,
+        "neutral": 0.56
+      },
+      "answered": true
+    },
+    {
+      "ts": 1652572800000,
+      "barIdx": 499,
+      "mid": 31293.32,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.26,
+        "neutral": 0.74
+      },
+      "answered": true
+    },
+    {
+      "ts": 1652832000000,
+      "barIdx": 502,
+      "mid": 28690.3,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.46,
+        "neutral": 0.54
+      },
+      "answered": true
+    },
+    {
+      "ts": 1653004800000,
+      "barIdx": 504,
+      "mid": 29172.8,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.72,
+        "neutral": 0.28
+      },
+      "answered": true
+    },
+    {
+      "ts": 1653264000000,
+      "barIdx": 507,
+      "mid": 29084.37,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.76,
+        "neutral": 0.24
+      },
+      "answered": true
+    },
+    {
+      "ts": 1653436800000,
+      "barIdx": 509,
+      "mid": 29507.5,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.73,
+        "neutral": 0.27
+      },
+      "answered": true
+    },
+    {
+      "ts": 1653609600000,
+      "barIdx": 511,
+      "mid": 28593.31,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 1,
+        "neutral": 0
+      },
+      "answered": true
+    },
+    {
+      "ts": 1653868800000,
+      "barIdx": 514,
+      "mid": 31718.42,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.71,
+        "neutral": 0.29
+      },
+      "answered": true
+    },
+    {
+      "ts": 1654041600000,
+      "barIdx": 516,
+      "mid": 29782.58,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.97,
+        "neutral": 0.03
+      },
+      "answered": true
+    },
+    {
+      "ts": 1654300800000,
+      "barIdx": 519,
+      "mid": 29846.27,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.25,
+        "neutral": 0.75
+      },
+      "answered": true
+    },
+    {
+      "ts": 1654473600000,
+      "barIdx": 521,
+      "mid": 31348,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.04,
+        "neutral": 0.96
+      },
+      "answered": true
+    },
+    {
+      "ts": 1654646400000,
+      "barIdx": 523,
+      "mid": 30181.34,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.01,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1654905600000,
+      "barIdx": 526,
+      "mid": 28380,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.01,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1655078400000,
+      "barIdx": 528,
+      "mid": 22460.52,
+      "pUp": 0.08333333333333334,
+      "probs": {
+        "up": 0.01,
+        "down": 0.11,
+        "neutral": 0.88
+      },
+      "answered": true
+    },
+    {
+      "ts": 1655337600000,
+      "barIdx": 531,
+      "mid": 20376.76,
+      "pUp": 0.022727272727272728,
+      "probs": {
+        "up": 0.01,
+        "down": 0.43,
+        "neutral": 0.56
+      },
+      "answered": true
+    },
+    {
+      "ts": 1655510400000,
+      "barIdx": 533,
+      "mid": 18949.08,
+      "pUp": 0.024390243902439022,
+      "probs": {
+        "up": 0.01,
+        "down": 0.4,
+        "neutral": 0.59
+      },
+      "answered": true
+    },
+    {
+      "ts": 1655683200000,
+      "barIdx": 535,
+      "mid": 20539.82,
+      "pUp": 0.02777777777777778,
+      "probs": {
+        "up": 0.01,
+        "down": 0.35,
+        "neutral": 0.64
+      },
+      "answered": true
+    },
+    {
+      "ts": 1655942400000,
+      "barIdx": 538,
+      "mid": 21091.3,
+      "pUp": 0.020833333333333336,
+      "probs": {
+        "up": 0.01,
+        "down": 0.47,
+        "neutral": 0.52
+      },
+      "answered": true
+    },
+    {
+      "ts": 1656115200000,
+      "barIdx": 540,
+      "mid": 21469.62,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.76,
+        "neutral": 0.24
+      },
+      "answered": true
+    },
+    {
+      "ts": 1656374400000,
+      "barIdx": 543,
+      "mid": 20253.07,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 1,
+        "neutral": 0
+      },
+      "answered": true
+    },
+    {
+      "ts": 1656547200000,
+      "barIdx": 545,
+      "mid": 19937.23,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 1,
+        "neutral": 0
+      },
+      "answered": true
+    },
+    {
+      "ts": 1656720000000,
+      "barIdx": 547,
+      "mid": 19226.53,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.72,
+        "neutral": 0.28
+      },
+      "answered": true
+    },
+    {
+      "ts": 1656979200000,
+      "barIdx": 550,
+      "mid": 20157.22,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 1,
+        "neutral": 0
+      },
+      "answered": true
+    },
+    {
+      "ts": 1657152000000,
+      "barIdx": 552,
+      "mid": 21615.25,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.94,
+        "neutral": 0.06
+      },
+      "answered": true
+    },
+    {
+      "ts": 1657411200000,
+      "barIdx": 555,
+      "mid": 20844.56,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.04,
+        "neutral": 0.96
+      },
+      "answered": true
+    },
+    {
+      "ts": 1657584000000,
+      "barIdx": 557,
+      "mid": 19308.37,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.39,
+        "neutral": 0.61
+      },
+      "answered": true
+    },
+    {
+      "ts": 1657756800000,
+      "barIdx": 559,
+      "mid": 20576.51,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.07,
+        "neutral": 0.93
+      },
+      "answered": true
+    },
+    {
+      "ts": 1658016000000,
+      "barIdx": 562,
+      "mid": 20798.5,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1658188800000,
+      "barIdx": 564,
+      "mid": 23392.19,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.01,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1658448000000,
+      "barIdx": 567,
+      "mid": 22684.3,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1658620800000,
+      "barIdx": 569,
+      "mid": 22591.28,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1658793600000,
+      "barIdx": 571,
+      "mid": 21255.55,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1659052800000,
+      "barIdx": 574,
+      "mid": 23782.99,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1659225600000,
+      "barIdx": 576,
+      "mid": 23304.65,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1659484800000,
+      "barIdx": 579,
+      "mid": 22824.55,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1659657600000,
+      "barIdx": 581,
+      "mid": 23317.38,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1659830400000,
+      "barIdx": 583,
+      "mid": 23177.81,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1660089600000,
+      "barIdx": 586,
+      "mid": 23964.88,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1660262400000,
+      "barIdx": 588,
+      "mid": 24412.39,
+      "pUp": 0.25,
+      "probs": {
+        "up": 0.01,
+        "down": 0.03,
+        "neutral": 0.96
+      },
+      "answered": true
+    },
+    {
+      "ts": 1660435200000,
+      "barIdx": 590,
+      "mid": 24315.55,
+      "pUp": 0.25,
+      "probs": {
+        "up": 0.01,
+        "down": 0.03,
+        "neutral": 0.96
+      },
+      "answered": true
+    },
+    {
+      "ts": 1660694400000,
+      "barIdx": 593,
+      "mid": 23335.92,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1660867200000,
+      "barIdx": 595,
+      "mid": 20829.32,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.01,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1661126400000,
+      "barIdx": 598,
+      "mid": 21397,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.05,
+        "neutral": 0.95
+      },
+      "answered": true
+    },
+    {
+      "ts": 1661299200000,
+      "barIdx": 600,
+      "mid": 21367.42,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.06,
+        "neutral": 0.94
+      },
+      "answered": true
+    },
+    {
+      "ts": 1661472000000,
+      "barIdx": 602,
+      "mid": 20243.48,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.08,
+        "neutral": 0.92
+      },
+      "answered": true
+    },
+    {
+      "ts": 1661731200000,
+      "barIdx": 605,
+      "mid": 20290,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.3,
+        "neutral": 0.7
+      },
+      "answered": true
+    },
+    {
+      "ts": 1661904000000,
+      "barIdx": 607,
+      "mid": 20060.32,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.26,
+        "neutral": 0.74
+      },
+      "answered": true
+    },
+    {
+      "ts": 1662163200000,
+      "barIdx": 610,
+      "mid": 19832.06,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.31,
+        "neutral": 0.69
+      },
+      "answered": true
+    },
+    {
+      "ts": 1662336000000,
+      "barIdx": 612,
+      "mid": 19795.12,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.29,
+        "neutral": 0.71
+      },
+      "answered": true
+    },
+    {
+      "ts": 1662508800000,
+      "barIdx": 614,
+      "mid": 19290.53,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.44,
+        "neutral": 0.56
+      },
+      "answered": true
+    },
+    {
+      "ts": 1662768000000,
+      "barIdx": 617,
+      "mid": 21650.6,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.21,
+        "neutral": 0.79
+      },
+      "answered": true
+    },
+    {
+      "ts": 1662940800000,
+      "barIdx": 619,
+      "mid": 22400,
+      "pUp": 0.0625,
+      "probs": {
+        "up": 0.01,
+        "down": 0.15,
+        "neutral": 0.84
+      },
+      "answered": true
+    },
+    {
+      "ts": 1663200000000,
+      "barIdx": 622,
+      "mid": 19698.24,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.01,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1663372800000,
+      "barIdx": 624,
+      "mid": 20112.04,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1663545600000,
+      "barIdx": 626,
+      "mid": 19540.33,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.01,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1663804800000,
+      "barIdx": 629,
+      "mid": 19403.29,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.01,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1663977600000,
+      "barIdx": 631,
+      "mid": 18921.25,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.21,
+        "neutral": 0.79
+      },
+      "answered": true
+    },
+    {
+      "ts": 1664236800000,
+      "barIdx": 634,
+      "mid": 19078.74,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.17,
+        "neutral": 0.83
+      },
+      "answered": true
+    },
+    {
+      "ts": 1664409600000,
+      "barIdx": 636,
+      "mid": 19590,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.07,
+        "neutral": 0.93
+      },
+      "answered": true
+    },
+    {
+      "ts": 1664582400000,
+      "barIdx": 638,
+      "mid": 19312.12,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1664841600000,
+      "barIdx": 641,
+      "mid": 20341.67,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1665014400000,
+      "barIdx": 643,
+      "mid": 19962.44,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1665273600000,
+      "barIdx": 646,
+      "mid": 19441.92,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1665446400000,
+      "barIdx": 648,
+      "mid": 19058.3,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1665619200000,
+      "barIdx": 650,
+      "mid": 19376.75,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.01,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1665878400000,
+      "barIdx": 653,
+      "mid": 19262.52,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1666051200000,
+      "barIdx": 655,
+      "mid": 19331.69,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.01,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1666310400000,
+      "barIdx": 658,
+      "mid": 19165.2,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.01,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1666483200000,
+      "barIdx": 660,
+      "mid": 19569.29,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1666656000000,
+      "barIdx": 662,
+      "mid": 20085.39,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.01,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1666915200000,
+      "barIdx": 665,
+      "mid": 20598.6,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1667088000000,
+      "barIdx": 667,
+      "mid": 20631.58,
+      "pUp": 0.25,
+      "probs": {
+        "up": 0.01,
+        "down": 0.03,
+        "neutral": 0.96
+      },
+      "answered": true
+    },
+    {
+      "ts": 1667347200000,
+      "barIdx": 670,
+      "mid": 20148.22,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1667520000000,
+      "barIdx": 672,
+      "mid": 21146.71,
+      "pUp": 0.11111111111111112,
+      "probs": {
+        "up": 0.01,
+        "down": 0.08,
+        "neutral": 0.91
+      },
+      "answered": true
+    },
+    {
+      "ts": 1667692800000,
+      "barIdx": 674,
+      "mid": 20908.79,
+      "pUp": 0.33333333333333337,
+      "probs": {
+        "up": 0.01,
+        "down": 0.02,
+        "neutral": 0.97
+      },
+      "answered": true
+    },
+    {
+      "ts": 1667952000000,
+      "barIdx": 677,
+      "mid": 15891.72,
+      "pUp": 0.02631578947368421,
+      "probs": {
+        "up": 0.01,
+        "down": 0.37,
+        "neutral": 0.62
+      },
+      "answered": true
+    },
+    {
+      "ts": 1668124800000,
+      "barIdx": 679,
+      "mid": 17014.2,
+      "pUp": 0.024999999999999998,
+      "probs": {
+        "up": 0.01,
+        "down": 0.39,
+        "neutral": 0.6
+      },
+      "answered": true
+    },
+    {
+      "ts": 1668297600000,
+      "barIdx": 681,
+      "mid": 16298.53,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.26,
+        "neutral": 0.74
+      },
+      "answered": true
+    },
+    {
+      "ts": 1668556800000,
+      "barIdx": 684,
+      "mid": 16643.82,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.29,
+        "neutral": 0.71
+      },
+      "answered": true
+    },
+    {
+      "ts": 1668729600000,
+      "barIdx": 686,
+      "mid": 16677,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.31,
+        "neutral": 0.69
+      },
+      "answered": true
+    },
+    {
+      "ts": 1668988800000,
+      "barIdx": 689,
+      "mid": 15756.6,
+      "pUp": 0.020833333333333336,
+      "probs": {
+        "up": 0.01,
+        "down": 0.47,
+        "neutral": 0.52
+      },
+      "answered": true
+    },
+    {
+      "ts": 1669161600000,
+      "barIdx": 691,
+      "mid": 16585.23,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.07,
+        "neutral": 0.93
+      },
+      "answered": true
+    },
+    {
+      "ts": 1669334400000,
+      "barIdx": 693,
+      "mid": 16510.68,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.63,
+        "neutral": 0.37
+      },
+      "answered": true
+    },
+    {
+      "ts": 1669593600000,
+      "barIdx": 696,
+      "mid": 16206.23,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 1,
+        "neutral": 0
+      },
+      "answered": true
+    },
+    {
+      "ts": 1669766400000,
+      "barIdx": 698,
+      "mid": 17166.34,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.84,
+        "neutral": 0.16
+      },
+      "answered": true
+    },
+    {
+      "ts": 1670025600000,
+      "barIdx": 701,
+      "mid": 16888.29,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.3,
+        "neutral": 0.7
+      },
+      "answered": true
+    },
+    {
+      "ts": 1670198400000,
+      "barIdx": 703,
+      "mid": 16967.48,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.94,
+        "neutral": 0.06
+      },
+      "answered": true
+    },
+    {
+      "ts": 1670371200000,
+      "barIdx": 705,
+      "mid": 16837.64,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.28,
+        "neutral": 0.72
+      },
+      "answered": true
+    },
+    {
+      "ts": 1670630400000,
+      "barIdx": 708,
+      "mid": 17128.95,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.01,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1670803200000,
+      "barIdx": 710,
+      "mid": 17207.12,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1671062400000,
+      "barIdx": 713,
+      "mid": 17358.98,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1671235200000,
+      "barIdx": 715,
+      "mid": 16777.49,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1671408000000,
+      "barIdx": 717,
+      "mid": 16437.64,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1671667200000,
+      "barIdx": 720,
+      "mid": 16817.45,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1671840000000,
+      "barIdx": 722,
+      "mid": 16834.7,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1672099200000,
+      "barIdx": 725,
+      "mid": 16701,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1672272000000,
+      "barIdx": 727,
+      "mid": 16624,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1672444800000,
+      "barIdx": 729,
+      "mid": 16525.78,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1672704000000,
+      "barIdx": 732,
+      "mid": 16666.58,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1672876800000,
+      "barIdx": 734,
+      "mid": 16824.44,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1673136000000,
+      "barIdx": 737,
+      "mid": 17120.34,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1673308800000,
+      "barIdx": 739,
+      "mid": 17434.47,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1673481600000,
+      "barIdx": 741,
+      "mid": 18843.04,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.9400000000000001,
+        "neutral": 0.06
+      },
+      "answered": true
+    },
+    {
+      "ts": 1673740800000,
+      "barIdx": 744,
+      "mid": 20865.25,
+      "pUp": 0.6,
+      "probs": {
+        "up": 0.03,
+        "down": 0.02,
+        "neutral": 0.95
+      },
+      "answered": true
+    },
+    {
+      "ts": 1673913600000,
+      "barIdx": 746,
+      "mid": 21124,
+      "pUp": 0.5714285714285714,
+      "probs": {
+        "up": 0.04,
+        "down": 0.03,
+        "neutral": 0.9299999999999999
+      },
+      "answered": true
+    },
+    {
+      "ts": 1674172800000,
+      "barIdx": 749,
+      "mid": 22664.78,
+      "pUp": 0.625,
+      "probs": {
+        "up": 0.05,
+        "down": 0.03,
+        "neutral": 0.92
+      },
+      "answered": true
+    },
+    {
+      "ts": 1674345600000,
+      "barIdx": 751,
+      "mid": 22711.79,
+      "pUp": 0.75,
+      "probs": {
+        "up": 0.03,
+        "down": 0.01,
+        "neutral": 0.96
+      },
+      "answered": true
+    },
+    {
+      "ts": 1674518400000,
+      "barIdx": 753,
+      "mid": 22631.09,
+      "pUp": 0.6666666666666667,
+      "probs": {
+        "up": 0.04,
+        "down": 0.02,
+        "neutral": 0.94
+      },
+      "answered": true
+    },
+    {
+      "ts": 1674777600000,
+      "barIdx": 756,
+      "mid": 23076.79,
+      "pUp": 0.7000000000000001,
+      "probs": {
+        "up": 0.07,
+        "down": 0.03,
+        "neutral": 0.9
+      },
+      "answered": true
+    },
+    {
+      "ts": 1674950400000,
+      "barIdx": 758,
+      "mid": 23748.04,
+      "pUp": 0.7999999999999999,
+      "probs": {
+        "up": 0.08,
+        "down": 0.02,
+        "neutral": 0.9
+      },
+      "answered": true
+    },
+    {
+      "ts": 1675209600000,
+      "barIdx": 761,
+      "mid": 23743.06,
+      "pUp": 1,
+      "probs": {
+        "up": 0.54,
+        "down": 0,
+        "neutral": 0.46
+      },
+      "answered": true
+    },
+    {
+      "ts": 1675382400000,
+      "barIdx": 763,
+      "mid": 23432.85,
+      "pUp": 1,
+      "probs": {
+        "up": 0.59,
+        "down": 0,
+        "neutral": 0.41
+      },
+      "answered": true
+    },
+    {
+      "ts": 1675555200000,
+      "barIdx": 765,
+      "mid": 22956.41,
+      "pUp": 0.9818181818181818,
+      "probs": {
+        "up": 0.54,
+        "down": 0.01,
+        "neutral": 0.45
+      },
+      "answered": true
+    },
+    {
+      "ts": 1675814400000,
+      "barIdx": 768,
+      "mid": 22964,
+      "pUp": 1,
+      "probs": {
+        "up": 0.99,
+        "down": 0,
+        "neutral": 0.01
+      },
+      "answered": true
+    },
+    {
+      "ts": 1675987200000,
+      "barIdx": 770,
+      "mid": 21629.35,
+      "pUp": 0.9777777777777777,
+      "probs": {
+        "up": 0.44,
+        "down": 0.01,
+        "neutral": 0.55
+      },
+      "answered": true
+    },
+    {
+      "ts": 1676160000000,
+      "barIdx": 772,
+      "mid": 21787.3,
+      "pUp": 0.888888888888889,
+      "probs": {
+        "up": 0.08,
+        "down": 0.01,
+        "neutral": 0.91
+      },
+      "answered": true
+    },
+    {
+      "ts": 1676419200000,
+      "barIdx": 775,
+      "mid": 24330.12,
+      "pUp": 1,
+      "probs": {
+        "up": 0.99,
+        "down": 0,
+        "neutral": 0.01
+      },
+      "answered": true
+    },
+    {
+      "ts": 1676592000000,
+      "barIdx": 777,
+      "mid": 24576.68,
+      "pUp": 0.8974358974358975,
+      "probs": {
+        "up": 0.35,
+        "down": 0.04,
+        "neutral": 0.61
+      },
+      "answered": true
+    },
+    {
+      "ts": 1676851200000,
+      "barIdx": 780,
+      "mid": 24837.85,
+      "pUp": 1,
+      "probs": {
+        "up": 0.06,
+        "down": 0,
+        "neutral": 0.94
+      },
+      "answered": true
+    },
+    {
+      "ts": 1677024000000,
+      "barIdx": 782,
+      "mid": 24186.06,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1677196800000,
+      "barIdx": 784,
+      "mid": 23189.33,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1677456000000,
+      "barIdx": 787,
+      "mid": 23488.76,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1677628800000,
+      "barIdx": 789,
+      "mid": 23629.97,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1677888000000,
+      "barIdx": 792,
+      "mid": 22347.86,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1678060800000,
+      "barIdx": 794,
+      "mid": 22403.96,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1678233600000,
+      "barIdx": 796,
+      "mid": 21702.77255,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1678492800000,
+      "barIdx": 799,
+      "mid": 20615.287,
+      "pUp": 0.9772727272727273,
+      "probs": {
+        "up": 0.43,
+        "down": 0.01,
+        "neutral": 0.56
+      },
+      "answered": true
+    },
+    {
+      "ts": 1678665600000,
+      "barIdx": 801,
+      "mid": 24175.17,
+      "pUp": 1,
+      "probs": {
+        "up": 0.09,
+        "down": 0,
+        "neutral": 0.91
+      },
+      "answered": true
+    },
+    {
+      "ts": 1678924800000,
+      "barIdx": 804,
+      "mid": 25030.5,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1679097600000,
+      "barIdx": 806,
+      "mid": 26983.83,
+      "pUp": 1,
+      "probs": {
+        "up": 0.02,
+        "down": 0,
+        "neutral": 0.98
+      },
+      "answered": true
+    },
+    {
+      "ts": 1679270400000,
+      "barIdx": 808,
+      "mid": 27817.21,
+      "pUp": 0.8333333333333333,
+      "probs": {
+        "up": 0.05,
+        "down": 0.01,
+        "neutral": 0.94
+      },
+      "answered": true
+    },
+    {
+      "ts": 1679529600000,
+      "barIdx": 811,
+      "mid": 28343.1202875,
+      "pUp": 0.9,
+      "probs": {
+        "up": 0.09,
+        "down": 0.01,
+        "neutral": 0.9
+      },
+      "answered": true
+    },
+    {
+      "ts": 1679702400000,
+      "barIdx": 813,
+      "mid": 27495.84,
+      "pUp": 1,
+      "probs": {
+        "up": 0.04,
+        "down": 0,
+        "neutral": 0.96
+      },
+      "answered": true
+    },
+    {
+      "ts": 1679961600000,
+      "barIdx": 816,
+      "mid": 27284.81,
+      "pUp": 1,
+      "probs": {
+        "up": 0.03,
+        "down": 0,
+        "neutral": 0.97
+      },
+      "answered": true
+    },
+    {
+      "ts": 1680134400000,
+      "barIdx": 818,
+      "mid": 28051.17,
+      "pUp": 0.9642857142857143,
+      "probs": {
+        "up": 0.27,
+        "down": 0.01,
+        "neutral": 0.72
+      },
+      "answered": true
+    },
+    {
+      "ts": 1680307200000,
+      "barIdx": 820,
+      "mid": 28471.96,
+      "pUp": 1,
+      "probs": {
+        "up": 0.55,
+        "down": 0,
+        "neutral": 0.45
+      },
+      "answered": true
+    },
+    {
+      "ts": 1680566400000,
+      "barIdx": 823,
+      "mid": 28184.21,
+      "pUp": 1,
+      "probs": {
+        "up": 0.12,
+        "down": 0,
+        "neutral": 0.88
+      },
+      "answered": true
+    },
+    {
+      "ts": 1680739200000,
+      "barIdx": 825,
+      "mid": 28053.1285,
+      "pUp": 1,
+      "probs": {
+        "up": 0.02,
+        "down": 0,
+        "neutral": 0.98
+      },
+      "answered": true
+    },
+    {
+      "ts": 1680998400000,
+      "barIdx": 828,
+      "mid": 28338.5430745,
+      "pUp": 1,
+      "probs": {
+        "up": 0.06,
+        "down": 0,
+        "neutral": 0.9400000000000001
+      },
+      "answered": true
+    },
+    {
+      "ts": 1681171200000,
+      "barIdx": 830,
+      "mid": 30229.9700005,
+      "pUp": 0.8125,
+      "probs": {
+        "up": 0.13,
+        "down": 0.03,
+        "neutral": 0.84
+      },
+      "answered": true
+    },
+    {
+      "ts": 1681344000000,
+      "barIdx": 832,
+      "mid": 30408.937085,
+      "pUp": 0.9166666666666667,
+      "probs": {
+        "up": 0.11,
+        "down": 0.01,
+        "neutral": 0.88
+      },
+      "answered": true
+    },
+    {
+      "ts": 1681603200000,
+      "barIdx": 835,
+      "mid": 30330.24,
+      "pUp": 0.9166666666666667,
+      "probs": {
+        "up": 0.11,
+        "down": 0.01,
+        "neutral": 0.88
+      },
+      "answered": true
+    },
+    {
+      "ts": 1681776000000,
+      "barIdx": 837,
+      "mid": 30395.06809198,
+      "pUp": 1,
+      "probs": {
+        "up": 1,
+        "down": 0,
+        "neutral": 0
+      },
+      "answered": true
+    },
+    {
+      "ts": 1682035200000,
+      "barIdx": 840,
+      "mid": 27280.29,
+      "pUp": 0.9743589743589743,
+      "probs": {
+        "up": 0.38,
+        "down": 0.01,
+        "neutral": 0.61
+      },
+      "answered": true
+    },
+    {
+      "ts": 1682208000000,
+      "barIdx": 842,
+      "mid": 27608.562535,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1682380800000,
+      "barIdx": 844,
+      "mid": 28322.46,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1682640000000,
+      "barIdx": 847,
+      "mid": 29352.88,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1682812800000,
+      "barIdx": 849,
+      "mid": 29268.64,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1683072000000,
+      "barIdx": 852,
+      "mid": 29071.82,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1683244800000,
+      "barIdx": 854,
+      "mid": 29597.0721275,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1683417600000,
+      "barIdx": 856,
+      "mid": 28967.044015,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1683676800000,
+      "barIdx": 859,
+      "mid": 27700.37,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1683849600000,
+      "barIdx": 861,
+      "mid": 26796.777185,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1684022400000,
+      "barIdx": 863,
+      "mid": 26935.454,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1684281600000,
+      "barIdx": 866,
+      "mid": 27394.93,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1684454400000,
+      "barIdx": 868,
+      "mid": 26881.07,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1684713600000,
+      "barIdx": 871,
+      "mid": 26850.6365,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1684886400000,
+      "barIdx": 873,
+      "mid": 26343.22003543,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0.01,
+        "down": 0.01,
+        "neutral": 0.98
+      },
+      "answered": true
+    },
+    {
+      "ts": 1685059200000,
+      "barIdx": 875,
+      "mid": 26743.9463303,
+      "pUp": 1,
+      "probs": {
+        "up": 0.05,
+        "down": 0,
+        "neutral": 0.95
+      },
+      "answered": true
+    },
+    {
+      "ts": 1685318400000,
+      "barIdx": 878,
+      "mid": 27744.17825055,
+      "pUp": 1,
+      "probs": {
+        "up": 0.04,
+        "down": 0,
+        "neutral": 0.96
+      },
+      "answered": true
+    },
+    {
+      "ts": 1685491200000,
+      "barIdx": 880,
+      "mid": 27214.07357625,
+      "pUp": 0.33333333333333337,
+      "probs": {
+        "up": 0.01,
+        "down": 0.02,
+        "neutral": 0.97
+      },
+      "answered": true
+    },
+    {
+      "ts": 1685750400000,
+      "barIdx": 883,
+      "mid": 27089.35608,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1685923200000,
+      "barIdx": 885,
+      "mid": 25804.5,
+      "pUp": 0.9770114942528736,
+      "probs": {
+        "up": 0.85,
+        "down": 0.02,
+        "neutral": 0.13
+      },
+      "answered": true
+    },
+    {
+      "ts": 1686096000000,
+      "barIdx": 887,
+      "mid": 26345.077225,
+      "pUp": 0.9722222222222222,
+      "probs": {
+        "up": 0.35,
+        "down": 0.01,
+        "neutral": 0.64
+      },
+      "answered": true
+    },
+    {
+      "ts": 1686355200000,
+      "barIdx": 890,
+      "mid": 25861.5045987725,
+      "pUp": 0.888888888888889,
+      "probs": {
+        "up": 0.08,
+        "down": 0.01,
+        "neutral": 0.91
+      },
+      "answered": true
+    },
+    {
+      "ts": 1686528000000,
+      "barIdx": 892,
+      "mid": 26115.72,
+      "pUp": 1,
+      "probs": {
+        "up": 0.04,
+        "down": 0,
+        "neutral": 0.96
+      },
+      "answered": true
+    },
+    {
+      "ts": 1686787200000,
+      "barIdx": 895,
+      "mid": 25576.61617185,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1686960000000,
+      "barIdx": 897,
+      "mid": 26513.13658,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1687132800000,
+      "barIdx": 899,
+      "mid": 26856.828121305,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1687392000000,
+      "barIdx": 902,
+      "mid": 29892.5682,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1687564800000,
+      "barIdx": 904,
+      "mid": 30548.958476685,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1687824000000,
+      "barIdx": 907,
+      "mid": 30696.249175275,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1687996800000,
+      "barIdx": 909,
+      "mid": 30439.99615,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1688169600000,
+      "barIdx": 911,
+      "mid": 30586.1363869,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1688428800000,
+      "barIdx": 914,
+      "mid": 30779.508,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1688601600000,
+      "barIdx": 916,
+      "mid": 29907.664855185,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1688860800000,
+      "barIdx": 919,
+      "mid": 30174.998452305,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1689033600000,
+      "barIdx": 921,
+      "mid": 30626.04755,
+      "pUp": 1,
+      "probs": {
+        "up": 0.15,
+        "down": 0,
+        "neutral": 0.85
+      },
+      "answered": true
+    },
+    {
+      "ts": 1689206400000,
+      "barIdx": 923,
+      "mid": 31488.6859538185,
+      "pUp": 1,
+      "probs": {
+        "up": 0.63,
+        "down": 0,
+        "neutral": 0.37
+      },
+      "answered": true
+    },
+    {
+      "ts": 1689465600000,
+      "barIdx": 926,
+      "mid": 30247.955055,
+      "pUp": 0.9444444444444444,
+      "probs": {
+        "up": 0.17,
+        "down": 0.01,
+        "neutral": 0.82
+      },
+      "answered": true
+    },
+    {
+      "ts": 1689638400000,
+      "barIdx": 928,
+      "mid": 29870.178185,
+      "pUp": 1,
+      "probs": {
+        "up": 0.05,
+        "down": 0,
+        "neutral": 0.95
+      },
+      "answered": true
+    },
+    {
+      "ts": 1689897600000,
+      "barIdx": 931,
+      "mid": 29907.505,
+      "pUp": 1,
+      "probs": {
+        "up": 0.08,
+        "down": 0,
+        "neutral": 0.92
+      },
+      "answered": true
+    },
+    {
+      "ts": 1690070400000,
+      "barIdx": 933,
+      "mid": 30092.95075,
+      "pUp": 1,
+      "probs": {
+        "up": 0.24,
+        "down": 0,
+        "neutral": 0.76
+      },
+      "answered": true
+    },
+    {
+      "ts": 1690243200000,
+      "barIdx": 935,
+      "mid": 29245.2246153845,
+      "pUp": 0.8750000000000001,
+      "probs": {
+        "up": 0.07,
+        "down": 0.01,
+        "neutral": 0.92
+      },
+      "answered": true
+    },
+    {
+      "ts": 1690502400000,
+      "barIdx": 938,
+      "mid": 29316.027,
+      "pUp": 1,
+      "probs": {
+        "up": 0.08,
+        "down": 0,
+        "neutral": 0.92
+      },
+      "answered": true
+    },
+    {
+      "ts": 1690675200000,
+      "barIdx": 940,
+      "mid": 29280.2392,
+      "pUp": 0.9714285714285714,
+      "probs": {
+        "up": 0.34,
+        "down": 0.01,
+        "neutral": 0.65
+      },
+      "answered": true
+    },
+    {
+      "ts": 1690934400000,
+      "barIdx": 943,
+      "mid": 29167.821211,
+      "pUp": 1,
+      "probs": {
+        "up": 0.05,
+        "down": 0,
+        "neutral": 0.95
+      },
+      "answered": true
+    },
+    {
+      "ts": 1691107200000,
+      "barIdx": 945,
+      "mid": 29078.0379595,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1691280000000,
+      "barIdx": 947,
+      "mid": 29038.42672231,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1691539200000,
+      "barIdx": 950,
+      "mid": 29559.97825,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1691712000000,
+      "barIdx": 952,
+      "mid": 29399.99841945,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1691884800000,
+      "barIdx": 954,
+      "mid": 29287.3646353645,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1692144000000,
+      "barIdx": 957,
+      "mid": 28704.115,
+      "pUp": 0.7999999999999999,
+      "probs": {
+        "up": 0.04,
+        "down": 0.01,
+        "neutral": 0.95
+      },
+      "answered": true
+    },
+    {
+      "ts": 1692316800000,
+      "barIdx": 959,
+      "mid": 26051.49855,
+      "pUp": 0.024390243902439022,
+      "probs": {
+        "up": 0.01,
+        "down": 0.4,
+        "neutral": 0.59
+      },
+      "answered": true
+    },
+    {
+      "ts": 1692576000000,
+      "barIdx": 962,
+      "mid": 26118.313,
+      "pUp": 0.02702702702702703,
+      "probs": {
+        "up": 0.01,
+        "down": 0.36,
+        "neutral": 0.63
+      },
+      "answered": true
+    },
+    {
+      "ts": 1692748800000,
+      "barIdx": 964,
+      "mid": 26429.0085,
+      "pUp": 0.03333333333333333,
+      "probs": {
+        "up": 0.01,
+        "down": 0.29,
+        "neutral": 0.7
+      },
+      "answered": true
+    },
+    {
+      "ts": 1692921600000,
+      "barIdx": 966,
+      "mid": 26044.635,
+      "pUp": 0.03571428571428571,
+      "probs": {
+        "up": 0.01,
+        "down": 0.27,
+        "neutral": 0.72
+      },
+      "answered": true
+    },
+    {
+      "ts": 1693180800000,
+      "barIdx": 969,
+      "mid": 26108.4,
+      "pUp": 0.02702702702702703,
+      "probs": {
+        "up": 0.01,
+        "down": 0.36,
+        "neutral": 0.63
+      },
+      "answered": true
+    },
+    {
+      "ts": 1693353600000,
+      "barIdx": 971,
+      "mid": 27295.925,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.93,
+        "neutral": 0.07
+      },
+      "answered": true
+    },
+    {
+      "ts": 1693612800000,
+      "barIdx": 974,
+      "mid": 25860.898,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 1,
+        "neutral": 0
+      },
+      "answered": true
+    },
+    {
+      "ts": 1693785600000,
+      "barIdx": 976,
+      "mid": 25803.8405,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 1,
+        "neutral": 0
+      },
+      "answered": true
+    },
+    {
+      "ts": 1693958400000,
+      "barIdx": 978,
+      "mid": 25749.882,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.63,
+        "neutral": 0.37
+      },
+      "answered": true
+    },
+    {
+      "ts": 1694217600000,
+      "barIdx": 981,
+      "mid": 25886.395,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.09,
+        "neutral": 0.91
+      },
+      "answered": true
+    },
+    {
+      "ts": 1694390400000,
+      "barIdx": 983,
+      "mid": 25158.8355,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.13,
+        "neutral": 0.87
+      },
+      "answered": true
+    },
+    {
+      "ts": 1694649600000,
+      "barIdx": 986,
+      "mid": 26526.015,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.01,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1694822400000,
+      "barIdx": 988,
+      "mid": 26567.8675,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1694995200000,
+      "barIdx": 990,
+      "mid": 26773.2945,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1695254400000,
+      "barIdx": 993,
+      "mid": 26568.257,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1695427200000,
+      "barIdx": 995,
+      "mid": 26578.205,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1695686400000,
+      "barIdx": 998,
+      "mid": 26203.1,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.01,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1695859200000,
+      "barIdx": 1000,
+      "mid": 27016.87,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1696032000000,
+      "barIdx": 1002,
+      "mid": 26968.25,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1696291200000,
+      "barIdx": 1005,
+      "mid": 27426.15,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.01,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1696464000000,
+      "barIdx": 1007,
+      "mid": 27406.834,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.64,
+        "neutral": 0.36
+      },
+      "answered": true
+    },
+    {
+      "ts": 1696723200000,
+      "barIdx": 1010,
+      "mid": 27938.6,
+      "pUp": 0.022727272727272728,
+      "probs": {
+        "up": 0.01,
+        "down": 0.43,
+        "neutral": 0.5599999999999999
+      },
+      "answered": true
+    },
+    {
+      "ts": 1696896000000,
+      "barIdx": 1012,
+      "mid": 27390.431,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.19,
+        "neutral": 0.81
+      },
+      "answered": true
+    },
+    {
+      "ts": 1697068800000,
+      "barIdx": 1014,
+      "mid": 26750.155,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.02,
+        "neutral": 0.98
+      },
+      "answered": true
+    },
+    {
+      "ts": 1697328000000,
+      "barIdx": 1017,
+      "mid": 27161.773,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1697500800000,
+      "barIdx": 1019,
+      "mid": 28409.302,
+      "pUp": 1,
+      "probs": {
+        "up": 0.04,
+        "down": 0,
+        "neutral": 0.96
+      },
+      "answered": true
+    },
+    {
+      "ts": 1697760000000,
+      "barIdx": 1022,
+      "mid": 29677.479,
+      "pUp": 0.7272727272727273,
+      "probs": {
+        "up": 0.16,
+        "down": 0.06,
+        "neutral": 0.78
+      },
+      "answered": true
+    },
+    {
+      "ts": 1697932800000,
+      "barIdx": 1024,
+      "mid": 29999.27,
+      "pUp": 0.7647058823529411,
+      "probs": {
+        "up": 0.13,
+        "down": 0.04,
+        "neutral": 0.83
+      },
+      "answered": true
+    },
+    {
+      "ts": 1698105600000,
+      "barIdx": 1026,
+      "mid": 33909.7195,
+      "pUp": 0.8125,
+      "probs": {
+        "up": 0.13,
+        "down": 0.03,
+        "neutral": 0.84
+      },
+      "answered": true
+    },
+    {
+      "ts": 1698364800000,
+      "barIdx": 1029,
+      "mid": 33911.765,
+      "pUp": 0.75,
+      "probs": {
+        "up": 0.06,
+        "down": 0.02,
+        "neutral": 0.92
+      },
+      "answered": true
+    },
+    {
+      "ts": 1698537600000,
+      "barIdx": 1031,
+      "mid": 34542.771,
+      "pUp": 0.8461538461538461,
+      "probs": {
+        "up": 0.11,
+        "down": 0.02,
+        "neutral": 0.87
+      },
+      "answered": true
+    },
+    {
+      "ts": 1698796800000,
+      "barIdx": 1034,
+      "mid": 35435.172,
+      "pUp": 0.7777777777777778,
+      "probs": {
+        "up": 0.07,
+        "down": 0.02,
+        "neutral": 0.91
+      },
+      "answered": true
+    },
+    {
+      "ts": 1698969600000,
+      "barIdx": 1036,
+      "mid": 34720.0965,
+      "pUp": 0.6666666666666666,
+      "probs": {
+        "up": 0.06,
+        "down": 0.03,
+        "neutral": 0.91
+      },
+      "answered": true
+    },
+    {
+      "ts": 1699142400000,
+      "barIdx": 1038,
+      "mid": 35042.585,
+      "pUp": 0.8750000000000001,
+      "probs": {
+        "up": 0.07,
+        "down": 0.01,
+        "neutral": 0.92
+      },
+      "answered": true
+    },
+    {
+      "ts": 1699401600000,
+      "barIdx": 1041,
+      "mid": 35618.7665,
+      "pUp": 0.98,
+      "probs": {
+        "up": 0.49,
+        "down": 0.01,
+        "neutral": 0.5
+      },
+      "answered": true
+    },
+    {
+      "ts": 1699574400000,
+      "barIdx": 1043,
+      "mid": 37329.482,
+      "pUp": 0.7272727272727273,
+      "probs": {
+        "up": 0.08,
+        "down": 0.03,
+        "neutral": 0.89
+      },
+      "answered": true
+    },
+    {
+      "ts": 1699747200000,
+      "barIdx": 1045,
+      "mid": 37092.1335,
+      "pUp": 0.888888888888889,
+      "probs": {
+        "up": 0.08,
+        "down": 0.01,
+        "neutral": 0.91
+      },
+      "answered": true
+    },
+    {
+      "ts": 1700006400000,
+      "barIdx": 1048,
+      "mid": 37900.611,
+      "pUp": 1,
+      "probs": {
+        "up": 0.99,
+        "down": 0,
+        "neutral": 0.01
+      },
+      "answered": true
+    },
+    {
+      "ts": 1700179200000,
+      "barIdx": 1050,
+      "mid": 36620.57,
+      "pUp": 1,
+      "probs": {
+        "up": 0.78,
+        "down": 0,
+        "neutral": 0.22
+      },
+      "answered": true
+    },
+    {
+      "ts": 1700438400000,
+      "barIdx": 1053,
+      "mid": 37481.35,
+      "pUp": 1,
+      "probs": {
+        "up": 1,
+        "down": 0,
+        "neutral": 0
+      },
+      "answered": true
+    },
+    {
+      "ts": 1700611200000,
+      "barIdx": 1055,
+      "mid": 37429.453,
+      "pUp": 1,
+      "probs": {
+        "up": 1,
+        "down": 0,
+        "neutral": 0
+      },
+      "answered": true
+    },
+    {
+      "ts": 1700784000000,
+      "barIdx": 1057,
+      "mid": 37729.147,
+      "pUp": 1,
+      "probs": {
+        "up": 1,
+        "down": 0,
+        "neutral": 0
+      },
+      "answered": true
+    },
+    {
+      "ts": 1701043200000,
+      "barIdx": 1060,
+      "mid": 37246.955,
+      "pUp": 1,
+      "probs": {
+        "up": 0.28,
+        "down": 0,
+        "neutral": 0.72
+      },
+      "answered": true
+    },
+    {
+      "ts": 1701216000000,
+      "barIdx": 1062,
+      "mid": 37864.575,
+      "pUp": 1,
+      "probs": {
+        "up": 1,
+        "down": 0,
+        "neutral": 0
+      },
+      "answered": true
+    },
+    {
+      "ts": 1701475200000,
+      "barIdx": 1065,
+      "mid": 39479.788,
+      "pUp": 0.9166666666666667,
+      "probs": {
+        "up": 0.11,
+        "down": 0.01,
+        "neutral": 0.88
+      },
+      "answered": true
+    },
+    {
+      "ts": 1701648000000,
+      "barIdx": 1067,
+      "mid": 41962.9505,
+      "pUp": 0.8125,
+      "probs": {
+        "up": 0.13,
+        "down": 0.03,
+        "neutral": 0.84
+      },
+      "answered": true
+    },
+    {
+      "ts": 1701820800000,
+      "barIdx": 1069,
+      "mid": 43782.8545,
+      "pUp": 0.7272727272727273,
+      "probs": {
+        "up": 0.08,
+        "down": 0.03,
+        "neutral": 0.89
+      },
+      "answered": true
+    },
+    {
+      "ts": 1702080000000,
+      "barIdx": 1072,
+      "mid": 43743.065,
+      "pUp": 0.9,
+      "probs": {
+        "up": 0.09,
+        "down": 0.01,
+        "neutral": 0.9
+      },
+      "answered": true
+    },
+    {
+      "ts": 1702252800000,
+      "barIdx": 1074,
+      "mid": 41261.024,
+      "pUp": 0.7999999999999999,
+      "probs": {
+        "up": 0.08,
+        "down": 0.02,
+        "neutral": 0.9
+      },
+      "answered": true
+    },
+    {
+      "ts": 1702512000000,
+      "barIdx": 1077,
+      "mid": 43038.9825,
+      "pUp": 1,
+      "probs": {
+        "up": 1,
+        "down": 0,
+        "neutral": 0
+      },
+      "answered": true
+    },
+    {
+      "ts": 1702684800000,
+      "barIdx": 1079,
+      "mid": 42241.2,
+      "pUp": 1,
+      "probs": {
+        "up": 0.34,
+        "down": 0,
+        "neutral": 0.66
+      },
+      "answered": true
+    },
+    {
+      "ts": 1702857600000,
+      "barIdx": 1081,
+      "mid": 42642.247,
+      "pUp": 1,
+      "probs": {
+        "up": 0.34,
+        "down": 0,
+        "neutral": 0.66
+      },
+      "answered": true
+    },
+    {
+      "ts": 1703116800000,
+      "barIdx": 1084,
+      "mid": 43866.0535,
+      "pUp": 1,
+      "probs": {
+        "up": 0.71,
+        "down": 0,
+        "neutral": 0.29
+      },
+      "answered": true
+    },
+    {
+      "ts": 1703289600000,
+      "barIdx": 1086,
+      "mid": 43745.4405,
+      "pUp": 1,
+      "probs": {
+        "up": 0.59,
+        "down": 0,
+        "neutral": 0.41
+      },
+      "answered": true
+    },
+    {
+      "ts": 1703548800000,
+      "barIdx": 1089,
+      "mid": 42517.7595,
+      "pUp": 1,
+      "probs": {
+        "up": 0.95,
+        "down": 0,
+        "neutral": 0.05
+      },
+      "answered": true
+    },
+    {
+      "ts": 1703721600000,
+      "barIdx": 1091,
+      "mid": 42598.53,
+      "pUp": 1,
+      "probs": {
+        "up": 0.93,
+        "down": 0,
+        "neutral": 0.07
+      },
+      "answered": true
+    },
+    {
+      "ts": 1703894400000,
+      "barIdx": 1093,
+      "mid": 42145.4,
+      "pUp": 0.95,
+      "probs": {
+        "up": 0.19,
+        "down": 0.01,
+        "neutral": 0.8
+      },
+      "answered": true
+    },
+    {
+      "ts": 1704153600000,
+      "barIdx": 1096,
+      "mid": 44948.455,
+      "pUp": 1,
+      "probs": {
+        "up": 1,
+        "down": 0,
+        "neutral": 0
+      },
+      "answered": true
+    },
+    {
+      "ts": 1704326400000,
+      "barIdx": 1098,
+      "mid": 44215.195,
+      "pUp": 1,
+      "probs": {
+        "up": 0.35,
+        "down": 0,
+        "neutral": 0.65
+      },
+      "answered": true
+    },
+    {
+      "ts": 1704585600000,
+      "barIdx": 1101,
+      "mid": 43948.884,
+      "pUp": 1,
+      "probs": {
+        "up": 0.97,
+        "down": 0,
+        "neutral": 0.03
+      },
+      "answered": true
+    },
+    {
+      "ts": 1704758400000,
+      "barIdx": 1103,
+      "mid": 46135.525,
+      "pUp": 0.888888888888889,
+      "probs": {
+        "up": 0.16,
+        "down": 0.02,
+        "neutral": 0.82
+      },
+      "answered": true
+    },
+    {
+      "ts": 1704931200000,
+      "barIdx": 1105,
+      "mid": 46369.9,
+      "pUp": 0.9545454545454545,
+      "probs": {
+        "up": 0.21,
+        "down": 0.01,
+        "neutral": 0.78
+      },
+      "answered": true
+    },
+    {
+      "ts": 1705190400000,
+      "barIdx": 1108,
+      "mid": 41725.271,
+      "pUp": 0.7999999999999999,
+      "probs": {
+        "up": 0.04,
+        "down": 0.01,
+        "neutral": 0.95
+      },
+      "answered": true
+    },
+    {
+      "ts": 1705363200000,
+      "barIdx": 1110,
+      "mid": 43154.775,
+      "pUp": 1,
+      "probs": {
+        "up": 0.07,
+        "down": 0,
+        "neutral": 0.93
+      },
+      "answered": true
+    },
+    {
+      "ts": 1705622400000,
+      "barIdx": 1113,
+      "mid": 41634.945,
+      "pUp": 0.888888888888889,
+      "probs": {
+        "up": 0.08,
+        "down": 0.01,
+        "neutral": 0.91
+      },
+      "answered": true
+    },
+    {
+      "ts": 1705795200000,
+      "barIdx": 1115,
+      "mid": 41557.295,
+      "pUp": 1,
+      "probs": {
+        "up": 0.04,
+        "down": 0,
+        "neutral": 0.96
+      },
+      "answered": true
+    },
+    {
+      "ts": 1705968000000,
+      "barIdx": 1117,
+      "mid": 39861.2545,
+      "pUp": 1,
+      "probs": {
+        "up": 0.06,
+        "down": 0,
+        "neutral": 0.94
+      },
+      "answered": true
+    },
+    {
+      "ts": 1706227200000,
+      "barIdx": 1120,
+      "mid": 41798.245,
+      "pUp": 1,
+      "probs": {
+        "up": 0.09,
+        "down": 0,
+        "neutral": 0.91
+      },
+      "answered": true
+    },
+    {
+      "ts": 1706400000000,
+      "barIdx": 1122,
+      "mid": 42037.35,
+      "pUp": 1,
+      "probs": {
+        "up": 0.06,
+        "down": 0,
+        "neutral": 0.94
+      },
+      "answered": true
+    },
+    {
+      "ts": 1706659200000,
+      "barIdx": 1125,
+      "mid": 42580.8,
+      "pUp": 1,
+      "probs": {
+        "up": 0.02,
+        "down": 0,
+        "neutral": 0.98
+      },
+      "answered": true
+    },
+    {
+      "ts": 1706832000000,
+      "barIdx": 1127,
+      "mid": 43183.83,
+      "pUp": 1,
+      "probs": {
+        "up": 0.04,
+        "down": 0,
+        "neutral": 0.96
+      },
+      "answered": true
+    },
+    {
+      "ts": 1707004800000,
+      "barIdx": 1129,
+      "mid": 42581.555,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1707264000000,
+      "barIdx": 1132,
+      "mid": 44333.6,
+      "pUp": 0.888888888888889,
+      "probs": {
+        "up": 0.08,
+        "down": 0.01,
+        "neutral": 0.91
+      },
+      "answered": true
+    },
+    {
+      "ts": 1707436800000,
+      "barIdx": 1134,
+      "mid": 47162.805,
+      "pUp": 0.7999999999999999,
+      "probs": {
+        "up": 0.04,
+        "down": 0.01,
+        "neutral": 0.95
+      },
+      "answered": true
+    },
+    {
+      "ts": 1707609600000,
+      "barIdx": 1136,
+      "mid": 48298.7465,
+      "pUp": 0.6666666666666667,
+      "probs": {
+        "up": 0.02,
+        "down": 0.01,
+        "neutral": 0.97
+      },
+      "answered": true
+    },
+    {
+      "ts": 1707868800000,
+      "barIdx": 1139,
+      "mid": 51836.176,
+      "pUp": 0.7999999999999999,
+      "probs": {
+        "up": 0.04,
+        "down": 0.01,
+        "neutral": 0.95
+      },
+      "answered": true
+    },
+    {
+      "ts": 1708041600000,
+      "barIdx": 1141,
+      "mid": 52192.4125,
+      "pUp": 0.6666666666666667,
+      "probs": {
+        "up": 0.02,
+        "down": 0.01,
+        "neutral": 0.97
+      },
+      "answered": true
+    },
+    {
+      "ts": 1708300800000,
+      "barIdx": 1144,
+      "mid": 51797.158,
+      "pUp": 0.6666666666666667,
+      "probs": {
+        "up": 0.02,
+        "down": 0.01,
+        "neutral": 0.97
+      },
+      "answered": true
+    },
+    {
+      "ts": 1708473600000,
+      "barIdx": 1146,
+      "mid": 51880.873,
+      "pUp": 1,
+      "probs": {
+        "up": 0.02,
+        "down": 0,
+        "neutral": 0.98
+      },
+      "answered": true
+    },
+    {
+      "ts": 1708646400000,
+      "barIdx": 1148,
+      "mid": 50731.477,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1708905600000,
+      "barIdx": 1151,
+      "mid": 54527.05,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1709078400000,
+      "barIdx": 1153,
+      "mid": 62559.76,
+      "pUp": 0.6428571428571428,
+      "probs": {
+        "up": 0.09,
+        "down": 0.05,
+        "neutral": 0.86
+      },
+      "answered": true
+    },
+    {
+      "ts": 1709337600000,
+      "barIdx": 1156,
+      "mid": 62033.9785,
+      "pUp": 0.7333333333333334,
+      "probs": {
+        "up": 0.11,
+        "down": 0.04,
+        "neutral": 0.85
+      },
+      "answered": true
+    },
+    {
+      "ts": 1709510400000,
+      "barIdx": 1158,
+      "mid": 68344.36,
+      "pUp": 0.72,
+      "probs": {
+        "up": 0.18,
+        "down": 0.07,
+        "neutral": 0.75
+      },
+      "answered": true
+    },
+    {
+      "ts": 1709683200000,
+      "barIdx": 1160,
+      "mid": 66141.466,
+      "pUp": 0.9,
+      "probs": {
+        "up": 0.18,
+        "down": 0.02,
+        "neutral": 0.8
+      },
+      "answered": true
+    },
+    {
+      "ts": 1709942400000,
+      "barIdx": 1163,
+      "mid": 68499.5475,
+      "pUp": 0.8666666666666667,
+      "probs": {
+        "up": 0.13,
+        "down": 0.02,
+        "neutral": 0.85
+      },
+      "answered": true
+    },
+    {
+      "ts": 1710115200000,
+      "barIdx": 1165,
+      "mid": 72138.737,
+      "pUp": 0.8,
+      "probs": {
+        "up": 0.24,
+        "down": 0.06,
+        "neutral": 0.7
+      },
+      "answered": true
+    },
+    {
+      "ts": 1710374400000,
+      "barIdx": 1168,
+      "mid": 71374.72,
+      "pUp": 0.7333333333333334,
+      "probs": {
+        "up": 0.11,
+        "down": 0.04,
+        "neutral": 0.85
+      },
+      "answered": true
+    },
+    {
+      "ts": 1710547200000,
+      "barIdx": 1170,
+      "mid": 65259.778,
+      "pUp": 0.9411764705882353,
+      "probs": {
+        "up": 0.16,
+        "down": 0.01,
+        "neutral": 0.83
+      },
+      "answered": true
+    },
+    {
+      "ts": 1710720000000,
+      "barIdx": 1172,
+      "mid": 67570.2325,
+      "pUp": 1,
+      "probs": {
+        "up": 0.17,
+        "down": 0,
+        "neutral": 0.83
+      },
+      "answered": true
+    },
+    {
+      "ts": 1710979200000,
+      "barIdx": 1175,
+      "mid": 65448.4,
+      "pUp": 0.9523809523809523,
+      "probs": {
+        "up": 0.2,
+        "down": 0.01,
+        "neutral": 0.79
+      },
+      "answered": true
+    },
+    {
+      "ts": 1711152000000,
+      "barIdx": 1177,
+      "mid": 64057.8875,
+      "pUp": 1,
+      "probs": {
+        "up": 0.07,
+        "down": 0,
+        "neutral": 0.93
+      },
+      "answered": true
+    },
+    {
+      "ts": 1711411200000,
+      "barIdx": 1180,
+      "mid": 70017.863,
+      "pUp": 1,
+      "probs": {
+        "up": 0.04,
+        "down": 0,
+        "neutral": 0.96
+      },
+      "answered": true
+    },
+    {
+      "ts": 1711584000000,
+      "barIdx": 1182,
+      "mid": 70742.066,
+      "pUp": 1,
+      "probs": {
+        "up": 0.02,
+        "down": 0,
+        "neutral": 0.98
+      },
+      "answered": true
+    },
+    {
+      "ts": 1711756800000,
+      "barIdx": 1184,
+      "mid": 69672.09,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1712016000000,
+      "barIdx": 1187,
+      "mid": 65438.555,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1712188800000,
+      "barIdx": 1189,
+      "mid": 68592.7,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1712448000000,
+      "barIdx": 1192,
+      "mid": 69403.058,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1712620800000,
+      "barIdx": 1194,
+      "mid": 69156.487,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1712793600000,
+      "barIdx": 1196,
+      "mid": 70071.075,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1713052800000,
+      "barIdx": 1199,
+      "mid": 65778.445,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1713225600000,
+      "barIdx": 1201,
+      "mid": 63820.282,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1713484800000,
+      "barIdx": 1204,
+      "mid": 63865.2275,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1713657600000,
+      "barIdx": 1206,
+      "mid": 64984.5,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1713830400000,
+      "barIdx": 1208,
+      "mid": 66380.3695,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1714089600000,
+      "barIdx": 1211,
+      "mid": 63809.661,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1714262400000,
+      "barIdx": 1213,
+      "mid": 63086.953,
+      "pUp": 0.7999999999999999,
+      "probs": {
+        "up": 0.04,
+        "down": 0.01,
+        "neutral": 0.95
+      },
+      "answered": true
+    },
+    {
+      "ts": 1714521600000,
+      "barIdx": 1216,
+      "mid": 58314.481,
+      "pUp": 0.9871794871794871,
+      "probs": {
+        "up": 0.77,
+        "down": 0.01,
+        "neutral": 0.22
+      },
+      "answered": true
+    },
+    {
+      "ts": 1714694400000,
+      "barIdx": 1218,
+      "mid": 62863.7,
+      "pUp": 1,
+      "probs": {
+        "up": 0.07,
+        "down": 0,
+        "neutral": 0.93
+      },
+      "answered": true
+    },
+    {
+      "ts": 1714867200000,
+      "barIdx": 1220,
+      "mid": 64073.7,
+      "pUp": 1,
+      "probs": {
+        "up": 0.02,
+        "down": 0,
+        "neutral": 0.98
+      },
+      "answered": true
+    },
+    {
+      "ts": 1715126400000,
+      "barIdx": 1223,
+      "mid": 61188.045,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.01,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1715299200000,
+      "barIdx": 1225,
+      "mid": 60812.29,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1715472000000,
+      "barIdx": 1227,
+      "mid": 61476.7,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1715731200000,
+      "barIdx": 1230,
+      "mid": 66267.1555,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1715904000000,
+      "barIdx": 1232,
+      "mid": 67038.773,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1716163200000,
+      "barIdx": 1235,
+      "mid": 71450.5645,
+      "pUp": 1,
+      "probs": {
+        "up": 0.02,
+        "down": 0,
+        "neutral": 0.98
+      },
+      "answered": true
+    },
+    {
+      "ts": 1716336000000,
+      "barIdx": 1237,
+      "mid": 69158.55,
+      "pUp": 1,
+      "probs": {
+        "up": 0.06,
+        "down": 0,
+        "neutral": 0.9400000000000001
+      },
+      "answered": true
+    },
+    {
+      "ts": 1716508800000,
+      "barIdx": 1239,
+      "mid": 68500.8495,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1716768000000,
+      "barIdx": 1242,
+      "mid": 69356.0355,
+      "pUp": 1,
+      "probs": {
+        "up": 0.02,
+        "down": 0,
+        "neutral": 0.98
+      },
+      "answered": true
+    },
+    {
+      "ts": 1716940800000,
+      "barIdx": 1244,
+      "mid": 67614.1,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1717200000000,
+      "barIdx": 1247,
+      "mid": 67723.485,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1717372800000,
+      "barIdx": 1249,
+      "mid": 68820.3255,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1717545600000,
+      "barIdx": 1251,
+      "mid": 71098.2355,
+      "pUp": 1,
+      "probs": {
+        "up": 0.05,
+        "down": 0,
+        "neutral": 0.95
+      },
+      "answered": true
+    },
+    {
+      "ts": 1717804800000,
+      "barIdx": 1254,
+      "mid": 69309.5635,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1717977600000,
+      "barIdx": 1256,
+      "mid": 69526.895,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1718236800000,
+      "barIdx": 1259,
+      "mid": 66735.9685,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1718409600000,
+      "barIdx": 1261,
+      "mid": 66199.094,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1718582400000,
+      "barIdx": 1263,
+      "mid": 66480.0135,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1718841600000,
+      "barIdx": 1266,
+      "mid": 64818.3075,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0.01,
+        "down": 0.01,
+        "neutral": 0.98
+      },
+      "answered": true
+    },
+    {
+      "ts": 1719014400000,
+      "barIdx": 1268,
+      "mid": 64242.41,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1719273600000,
+      "barIdx": 1271,
+      "mid": 61808.47,
+      "pUp": 0.9777777777777777,
+      "probs": {
+        "up": 0.44,
+        "down": 0.01,
+        "neutral": 0.55
+      },
+      "answered": true
+    },
+    {
+      "ts": 1719446400000,
+      "barIdx": 1273,
+      "mid": 61619.95,
+      "pUp": 0.8333333333333333,
+      "probs": {
+        "up": 0.05,
+        "down": 0.01,
+        "neutral": 0.94
+      },
+      "answered": true
+    },
+    {
+      "ts": 1719619200000,
+      "barIdx": 1275,
+      "mid": 60885.238,
+      "pUp": 0.7999999999999999,
+      "probs": {
+        "up": 0.04,
+        "down": 0.01,
+        "neutral": 0.95
+      },
+      "answered": true
+    },
+    {
+      "ts": 1719878400000,
+      "barIdx": 1278,
+      "mid": 62030.78,
+      "pUp": 1,
+      "probs": {
+        "up": 0.03,
+        "down": 0,
+        "neutral": 0.97
+      },
+      "answered": true
+    },
+    {
+      "ts": 1720051200000,
+      "barIdx": 1280,
+      "mid": 56995.186,
+      "pUp": 0.045454545454545456,
+      "probs": {
+        "up": 0.01,
+        "down": 0.21,
+        "neutral": 0.78
+      },
+      "answered": true
+    },
+    {
+      "ts": 1720310400000,
+      "barIdx": 1283,
+      "mid": 55812.815,
+      "pUp": 0.037037037037037035,
+      "probs": {
+        "up": 0.01,
+        "down": 0.26,
+        "neutral": 0.73
+      },
+      "answered": true
+    },
+    {
+      "ts": 1720483200000,
+      "barIdx": 1285,
+      "mid": 58019.71,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.3,
+        "neutral": 0.7
+      },
+      "answered": true
+    },
+    {
+      "ts": 1720656000000,
+      "barIdx": 1287,
+      "mid": 57345.897,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.2,
+        "neutral": 0.8
+      },
+      "answered": true
+    },
+    {
+      "ts": 1720915200000,
+      "barIdx": 1290,
+      "mid": 60787.95,
+      "pUp": 1,
+      "probs": {
+        "up": 0.03,
+        "down": 0,
+        "neutral": 0.97
+      },
+      "answered": true
+    },
+    {
+      "ts": 1721088000000,
+      "barIdx": 1292,
+      "mid": 65118.453,
+      "pUp": 0.9615384615384615,
+      "probs": {
+        "up": 0.25,
+        "down": 0.01,
+        "neutral": 0.74
+      },
+      "answered": true
+    },
+    {
+      "ts": 1721347200000,
+      "barIdx": 1295,
+      "mid": 66704.8,
+      "pUp": 0.9285714285714285,
+      "probs": {
+        "up": 0.13,
+        "down": 0.01,
+        "neutral": 0.86
+      },
+      "answered": true
+    },
+    {
+      "ts": 1721520000000,
+      "barIdx": 1297,
+      "mid": 68118.3835,
+      "pUp": 0.8571428571428572,
+      "probs": {
+        "up": 0.06,
+        "down": 0.01,
+        "neutral": 0.93
+      },
+      "answered": true
+    },
+    {
+      "ts": 1721692800000,
+      "barIdx": 1299,
+      "mid": 65909.6525,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1721952000000,
+      "barIdx": 1302,
+      "mid": 67924.576,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1722124800000,
+      "barIdx": 1304,
+      "mid": 68282.4,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1722384000000,
+      "barIdx": 1307,
+      "mid": 64660,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1722556800000,
+      "barIdx": 1309,
+      "mid": 61400.79,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1722729600000,
+      "barIdx": 1311,
+      "mid": 58098.408,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1722988800000,
+      "barIdx": 1314,
+      "mid": 55101.9695,
+      "pUp": 0.02380952380952381,
+      "probs": {
+        "up": 0.01,
+        "down": 0.41,
+        "neutral": 0.58
+      },
+      "answered": true
+    },
+    {
+      "ts": 1723161600000,
+      "barIdx": 1316,
+      "mid": 60874.25075,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.02,
+        "neutral": 0.98
+      },
+      "answered": true
+    },
+    {
+      "ts": 1723334400000,
+      "barIdx": 1318,
+      "mid": 58776.26,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.04,
+        "neutral": 0.96
+      },
+      "answered": true
+    },
+    {
+      "ts": 1723593600000,
+      "barIdx": 1321,
+      "mid": 58723.5505,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.02,
+        "neutral": 0.98
+      },
+      "answered": true
+    },
+    {
+      "ts": 1723766400000,
+      "barIdx": 1323,
+      "mid": 58896.03,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.03,
+        "neutral": 0.97
+      },
+      "answered": true
+    },
+    {
+      "ts": 1724025600000,
+      "barIdx": 1326,
+      "mid": 59503.935,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.21,
+        "neutral": 0.79
+      },
+      "answered": true
+    },
+    {
+      "ts": 1724198400000,
+      "barIdx": 1328,
+      "mid": 61155.2395,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.01,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1724371200000,
+      "barIdx": 1330,
+      "mid": 64087.375,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1724630400000,
+      "barIdx": 1333,
+      "mid": 62881.9095,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1724803200000,
+      "barIdx": 1335,
+      "mid": 59015.055,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.01,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1725062400000,
+      "barIdx": 1338,
+      "mid": 58966.3475,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1725235200000,
+      "barIdx": 1340,
+      "mid": 59117.05,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1725408000000,
+      "barIdx": 1342,
+      "mid": 57961.259,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.02,
+        "neutral": 0.98
+      },
+      "answered": true
+    },
+    {
+      "ts": 1725667200000,
+      "barIdx": 1345,
+      "mid": 54171.035,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.19,
+        "neutral": 0.81
+      },
+      "answered": true
+    },
+    {
+      "ts": 1725840000000,
+      "barIdx": 1347,
+      "mid": 57028.3,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.03,
+        "neutral": 0.97
+      },
+      "answered": true
+    },
+    {
+      "ts": 1726099200000,
+      "barIdx": 1350,
+      "mid": 58138.8165,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.01,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1726272000000,
+      "barIdx": 1352,
+      "mid": 60017.33,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1726444800000,
+      "barIdx": 1354,
+      "mid": 58197.104,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1726704000000,
+      "barIdx": 1357,
+      "mid": 62939.85,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1726876800000,
+      "barIdx": 1359,
+      "mid": 63414.36,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1727136000000,
+      "barIdx": 1362,
+      "mid": 64306.595,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1727308800000,
+      "barIdx": 1364,
+      "mid": 65152.06,
+      "pUp": 1,
+      "probs": {
+        "up": 0.02,
+        "down": 0,
+        "neutral": 0.98
+      },
+      "answered": true
+    },
+    {
+      "ts": 1727481600000,
+      "barIdx": 1366,
+      "mid": 65896.094,
+      "pUp": 1,
+      "probs": {
+        "up": 0.04,
+        "down": 0,
+        "neutral": 0.96
+      },
+      "answered": true
+    },
+    {
+      "ts": 1727740800000,
+      "barIdx": 1369,
+      "mid": 60838.4405,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.02,
+        "neutral": 0.98
+      },
+      "answered": true
+    },
+    {
+      "ts": 1727913600000,
+      "barIdx": 1371,
+      "mid": 60781.02,
+      "pUp": 0,
+      "probs": {
+        "up": 0,
+        "down": 0.01,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1728172800000,
+      "barIdx": 1374,
+      "mid": 62854.602,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1728345600000,
+      "barIdx": 1376,
+      "mid": 62149.1885,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1728518400000,
+      "barIdx": 1378,
+      "mid": 60277.9,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1728777600000,
+      "barIdx": 1381,
+      "mid": 62829.22,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1728950400000,
+      "barIdx": 1383,
+      "mid": 67043.812,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1729209600000,
+      "barIdx": 1386,
+      "mid": 68438.9375,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1729382400000,
+      "barIdx": 1388,
+      "mid": 68978.937,
+      "pUp": 0.8750000000000001,
+      "probs": {
+        "up": 0.07,
+        "down": 0.01,
+        "neutral": 0.92
+      },
+      "answered": true
+    },
+    {
+      "ts": 1729555200000,
+      "barIdx": 1390,
+      "mid": 67354.335,
+      "pUp": 1,
+      "probs": {
+        "up": 0.05,
+        "down": 0,
+        "neutral": 0.95
+      },
+      "answered": true
+    },
+    {
+      "ts": 1729814400000,
+      "barIdx": 1393,
+      "mid": 66616.9465,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    },
+    {
+      "ts": 1729987200000,
+      "barIdx": 1395,
+      "mid": 67962.3005,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1730246400000,
+      "barIdx": 1398,
+      "mid": 72333.68,
+      "pUp": 0.8571428571428572,
+      "probs": {
+        "up": 0.12,
+        "down": 0.02,
+        "neutral": 0.86
+      },
+      "answered": true
+    },
+    {
+      "ts": 1730419200000,
+      "barIdx": 1400,
+      "mid": 69476.927,
+      "pUp": 0.8750000000000001,
+      "probs": {
+        "up": 0.07,
+        "down": 0.01,
+        "neutral": 0.92
+      },
+      "answered": true
+    },
+    {
+      "ts": 1730592000000,
+      "barIdx": 1402,
+      "mid": 68747.4745,
+      "pUp": 1,
+      "probs": {
+        "up": 0.04,
+        "down": 0,
+        "neutral": 0.96
+      },
+      "answered": true
+    },
+    {
+      "ts": 1730851200000,
+      "barIdx": 1405,
+      "mid": 75663.88,
+      "pUp": 1,
+      "probs": {
+        "up": 0.05,
+        "down": 0,
+        "neutral": 0.95
+      },
+      "answered": true
+    },
+    {
+      "ts": 1731024000000,
+      "barIdx": 1407,
+      "mid": 76581.395,
+      "pUp": 0.7999999999999999,
+      "probs": {
+        "up": 0.08,
+        "down": 0.02,
+        "neutral": 0.9
+      },
+      "answered": true
+    },
+    {
+      "ts": 1731196800000,
+      "barIdx": 1409,
+      "mid": 80485.5,
+      "pUp": 0.8181818181818181,
+      "probs": {
+        "up": 0.18,
+        "down": 0.04,
+        "neutral": 0.78
+      },
+      "answered": true
+    },
+    {
+      "ts": 1731456000000,
+      "barIdx": 1412,
+      "mid": 90562.2165,
+      "pUp": 0.6153846153846154,
+      "probs": {
+        "up": 0.08,
+        "down": 0.05,
+        "neutral": 0.87
+      },
+      "answered": true
+    },
+    {
+      "ts": 1731628800000,
+      "barIdx": 1414,
+      "mid": 91101.142,
+      "pUp": 0.7647058823529411,
+      "probs": {
+        "up": 0.13,
+        "down": 0.04,
+        "neutral": 0.83
+      },
+      "answered": true
+    },
+    {
+      "ts": 1731888000000,
+      "barIdx": 1417,
+      "mid": 90552.1455,
+      "pUp": 0.8666666666666667,
+      "probs": {
+        "up": 0.13,
+        "down": 0.02,
+        "neutral": 0.85
+      },
+      "answered": true
+    },
+    {
+      "ts": 1732060800000,
+      "barIdx": 1419,
+      "mid": 94330.585,
+      "pUp": 0.8750000000000001,
+      "probs": {
+        "up": 0.14,
+        "down": 0.02,
+        "neutral": 0.84
+      },
+      "answered": true
+    },
+    {
+      "ts": 1732233600000,
+      "barIdx": 1421,
+      "mid": 98978.82,
+      "pUp": 0.8181818181818181,
+      "probs": {
+        "up": 0.09,
+        "down": 0.02,
+        "neutral": 0.89
+      },
+      "answered": true
+    },
+    {
+      "ts": 1732492800000,
+      "barIdx": 1424,
+      "mid": 93090.65,
+      "pUp": 0.9130434782608696,
+      "probs": {
+        "up": 0.21,
+        "down": 0.02,
+        "neutral": 0.77
+      },
+      "answered": true
+    },
+    {
+      "ts": 1732665600000,
+      "barIdx": 1426,
+      "mid": 96003.055,
+      "pUp": 1,
+      "probs": {
+        "up": 1,
+        "down": 0,
+        "neutral": 0
+      },
+      "answered": true
+    },
+    {
+      "ts": 1732924800000,
+      "barIdx": 1429,
+      "mid": 96474.766,
+      "pUp": 1,
+      "probs": {
+        "up": 0.59,
+        "down": 0,
+        "neutral": 0.41
+      },
+      "answered": true
+    },
+    {
+      "ts": 1733097600000,
+      "barIdx": 1431,
+      "mid": 95843.4,
+      "pUp": 0.9827586206896551,
+      "probs": {
+        "up": 0.57,
+        "down": 0.01,
+        "neutral": 0.42
+      },
+      "answered": true
+    },
+    {
+      "ts": 1733270400000,
+      "barIdx": 1433,
+      "mid": 98835.9765,
+      "pUp": 1,
+      "probs": {
+        "up": 0.64,
+        "down": 0,
+        "neutral": 0.36
+      },
+      "answered": true
+    },
+    {
+      "ts": 1733529600000,
+      "barIdx": 1436,
+      "mid": 99867.847,
+      "pUp": 1,
+      "probs": {
+        "up": 0.72,
+        "down": 0,
+        "neutral": 0.28
+      },
+      "answered": true
+    },
+    {
+      "ts": 1733702400000,
+      "barIdx": 1438,
+      "mid": 97432.7315,
+      "pUp": 1,
+      "probs": {
+        "up": 0.26,
+        "down": 0,
+        "neutral": 0.74
+      },
+      "answered": true
+    },
+    {
+      "ts": 1733961600000,
+      "barIdx": 1441,
+      "mid": 100067.2,
+      "pUp": 1,
+      "probs": {
+        "up": 0.64,
+        "down": 0,
+        "neutral": 0.36
+      },
+      "answered": true
+    },
+    {
+      "ts": 1734134400000,
+      "barIdx": 1443,
+      "mid": 101416.555,
+      "pUp": 1,
+      "probs": {
+        "up": 0.56,
+        "down": 0,
+        "neutral": 0.44
+      },
+      "answered": true
+    },
+    {
+      "ts": 1734307200000,
+      "barIdx": 1445,
+      "mid": 106088.6445,
+      "pUp": 0.92,
+      "probs": {
+        "up": 0.23,
+        "down": 0.02,
+        "neutral": 0.75
+      },
+      "answered": true
+    },
+    {
+      "ts": 1734566400000,
+      "barIdx": 1448,
+      "mid": 97471.05,
+      "pUp": 0.9696969696969697,
+      "probs": {
+        "up": 0.32,
+        "down": 0.01,
+        "neutral": 0.67
+      },
+      "answered": true
+    },
+    {
+      "ts": 1734739200000,
+      "barIdx": 1450,
+      "mid": 97270.4115,
+      "pUp": 0.8333333333333333,
+      "probs": {
+        "up": 0.05,
+        "down": 0.01,
+        "neutral": 0.94
+      },
+      "answered": true
+    },
+    {
+      "ts": 1734998400000,
+      "barIdx": 1453,
+      "mid": 98647.0385,
+      "pUp": 1,
+      "probs": {
+        "up": 0.01,
+        "down": 0,
+        "neutral": 0.99
+      },
+      "answered": true
+    },
+    {
+      "ts": 1735171200000,
+      "barIdx": 1455,
+      "mid": 95766.9,
+      "pUp": 0.5,
+      "probs": {
+        "up": 0,
+        "down": 0,
+        "neutral": 1
+      },
+      "answered": false
+    }
+  ]
+}

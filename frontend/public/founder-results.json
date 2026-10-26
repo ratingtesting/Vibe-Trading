@@ -1,0 +1,517 @@
+{
+ "generated_at": "2026-10-25",
+ "audit": "/transition-audit.html",
+ "status": "HONEST_RECHECK_NO_SURVIVORS",
+ "notice_ru": "Пересчёт в правильной шкале (попериодный Sharpe, реальные skew/kurtosis, пул 8174 испытаний): ни один прогон не проходит планку DSR>=0.95. Прежние «PASS» держались на годовом Sharpe, который завышал DSR примерно в sqrt(365) раз. Цифры ниже — историческая доходность из сохранённых артефактов, а не подтверждённая прибыльность.",
+ "btc_kopilka_rules": {
+  "lock_threshold": 0.3,
+  "lock_share_of_gain": 0.75,
+  "return_share_of_btc": 0.3,
+  "drawdown_trigger": 0.1,
+  "ma_window": 50,
+  "cost_per_leg": 0.001,
+  "start_capital": 100,
+  "bottom_rule": "Откат >=10% от пика + восстановление >= половины глубины от дна + цена выше своей 50-дневной средней (причинное правило, без чтения будущего).",
+  "dd_gate_note": "Просадка «не хуже 20%» = |dd| <= 20. Раньше в scan_10k.py стояло max_dd_pct <= 20 при отрицательной просадке — проходило любое отрицательное число.",
+  "dsr_note": "DSR считается отдельным проходом по всему пулу (honest_dsr_recheck.py). В блочных сканерах DSR не считается: там неизвестен полный пул испытаний.",
+  "sizing_note": "position_adjustment='hold' отбрасывал изменение размера позиции в том же направлении (у roc10-vol10-AVAX 1885 из 2180 запросов). Новые прогоны используют 'rebalance'."
+ },
+ "candidates": [
+  {
+   "id": "TSMOM-154",
+   "symbol": "SOLUSDT",
+   "scan": "archetype-scan",
+   "parameters": "{\"lookback\": 126}",
+   "risk_parameters": "{\"mode\": \"raw\"}",
+   "period_start": "2020-08-11",
+   "period_end": "2026-10-19",
+   "baseline": {
+    "annual_pct": 116.32319033581445,
+    "max_dd_pct": -64.38266573498066,
+    "t_stat": 3.3552509289790753,
+    "final_value": 11881.870636330224
+   },
+   "overlay": {
+    "annual_pct": 63.24721406572556,
+    "max_dd_pct": -72.12499132604418,
+    "final_value": 2079.1911074906056,
+    "final_btc_units": 0.01755025889536878,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 1449.5367815668747,
+    "btc_share_pct": 69.7163803916194,
+    "locks": 21,
+    "returns_to_asset": 4,
+    "delta_annual_pct": -53.07597627008889,
+    "delta_dd_pct": -7.742325591063519
+   }
+  },
+  {
+   "id": "TSMOM-94",
+   "symbol": "SOLUSDT",
+   "scan": "archetype-scan",
+   "parameters": "{\"lookback\": 30}",
+   "risk_parameters": "{\"mode\": \"raw\"}",
+   "period_start": "2020-08-11",
+   "period_end": "2026-10-19",
+   "baseline": {
+    "annual_pct": 113.66033861876139,
+    "max_dd_pct": -56.87555517338141,
+    "t_stat": 3.336575333925214,
+    "final_value": 11004.699728666163
+   },
+   "overlay": {
+    "annual_pct": 66.00892502201197,
+    "max_dd_pct": -68.45788316176305,
+    "final_value": 2306.7769970353193,
+    "final_btc_units": 0.021055400108900387,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 1739.0385572324608,
+    "btc_share_pct": 75.38823906547887,
+    "locks": 21,
+    "returns_to_asset": 4,
+    "delta_annual_pct": -47.65141359674942,
+    "delta_dd_pct": -11.582327988381643
+   }
+  },
+  {
+   "id": "RegimeSwitching-864",
+   "symbol": "ZILUSDT",
+   "scan": "archetype-scan",
+   "parameters": "{\"regime_period\": 50, \"trend_lookback\": 14}",
+   "risk_parameters": "{\"mode\": \"raw\"}",
+   "period_start": "2020-01-01",
+   "period_end": "2026-10-19",
+   "baseline": {
+    "annual_pct": 112.02939538395648,
+    "max_dd_pct": -72.11827956217006,
+    "t_stat": 3.1271260410782613,
+    "final_value": 16610.685109329963
+   },
+   "overlay": {
+    "annual_pct": 78.16063263417561,
+    "max_dd_pct": -64.90385963091134,
+    "final_value": 5084.017414015099,
+    "final_btc_units": 0.04217058832325732,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 3483.015221559304,
+    "btc_share_pct": 68.50911273351825,
+    "locks": 25,
+    "returns_to_asset": 6,
+    "delta_annual_pct": -33.86876274978087,
+    "delta_dd_pct": 7.214419931258718
+   }
+  },
+  {
+   "id": "RegimeSwitching-935",
+   "symbol": "ADAUSDT",
+   "scan": "archetype-scan",
+   "parameters": "{\"regime_period\": 100, \"trend_lookback\": 30}",
+   "risk_parameters": "{\"mode\": \"raw\"}",
+   "period_start": "2020-01-01",
+   "period_end": "2026-10-19",
+   "baseline": {
+    "annual_pct": 106.39370432208923,
+    "max_dd_pct": -56.041578244774826,
+    "t_stat": 3.318041159103871,
+    "final_value": 13829.230433805247
+   },
+   "overlay": {
+    "annual_pct": 68.30049245944974,
+    "max_dd_pct": -66.61222078849471,
+    "final_value": 3451.4377267561636,
+    "final_btc_units": 0.03313638277596122,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 2736.84883671487,
+    "btc_share_pct": 79.29590661591045,
+    "locks": 22,
+    "returns_to_asset": 5,
+    "delta_annual_pct": -38.09321186263949,
+    "delta_dd_pct": -10.570642543719885
+   }
+  },
+  {
+   "id": "MARegimeFilter-214",
+   "symbol": "SOLUSDT",
+   "scan": "archetype-scan",
+   "parameters": "{\"ma_period\": 50}",
+   "risk_parameters": "{\"mode\": \"raw\"}",
+   "period_start": "2020-08-11",
+   "period_end": "2026-10-19",
+   "baseline": {
+    "annual_pct": 101.58133549850974,
+    "max_dd_pct": -72.89668561975972,
+    "t_stat": 3.1362276485300615,
+    "final_value": 7675.198937291854
+   },
+   "overlay": {
+    "annual_pct": 62.17388306021665,
+    "max_dd_pct": -75.05169286163868,
+    "final_value": 1995.978254763205,
+    "final_btc_units": 0.01785626067176737,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 1474.810530105798,
+    "btc_share_pct": 73.88910808954498,
+    "locks": 20,
+    "returns_to_asset": 4,
+    "delta_annual_pct": -39.40745243829309,
+    "delta_dd_pct": -2.1550072418789625
+   }
+  },
+  {
+   "id": "RegimeSwitching-905",
+   "symbol": "ADAUSDT",
+   "scan": "archetype-scan",
+   "parameters": "{\"regime_period\": 100, \"trend_lookback\": 14}",
+   "risk_parameters": "{\"mode\": \"raw\"}",
+   "period_start": "2020-01-01",
+   "period_end": "2026-10-19",
+   "baseline": {
+    "annual_pct": 101.55383650439722,
+    "max_dd_pct": -65.60262907827278,
+    "t_stat": 3.2897266228600937,
+    "final_value": 11767.744182158965
+   },
+   "overlay": {
+    "annual_pct": 69.33498114092103,
+    "max_dd_pct": -66.88286026544216,
+    "final_value": 3598.3562065820297,
+    "final_btc_units": 0.037364766192030885,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 3086.085695538517,
+    "btc_share_pct": 85.76376318424288,
+    "locks": 23,
+    "returns_to_asset": 4,
+    "delta_annual_pct": -32.218855363476194,
+    "delta_dd_pct": -1.2802311871693774
+   }
+  },
+  {
+   "id": "RegimeSwitching-875",
+   "symbol": "ADAUSDT",
+   "scan": "archetype-scan",
+   "parameters": "{\"regime_period\": 50, \"trend_lookback\": 30}",
+   "risk_parameters": "{\"mode\": \"raw\"}",
+   "period_start": "2020-01-01",
+   "period_end": "2026-10-19",
+   "baseline": {
+    "annual_pct": 95.31001800529333,
+    "max_dd_pct": -67.61190985534292,
+    "t_stat": 3.1131327795989794,
+    "final_value": 9499.99205137765
+   },
+   "overlay": {
+    "annual_pct": 65.52289829170417,
+    "max_dd_pct": -71.17542123196144,
+    "final_value": 3082.0137364855614,
+    "final_btc_units": 0.03041842775887643,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 2512.3635005499277,
+    "btc_share_pct": 81.51694688469465,
+    "locks": 21,
+    "returns_to_asset": 4,
+    "delta_annual_pct": -29.787119713589163,
+    "delta_dd_pct": -3.5635113766185214
+   }
+  },
+  {
+   "id": "TSMOM-4",
+   "symbol": "SOLUSDT",
+   "scan": "archetype-scan",
+   "parameters": "{\"lookback\": 7}",
+   "risk_parameters": "{\"mode\": \"raw\"}",
+   "period_start": "2020-08-11",
+   "period_end": "2026-10-19",
+   "baseline": {
+    "annual_pct": 95.00204271229289,
+    "max_dd_pct": -81.87398946312645,
+    "t_stat": 3.0660331836063515,
+    "final_value": 6249.696295011448
+   },
+   "overlay": {
+    "annual_pct": 60.61855204594724,
+    "max_dd_pct": -76.88203377287573,
+    "final_value": 1880.3639164761098,
+    "final_btc_units": 0.016298483326257336,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 1346.1482936527354,
+    "btc_share_pct": 71.58977482270987,
+    "locks": 19,
+    "returns_to_asset": 4,
+    "delta_annual_pct": -34.38349066634565,
+    "delta_dd_pct": 4.99195569025072
+   }
+  },
+  {
+   "id": "TSMOM-SOLUSDT-ddthrottle-16",
+   "symbol": "SOLUSDT",
+   "scan": "risk-overlay",
+   "parameters": "{\"lookback\": 126}",
+   "risk_parameters": "{\"hard_dd\": 0.35, \"mode\": \"drawdown-throttle\", \"soft_dd\": 0.15}",
+   "period_start": "2020-08-11",
+   "period_end": "2026-10-19",
+   "baseline": {
+    "annual_pct": 92.56901351607003,
+    "max_dd_pct": -59.219356915762255,
+    "t_stat": 3.2837927408297505,
+    "final_value": 5782.247120617017
+   },
+   "overlay": {
+    "annual_pct": 54.75644526523269,
+    "max_dd_pct": -68.7021532066008,
+    "final_value": 1493.7002894415486,
+    "final_btc_units": 0.01117581596736809,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 923.0494208263374,
+    "btc_share_pct": 61.7961600028503,
+    "locks": 18,
+    "returns_to_asset": 4,
+    "delta_annual_pct": -37.81256825083734,
+    "delta_dd_pct": -9.482796290838543
+   }
+  },
+  {
+   "id": "RegimeSwitching-993",
+   "symbol": "BNBUSDT",
+   "scan": "archetype-scan",
+   "parameters": "{\"regime_period\": 200, \"trend_lookback\": 30}",
+   "risk_parameters": "{\"mode\": \"raw\"}",
+   "period_start": "2020-01-01",
+   "period_end": "2026-10-19",
+   "baseline": {
+    "annual_pct": 90.22137790039082,
+    "max_dd_pct": -50.056506321645756,
+    "t_stat": 3.3018535105421534,
+    "final_value": 7938.317995775992
+   },
+   "overlay": {
+    "annual_pct": 51.92397661601742,
+    "max_dd_pct": -55.404334623823836,
+    "final_value": 1720.1114204940734,
+    "final_btc_units": 0.014321006706121313,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 1182.8216377518295,
+    "btc_share_pct": 68.7642453656917,
+    "locks": 17,
+    "returns_to_asset": 6,
+    "delta_annual_pct": -38.2974012843734,
+    "delta_dd_pct": -5.34782830217808
+   }
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-36",
+   "symbol": "ADAUSDT",
+   "scan": "risk-overlay",
+   "parameters": "{\"regime_period\": 100, \"trend_lookback\": 14}",
+   "risk_parameters": "{\"hard_dd\": 0.35, \"mode\": \"drawdown-throttle\", \"soft_dd\": 0.15}",
+   "period_start": "2020-01-01",
+   "period_end": "2026-10-19",
+   "baseline": {
+    "annual_pct": 66.498500061665,
+    "max_dd_pct": -41.01693141682533,
+    "t_stat": 3.387323878462328,
+    "final_value": 3207.7226925833606
+   },
+   "overlay": {
+    "annual_pct": 52.51786065752191,
+    "max_dd_pct": -60.19898237908119,
+    "final_value": 1766.3755377307202,
+    "final_btc_units": 0.015390656077581374,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 1271.1676910240349,
+    "btc_share_pct": 71.96474723926013,
+    "locks": 14,
+    "returns_to_asset": 3,
+    "delta_annual_pct": -13.98063940414309,
+    "delta_dd_pct": -19.182050962255857
+   }
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-40",
+   "symbol": "ADAUSDT",
+   "scan": "risk-overlay",
+   "parameters": "{\"regime_period\": 100, \"trend_lookback\": 30}",
+   "risk_parameters": "{\"hard_dd\": 0.35, \"mode\": \"drawdown-throttle\", \"soft_dd\": 0.15}",
+   "period_start": "2020-01-01",
+   "period_end": "2026-10-19",
+   "baseline": {
+    "annual_pct": 65.29328293087599,
+    "max_dd_pct": -43.204436377476284,
+    "t_stat": 3.2466079555746035,
+    "final_value": 3053.046058011965
+   },
+   "overlay": {
+    "annual_pct": 48.38381117966038,
+    "max_dd_pct": -60.65668168278149,
+    "final_value": 1465.2033359717266,
+    "final_btc_units": 0.012871446144997413,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 1063.0974010334596,
+    "btc_share_pct": 72.55630498059239,
+    "locks": 14,
+    "returns_to_asset": 2,
+    "delta_annual_pct": -16.909471751215612,
+    "delta_dd_pct": -17.452245305305205
+   }
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-28",
+   "symbol": "ADAUSDT",
+   "scan": "risk-overlay",
+   "parameters": "{\"regime_period\": 50, \"trend_lookback\": 14}",
+   "risk_parameters": "{\"hard_dd\": 0.35, \"mode\": \"drawdown-throttle\", \"soft_dd\": 0.15}",
+   "period_start": "2020-01-01",
+   "period_end": "2026-10-19",
+   "baseline": {
+    "annual_pct": 60.48742175705999,
+    "max_dd_pct": -41.628756605899966,
+    "t_stat": 3.1873148393846393,
+    "final_value": 2497.8229578952137
+   },
+   "overlay": {
+    "annual_pct": 52.13153540948441,
+    "max_dd_pct": -63.168855503133194,
+    "final_value": 1736.1614962134902,
+    "final_btc_units": 0.015255440993668665,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 1259.999808047343,
+    "btc_share_pct": 72.57388271744077,
+    "locks": 15,
+    "returns_to_asset": 3,
+    "delta_annual_pct": -8.355886347575584,
+    "delta_dd_pct": -21.54009889723323
+   }
+  }
+ ],
+ "honest_dsr_recheck": {
+  "date": "2026-10-25",
+  "scale": "per-observation Sharpe (mean/std), без sqrt(365) — как требует multipletesting.py",
+  "n_trials_pooled": 8174,
+  "trial_sharpe_std": 0.02171,
+  "expected_false_positives_5pct": 408.7,
+  "n_reference": 0,
+  "n_candidate": 0,
+  "best_by_dsr": [
+   {
+    "block": "freqtrade-scan",
+    "name": "roc10-raw-811",
+    "family": "roc10",
+    "risk": "raw",
+    "symbol": "AVAXUSDT",
+    "t_stat": 3.7201886747407604,
+    "dsr": 0.4244057198956633,
+    "max_dd_pct": 75.15407361182133,
+    "sharpe_per_obs": 0.07897439638397591,
+    "n_obs": 2219
+   },
+   {
+    "block": "freqtrade-scan",
+    "name": "ema9_21-raw-403",
+    "family": "ema9_21",
+    "risk": "raw",
+    "symbol": "VETUSDT",
+    "t_stat": 3.82559411782175,
+    "dsr": 0.37957164508362196,
+    "max_dd_pct": 69.06739550352223,
+    "sharpe_per_obs": 0.07675790190564534,
+    "n_obs": 2484
+   },
+   {
+    "block": "freqtrade-scan",
+    "name": "roc10-vol10-812",
+    "family": "roc10",
+    "risk": "vol10",
+    "symbol": "AVAXUSDT",
+    "t_stat": 3.5957588045763367,
+    "dsr": 0.3715331794292861,
+    "max_dd_pct": 12.63825594140523,
+    "sharpe_per_obs": 0.07633292447286198,
+    "n_obs": 2219
+   },
+   {
+    "block": "scan-10k",
+    "name": "TSMOM-raw-820",
+    "family": "TSMOM",
+    "risk": "raw",
+    "symbol": "SOLUSDT",
+    "t_stat": 3.3552475597709535,
+    "dsr": 0.27652158786657144,
+    "max_dd_pct": 64.38266573498066,
+    "sharpe_per_obs": 0.07056255341173881,
+    "n_obs": 2261
+   },
+   {
+    "block": "archetype-scan",
+    "name": "TSMOM-154",
+    "family": "TSMOM",
+    "risk": "",
+    "symbol": "",
+    "t_stat": 3.3552475597709535,
+    "dsr": 0.27652158786657144,
+    "max_dd_pct": 64.38266573498066,
+    "sharpe_per_obs": 0.07056255341173881,
+    "n_obs": 2261
+   },
+   {
+    "block": "scan-10k",
+    "name": "TSMOM-raw-460",
+    "family": "TSMOM",
+    "risk": "raw",
+    "symbol": "SOLUSDT",
+    "t_stat": 3.3365720242901777,
+    "dsr": 0.2673321473937441,
+    "max_dd_pct": 56.87555517338141,
+    "sharpe_per_obs": 0.07016979745368217,
+    "n_obs": 2261
+   },
+   {
+    "block": "archetype-scan",
+    "name": "TSMOM-94",
+    "family": "TSMOM",
+    "risk": "",
+    "symbol": "",
+    "t_stat": 3.3365720242901777,
+    "dsr": 0.2673321473937441,
+    "max_dd_pct": 56.87555517338141,
+    "sharpe_per_obs": 0.07016979745368217,
+    "n_obs": 2261
+   },
+   {
+    "block": "scan-10k",
+    "name": "MARegimeFilter-raw-1090",
+    "family": "MARegimeFilter",
+    "risk": "raw",
+    "symbol": "SOLUSDT",
+    "t_stat": 3.3200154902387475,
+    "dsr": 0.26049789169863236,
+    "max_dd_pct": 76.27229956575947,
+    "sharpe_per_obs": 0.0698216051675675,
+    "n_obs": 2261
+   },
+   {
+    "block": "freqtrade-scan",
+    "name": "roc30-raw-847",
+    "family": "roc30",
+    "risk": "raw",
+    "symbol": "SOLUSDT",
+    "t_stat": 3.281944357738724,
+    "dsr": 0.25281318254545126,
+    "max_dd_pct": 72.63608430294288,
+    "sharpe_per_obs": 0.06902094999306178,
+    "n_obs": 2261
+   },
+   {
+    "block": "risk-overlay",
+    "name": "TSMOM-SOLUSDT-ddthrottle-16",
+    "family": "TSMOM-SOLUSDT-ddthrottle",
+    "risk": "",
+    "symbol": "",
+    "t_stat": 3.283789595882315,
+    "dsr": 0.2519267373771049,
+    "max_dd_pct": 59.219356915762255,
+    "sharpe_per_obs": 0.06905975628462299,
+    "n_obs": 2261
+   }
+  ],
+  "limitation": "DSR предполагает независимость испытаний; стратегии на одной паре коррелированы.  skew/kurtosis — по реальному ряду. Это пересчёт уже опубликованных чисел,  а НЕ новый чистый тест: пул уже виден."
+ }
+}

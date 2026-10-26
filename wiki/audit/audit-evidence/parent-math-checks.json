@@ -1,0 +1,32 @@
+{
+  "dsr_scale_check": {
+    "purpose": "Same legacy summary inputs; demonstrate scale bug, NOT final corrected universe verdict.",
+    "old_annual_inputs": 0.9999855774656082,
+    "incorrect_partial_conversion_in_child_probe": 0.0,
+    "both_inputs_per_observation": 0.614100973209255,
+    "both_input_units_required": true
+  },
+  "portfolio_accounting_fixture": {
+    "fixture_only": true,
+    "intended_monthly_hold_final": 1.1,
+    "actual_function_final": 1.1025,
+    "implied_daily_fixed_weights_without_turnover_cost": true,
+    "changing_cost_10bps_to_10000bps_changes_output": false
+  },
+  "btc_profit_transfer_fee_fixture": {
+    "fixture_only": true,
+    "nav_before_profit_lock": 1.37477485,
+    "nav_after_profit_lock_function": 1.37477485,
+    "actual_fee_on_profit_transfer": 0.0,
+    "expected_positive_fee": true,
+    "note": "A separately fee-charged transfer should reduce NAV; here the difference is zero."
+  },
+  "legacy_13_correlation": {
+    "count": 13,
+    "common_days": 2260,
+    "mean_pair_correlation": 0.4328815046243049,
+    "max_pair_correlation": 0.9782495736349599,
+    "min_pair_correlation": 0.16002428345818268,
+    "label": "Legacy selected series, not an independent validation sample."
+  }
+}

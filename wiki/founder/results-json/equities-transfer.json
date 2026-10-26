@@ -1,0 +1,205 @@
+{
+  "generatedAt": "2026-10-12T20:58:31.408Z",
+  "results": [
+    {
+      "sym": "AAPL",
+      "arm": "tsmom-7",
+      "medianAlpha": -0.2778945873938383,
+      "medianRet": 4.249176612769978,
+      "medianAlphaTt": -0.09814831614452046,
+      "positive": 6,
+      "windowCount": 22,
+      "fills": 117
+    },
+    {
+      "sym": "AAPL",
+      "arm": "tsmom-14",
+      "medianAlpha": -0.24516299232999383,
+      "medianRet": 4.282876166880012,
+      "medianAlphaTt": -0.07726331258173325,
+      "positive": 9,
+      "windowCount": 22,
+      "fills": 83
+    },
+    {
+      "sym": "AAPL",
+      "arm": "tsmom-21",
+      "medianAlpha": -0.24516299232999383,
+      "medianRet": 4.295502638220006,
+      "medianAlphaTt": -0.07741125725151399,
+      "positive": 8,
+      "windowCount": 22,
+      "fills": 80
+    },
+    {
+      "sym": "AAPL",
+      "arm": "tsmom-30",
+      "medianAlpha": -0.4129966228344557,
+      "medianRet": 4.276663141299997,
+      "medianAlphaTt": -0.07761963885033474,
+      "positive": 8,
+      "windowCount": 22,
+      "fills": 72
+    },
+    {
+      "sym": "AAPL",
+      "arm": "tsmom-252",
+      "medianAlpha": -0.07060494531266137,
+      "medianRet": 2.6443737787299915,
+      "medianAlphaTt": -0.11805219266143308,
+      "positive": 6,
+      "windowCount": 22,
+      "fills": 122
+    },
+    {
+      "sym": "SPY",
+      "arm": "tsmom-7",
+      "medianAlpha": -0.10092290327699915,
+      "medianRet": 1.9446483517269852,
+      "medianAlphaTt": -0.10760613497904359,
+      "positive": 4,
+      "windowCount": 22,
+      "fills": 33
+    },
+    {
+      "sym": "SPY",
+      "arm": "tsmom-14",
+      "medianAlpha": -0.15201015051137756,
+      "medianRet": 1.722259500419998,
+      "medianAlphaTt": -0.10760613497904359,
+      "positive": 6,
+      "windowCount": 22,
+      "fills": 28
+    },
+    {
+      "sym": "SPY",
+      "arm": "tsmom-21",
+      "medianAlpha": -0.10092290327699915,
+      "medianRet": 2.0848137008000034,
+      "medianAlphaTt": -0.10760613497904359,
+      "positive": 6,
+      "windowCount": 22,
+      "fills": 29
+    },
+    {
+      "sym": "SPY",
+      "arm": "tsmom-30",
+      "medianAlpha": -0.21201379231902284,
+      "medianRet": 1.7512128149999917,
+      "medianAlphaTt": -0.10760613497904359,
+      "positive": 5,
+      "windowCount": 22,
+      "fills": 28
+    },
+    {
+      "sym": "SPY",
+      "arm": "tsmom-252",
+      "medianAlpha": -0.17069551475715006,
+      "medianRet": 1.7512128149999917,
+      "medianAlphaTt": -0.10760613497904359,
+      "positive": 5,
+      "windowCount": 22,
+      "fills": 26
+    },
+    {
+      "sym": "NVDA",
+      "arm": "tsmom-7",
+      "medianAlpha": -2.356114030194493,
+      "medianRet": 5.029487755510065,
+      "medianAlphaTt": -0.0853177145317181,
+      "positive": 9,
+      "windowCount": 22,
+      "fills": 210
+    },
+    {
+      "sym": "NVDA",
+      "arm": "tsmom-14",
+      "medianAlpha": -1.7861634290662352,
+      "medianRet": 5.360896745290011,
+      "medianAlphaTt": -0.08187098571272866,
+      "positive": 8,
+      "windowCount": 22,
+      "fills": 195
+    },
+    {
+      "sym": "NVDA",
+      "arm": "tsmom-21",
+      "medianAlpha": -1.9595347306979587,
+      "medianRet": 5.137265906090027,
+      "medianAlphaTt": -0.08366010781792887,
+      "positive": 5,
+      "windowCount": 22,
+      "fills": 198
+    },
+    {
+      "sym": "NVDA",
+      "arm": "tsmom-30",
+      "medianAlpha": -0.6381141993365063,
+      "medianRet": 5.781545650400011,
+      "medianAlphaTt": -0.08549094155526582,
+      "positive": 6,
+      "windowCount": 22,
+      "fills": 185
+    },
+    {
+      "sym": "NVDA",
+      "arm": "tsmom-252",
+      "medianAlpha": -0.49793699958567395,
+      "medianRet": 4.144547689919009,
+      "medianAlphaTt": 0,
+      "positive": 6,
+      "windowCount": 22,
+      "fills": 136
+    },
+    {
+      "sym": "TSLA",
+      "arm": "tsmom-7",
+      "medianAlpha": -0.12374200488570875,
+      "medianRet": 1.7752433410300084,
+      "medianAlphaTt": -0.10565308246525085,
+      "positive": 10,
+      "windowCount": 22,
+      "fills": 166
+    },
+    {
+      "sym": "TSLA",
+      "arm": "tsmom-14",
+      "medianAlpha": -0.5613922822837196,
+      "medianRet": 1.8729739574800064,
+      "medianAlphaTt": -0.09947422100911041,
+      "positive": 10,
+      "windowCount": 22,
+      "fills": 174
+    },
+    {
+      "sym": "TSLA",
+      "arm": "tsmom-21",
+      "medianAlpha": -0.6142860424150189,
+      "medianRet": 1.4518887402400038,
+      "medianAlphaTt": -0.10095715237266045,
+      "positive": 8,
+      "windowCount": 22,
+      "fills": 172
+    },
+    {
+      "sym": "TSLA",
+      "arm": "tsmom-30",
+      "medianAlpha": -0.6114110123342202,
+      "medianRet": 1.4210240325200019,
+      "medianAlphaTt": -0.10387461943348608,
+      "positive": 9,
+      "windowCount": 22,
+      "fills": 158
+    },
+    {
+      "sym": "TSLA",
+      "arm": "tsmom-252",
+      "medianAlpha": -0.16949448525467314,
+      "medianRet": 0.5853435109099969,
+      "medianAlphaTt": -0.10349282342563271,
+      "positive": 9,
+      "windowCount": 22,
+      "fills": 136
+    }
+  ]
+}

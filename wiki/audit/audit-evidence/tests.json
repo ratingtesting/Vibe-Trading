@@ -1,0 +1,46 @@
+[
+  {
+    "name": "new_crypto_stats_causality",
+    "command": "C:/Projects/jev-vibe/.venv/Scripts/python.exe -m pytest agent/tests/test_crypto_engine.py agent/tests/quantlib/test_multipletesting.py agent/tests/test_execution_causality.py -q",
+    "rc": 0,
+    "passed": 141,
+    "seconds_reported": 9.61
+  },
+  {
+    "name": "i18n",
+    "command": "npm run test:run -- src/i18n/__tests__/i18n.test.ts",
+    "rc": 0,
+    "passed": 46,
+    "seconds_reported": 18.93
+  },
+  {
+    "name": "typescript",
+    "command": "npx tsc -b --pretty false",
+    "rc": 0
+  },
+  {
+    "name": "frontend_build",
+    "command": "npm run build",
+    "rc": null,
+    "status": "Built successfully per saved output; exit-code JSON lost in kernel timeout. Subsequent tsc -b rc=0; dist produced.",
+    "build_seconds": 143.4,
+    "log": "C:\\Users\\Unicorn\\AppData\\Local\\hermes\\profiles\\trade\\cache\\scratch\\jev-migration-audit-20261024\\frontend_build.log"
+  },
+  {
+    "name": "old_tests",
+    "command": "npm test",
+    "rc": 1,
+    "total": 524,
+    "passed": 517,
+    "failed": 5,
+    "skipped": 2,
+    "seconds_reported": 130.6294172,
+    "failure": "tests/unified.test.ts: external localhost:8800 panel unavailable (ECONNREFUSED), not an isolated suite."
+  },
+  {
+    "name": "integration_probes",
+    "command": "C:/Projects/jev-vibe/.venv/Scripts/python.exe .../integration_probes.py",
+    "rc": 0,
+    "status": "Demonstrated missing validation, metadata, disabled visibility and partial-update defects; test fixtures, no real provider calls."
+  }
+]

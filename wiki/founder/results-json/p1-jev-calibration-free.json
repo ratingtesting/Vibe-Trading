@@ -1,0 +1,191 @@
+{
+ "status": "analysis-of-cached-answers",
+ "generatedAt": "2026-10-18T19:12:49.993Z",
+ "source": "research/cache/jev-calibration.jsonl",
+ "freeTierReachability": {
+  "opencodeApiKey": "HTTP 401 api_key_expired (GET /zen/v1/models) — the stored key is EXPIRED",
+  "freeTierFromThisNetwork": "HTTP 403 FreeTierError: \"free models aren't available from your current network ... abusive traffic from this IP address\"",
+  "localOpencodeServer": "127.0.0.1:8933/v1/systemone answers, but its upstream free tier returns the same 403",
+  "consequence": "a live re-run from this machine would record zero answers; the cached free-tier rows are used instead"
+ },
+ "rows": {
+  "total": 736,
+  "free": 236,
+  "paid": 500
+ },
+ "freeTier": {
+  "n": 236,
+  "note": "outcome is the model's OWN direction choice (no forward-return label in the cache); a real label requires the live re-run",
+  "meanPUp": 0.05182203389830505,
+  "sharePredictingUp": 0.0423728813559322,
+  "brierVsOwnChoice": 0.010654661016949177,
+  "eceVsOwnChoice": 0.03758474576271186,
+  "confidenceSplit": {
+   "above09": {
+    "n": 124,
+    "meanPUp": 0.013225806451612906
+   },
+   "below09": {
+    "n": 112,
+    "meanPUp": 0.09455357142857139
+   }
+  },
+  "choiceDistribution": {
+   "neutral": 197,
+   "down": 29,
+   "up": 10
+  },
+  "reliability": [
+   {
+    "bin": "0.0-0.1",
+    "n": 209,
+    "meanPredicted": 0.006650717703349285,
+    "empirical": 0
+   },
+   {
+    "bin": "0.1-0.2",
+    "n": 5,
+    "meanPredicted": 0.14400000000000002,
+    "empirical": 0
+   },
+   {
+    "bin": "0.2-0.3",
+    "n": 8,
+    "meanPredicted": 0.2425,
+    "empirical": 0
+   },
+   {
+    "bin": "0.3-0.4",
+    "n": 3,
+    "meanPredicted": 0.3633333333333333,
+    "empirical": 0
+   },
+   {
+    "bin": "0.4-0.5",
+    "n": 1,
+    "meanPredicted": 0.41,
+    "empirical": 0
+   },
+   {
+    "bin": "0.5-0.6",
+    "n": 4,
+    "meanPredicted": 0.54,
+    "empirical": 1
+   },
+   {
+    "bin": "0.6-0.7",
+    "n": 2,
+    "meanPredicted": 0.615,
+    "empirical": 1
+   },
+   {
+    "bin": "0.7-0.8",
+    "n": 1,
+    "meanPredicted": 0.71,
+    "empirical": 1
+   },
+   {
+    "bin": "0.8-0.9",
+    "n": 2,
+    "meanPredicted": 0.81,
+    "empirical": 1
+   },
+   {
+    "bin": "0.9-1.0",
+    "n": 1,
+    "meanPredicted": 0.96,
+    "empirical": 1
+   }
+  ]
+ },
+ "paidTierForComparison": {
+  "n": 500,
+  "note": "outcome is the model's OWN direction choice (no forward-return label in the cache); a real label requires the live re-run",
+  "meanPUp": 0.0962,
+  "sharePredictingUp": 0.072,
+  "brierVsOwnChoice": 0.014279599999999995,
+  "eceVsOwnChoice": 0.05559999999999998,
+  "confidenceSplit": {
+   "above09": {
+    "n": 286,
+    "meanPUp": 0.054405594405594344
+   },
+   "below09": {
+    "n": 214,
+    "meanPUp": 0.1520560747663551
+   }
+  },
+  "choiceDistribution": {
+   "neutral": 432,
+   "up": 36,
+   "down": 32
+  },
+  "reliability": [
+   {
+    "bin": "0.0-0.1",
+    "n": 400,
+    "meanPredicted": 0.013899999999999978,
+    "empirical": 0
+   },
+   {
+    "bin": "0.1-0.2",
+    "n": 32,
+    "meanPredicted": 0.1384375,
+    "empirical": 0
+   },
+   {
+    "bin": "0.2-0.3",
+    "n": 16,
+    "meanPredicted": 0.24250000000000002,
+    "empirical": 0
+   },
+   {
+    "bin": "0.3-0.4",
+    "n": 10,
+    "meanPredicted": 0.3449999999999999,
+    "empirical": 0
+   },
+   {
+    "bin": "0.4-0.5",
+    "n": 6,
+    "meanPredicted": 0.4383333333333333,
+    "empirical": 0
+   },
+   {
+    "bin": "0.5-0.6",
+    "n": 9,
+    "meanPredicted": 0.5611111111111112,
+    "empirical": 1
+   },
+   {
+    "bin": "0.6-0.7",
+    "n": 6,
+    "meanPredicted": 0.6333333333333334,
+    "empirical": 1
+   },
+   {
+    "bin": "0.7-0.8",
+    "n": 5,
+    "meanPredicted": 0.7540000000000001,
+    "empirical": 1
+   },
+   {
+    "bin": "0.8-0.9",
+    "n": 2,
+    "meanPredicted": 0.855,
+    "empirical": 1
+   },
+   {
+    "bin": "0.9-1.0",
+    "n": 14,
+    "meanPredicted": 0.987142857142857,
+    "empirical": 1
+   }
+  ]
+ },
+ "optionOrderTest": {
+  "status": "NOT MEASURED HERE",
+  "why": "requires fresh calls with permuted options; the cache holds only one ordering per state",
+  "where": "research/p1-calibrate-jev-free.ts (run it when the free tier is reachable)"
+ }
+}

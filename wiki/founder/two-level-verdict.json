@@ -1,0 +1,45 @@
+{
+ "date": "2026-10-19",
+ "n_trials": 384,
+ "trial_sharpe_std": 0.3708,
+ "reference_edges": 0,
+ "candidates": [
+  {
+   "scan": "risk-overlay",
+   "name": "TSMOM-SOLUSDT-vol10-1",
+   "symbol": "SOLUSDT",
+   "sharpe": 1.1748477964202457,
+   "t_stat": 2.924,
+   "annual_pct": 11.85,
+   "max_dd_pct": 14.9,
+   "trade_count": 198,
+   "n_obs": 2261,
+   "dsr": 0.9961,
+   "verdict": "CANDIDATE"
+  }
+ ],
+ "jev_calls": 1,
+ "jev_cost_usd": 1.4e-05,
+ "jev_judgments": [
+  {
+   "row": "TSMOM-SOLUSDT-vol10-1",
+   "symbol": "SOLUSDT",
+   "model": "jev-1.13-free",
+   "status": "selected",
+   "choice": "continue",
+   "probabilities": {
+    "continue": 0.67,
+    "reverse": 0.17,
+    "flat": 0.16
+   },
+   "confidence": 0.51,
+   "raw": {
+    "source": "free",
+    "provider": "opencode-zen",
+    "decision_id": null
+   }
+  }
+ ],
+ "reference": [],
+ "caveat": "A CANDIDATE is NOT a confirmed edge. The t-bar is relaxed, which raises the expected false-positive rate; at n trials the expected number of lucky 2.5-3.0 t-statistics grows with n. A CANDIDATE must clear forward-PAPER (>= 60 days, >= 30 trades, ECE <= 0.10, realised costs <= model x 1.5) before it trades, and its drawdown must stay under 20% with the risk overlay active."
+}

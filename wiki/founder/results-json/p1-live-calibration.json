@@ -1,0 +1,70 @@
+{
+ "status": "done",
+ "date": "2026-10-19",
+ "method": "LIVE jev-route calls (paid TypeSafe tier), each answer labelled with what actually happened over the next FORWARD days",
+ "cost": {
+  "calls": 59,
+  "usd": 0.000849600000000001,
+  "perCall": 0.0000144
+ },
+ "sample": {
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT",
+   "ADAUSDT",
+   "AVAXUSDT",
+   "DOGEUSDT",
+   "LINKUSDT",
+   "LTCUSDT"
+  ],
+  "questions": 59,
+  "forwardDays": 30,
+  "spanDays": 1206
+ },
+ "calibration": {
+  "meanPUp": 0.3777966101694915,
+  "baseRateUp": 0.4915254237288136,
+  "brier": 0.5036593220338983,
+  "brierBaseline": 0.24992818155702384,
+  "logLoss": 1.9193671796508012,
+  "ece": 0.5096610169491524,
+  "skillVsBase": -1.0152162068965516,
+  "bins": [
+   {
+    "n": 36,
+    "meanPredicted": 0.022777777777777786,
+    "empirical": 0.5277777777777778
+   },
+   {
+    "n": 0,
+    "meanPredicted": null,
+    "empirical": null
+   },
+   {
+    "n": 0,
+    "meanPredicted": null,
+    "empirical": null
+   },
+   {
+    "n": 1,
+    "meanPredicted": 0.79,
+    "empirical": 1
+   },
+   {
+    "n": 22,
+    "meanPredicted": 0.9399999999999996,
+    "empirical": 0.4090909090909091
+   }
+  ]
+ },
+ "verdict": "NOT CALIBRATED: probabilities must not be used raw — apply a mapping",
+ "limitations": [
+  "The label is direction-of-next-30-days, not a trading P&L. This measures whether the judge's probabilities mean what they say, not whether trading on them profits.",
+  "Only 10 symbols and a single forward horizon are tested; a different horizon or universe could calibrate differently.",
+  "The model is jev-1.14 via the paid tier; the free tier is unreachable from this network (HTTP 403), so a free-tier calibration is not measured here.",
+  "No out-of-sample claim: the same router and the same data are used to ask and to label."
+ ]
+}

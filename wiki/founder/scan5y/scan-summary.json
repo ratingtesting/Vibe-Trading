@@ -1,0 +1,18 @@
+{
+ "date": "2026-10-25",
+ "period": {
+  "start": "2021-10-20",
+  "end": "2026-10-19",
+  "years": 5,
+  "min_bars": 1826
+ },
+ "annualisation": 365.0,
+ "position_adjustment": "rebalance",
+ "n_jobs": 12,
+ "n_ok": 12,
+ "n_error": 0,
+ "n_variants": 2,
+ "n_symbols": 2,
+ "elapsed_s": 20.0,
+ "note": "Доходность в годовых = (prod(1+r))^(365/n)-1 из дневной доходности."
+}

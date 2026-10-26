@@ -1,0 +1,40 @@
+{
+ "status": "done",
+ "verdict": "ГОРИЗОНТ ПЕРЕОЦЕНКИ НЕ СПАСАЕТ: базис платится независимо от частоты — -1.9%/год при ежедневной переоценке, -2.2%/год при раз в 30 дней.",
+ "date": "2026-10-18",
+ "question": "is the basis bill a cost of carry, or a cost of CLOSING too often?",
+ "universe": 68,
+ "days": 900,
+ "arms": {
+  "daily_mark": {
+   "annual": -0.019164274761074532,
+   "t": -1.613415846492663,
+   "dd": 0.05562234200658178,
+   "horizon": 1
+  },
+  "weekly_basis": {
+   "annual": -0.0225918355203384,
+   "t": -2.492795156932124,
+   "dd": 0.05672866435752799,
+   "horizon": 7
+  },
+  "monthly_basis": {
+   "annual": -0.022356754312105202,
+   "t": -2.530107423552573,
+   "dd": 0.055774374737566856,
+   "horizon": 30
+  },
+  "quarterly_basis": {
+   "annual": -0.022547238342719027,
+   "t": -2.5607285845131953,
+   "dd": 0.05621569862602427,
+   "horizon": 90
+  }
+ },
+ "interpretation": "the basis bill is independent of horizon: carry with basis is unprofitable regardless",
+ "limitations": [
+  "Only funding-ranked coins are tested here; the selection control (p3b-selection-control) showed all selections lose on a daily mark.",
+  "Deferring basis realisation changes the return series, not the economic exposure — a daily mark is the conservative reading.",
+  "Funding is recorded on payment days and accrued daily, which overstates funding on days with no payment."
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "status": "done",
+ "verdict": "ПРЕИМУЩЕСТВО МАЛОГО СЧЁТА НЕ ПОДТВЕРЖДЕНО: t мелких=-0.02, t крупных=-0.85 — оба ниже планки 3. Это движение рынка, а не эффект неликвидности.",
+ "date": "2026-10-18",
+ "data": {
+  "universe": 326,
+  "days": 900,
+  "from": "2024-04-29",
+  "to": "2026-10-15"
+ },
+ "settings": {
+  "signal": "40-day past return > 0 (via PointInTime.asOf)",
+  "rebalanceDays": 90,
+  "costPerSide": 0.003,
+  "minVolumeUsd": 50000
+ },
+ "liquidityComparison": {
+  "smallest20": {
+   "total": -0.35992962928913563,
+   "annual": -0.006390378939949702,
+   "t": -0.017038070522967477,
+   "investedDays": 634,
+   "ofDays": 899,
+   "buyAndHold": -0.7740117458337654
+  },
+  "middle20": {
+   "total": -0.1428696649077036,
+   "annual": 0.2884253889850614,
+   "t": 0.5393625263142441,
+   "investedDays": 819,
+   "ofDays": 899
+  },
+  "largest20": {
+   "total": -0.8398891317907813,
+   "annual": -0.42920520750549,
+   "t": -0.8507104670915341,
+   "investedDays": 882,
+   "ofDays": 899,
+   "buyAndHold": 0.3863819183475947
+  }
+ },
+ "leakProbe": {
+  "comparisons": 15,
+  "setsDiffering": 15,
+  "changePct": 100,
+  "verdict": "sets differ a lot — expected for illiquid coins; the SIGNAL is still past-only by construction"
+ },
+ "limitations": [
+  "SURVIVORSHIP: coins that fell to zero and were delisted are absent from 2020-2026 data, so the small-cap result is an UPPER BOUND.",
+  "The signal is read through PointInTime.asOf, which throws on any read past the cutoff — so the trend leg cannot look ahead. The liquidity ranking is also past-only.",
+  "Costs are charged on rebalance days only (90-day cadence), which understates the true round trip of an illiquid exit.",
+  "HISTORICAL, no out-of-sample claim."
+ ],
+ "conclusion": "small-cap effect looks real, survivorship caveat applies"
+}

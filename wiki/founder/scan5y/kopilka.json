@@ -1,0 +1,283 @@
+{
+ "date": "2026-10-25",
+ "period": {
+  "start": "2021-10-20",
+  "end": "2026-10-19",
+  "years": 5
+ },
+ "declared_parameters": {
+  "lock_threshold": 0.3,
+  "lock_share_of_gain": 0.75,
+  "return_share_of_btc": 0.3,
+  "drawdown_trigger": 0.1,
+  "ma_window": 50,
+  "cost_per_leg": 0.001,
+  "start_capital": 100.0
+ },
+ "n_selected": 8,
+ "n_computed": 8,
+ "honest_limits": [
+  "Наложение применяется к реализованной дневной доходности стратегии, а не к повторному прогону движка со смешанным BTC-рукавом.",
+  "Отбор кандидатов сделан на том же 5-летнем окне, которое идёт в скан: поздний срез не является неприкосновенной проверкой.",
+  "Комиссия движка уже учтена в доходности стратегии; в копилке считается только комиссия переводов (10 bps на ногу).",
+  "Цены актива и BTC — из локальных биржевых CSV, тот же источник, что и доходность."
+ ],
+ "rows": [
+  {
+   "idx": 9,
+   "family": "TSMOM",
+   "symbol": "AAVEUSDT",
+   "risk": "vol10",
+   "params": {
+    "lookback": 7
+   },
+   "base": {
+    "annual_pct": 2.454438689482741,
+    "max_dd_pct": -12.97909194223158,
+    "t_stat": 0.7688677554535357,
+    "final_value": null
+   },
+   "kopilka": {
+    "annual_pct": 2.4557999678848974,
+    "max_dd_pct": -12.979091942231246,
+    "t_stat": 0.768867708263323,
+    "final_value": 112.89708875825146,
+    "final_btc_units": 0.0,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 0.0,
+    "final_asset_value": 112.89708875825146,
+    "final_cash": 0.0,
+    "btc_share_pct": 0.0,
+    "asset_share_pct": 100.0,
+    "locks": 0,
+    "returns_to_asset": 0
+   },
+   "delta_annual_pct": 0.0013612784021566071,
+   "delta_dd_pct": 3.339550858072471e-13
+  },
+  {
+   "idx": 52,
+   "family": "TSMOM",
+   "symbol": "FETUSDT",
+   "risk": "raw",
+   "params": {
+    "lookback": 5
+   },
+   "base": {
+    "annual_pct": -5.46275001968608,
+    "max_dd_pct": -89.47831728021721,
+    "t_stat": 0.7442485295260134,
+    "final_value": null
+   },
+   "kopilka": {
+    "annual_pct": -100.0,
+    "max_dd_pct": -100.0,
+    "t_stat": -1.0859132182076594,
+    "final_value": 0.0,
+    "final_btc_units": 0.0,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 0.0,
+    "final_asset_value": 0.0,
+    "final_cash": 0.0,
+    "btc_share_pct": 0.0,
+    "asset_share_pct": 0.0,
+    "locks": 0,
+    "returns_to_asset": 1
+   },
+   "delta_annual_pct": -94.53724998031392,
+   "delta_dd_pct": -10.521682719782788
+  },
+  {
+   "idx": 31,
+   "family": "TSMOM",
+   "symbol": "CKBUSDT",
+   "risk": "raw",
+   "params": {
+    "lookback": 5
+   },
+   "base": {
+    "annual_pct": -7.762798270802218,
+    "max_dd_pct": -77.51121488484056,
+    "t_stat": 0.6417273285971308,
+    "final_value": null
+   },
+   "kopilka": {
+    "annual_pct": -19.42041938443588,
+    "max_dd_pct": -94.94598862595616,
+    "t_stat": 0.38902383168524995,
+    "final_value": 33.972304934606626,
+    "final_btc_units": 0.0003808256075399343,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 31.45370839158134,
+    "final_asset_value": 2.5185965430252835,
+    "final_cash": 0.0,
+    "btc_share_pct": 92.58632421946837,
+    "asset_share_pct": 7.413675780531631,
+    "locks": 1,
+    "returns_to_asset": 1
+   },
+   "delta_annual_pct": -11.657621113633663,
+   "delta_dd_pct": -17.434773741115606
+  },
+  {
+   "idx": 57,
+   "family": "TSMOM",
+   "symbol": "GALAUSDT",
+   "risk": "raw",
+   "params": {
+    "lookback": 5
+   },
+   "base": {
+    "annual_pct": -12.042868891523263,
+    "max_dd_pct": -94.1795822877719,
+    "t_stat": 0.6055422221217502,
+    "final_value": null
+   },
+   "kopilka": {
+    "annual_pct": 31.18433661558939,
+    "max_dd_pct": -75.27646482308405,
+    "t_stat": 1.5084835059100086,
+    "final_value": 388.51690221370546,
+    "final_btc_units": 0.004548855790319264,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 375.7057842520604,
+    "final_asset_value": 12.811117961645028,
+    "final_cash": -7.105427357601002e-15,
+    "btc_share_pct": 96.70255839870816,
+    "asset_share_pct": 3.297441601291831,
+    "locks": 4,
+    "returns_to_asset": 0
+   },
+   "delta_annual_pct": 43.22720550711266,
+   "delta_dd_pct": 18.90311746468784
+  },
+  {
+   "idx": 46,
+   "family": "TSMOM",
+   "symbol": "DUSKUSDT",
+   "risk": "raw",
+   "params": {
+    "lookback": 5
+   },
+   "base": {
+    "annual_pct": -17.492981430084576,
+    "max_dd_pct": -97.5243843341573,
+    "t_stat": 0.5780587751336478,
+    "final_value": null
+   },
+   "kopilka": {
+    "annual_pct": 14.637456224950895,
+    "max_dd_pct": -78.82687210170396,
+    "t_stat": 1.1628908424277744,
+    "final_value": 197.98518926230014,
+    "final_btc_units": 0.0022645448914692715,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 187.03662055722054,
+    "final_asset_value": 10.948568705079587,
+    "final_cash": 0.0,
+    "btc_share_pct": 94.47000619295092,
+    "asset_share_pct": 5.529993807049075,
+    "locks": 5,
+    "returns_to_asset": 1
+   },
+   "delta_annual_pct": 32.13043765503547,
+   "delta_dd_pct": 18.69751223245335
+  },
+  {
+   "idx": 7,
+   "family": "TSMOM",
+   "symbol": "AAVEUSDT",
+   "risk": "raw",
+   "params": {
+    "lookback": 7
+   },
+   "base": {
+    "annual_pct": -6.058413434876552,
+    "max_dd_pct": -83.03399538316523,
+    "t_stat": 0.5560771878804425,
+    "final_value": null
+   },
+   "kopilka": {
+    "annual_pct": -10.435003737096405,
+    "max_dd_pct": -89.65317957326077,
+    "t_stat": 0.6394120870185759,
+    "final_value": 57.635698465803976,
+    "final_btc_units": 0.0006492600007105272,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 53.6246363908849,
+    "final_asset_value": 4.011062074919075,
+    "final_cash": 0.0,
+    "btc_share_pct": 93.0406637176456,
+    "asset_share_pct": 6.959336282354402,
+    "locks": 1,
+    "returns_to_asset": 1
+   },
+   "delta_annual_pct": -4.376590302219853,
+   "delta_dd_pct": -6.619184190095538
+  },
+  {
+   "idx": 3,
+   "family": "TSMOM",
+   "symbol": "AAVEUSDT",
+   "risk": "vol10",
+   "params": {
+    "lookback": 5
+   },
+   "base": {
+    "annual_pct": 1.6177985833961683,
+    "max_dd_pct": -13.233568759176006,
+    "t_stat": 0.5410913523467523,
+    "final_value": null
+   },
+   "kopilka": {
+    "annual_pct": 1.6186921845524171,
+    "max_dd_pct": -13.233568759176006,
+    "t_stat": 0.5410912948994504,
+    "final_value": 108.35975303864747,
+    "final_btc_units": 0.0,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 0.0,
+    "final_asset_value": 108.35975303864747,
+    "final_cash": 0.0,
+    "btc_share_pct": 0.0,
+    "asset_share_pct": 100.0,
+    "locks": 0,
+    "returns_to_asset": 0
+   },
+   "delta_annual_pct": 0.0008936011562488133,
+   "delta_dd_pct": 0.0
+  },
+  {
+   "idx": 60,
+   "family": "TSMOM",
+   "symbol": "HBARUSDT",
+   "risk": "raw",
+   "params": {
+    "lookback": 5
+   },
+   "base": {
+    "annual_pct": -7.718944780196146,
+    "max_dd_pct": -83.33221796312769,
+    "t_stat": 0.5329603914000177,
+    "final_value": null
+   },
+   "kopilka": {
+    "annual_pct": -100.0,
+    "max_dd_pct": -100.0,
+    "t_stat": -0.8762298570178237,
+    "final_value": 0.0,
+    "final_btc_units": 0.0,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 0.0,
+    "final_asset_value": 0.0,
+    "final_cash": 0.0,
+    "btc_share_pct": 0.0,
+    "asset_share_pct": 0.0,
+    "locks": 0,
+    "returns_to_asset": 1
+   },
+   "delta_annual_pct": -92.28105521980385,
+   "delta_dd_pct": -16.66778203687231
+  }
+ ]
+}

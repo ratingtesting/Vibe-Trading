@@ -1,0 +1,154 @@
+{
+  "generatedAt": "2026-10-17T12:51:30.720Z",
+  "design": {
+    "topN": 10,
+    "lookbackDays": 30,
+    "rebalanceDays": 30,
+    "costPairRoundTrip": 0.006,
+    "minOrderUsd": 5,
+    "capitals": [
+      100,
+      1000,
+      100000
+    ],
+    "leverage": "none",
+    "symbols": 73,
+    "window": [
+      "2019-09-10",
+      "2026-10-15"
+    ]
+  },
+  "runs": {
+    "100": {
+      "capital": 100,
+      "finalEquity": 134.15,
+      "multiple": 1.341,
+      "cagr": 0.04223470319147049,
+      "maxDrawdown": 0.039354333590478685,
+      "monthsSimulated": 85,
+      "worstMonth": {
+        "month": "2025-04",
+        "ret": -0.0074405108689928065
+      },
+      "bestMonth": {
+        "month": "2021-02",
+        "ret": 0.05264369708766719
+      },
+      "rebalances": 87,
+      "costMultiplier": 1,
+      "legShortfallDays": 6,
+      "years": 7.1
+    },
+    "1000": {
+      "capital": 1000,
+      "finalEquity": 1341.47,
+      "multiple": 1.341,
+      "cagr": 0.04223470319147027,
+      "maxDrawdown": 0.03935433359048279,
+      "monthsSimulated": 85,
+      "worstMonth": {
+        "month": "2025-04",
+        "ret": -0.007440510868993127
+      },
+      "bestMonth": {
+        "month": "2021-02",
+        "ret": 0.05264369708766726
+      },
+      "rebalances": 87,
+      "costMultiplier": 1,
+      "legShortfallDays": 6,
+      "years": 7.1
+    },
+    "100000": {
+      "capital": 100000,
+      "finalEquity": 134146.66,
+      "multiple": 1.341,
+      "cagr": 0.042234703191469825,
+      "maxDrawdown": 0.039354333590482904,
+      "monthsSimulated": 85,
+      "worstMonth": {
+        "month": "2025-04",
+        "ret": -0.007440510868993036
+      },
+      "bestMonth": {
+        "month": "2021-02",
+        "ret": 0.05264369708766729
+      },
+      "rebalances": 87,
+      "costMultiplier": 1,
+      "legShortfallDays": 6,
+      "years": 7.1
+    },
+    "100_cost_x2": {
+      "capital": 100,
+      "finalEquity": 105.89,
+      "multiple": 1.059,
+      "cagr": 0.008091544417817564,
+      "maxDrawdown": 0.15912368315022363,
+      "monthsSimulated": 85,
+      "worstMonth": {
+        "month": "2025-04",
+        "ret": -0.010427149251533234
+      },
+      "bestMonth": {
+        "month": "2021-02",
+        "ret": 0.052643697087667536
+      },
+      "rebalances": 87,
+      "costMultiplier": 2,
+      "legShortfallDays": 6,
+      "years": 7.1
+    }
+  },
+  "benchmark": {
+    "btcHold": {
+      "finalEquity": 813.28,
+      "multiple": 8.133,
+      "cagr": 0.3433147873268081,
+      "maxDrawdown": 0.7666956183209539
+    }
+  },
+  "recent": {
+    "from": "2024-01-01",
+    "normal": {
+      "capital": 100,
+      "finalEquity": 99.69,
+      "multiple": 0.997,
+      "cagr": -0.0011202656143680656,
+      "maxDrawdown": 0.04498615931612471,
+      "monthsSimulated": 34,
+      "worstMonth": {
+        "month": "2025-04",
+        "ret": -0.012804296849413813
+      },
+      "bestMonth": {
+        "month": "2024-03",
+        "ret": 0.019408310305148044
+      },
+      "rebalances": 34,
+      "costMultiplier": 1,
+      "legShortfallDays": 1,
+      "years": 2.79
+    },
+    "stress": {
+      "capital": 100,
+      "finalEquity": 89.26,
+      "multiple": 0.893,
+      "cagr": -0.03992969396938573,
+      "maxDrawdown": 0.12397720615612129,
+      "monthsSimulated": 34,
+      "worstMonth": {
+        "month": "2025-04",
+        "ret": -0.017753619338482497
+      },
+      "bestMonth": {
+        "month": "2024-03",
+        "ret": 0.016340883092594845
+      },
+      "rebalances": 34,
+      "costMultiplier": 2,
+      "legShortfallDays": 25,
+      "years": 2.79
+    }
+  }
+}

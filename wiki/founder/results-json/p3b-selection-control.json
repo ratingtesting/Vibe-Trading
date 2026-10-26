@@ -1,0 +1,47 @@
+{
+ "status": "done",
+ "verdict": "ОТБОР МОНЕТ НЕ СПАСАЕТ: кэрри с базисом убыточен при любом отборе — по funding -1.9%/год, по ликвидности -4.2%, все 68 равным весом -4.6%.",
+ "date": "2026-10-18",
+ "question": "is the carry-with-basis loss caused by SELECTING coins by funding rate?",
+ "universe": 68,
+ "days": 900,
+ "from": "2024-04-29",
+ "to": "2026-10-15",
+ "arms": {
+  "top10_by_funding": {
+   "annual": -0.019164274761074532,
+   "t": -1.613415846492663,
+   "dd": 0.05562234200658178,
+   "total": -0.04651457089809685,
+   "construction": "p3b: rank by past 30d avg funding, take top 10"
+  },
+  "top10_by_liquidity": {
+   "annual": -0.04151213911815843,
+   "t": -4.415543906777043,
+   "dd": 0.10406874412000833,
+   "total": -0.09743913170396834,
+   "construction": "same method, but rank by past 30d spot turnover, take top 10"
+  },
+  "bottom10_illiquid": {
+   "annual": -0.02827850989381025,
+   "t": -1.9279147286310714,
+   "dd": 0.07933801064843216,
+   "total": -0.06789039815870901,
+   "construction": "same method, but rank by liquidity ASCENDING (the illiquid end)"
+  },
+  "all_equal_weight": {
+   "annual": -0.04587008590372128,
+   "t": -4.764561187131477,
+   "dd": 0.1120121346728602,
+   "total": -0.10708791524268002,
+   "construction": "no selection: equal weight the whole universe"
+  }
+ },
+ "interpretation": "selection is not the defect: carry with basis is unprofitable under every selection tried.",
+ "limitations": [
+  "Basis is measured close-to-close on daily bars; intraday path not modelled.",
+  "Liquidity is measured on SPOT turnover, not perp depth, which is the market that would actually be traded.",
+  "Costs charged only on rebalance days.",
+  "No forward/out-of-sample claim: all four arms are historical descriptions of the same period."
+ ]
+}

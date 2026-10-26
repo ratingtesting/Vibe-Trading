@@ -1,0 +1,92 @@
+{
+  "generatedAt": "2026-10-15T23:46:08.658Z",
+  "design": {
+    "proxy": "BTCUSDT",
+    "regimeRule": {
+      "slopeWindow": 50,
+      "trendSlopePct": 0.15,
+      "trendR2": 0.5,
+      "volRatio": 1.2
+    },
+    "strategy": {
+      "r2Entry": 0.8,
+      "regWindowDays": 90,
+      "topHold": 10,
+      "cost": 0.0015,
+      "leverage": "none"
+    },
+    "regimes": {
+      "DEV": {
+        "RANGE": 99,
+        "CHAOS": 626,
+        "TREND": 836
+      },
+      "EVAL": {
+        "RANGE": 107,
+        "CHAOS": 615,
+        "TREND": 662
+      }
+    },
+    "trendShareDev": 0.535554131966688,
+    "trendShareEval": 0.47832369942196534
+  },
+  "armA_ungated": {
+    "dev": {
+      "n": 1614,
+      "mean": 0.0007989916620349022,
+      "sd": 0.008536991052333185,
+      "t": 3.7600116120966587
+    },
+    "eval": {
+      "n": 1384,
+      "mean": 0.00008298794309095977,
+      "sd": 0.009049937278849077,
+      "t": 0.3411437948565319
+    },
+    "maxDrawdown": 0.20985902412633173,
+    "sharpeDev": 1.7880672682312675
+  },
+  "armB_gated": {
+    "dev": {
+      "n": 1614,
+      "mean": 0.0004488567799442252,
+      "sd": 0.0057377908122804525,
+      "t": 3.142786247163224
+    },
+    "eval": {
+      "n": 1384,
+      "mean": 0.00017189915646490984,
+      "sd": 0.007098829795545938,
+      "t": 0.9008552775032764
+    },
+    "maxDrawdown": 0.1170110177829139,
+    "sharpeDev": 1.4945467725474362,
+    "sharpeEval": 0.46262959777528667,
+    "regimeLog": {
+      "TREND": 1498,
+      "RANGE": 206,
+      "CHAOS": 1295
+    }
+  },
+  "armB_costStressEval": {
+    "n": 1384,
+    "mean": 0.00014540791977205364,
+    "sd": 0.007105796389353732,
+    "t": 0.7612781193380003
+  },
+  "causality": {
+    "label": "CHAOS",
+    "corrupted": "CHAOS",
+    "pass": true
+  },
+  "verdict": {
+    "gates": {
+      "G1_eval_improves": false,
+      "G2_dev_still_positive": true,
+      "G3_regime_not_degenerate": true,
+      "G4_causality": true,
+      "G5_cost_stress_eval_positive": true
+    },
+    "allPassed": false
+  }
+}

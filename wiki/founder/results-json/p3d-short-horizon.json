@@ -1,0 +1,66 @@
+{
+ "status": "done",
+ "verdict": "КОРОТКИЙ ГОРИЗОН НЕ СПАСАЕТ: все горизонты 3–90 дней убыточны; H=3 даёт -0.47 п.п./год. Комиссии съедают funding.",
+ "date": "2026-10-18",
+ "question": "does a short holding period avoid the basis bill?",
+ "universe": 68,
+ "days": 900,
+ "arms": [
+  {
+   "horizon": 3,
+   "cycles": 300,
+   "annual": -0.46526705800704843,
+   "t": -95.85318468180576,
+   "dd": 0.6833661588172064,
+   "total": -0.6832064382083136
+  },
+  {
+   "horizon": 7,
+   "cycles": 129,
+   "annual": -0.1891351693115407,
+   "t": -49.566156946141035,
+   "dd": 0.3742538050927501,
+   "total": -0.3742538050927501
+  },
+  {
+   "horizon": 14,
+   "cycles": 65,
+   "annual": -0.0861788792913018,
+   "t": -18.40315437412616,
+   "dd": 0.19368471177237156,
+   "total": -0.19368471177237156
+  },
+  {
+   "horizon": 30,
+   "cycles": 30,
+   "annual": -0.038063210696951,
+   "t": -6.986248505240888,
+   "dd": 0.0897988429439095,
+   "total": -0.0897988429439095
+  },
+  {
+   "horizon": 90,
+   "cycles": 10,
+   "annual": -0.00043195331545155957,
+   "t": -0.08374027028011281,
+   "dd": 0.015429786417191648,
+   "total": -0.0011372978513011223
+  }
+ ],
+ "best": {
+  "horizon": 3,
+  "cycles": 300,
+  "annual": -0.46526705800704843,
+  "t": -95.85318468180576,
+  "dd": 0.6833661588172064,
+  "total": -0.6832064382083136
+ },
+ "bestProfitable": null,
+ "gatePasses": false,
+ "interpretation": "no horizon works: every holding period tested is unprofitable once costs are charged, and the short ones are worse (rotation costs dominate funding)",
+ "limitations": [
+  "Funding is accrued daily from the payment record; on days without a payment the accrual is zero, so the stream is exact only at payment times.",
+  "Rotation cost is charged once per cycle, which for small H is a large drag — this is conservative, not optimistic.",
+  "Selection is still by past funding, which the selection control showed is the weaker construction."
+ ]
+}

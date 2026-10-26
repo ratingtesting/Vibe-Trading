@@ -1,0 +1,19 @@
+{
+  "quarantine": {
+    "opencode-zen": 1792853618.3148148
+  },
+  "last_test_results": {
+    "opencode-zen": {
+      "success": false,
+      "latency_ms": 0,
+      "error": "JEV returned HTTP 429: {\"error\": {\"message\": \"Zen HTTP 429 (retry-after 33382s): FreeUsageLimitError: Free usage limit reached. Subscribe to OpenCode Go to keep going: https://opencode.ai/go\", \"type\": \"invalid_request_error\", \"code\": null}}",
+      "timestamp": 1792853018.338022
+    },
+    "openrouter-typesafe": {
+      "success": true,
+      "latency_ms": 1841,
+      "error": null,
+      "timestamp": 1792853017.1726313
+    }
+  }
+}

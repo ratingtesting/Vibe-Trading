@@ -1,0 +1,175 @@
+{
+ "date": "2026-10-25",
+ "n_dirs_on_disk": 8354,
+ "n_rows_recomputed": 8174,
+ "matches_artifact": true,
+ "trial_sharpe_std": 0.021710330776226704,
+ "expected_false_positives_5pct": 408.70000000000005,
+ "pass_t_ge_3": 66,
+ "pass_dd_le_20": 2945,
+ "pass_dsr_ge_095": 0,
+ "n_reference": 0,
+ "top_by_dsr": [
+  {
+   "block": "freqtrade-scan",
+   "name": "roc10-raw-811",
+   "t_stat": 3.7201886747407604,
+   "dsr": 0.42440571989566245,
+   "max_dd_pct": 75.15407361182133,
+   "sharpe_per_obs": 0.07897439638397591
+  },
+  {
+   "block": "freqtrade-scan",
+   "name": "ema9_21-raw-403",
+   "t_stat": 3.82559411782175,
+   "dsr": 0.3795716450836211,
+   "max_dd_pct": 69.06739550352223,
+   "sharpe_per_obs": 0.07675790190564534
+  },
+  {
+   "block": "freqtrade-scan",
+   "name": "roc10-vol10-812",
+   "t_stat": 3.5957588045763367,
+   "dsr": 0.3715331794292854,
+   "max_dd_pct": 12.63825594140523,
+   "sharpe_per_obs": 0.07633292447286198
+  },
+  {
+   "block": "scan-10k",
+   "name": "TSMOM-raw-820",
+   "t_stat": 3.3552475597709535,
+   "dsr": 0.2765215878665708,
+   "max_dd_pct": 64.38266573498066,
+   "sharpe_per_obs": 0.07056255341173881
+  },
+  {
+   "block": "archetype-scan",
+   "name": "TSMOM-154",
+   "t_stat": 3.3552475597709535,
+   "dsr": 0.2765215878665708,
+   "max_dd_pct": 64.38266573498066,
+   "sharpe_per_obs": 0.07056255341173881
+  },
+  {
+   "block": "scan-10k",
+   "name": "TSMOM-raw-460",
+   "t_stat": 3.3365720242901777,
+   "dsr": 0.26733214739374345,
+   "max_dd_pct": 56.87555517338141,
+   "sharpe_per_obs": 0.07016979745368217
+  },
+  {
+   "block": "archetype-scan",
+   "name": "TSMOM-94",
+   "t_stat": 3.3365720242901777,
+   "dsr": 0.26733214739374345,
+   "max_dd_pct": 56.87555517338141,
+   "sharpe_per_obs": 0.07016979745368217
+  },
+  {
+   "block": "scan-10k",
+   "name": "MARegimeFilter-raw-1090",
+   "t_stat": 3.3200154902387475,
+   "dsr": 0.26049789169863163,
+   "max_dd_pct": 76.27229956575947,
+   "sharpe_per_obs": 0.0698216051675675
+  },
+  {
+   "block": "freqtrade-scan",
+   "name": "roc30-raw-847",
+   "t_stat": 3.281944357738724,
+   "dsr": 0.2528131825454507,
+   "max_dd_pct": 72.63608430294288,
+   "sharpe_per_obs": 0.06902094999306178
+  },
+  {
+   "block": "risk-overlay",
+   "name": "TSMOM-SOLUSDT-ddthrottle-16",
+   "t_stat": 3.283789595882315,
+   "dsr": 0.2519267373771042,
+   "max_dd_pct": 59.219356915762255,
+   "sharpe_per_obs": 0.06905975628462299
+  },
+  {
+   "block": "freqtrade-scan",
+   "name": "bb_ride-vol10-308",
+   "t_stat": 3.2902130709487794,
+   "dsr": 0.2416966160859858,
+   "max_dd_pct": 14.051480102003088,
+   "sharpe_per_obs": 0.06919484521454305
+  },
+  {
+   "block": "scan-10k",
+   "name": "MARegimeFilter-vol10-1091",
+   "t_stat": 3.260698382619662,
+   "dsr": 0.23690090551941884,
+   "max_dd_pct": 15.439010413368804,
+   "sharpe_per_obs": 0.0685741363891721
+  },
+  {
+   "block": "freqtrade-scan",
+   "name": "roc30-raw-899",
+   "t_stat": 3.394014880327177,
+   "dsr": 0.2265589750686992,
+   "max_dd_pct": 76.21648836839185,
+   "sharpe_per_obs": 0.06809856279233034
+  },
+  {
+   "block": "scan-10k",
+   "name": "TSMOM-vol10-452",
+   "t_stat": 3.3258206641663746,
+   "dsr": 0.20892813413495137,
+   "max_dd_pct": 15.775438970077815,
+   "sharpe_per_obs": 0.06673029297765809
+  },
+  {
+   "block": "risk-overlay",
+   "name": "RegimeSwitching-ADAUSDT-ddthrottle-36",
+   "t_stat": 3.3873210011714003,
+   "dsr": 0.2084038738444951,
+   "max_dd_pct": 41.016931416825344,
+   "sharpe_per_obs": 0.06796425473356014
+  },
+  {
+   "block": "freqtrade-scan",
+   "name": "roc30-raw-883",
+   "t_stat": 3.3385713618414994,
+   "dsr": 0.20792297170499907,
+   "max_dd_pct": 69.54250953827302,
+   "sharpe_per_obs": 0.06698612691383453
+  },
+  {
+   "block": "scan-10k",
+   "name": "MARegimeFilter-raw-1270",
+   "t_stat": 3.1362249357654712,
+   "dsr": 0.20363409455714332,
+   "max_dd_pct": 72.89668561975972,
+   "sharpe_per_obs": 0.06595639683775979
+  },
+  {
+   "block": "archetype-scan",
+   "name": "MARegimeFilter-214",
+   "t_stat": 3.1362249357654712,
+   "dsr": 0.20363409455714332,
+   "max_dd_pct": 72.89668561975972,
+   "sharpe_per_obs": 0.06595639683775979
+  },
+  {
+   "block": "scan-10k",
+   "name": "MARegimeFilter-vol10-1181",
+   "t_stat": 3.134830973942444,
+   "dsr": 0.20205976676580545,
+   "max_dd_pct": 22.748616492297124,
+   "sharpe_per_obs": 0.06592708111549518
+  },
+  {
+   "block": "freqtrade-scan",
+   "name": "ema21_50-raw-429",
+   "t_stat": 3.3000868483384904,
+   "dsr": 0.19944442246195154,
+   "max_dd_pct": 67.40012421409705,
+   "sharpe_per_obs": 0.06621396174905944
+  }
+ ],
+ "conclusion": "Пересчёт полон: строки не потеряны, воспроизводится двумя путями. Ни один прогон не проходит DSR>=0.95, потому что пул из 8174 испытаний требует от лучшего результата SR/набл ~0.0009, а лучший есть 0.00099 у ДРУГОЙ строки с просадкой 75%."
+}

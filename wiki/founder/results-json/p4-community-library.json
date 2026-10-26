@@ -1,0 +1,726 @@
+{
+ "status": "done",
+ "date": "2026-10-18",
+ "source": "freqtrade/freqtrade-strategies (cloned shallow, user_data/strategies)",
+ "files": {
+  "scanned": 68,
+  "distinctRules": 55,
+  "duplicateFiles": 13
+ },
+ "families": {
+  "oscillator": 29,
+  "volatility-band": 17,
+  "breakout": 4,
+  "momentum": 3,
+  "mean-reversion": 2
+ },
+ "exclusions": {
+  "mlWrappers": 1,
+  "noEntryExitLogic": 0,
+  "reason": "ML wrappers need a model we do not have; files with no entry/exit logic cannot be run as a rule"
+ },
+ "trialCount": {
+  "trials": 54,
+  "significanceLevel": 0.05,
+  "expectedToPassByChance": 2.7,
+  "note": "THIS is the number that decides whether a 'winner' means anything. If the observed count is close to this, the library taught us nothing."
+ },
+ "duplicates": [
+  {
+   "sig": "bbands+rsi",
+   "files": [
+    "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/BbandRsi.py",
+    "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/BinHV45.py"
+   ]
+  },
+  {
+   "sig": "bbands+ema+rsi+volume",
+   "files": [
+    "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/CombinedBinHAndCluc.py",
+    "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/EMASkipPump.py"
+   ]
+  },
+  {
+   "sig": "rsi+sma",
+   "files": [
+    "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/Freqtrade_backtest_validation_freqtrade1.py",
+    "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/MultiRSI.py",
+    "research/repos/freqtrade-strategies/user_data/strategies/BreakEven.py",
+    "research/repos/freqtrade-strategies/user_data/strategies/mabStra.py"
+   ]
+  },
+  {
+   "sig": "rsi",
+   "files": [
+    "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/DoesNothingStrategy.py",
+    "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/TechnicalExampleStrategy.py",
+    "research/repos/freqtrade-strategies/user_data/strategies/HourBasedStrategy.py",
+    "research/repos/freqtrade-strategies/user_data/strategies/PatternRecognition.py"
+   ]
+  },
+  {
+   "sig": "doji+rsi+volume",
+   "files": [
+    "research/repos/freqtrade-strategies/user_data/strategies/futures/FSupertrendStrategy.py",
+    "research/repos/freqtrade-strategies/user_data/strategies/multi_tf.py",
+    "research/repos/freqtrade-strategies/user_data/strategies/Supertrend.py"
+   ]
+  },
+  {
+   "sig": "doji+rsi",
+   "files": [
+    "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/TDSequentialStrategy.py",
+    "research/repos/freqtrade-strategies/user_data/strategies/PowerTower.py"
+   ]
+  },
+  {
+   "sig": "doji+ema+rsi",
+   "files": [
+    "research/repos/freqtrade-strategies/user_data/strategies/Strategy001.py",
+    "research/repos/freqtrade-strategies/user_data/strategies/Strategy001_custom_exit.py"
+   ]
+  },
+  {
+   "sig": "doji+ema+rsi+volume",
+   "files": [
+    "research/repos/freqtrade-strategies/user_data/strategies/AlmgrenChrissStrategy.py",
+    "research/repos/freqtrade-strategies/user_data/strategies/TWAPStrategy.py"
+   ]
+  }
+ ],
+ "candidates": [
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/AlmgrenChrissStrategy.py",
+   "family": "oscillator",
+   "indicators": [
+    "rsi",
+    "ema",
+    "volume",
+    "doji"
+   ],
+   "lines": 234
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/Bandtastic.py",
+   "family": "volatility-band",
+   "indicators": [
+    "rsi",
+    "bbands",
+    "ema",
+    "volume",
+    "doji"
+   ],
+   "lines": 164
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/ADXMomentum.py",
+   "family": "momentum",
+   "indicators": [
+    "rsi",
+    "adx",
+    "momentum",
+    "doji"
+   ],
+   "lines": 70
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/AdxSmas.py",
+   "family": "oscillator",
+   "indicators": [
+    "rsi",
+    "sma",
+    "adx"
+   ],
+   "lines": 62
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/ASDTSRockwellTrading.py",
+   "family": "oscillator",
+   "indicators": [
+    "rsi",
+    "macd"
+   ],
+   "lines": 87
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/AverageStrategy.py",
+   "family": "oscillator",
+   "indicators": [
+    "rsi",
+    "ema",
+    "volume"
+   ],
+   "lines": 80
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/AwesomeMacd.py",
+   "family": "oscillator",
+   "indicators": [
+    "rsi",
+    "macd",
+    "ema",
+    "adx"
+   ],
+   "lines": 68
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/BbandRsi.py",
+   "family": "volatility-band",
+   "indicators": [
+    "rsi",
+    "bbands"
+   ],
+   "lines": 65
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/BinHV27.py",
+   "family": "oscillator",
+   "indicators": [
+    "rsi",
+    "ema",
+    "sma",
+    "adx"
+   ],
+   "lines": 138
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/CCIStrategy.py",
+   "family": "volatility-band",
+   "indicators": [
+    "rsi",
+    "bbands",
+    "sma",
+    "volume",
+    "cci"
+   ],
+   "lines": 121
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/ClucMay72018.py",
+   "family": "volatility-band",
+   "indicators": [
+    "rsi",
+    "macd",
+    "bbands",
+    "ema",
+    "adx",
+    "volume"
+   ],
+   "lines": 85
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/CMCWinner.py",
+   "family": "breakout",
+   "indicators": [
+    "cci",
+    "breakout",
+    "mean-reversion"
+   ],
+   "lines": 96
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/CofiBitStrategy.py",
+   "family": "oscillator",
+   "indicators": [
+    "rsi",
+    "ema",
+    "adx",
+    "stoch"
+   ],
+   "lines": 95
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/CombinedBinHAndCluc.py",
+   "family": "volatility-band",
+   "indicators": [
+    "rsi",
+    "bbands",
+    "ema",
+    "volume"
+   ],
+   "lines": 77
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/DoesNothingStrategy.py",
+   "family": "oscillator",
+   "indicators": [
+    "rsi"
+   ],
+   "lines": 46
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/Freqtrade_backtest_validation_freqtrade1.py",
+   "family": "oscillator",
+   "indicators": [
+    "rsi",
+    "sma"
+   ],
+   "lines": 51
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/Low_BB.py",
+   "family": "volatility-band",
+   "indicators": [
+    "rsi",
+    "macd",
+    "bbands",
+    "cci"
+   ],
+   "lines": 110
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/MACDStrategy.py",
+   "family": "oscillator",
+   "indicators": [
+    "rsi",
+    "macd",
+    "volume",
+    "cci"
+   ],
+   "lines": 104
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/MACDStrategy_crossed.py",
+   "family": "oscillator",
+   "indicators": [
+    "rsi",
+    "macd",
+    "cci"
+   ],
+   "lines": 79
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/Quickie.py",
+   "family": "momentum",
+   "indicators": [
+    "rsi",
+    "macd",
+    "bbands",
+    "ema",
+    "sma",
+    "adx",
+    "momentum"
+   ],
+   "lines": 79
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/ReinforcedAverageStrategy.py",
+   "family": "volatility-band",
+   "indicators": [
+    "rsi",
+    "bbands",
+    "ema",
+    "sma",
+    "volume",
+    "doji"
+   ],
+   "lines": 98
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/ReinforcedQuickie.py",
+   "family": "volatility-band",
+   "indicators": [
+    "rsi",
+    "macd",
+    "bbands",
+    "ema",
+    "sma",
+    "volume",
+    "cci",
+    "doji"
+   ],
+   "lines": 196
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/ReinforcedSmoothScalp.py",
+   "family": "volatility-band",
+   "indicators": [
+    "rsi",
+    "bbands",
+    "ema",
+    "sma",
+    "adx",
+    "volume",
+    "cci",
+    "stoch"
+   ],
+   "lines": 139
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/Scalp.py",
+   "family": "volatility-band",
+   "indicators": [
+    "rsi",
+    "bbands",
+    "ema",
+    "adx",
+    "stoch"
+   ],
+   "lines": 76
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/Simple.py",
+   "family": "volatility-band",
+   "indicators": [
+    "rsi",
+    "macd",
+    "bbands"
+   ],
+   "lines": 77
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/SmoothOperator.py",
+   "family": "mean-reversion",
+   "indicators": [
+    "rsi",
+    "macd",
+    "bbands",
+    "ema",
+    "sma",
+    "adx",
+    "volume",
+    "cci",
+    "doji",
+    "mean-reversion"
+   ],
+   "lines": 305
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/SmoothScalp.py",
+   "family": "volatility-band",
+   "indicators": [
+    "rsi",
+    "macd",
+    "bbands",
+    "ema",
+    "adx",
+    "cci",
+    "stoch"
+   ],
+   "lines": 103
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/berlinguyinca/TDSequentialStrategy.py",
+   "family": "oscillator",
+   "indicators": [
+    "rsi",
+    "doji"
+   ],
+   "lines": 152
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/CustomStoplossWithPSAR.py",
+   "family": "oscillator",
+   "indicators": [
+    "rsi",
+    "sma",
+    "doji"
+   ],
+   "lines": 95
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/Diamond.py",
+   "family": "oscillator",
+   "indicators": [
+    "rsi",
+    "sma",
+    "volume"
+   ],
+   "lines": 156
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/FixedRiskRewardLoss.py",
+   "family": "oscillator",
+   "indicators": [
+    "rsi",
+    "sma",
+    "atr",
+    "doji"
+   ],
+   "lines": 122
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/futures/FAdxSmaStrategy.py",
+   "family": "oscillator",
+   "indicators": [
+    "rsi",
+    "sma",
+    "adx",
+    "doji"
+   ],
+   "lines": 131
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/futures/FOttStrategy.py",
+   "family": "oscillator",
+   "indicators": [
+    "rsi",
+    "ema",
+    "adx",
+    "doji"
+   ],
+   "lines": 188
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/futures/FReinforcedStrategy.py",
+   "family": "volatility-band",
+   "indicators": [
+    "rsi",
+    "bbands",
+    "ema",
+    "sma",
+    "adx",
+    "doji"
+   ],
+   "lines": 145
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/futures/FSampleStrategy.py",
+   "family": "volatility-band",
+   "indicators": [
+    "rsi",
+    "macd",
+    "bbands",
+    "ema",
+    "adx",
+    "volume",
+    "stoch",
+    "doji"
+   ],
+   "lines": 163
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/futures/FSupertrendStrategy.py",
+   "family": "oscillator",
+   "indicators": [
+    "rsi",
+    "volume",
+    "doji"
+   ],
+   "lines": 233
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/futures/TrendFollowingStrategy.py",
+   "family": "oscillator",
+   "indicators": [
+    "rsi",
+    "volume"
+   ],
+   "lines": 70
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/futures/VolatilitySystem.py",
+   "family": "oscillator",
+   "indicators": [
+    "rsi",
+    "atr",
+    "doji"
+   ],
+   "lines": 158
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/GodStra.py",
+   "family": "oscillator",
+   "indicators": [
+    "rsi",
+    "sma",
+    "volume",
+    "ichimoku"
+   ],
+   "lines": 179
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/Heracles.py",
+   "family": "breakout",
+   "indicators": [
+    "rsi",
+    "atr",
+    "breakout"
+   ],
+   "lines": 122
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/hlhb.py",
+   "family": "momentum",
+   "indicators": [
+    "rsi",
+    "ema",
+    "adx",
+    "momentum",
+    "volume",
+    "doji"
+   ],
+   "lines": 129
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/InformativeSample.py",
+   "family": "oscillator",
+   "indicators": [
+    "rsi",
+    "ema",
+    "sma",
+    "doji"
+   ],
+   "lines": 133
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/lookahead_bias/DevilStra.py",
+   "family": "volatility-band",
+   "indicators": [
+    "rsi",
+    "macd",
+    "bbands",
+    "ema",
+    "sma",
+    "adx",
+    "volume",
+    "cci",
+    "willr",
+    "stoch",
+    "doji"
+   ],
+   "lines": 722
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/lookahead_bias/GodStraNew.py",
+   "family": "breakout",
+   "indicators": [
+    "rsi",
+    "macd",
+    "bbands",
+    "ema",
+    "sma",
+    "adx",
+    "atr",
+    "momentum",
+    "volume",
+    "cci",
+    "willr",
+    "stoch",
+    "doji",
+    "breakout"
+   ],
+   "lines": 645
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/lookahead_bias/Zeus.py",
+   "family": "oscillator",
+   "indicators": [
+    "rsi",
+    "ichimoku"
+   ],
+   "lines": 149
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/MultiMa.py",
+   "family": "oscillator",
+   "indicators": [
+    "rsi",
+    "ema"
+   ],
+   "lines": 100
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/Strategy001.py",
+   "family": "oscillator",
+   "indicators": [
+    "rsi",
+    "ema",
+    "doji"
+   ],
+   "lines": 123
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/Strategy002.py",
+   "family": "volatility-band",
+   "indicators": [
+    "rsi",
+    "bbands",
+    "stoch",
+    "doji"
+   ],
+   "lines": 137
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/Strategy003.py",
+   "family": "volatility-band",
+   "indicators": [
+    "rsi",
+    "bbands",
+    "ema",
+    "sma",
+    "stoch",
+    "doji"
+   ],
+   "lines": 154
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/Strategy004.py",
+   "family": "breakout",
+   "indicators": [
+    "rsi",
+    "ema",
+    "adx",
+    "volume",
+    "cci",
+    "stoch",
+    "doji",
+    "breakout",
+    "mean-reversion"
+   ],
+   "lines": 159
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/Strategy005.py",
+   "family": "oscillator",
+   "indicators": [
+    "rsi",
+    "macd",
+    "sma",
+    "volume",
+    "stoch",
+    "doji"
+   ],
+   "lines": 186
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/SwingHighToSky.py",
+   "family": "oscillator",
+   "indicators": [
+    "rsi",
+    "ema",
+    "cci"
+   ],
+   "lines": 111
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/TrendRiderStrategy.py",
+   "family": "mean-reversion",
+   "indicators": [
+    "rsi",
+    "macd",
+    "bbands",
+    "ema",
+    "sma",
+    "adx",
+    "atr",
+    "momentum",
+    "volume",
+    "doji",
+    "mean-reversion"
+   ],
+   "lines": 634
+  },
+  {
+   "file": "research/repos/freqtrade-strategies/user_data/strategies/UniversalMACD.py",
+   "family": "oscillator",
+   "indicators": [
+    "rsi",
+    "macd",
+    "ema",
+    "doji"
+   ],
+   "lines": 114
+  }
+ ]
+}

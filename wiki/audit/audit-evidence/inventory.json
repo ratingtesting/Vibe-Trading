@@ -1,0 +1,309 @@
+{
+  "root": "C:\\Projects\\jev-vibe",
+  "initial_sha": "1bc9f43cb25f3cf099f9476cb873e7dcac75278c",
+  "batches": [
+    {
+      "file": "archetype-scan/scan-results.json",
+      "rows": 1020,
+      "status_counts": {
+        "OK": 1020
+      },
+      "with_nonnull_t": 1020,
+      "symbols": 30,
+      "families": [
+        "MARegimeFilter",
+        "RegimeSwitching",
+        "TSMOM",
+        "VolatilityBreakout",
+        "ZScoreMeanReversion"
+      ],
+      "t3_positive_and_dd20": 0,
+      "t25_positive_and_dd20": 0,
+      "zero_trades": 0,
+      "negative_t": 79,
+      "row_keys": [
+        "alive",
+        "annual_pct",
+        "dsr",
+        "family",
+        "gate_g4",
+        "gate_g5",
+        "max_dd_pct",
+        "n_obs",
+        "params",
+        "sharpe",
+        "status",
+        "symbol",
+        "t_stat",
+        "trade_count"
+      ],
+      "sha256": "7234511e7a2e02de2f5021dd98164bd1946f1fd4d4e000985b4c524157affdb4"
+    },
+    {
+      "file": "risk-overlay/overlay-results.json",
+      "rows": 44,
+      "status_counts": {
+        "OK": 44
+      },
+      "with_nonnull_t": 44,
+      "symbols": 4,
+      "families": [
+        "MARegimeFilter",
+        "RegimeSwitching",
+        "TSMOM",
+        "VolatilityBreakout"
+      ],
+      "t3_positive_and_dd20": 0,
+      "t25_positive_and_dd20": 10,
+      "zero_trades": 0,
+      "negative_t": 0,
+      "row_keys": [
+        "alive",
+        "annual_pct",
+        "dsr",
+        "gate_dd20",
+        "gate_g4",
+        "gate_g5",
+        "label",
+        "max_dd_pct",
+        "n_obs",
+        "sharpe",
+        "status",
+        "symbol",
+        "t_stat",
+        "trade_count"
+      ],
+      "sha256": "ed07f07fe6b6a6b66c3d7ac7f5e5fa8d27218290c53934f8467318cea64fb7ce"
+    },
+    {
+      "file": "combo-overlay/combo-results.json",
+      "rows": 78,
+      "status_counts": {
+        "OK": 78
+      },
+      "with_nonnull_t": 78,
+      "symbols": 6,
+      "families": [
+        "MARegimeFilter",
+        "RegimeSwitching",
+        "TSMOM",
+        "VolatilityBreakout"
+      ],
+      "t3_positive_and_dd20": 0,
+      "t25_positive_and_dd20": 18,
+      "zero_trades": 0,
+      "negative_t": 0,
+      "row_keys": [
+        "annual_pct",
+        "label",
+        "max_dd_pct",
+        "sharpe",
+        "status",
+        "symbol",
+        "t_stat",
+        "trade_count"
+      ],
+      "sha256": "06adb65133fdf663c1d97d9e9187f60f72bf415e2486c0be58d43aa9c1153f2d"
+    },
+    {
+      "file": "scan-10k/scan-results.json",
+      "rows": 6030,
+      "status_counts": {
+        "OK": 6030
+      },
+      "with_nonnull_t": 5850,
+      "symbols": 30,
+      "families": [
+        "MARegimeFilter",
+        "RegimeSwitching",
+        "TSMOM",
+        "VolatilityBreakout",
+        "ZScoreMeanReversion"
+      ],
+      "t3_positive_and_dd20": 6,
+      "t25_positive_and_dd20": 100,
+      "zero_trades": 180,
+      "negative_t": 822,
+      "row_keys": [
+        "annual_pct",
+        "family",
+        "max_dd_pct",
+        "risk",
+        "sharpe",
+        "status",
+        "symbol",
+        "t_stat",
+        "trade_count"
+      ],
+      "sha256": "929ec255b69552dd68ea11a19204189c09ede99e761cd9ebc5fc1b11d67eaca7"
+    },
+    {
+      "file": "freqtrade-scan/scan-results.json",
+      "rows": 1260,
+      "status_counts": {
+        "OK": 1260
+      },
+      "with_nonnull_t": 1260,
+      "symbols": 30,
+      "families": [
+        "bb_revert",
+        "bb_ride",
+        "bb_rsi",
+        "cci_revert",
+        "donchian20",
+        "donchian55",
+        "donchian_vol",
+        "ema21_50",
+        "ema50_200",
+        "ema9_21",
+        "ema_adx",
+        "macd_cross",
+        "roc10",
+        "roc30",
+        "rsi25_75",
+        "rsi30_70",
+        "rsi35_65",
+        "rsi_macd",
+        "stoch20_80",
+        "stoch_ema",
+        "vol_ema_trend"
+      ],
+      "t3_positive_and_dd20": 4,
+      "t25_positive_and_dd20": 15,
+      "zero_trades": 0,
+      "negative_t": 603,
+      "row_keys": [
+        "annual_pct",
+        "family",
+        "max_dd_pct",
+        "risk",
+        "sharpe",
+        "status",
+        "symbol",
+        "t_stat",
+        "trade_count"
+      ],
+      "sha256": "d3a6668f60bbda07cda43f4a00fea982ca34758d45320eff3f149f72833cfec5"
+    }
+  ],
+  "alpha": {
+    "alpha101": {
+      "tested": 52,
+      "alive": 23,
+      "period": "2020-2026",
+      "horizon": 1
+    },
+    "gtja191": {
+      "tested": 151,
+      "alive": 29,
+      "period": "2020-2026",
+      "horizon": 1
+    },
+    "qlib158": {
+      "tested": 154,
+      "alive": 37,
+      "period": "2020-2026",
+      "horizon": 1
+    },
+    "academic": {
+      "tested": 12,
+      "alive": 4,
+      "period": "2020-2026",
+      "horizon": 1
+    },
+    "fundamental": {
+      "tested": 0,
+      "alive": 0,
+      "period": "2020-2026",
+      "horizon": 1
+    }
+  },
+  "saved_rows_total": 8432,
+  "alpha_tested_total": 369,
+  "saved_rows_plus_alpha": 8801,
+  "locales": {
+    "ar": {
+      "keys": 2176,
+      "missing": [],
+      "extra": [],
+      "jev_keys": 53
+    },
+    "de": {
+      "keys": 2176,
+      "missing": [],
+      "extra": [],
+      "jev_keys": 53
+    },
+    "en": {
+      "keys": 2176,
+      "missing": [],
+      "extra": [],
+      "jev_keys": 53
+    },
+    "es": {
+      "keys": 2176,
+      "missing": [],
+      "extra": [],
+      "jev_keys": 53
+    },
+    "fa": {
+      "keys": 2176,
+      "missing": [],
+      "extra": [],
+      "jev_keys": 53
+    },
+    "id": {
+      "keys": 2176,
+      "missing": [],
+      "extra": [],
+      "jev_keys": 53
+    },
+    "ja": {
+      "keys": 2176,
+      "missing": [],
+      "extra": [],
+      "jev_keys": 53
+    },
+    "ko": {
+      "keys": 2176,
+      "missing": [],
+      "extra": [],
+      "jev_keys": 53
+    },
+    "pt-BR": {
+      "keys": 2176,
+      "missing": [],
+      "extra": [],
+      "jev_keys": 53
+    },
+    "ru": {
+      "keys": 2176,
+      "missing": [],
+      "extra": [],
+      "jev_keys": 53
+    },
+    "tr": {
+      "keys": 2176,
+      "missing": [],
+      "extra": [],
+      "jev_keys": 53
+    },
+    "zh-CN": {
+      "keys": 2176,
+      "missing": [],
+      "extra": [],
+      "jev_keys": 53
+    }
+  },
+  "historical_original_archetype_rows": 340,
+  "historical_attempts_plus_alpha": 9141,
+  "first_backtest_rows": 5,
+  "known_historical_result_rows_plus_factors": 9146,
+  "btc_scaled_old_artifact": {
+    "units": 0.002508315726164516,
+    "btc_value": 207.1704996794972,
+    "total_value": 348.24807742242643,
+    "btc_share_percent": 59.48934484086138,
+    "note": "Old artifact only; not independently validated as correct overlay."
+  }
+}

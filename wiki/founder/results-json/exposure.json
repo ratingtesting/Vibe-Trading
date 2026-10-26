@@ -1,0 +1,208 @@
+{
+  "question": "Is the edge alpha, or just a smaller position than buy-and-hold?",
+  "method": "exposure = |position * mark| / equity, sampled every bar; returnPerExposure = return% / avgExposure",
+  "dev": {
+    "buyHoldReturnPct": 217.72,
+    "buyHoldExposure": 1,
+    "strategies": {
+      "ma-cross": {
+        "totalReturnPct": 1.21,
+        "maxDdPct": 11.55,
+        "sharpe": 0.083,
+        "fills": 95,
+        "timeInMarket": 0.064,
+        "avgExposure": 0.0162,
+        "maxExposure": 0.285,
+        "returnPerExposure": 75.05,
+        "betaOnlyReturnPct": 3.52,
+        "excessOverBetaPct": -2.31
+      },
+      "mean-reversion": {
+        "totalReturnPct": -7.54,
+        "maxDdPct": 10.9,
+        "sharpe": -0.521,
+        "fills": 16,
+        "timeInMarket": 0.02,
+        "avgExposure": 0.0052,
+        "maxExposure": 0.314,
+        "returnPerExposure": -1443.33,
+        "betaOnlyReturnPct": 1.14,
+        "excessOverBetaPct": -8.67
+      },
+      "momentum-breakout": {
+        "totalReturnPct": -3.51,
+        "maxDdPct": 11.45,
+        "sharpe": -0.088,
+        "fills": 36,
+        "timeInMarket": 0.099,
+        "avgExposure": 0.0251,
+        "maxExposure": 0.328,
+        "returnPerExposure": -139.72,
+        "betaOnlyReturnPct": 5.47,
+        "excessOverBetaPct": -8.97
+      },
+      "vol-momentum": {
+        "totalReturnPct": 12.63,
+        "maxDdPct": 11.75,
+        "sharpe": 0.366,
+        "fills": 323,
+        "timeInMarket": 0.261,
+        "avgExposure": 0.064,
+        "maxExposure": 0.287,
+        "returnPerExposure": 197.13,
+        "betaOnlyReturnPct": 13.94,
+        "excessOverBetaPct": -1.32
+      },
+      "range-mean-reversion": {
+        "totalReturnPct": -6.85,
+        "maxDdPct": 10.44,
+        "sharpe": -0.479,
+        "fills": 30,
+        "timeInMarket": 0.02,
+        "avgExposure": 0.0051,
+        "maxExposure": 0.314,
+        "returnPerExposure": -1346.15,
+        "betaOnlyReturnPct": 1.11,
+        "excessOverBetaPct": -7.95
+      },
+      "ensemble": {
+        "totalReturnPct": 18.36,
+        "maxDdPct": 13.33,
+        "sharpe": 0.573,
+        "fills": 37,
+        "timeInMarket": 0.134,
+        "avgExposure": 0.0344,
+        "maxExposure": 0.397,
+        "returnPerExposure": 533.09,
+        "betaOnlyReturnPct": 7.5,
+        "excessOverBetaPct": 10.86
+      },
+      "mom-trend": {
+        "totalReturnPct": -6.68,
+        "maxDdPct": 10.64,
+        "sharpe": -0.287,
+        "fills": 86,
+        "timeInMarket": 0.113,
+        "avgExposure": 0.0285,
+        "maxExposure": 0.308,
+        "returnPerExposure": -234.64,
+        "betaOnlyReturnPct": 6.2,
+        "excessOverBetaPct": -12.87
+      },
+      "mr-range": {
+        "totalReturnPct": -10.14,
+        "maxDdPct": 11.81,
+        "sharpe": -0.524,
+        "fills": 16,
+        "timeInMarket": 0.036,
+        "avgExposure": 0.0102,
+        "maxExposure": 0.414,
+        "returnPerExposure": -995.96,
+        "betaOnlyReturnPct": 2.22,
+        "excessOverBetaPct": -12.36
+      }
+    }
+  },
+  "eval": {
+    "buyHoldReturnPct": -10.63,
+    "buyHoldExposure": 1,
+    "strategies": {
+      "ma-cross": {
+        "totalReturnPct": 4.76,
+        "maxDdPct": 8.34,
+        "sharpe": 0.303,
+        "fills": 616,
+        "timeInMarket": 0.979,
+        "avgExposure": 0.2449,
+        "maxExposure": 0.288,
+        "returnPerExposure": 19.43,
+        "betaOnlyReturnPct": -2.6,
+        "excessOverBetaPct": 7.36
+      },
+      "mean-reversion": {
+        "totalReturnPct": 2.28,
+        "maxDdPct": 13.03,
+        "sharpe": 0.192,
+        "fills": 126,
+        "timeInMarket": 0.599,
+        "avgExposure": 0.1503,
+        "maxExposure": 0.277,
+        "returnPerExposure": 15.16,
+        "betaOnlyReturnPct": -1.6,
+        "excessOverBetaPct": 3.88
+      },
+      "momentum-breakout": {
+        "totalReturnPct": -9.18,
+        "maxDdPct": 12.77,
+        "sharpe": -0.755,
+        "fills": 58,
+        "timeInMarket": 0.421,
+        "avgExposure": 0.1073,
+        "maxExposure": 0.298,
+        "returnPerExposure": -85.59,
+        "betaOnlyReturnPct": -1.14,
+        "excessOverBetaPct": -8.04
+      },
+      "vol-momentum": {
+        "totalReturnPct": 10.83,
+        "maxDdPct": 7.83,
+        "sharpe": 0.612,
+        "fills": 598,
+        "timeInMarket": 0.953,
+        "avgExposure": 0.2381,
+        "maxExposure": 0.288,
+        "returnPerExposure": 45.46,
+        "betaOnlyReturnPct": -2.53,
+        "excessOverBetaPct": 13.36
+      },
+      "range-mean-reversion": {
+        "totalReturnPct": -9.37,
+        "maxDdPct": 10.64,
+        "sharpe": -0.994,
+        "fills": 119,
+        "timeInMarket": 0.188,
+        "avgExposure": 0.047,
+        "maxExposure": 0.272,
+        "returnPerExposure": -199.52,
+        "betaOnlyReturnPct": -0.5,
+        "excessOverBetaPct": -8.87
+      },
+      "ensemble": {
+        "totalReturnPct": 13.88,
+        "maxDdPct": 10.05,
+        "sharpe": 0.757,
+        "fills": 376,
+        "timeInMarket": 0.954,
+        "avgExposure": 0.2418,
+        "maxExposure": 0.336,
+        "returnPerExposure": 57.39,
+        "betaOnlyReturnPct": -2.57,
+        "excessOverBetaPct": 16.45
+      },
+      "mom-trend": {
+        "totalReturnPct": -0.87,
+        "maxDdPct": 10.47,
+        "sharpe": 0,
+        "fills": 233,
+        "timeInMarket": 0.899,
+        "avgExposure": 0.2248,
+        "maxExposure": 0.321,
+        "returnPerExposure": -3.87,
+        "betaOnlyReturnPct": -2.39,
+        "excessOverBetaPct": 1.52
+      },
+      "mr-range": {
+        "totalReturnPct": -4.71,
+        "maxDdPct": 12,
+        "sharpe": -0.285,
+        "fills": 64,
+        "timeInMarket": 0.568,
+        "avgExposure": 0.1431,
+        "maxExposure": 0.314,
+        "returnPerExposure": -32.9,
+        "betaOnlyReturnPct": -1.52,
+        "excessOverBetaPct": -3.19
+      }
+    }
+  }
+}

@@ -1,0 +1,2597 @@
+{
+  "generatedAt": "2026-10-15T15:44:06.854Z",
+  "design": {
+    "assets": [
+      "SPY",
+      "BTC/USD"
+    ],
+    "windows": "decision day close-to-close; and [D-1..D+1]",
+    "split": "ACTION = |DFF change| > 0 around the decision (fact); NO_ACTION otherwise",
+    "substitution": "a true surprise-vs-consensus split requires a consensus feed, which is paid; the factual action/no-action split replaces it and is recorded rather than hidden",
+    "benchmark": "unconditional distribution of same-length non-overlapping windows",
+    "gate": "|DEV t|>=3 and EVAL sign agreement",
+    "decisions": 53,
+    "split_note": "DEV 2021-05..2024-12, EVAL 2025-01..now"
+  },
+  "report": {
+    "SPY|w1|ACTION": {
+      "dev": {
+        "t": -0.6168547578376455,
+        "n": 17,
+        "mean": -0.002050458259834559,
+        "uncondMean": 0.0006205939838591551
+      },
+      "eval": {
+        "t": -0.1092680278984037,
+        "n": 4,
+        "mean": 0.0003659628786328306
+      },
+      "gate": false
+    },
+    "SPY|w1|NO_ACTION": {
+      "dev": {
+        "t": 1.3894149621512057,
+        "n": 12,
+        "mean": 0.004634634511067899,
+        "uncondMean": 0.0006205939838591551
+      },
+      "eval": {
+        "t": -1.4650912612382,
+        "n": 10,
+        "mean": -0.003290834377710261
+      },
+      "gate": false
+    },
+    "SPY|w1|ALL": {
+      "dev": {
+        "t": 0.03355718944037928,
+        "n": 29,
+        "mean": 0.0007157870246768031,
+        "uncondMean": 0.0006205939838591551
+      },
+      "eval": {
+        "t": -1.4136300251575293,
+        "n": 14,
+        "mean": -0.002246035161612235
+      },
+      "gate": false
+    },
+    "SPY|w3|ACTION": {
+      "dev": {
+        "t": -0.9361429483338142,
+        "n": 17,
+        "mean": -0.0042818250078156634,
+        "uncondMean": 0.001828651705037701
+      },
+      "eval": {
+        "t": -0.20876177955131917,
+        "n": 4,
+        "mean": 0.001125889043176509
+      },
+      "gate": false
+    },
+    "SPY|w3|NO_ACTION": {
+      "dev": {
+        "t": 0.3271256933976311,
+        "n": 12,
+        "mean": 0.0034564204005181898,
+        "uncondMean": 0.001828651705037701
+      },
+      "eval": {
+        "t": -1.5243622641987105,
+        "n": 10,
+        "mean": -0.0018717816092035378
+      },
+      "gate": false
+    },
+    "SPY|w3|ALL": {
+      "dev": {
+        "t": -0.6676296781715915,
+        "n": 29,
+        "mean": -0.0010797924250568278,
+        "uncondMean": 0.001828651705037701
+      },
+      "eval": {
+        "t": -1.4319735436143946,
+        "n": 14,
+        "mean": -0.0010153042799520959
+      },
+      "gate": false
+    },
+    "BTC/USD|w1|ACTION": {
+      "dev": {
+        "t": 0.02404449376876678,
+        "n": 17,
+        "mean": 0.0011506442864844878,
+        "uncondMean": 0.0009261330922556456
+      },
+      "eval": {
+        "t": -1.1623623075871636,
+        "n": 4,
+        "mean": -0.007042580762193301
+      },
+      "gate": false
+    },
+    "BTC/USD|w1|NO_ACTION": {
+      "dev": {
+        "t": 1.194457330833449,
+        "n": 12,
+        "mean": 0.014403113453449754,
+        "uncondMean": 0.0009261330922556456
+      },
+      "eval": {
+        "t": 0.09737681241883102,
+        "n": 10,
+        "mean": 0.0016290960636995977
+      },
+      "gate": false
+    },
+    "BTC/USD|w1|ALL": {
+      "dev": {
+        "t": 0.7943966736428101,
+        "n": 29,
+        "mean": 0.006634424631435633,
+        "uncondMean": 0.0009261330922556456
+      },
+      "eval": {
+        "t": -0.32273888406312506,
+        "n": 14,
+        "mean": -0.0008485258865555163
+      },
+      "gate": false
+    },
+    "BTC/USD|w3|ACTION": {
+      "dev": {
+        "t": 0.5658408274115252,
+        "n": 17,
+        "mean": 0.011154402536996236,
+        "uncondMean": 0.002657226296192834
+      },
+      "eval": {
+        "t": -0.7169053959664787,
+        "n": 4,
+        "mean": -0.009505312940004396
+      },
+      "gate": false
+    },
+    "BTC/USD|w3|NO_ACTION": {
+      "dev": {
+        "t": 0.044237977485430374,
+        "n": 12,
+        "mean": 0.003033991020021165,
+        "uncondMean": 0.002657226296192834
+      },
+      "eval": {
+        "t": -0.7469563468432311,
+        "n": 10,
+        "mean": -0.00799633001675919
+      },
+      "gate": false
+    },
+    "BTC/USD|w3|ALL": {
+      "dev": {
+        "t": 0.5425799271973015,
+        "n": 29,
+        "mean": 0.00779423225411,
+        "uncondMean": 0.002657226296192834
+      },
+      "eval": {
+        "t": -1.0071785275721632,
+        "n": 14,
+        "mean": -0.00842746799482925
+      },
+      "gate": false
+    }
+  },
+  "gatesTaken": [],
+  "rows": [
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2021-01-27",
+      "ret": -0.02371775033058554
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2021-04-28",
+      "ret": -0.00028352707683587663
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2021-06-16",
+      "ret": -0.005602880032451019
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2021-07-28",
+      "ret": -0.0003909399662813673
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2022-03-16",
+      "ret": 0.022176108805440187
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2022-05-04",
+      "ret": 0.030459183673469337
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2022-06-15",
+      "ret": 0.014262173987158233
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2022-07-27",
+      "ret": 0.025946969696969635
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2022-09-21",
+      "ret": -0.01744090385564634
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2022-11-02",
+      "ret": -0.025091078423316038
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2022-12-14",
+      "ret": -0.006393627335377183
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2023-03-22",
+      "ret": -0.017045454545454475
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2023-05-03",
+      "ret": -0.006864290435755316
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2023-07-26",
+      "ret": 0.00015994150710585409
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2024-09-18",
+      "ret": -0.0029708744942222864
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2024-11-07",
+      "ret": 0.007737847943498188
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2024-12-18",
+      "ret": -0.0297986895349035
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2025-09-17",
+      "ret": -0.0012440103206783348
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2025-10-29",
+      "ret": 0.0004855154555751806
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2025-12-10",
+      "ret": 0.006629965074291144
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2026-09-16",
+      "ret": -0.0044076186946566676
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2021-03-17",
+      "ret": 0.0034093388610081377
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2021-09-22",
+      "ret": 0.009764517322154997
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2021-11-03",
+      "ret": 0.006111252575291104
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2021-12-15",
+      "ret": 0.015622115562119232
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2022-01-26",
+      "ret": -0.002501410108639579
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2023-06-14",
+      "ret": 0.0011960005740803137
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2023-09-20",
+      "ret": -0.0091818330873914
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2023-12-13",
+      "ret": 0.0137858611135937
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2024-01-31",
+      "ret": -0.016305148219057042
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2024-03-20",
+      "ret": 0.009243361948492623
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2024-06-12",
+      "ret": 0.008206622821314236
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2024-07-31",
+      "ret": 0.01626493476984847
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2025-01-29",
+      "ret": -0.004486801045795685
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2025-03-19",
+      "ret": 0.010887148076119013
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2025-05-07",
+      "ret": 0.004202597969654054
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2025-06-18",
+      "ret": -0.00015312632922170888
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2025-07-30",
+      "ret": -0.0012605511321026608
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2026-01-28",
+      "ret": -0.00010143898445091892
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2026-03-18",
+      "ret": -0.013958170563134753
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2026-04-29",
+      "ret": -0.00015534529021321575
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2026-06-17",
+      "ret": -0.012484093496751614
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2026-07-29",
+      "ret": -0.015398562981205122
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2021-01-27",
+      "ret": -0.02371775033058554
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2021-03-17",
+      "ret": 0.0034093388610081377
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2021-04-28",
+      "ret": -0.00028352707683587663
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2021-06-16",
+      "ret": -0.005602880032451019
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2021-07-28",
+      "ret": -0.0003909399662813673
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2021-09-22",
+      "ret": 0.009764517322154997
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2021-11-03",
+      "ret": 0.006111252575291104
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2021-12-15",
+      "ret": 0.015622115562119232
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2022-01-26",
+      "ret": -0.002501410108639579
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2022-03-16",
+      "ret": 0.022176108805440187
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2022-05-04",
+      "ret": 0.030459183673469337
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2022-06-15",
+      "ret": 0.014262173987158233
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2022-07-27",
+      "ret": 0.025946969696969635
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2022-09-21",
+      "ret": -0.01744090385564634
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2022-11-02",
+      "ret": -0.025091078423316038
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2022-12-14",
+      "ret": -0.006393627335377183
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2023-03-22",
+      "ret": -0.017045454545454475
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2023-05-03",
+      "ret": -0.006864290435755316
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2023-06-14",
+      "ret": 0.0011960005740803137
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2023-07-26",
+      "ret": 0.00015994150710585409
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2023-09-20",
+      "ret": -0.0091818330873914
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2023-12-13",
+      "ret": 0.0137858611135937
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2024-01-31",
+      "ret": -0.016305148219057042
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2024-03-20",
+      "ret": 0.009243361948492623
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2024-06-12",
+      "ret": 0.008206622821314236
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2024-07-31",
+      "ret": 0.01626493476984847
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2024-09-18",
+      "ret": -0.0029708744942222864
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2024-11-07",
+      "ret": 0.007737847943498188
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2024-12-18",
+      "ret": -0.0297986895349035
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2025-01-29",
+      "ret": -0.004486801045795685
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2025-03-19",
+      "ret": 0.010887148076119013
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2025-05-07",
+      "ret": 0.004202597969654054
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2025-06-18",
+      "ret": -0.00015312632922170888
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2025-07-30",
+      "ret": -0.0012605511321026608
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2025-09-17",
+      "ret": -0.0012440103206783348
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2025-10-29",
+      "ret": 0.0004855154555751806
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2025-12-10",
+      "ret": 0.006629965074291144
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2026-01-28",
+      "ret": -0.00010143898445091892
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2026-03-18",
+      "ret": -0.013958170563134753
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2026-04-29",
+      "ret": -0.00015534529021321575
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2026-06-17",
+      "ret": -0.012484093496751614
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2026-07-29",
+      "ret": -0.015398562981205122
+    },
+    {
+      "asset": "SPY",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2026-09-16",
+      "ret": -0.0044076186946566676
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2021-01-27",
+      "ret": -0.01825022461814918
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2021-04-28",
+      "ret": 0.005875531503672038
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2021-06-16",
+      "ret": -0.007743698754934747
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2021-07-28",
+      "ret": -0.000851270825732664
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2022-03-16",
+      "ret": 0.05772031581368009
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2022-05-04",
+      "ret": -0.0016144738865256913
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2022-06-15",
+      "ret": -0.022263135533210576
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2022-07-27",
+      "ret": 0.02646917277150962
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2022-09-21",
+      "ret": -0.036867358833256425
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2022-11-02",
+      "ret": -0.039354187689202846
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2022-12-14",
+      "ret": -0.023365102832853646
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2023-03-22",
+      "ret": -0.0014324747327374432
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2023-05-03",
+      "ret": -0.024961665116512877
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2023-07-26",
+      "ret": -0.003757417462826873
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2024-09-18",
+      "ret": 0.014459193348406396
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2024-11-07",
+      "ret": 0.0372558411836712
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2024-12-18",
+      "ret": -0.03411006946786266
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2025-09-17",
+      "ret": 0.002039814729609679
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2025-10-29",
+      "ret": -0.007892135892253904
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2025-12-10",
+      "ret": 0.008102912908472648
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2026-09-16",
+      "ret": 0.0022529644268776128
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2021-03-17",
+      "ret": -0.012499319209193449
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2021-09-22",
+      "ret": 0.021037591762329555
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2021-11-03",
+      "ret": 0.01494479953515393
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2021-12-15",
+      "ret": -0.00029790549521058196
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2022-01-26",
+      "ret": -0.01954894503524618
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2023-06-14",
+      "ret": 0.020273035899164515
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2023-09-20",
+      "ret": -0.027605067551774165
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2023-12-13",
+      "ret": 0.021704973963009522
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2024-01-31",
+      "ret": -0.0042045072317524745
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2024-03-20",
+      "ret": 0.01820809828759562
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2024-06-12",
+      "ret": 0.012685720875699191
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2024-07-31",
+      "ret": -0.003221430993557206
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2025-01-29",
+      "ret": 0.009476173463311754
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2025-03-19",
+      "ret": -0.002930600503415981
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2025-05-07",
+      "ret": 0.0027422468382976017
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2025-06-18",
+      "ret": -0.008704159778685105
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2025-07-30",
+      "ret": -0.007622897337555834
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2026-01-28",
+      "ret": 0.0018913767768029555
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2026-03-18",
+      "ret": -0.013784064717313638
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2026-04-29",
+      "ret": 0.004876540607389179
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2026-06-17",
+      "ret": -0.008175439063685896
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2026-07-29",
+      "ret": 0.003513007622819586
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2021-01-27",
+      "ret": -0.01825022461814918
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2021-03-17",
+      "ret": -0.012499319209193449
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2021-04-28",
+      "ret": 0.005875531503672038
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2021-06-16",
+      "ret": -0.007743698754934747
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2021-07-28",
+      "ret": -0.000851270825732664
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2021-09-22",
+      "ret": 0.021037591762329555
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2021-11-03",
+      "ret": 0.01494479953515393
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2021-12-15",
+      "ret": -0.00029790549521058196
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2022-01-26",
+      "ret": -0.01954894503524618
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2022-03-16",
+      "ret": 0.05772031581368009
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2022-05-04",
+      "ret": -0.0016144738865256913
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2022-06-15",
+      "ret": -0.022263135533210576
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2022-07-27",
+      "ret": 0.02646917277150962
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2022-09-21",
+      "ret": -0.036867358833256425
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2022-11-02",
+      "ret": -0.039354187689202846
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2022-12-14",
+      "ret": -0.023365102832853646
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2023-03-22",
+      "ret": -0.0014324747327374432
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2023-05-03",
+      "ret": -0.024961665116512877
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2023-06-14",
+      "ret": 0.020273035899164515
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2023-07-26",
+      "ret": -0.003757417462826873
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2023-09-20",
+      "ret": -0.027605067551774165
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2023-12-13",
+      "ret": 0.021704973963009522
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2024-01-31",
+      "ret": -0.0042045072317524745
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2024-03-20",
+      "ret": 0.01820809828759562
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2024-06-12",
+      "ret": 0.012685720875699191
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2024-07-31",
+      "ret": -0.003221430993557206
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2024-09-18",
+      "ret": 0.014459193348406396
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2024-11-07",
+      "ret": 0.0372558411836712
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2024-12-18",
+      "ret": -0.03411006946786266
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2025-01-29",
+      "ret": 0.009476173463311754
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2025-03-19",
+      "ret": -0.002930600503415981
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2025-05-07",
+      "ret": 0.0027422468382976017
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2025-06-18",
+      "ret": -0.008704159778685105
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2025-07-30",
+      "ret": -0.007622897337555834
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2025-09-17",
+      "ret": 0.002039814729609679
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2025-10-29",
+      "ret": -0.007892135892253904
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2025-12-10",
+      "ret": 0.008102912908472648
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2026-01-28",
+      "ret": 0.0018913767768029555
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2026-03-18",
+      "ret": -0.013784064717313638
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2026-04-29",
+      "ret": 0.004876540607389179
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2026-06-17",
+      "ret": -0.008175439063685896
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2026-07-29",
+      "ret": 0.003513007622819586
+    },
+    {
+      "asset": "SPY",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2026-09-16",
+      "ret": 0.0022529644268776128
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2021-01-27",
+      "ret": -0.06457097730293437
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2021-04-28",
+      "ret": -0.0035342291628835953
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2021-06-16",
+      "ret": -0.04496209137173668
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2021-07-28",
+      "ret": 0.013743402627325096
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2022-03-16",
+      "ret": 0.046671673963886384
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2022-05-04",
+      "ret": 0.052228577306534296
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2022-06-15",
+      "ret": 0.02100498184062105
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2022-07-27",
+      "ret": 0.08010284372787346
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2022-09-21",
+      "ret": -0.02203570181994219
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2022-11-02",
+      "ret": -0.016119005914062234
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2022-12-14",
+      "ret": 0.0015480668571374867
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2023-03-22",
+      "ret": -0.03079844496865214
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2023-05-03",
+      "ret": 0.011099219929110449
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2023-07-26",
+      "ret": 0.0035872715287783574
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2024-09-18",
+      "ret": 0.023291525820907655
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2024-11-07",
+      "ret": 0.003770398768870864
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2024-12-18",
+      "ret": -0.0554665589605976
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2025-09-17",
+      "ret": -0.0031818422957592407
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2025-10-29",
+      "ret": -0.02535571797750036
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2025-12-10",
+      "ret": -0.0070343647051746006
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ACTION",
+      "iso": "2026-09-16",
+      "ret": 0.007401601929660995
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2021-03-17",
+      "ret": 0.03532150602288975
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2021-09-22",
+      "ret": 0.07056778915343087
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2021-11-03",
+      "ret": -0.005914132260526506
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2021-12-15",
+      "ret": 0.010160669198704397
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2022-01-26",
+      "ret": -0.004426967343476251
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2023-06-14",
+      "ret": -0.04189221068164395
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2023-09-20",
+      "ret": -0.0029346756140696817
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2023-12-13",
+      "ret": 0.03470770783604182
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2024-01-31",
+      "ret": -0.008733526760909993
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2024-03-20",
+      "ret": 0.09544900226806119
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2024-06-12",
+      "ret": 0.013330447971375836
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2024-07-31",
+      "ret": -0.022798248348480432
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2025-01-29",
+      "ret": 0.02362167818608718
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2025-03-19",
+      "ret": 0.04912752316599289
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2025-05-07",
+      "ret": 0.0024018580390776645
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2025-06-18",
+      "ret": 0.0024546657762944957
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2025-07-30",
+      "ret": -0.0009528437307032567
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2026-01-28",
+      "ret": 0.00033264409691868835
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2026-03-18",
+      "ret": -0.03636078709756729
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2026-04-29",
+      "ret": -0.007387402702191848
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2026-06-17",
+      "ret": -0.017802881823928418
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "NO_ACTION",
+      "iso": "2026-07-29",
+      "ret": 0.000856506727015871
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2021-01-27",
+      "ret": -0.06457097730293437
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2021-03-17",
+      "ret": 0.03532150602288975
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2021-04-28",
+      "ret": -0.0035342291628835953
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2021-06-16",
+      "ret": -0.04496209137173668
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2021-07-28",
+      "ret": 0.013743402627325096
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2021-09-22",
+      "ret": 0.07056778915343087
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2021-11-03",
+      "ret": -0.005914132260526506
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2021-12-15",
+      "ret": 0.010160669198704397
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2022-01-26",
+      "ret": -0.004426967343476251
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2022-03-16",
+      "ret": 0.046671673963886384
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2022-05-04",
+      "ret": 0.052228577306534296
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2022-06-15",
+      "ret": 0.02100498184062105
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2022-07-27",
+      "ret": 0.08010284372787346
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2022-09-21",
+      "ret": -0.02203570181994219
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2022-11-02",
+      "ret": -0.016119005914062234
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2022-12-14",
+      "ret": 0.0015480668571374867
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2023-03-22",
+      "ret": -0.03079844496865214
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2023-05-03",
+      "ret": 0.011099219929110449
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2023-06-14",
+      "ret": -0.04189221068164395
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2023-07-26",
+      "ret": 0.0035872715287783574
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2023-09-20",
+      "ret": -0.0029346756140696817
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2023-12-13",
+      "ret": 0.03470770783604182
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2024-01-31",
+      "ret": -0.008733526760909993
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2024-03-20",
+      "ret": 0.09544900226806119
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2024-06-12",
+      "ret": 0.013330447971375836
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2024-07-31",
+      "ret": -0.022798248348480432
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2024-09-18",
+      "ret": 0.023291525820907655
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2024-11-07",
+      "ret": 0.003770398768870864
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2024-12-18",
+      "ret": -0.0554665589605976
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2025-01-29",
+      "ret": 0.02362167818608718
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2025-03-19",
+      "ret": 0.04912752316599289
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2025-05-07",
+      "ret": 0.0024018580390776645
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2025-06-18",
+      "ret": 0.0024546657762944957
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2025-07-30",
+      "ret": -0.0009528437307032567
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2025-09-17",
+      "ret": -0.0031818422957592407
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2025-10-29",
+      "ret": -0.02535571797750036
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2025-12-10",
+      "ret": -0.0070343647051746006
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2026-01-28",
+      "ret": 0.00033264409691868835
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2026-03-18",
+      "ret": -0.03636078709756729
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2026-04-29",
+      "ret": -0.007387402702191848
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2026-06-17",
+      "ret": -0.017802881823928418
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2026-07-29",
+      "ret": 0.000856506727015871
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 1,
+      "split": "ALL",
+      "iso": "2026-09-16",
+      "ret": 0.007401601929660995
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2021-01-27",
+      "ret": 0.035662312930058615
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2021-04-28",
+      "ret": -0.008677207261013287
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2021-06-16",
+      "ret": -0.05991477970939807
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2021-07-28",
+      "ret": 0.07469071410639039
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2022-03-16",
+      "ret": 0.031677670792405355
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2022-05-04",
+      "ret": -0.051348673757406926
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2022-06-15",
+      "ret": -0.0927743436037991
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2022-07-27",
+      "ret": 0.11884001947812495
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2022-09-21",
+      "ret": -0.00701318759713887
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2022-11-02",
+      "ret": -0.013886231869912447
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2022-12-14",
+      "ret": 0.008825416455513713
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2023-03-22",
+      "ret": 0.01890593224482262
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2023-05-03",
+      "ret": 0.028842380803811407
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2023-07-26",
+      "ret": 0.0012366101213912017
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2024-09-18",
+      "ret": 0.08149453622297087
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2024-11-07",
+      "ret": 0.10429380486310147
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2024-12-18",
+      "ret": -0.08123013109098587
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2025-09-17",
+      "ret": 0.014835190923587316
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2025-10-29",
+      "ret": -0.050659947180035636
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2025-12-10",
+      "ret": 0.02109285116936932
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ACTION",
+      "iso": "2026-09-16",
+      "ret": -0.023289346672938582
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2021-03-17",
+      "ret": 0.035106914323963734
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2021-09-22",
+      "ret": 0.04387730400319789
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2021-11-03",
+      "ret": 0.008642301733958524
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2021-12-15",
+      "ret": 0.018892623120910113
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2022-01-26",
+      "ret": 0.013756331906538799
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2023-06-14",
+      "ret": -0.020642885899756935
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2023-09-20",
+      "ret": -0.007658284265315118
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2023-12-13",
+      "ret": 0.04309050836935113
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2024-01-31",
+      "ret": -0.00507316040561645
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2024-03-20",
+      "ret": -0.03140188247835307
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2024-06-12",
+      "ret": -0.04014168186282452
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2024-07-31",
+      "ret": -0.02204019630580012
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2025-01-29",
+      "ret": 0.026338601857691213
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2025-03-19",
+      "ret": 0.0009909777669308006
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2025-05-07",
+      "ret": 0.08892236759556615
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2025-06-18",
+      "ret": -0.019076444674698823
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2025-07-30",
+      "ret": -0.019434834528544553
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2026-01-28",
+      "ret": -0.042368808091172494
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2026-03-18",
+      "ret": -0.06642281870134492
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2026-04-29",
+      "ret": -0.013651540924964234
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2026-06-17",
+      "ret": -0.05137825840986532
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "NO_ACTION",
+      "iso": "2026-07-29",
+      "ret": 0.016117457942810276
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2021-01-27",
+      "ret": 0.035662312930058615
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2021-03-17",
+      "ret": 0.035106914323963734
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2021-04-28",
+      "ret": -0.008677207261013287
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2021-06-16",
+      "ret": -0.05991477970939807
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2021-07-28",
+      "ret": 0.07469071410639039
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2021-09-22",
+      "ret": 0.04387730400319789
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2021-11-03",
+      "ret": 0.008642301733958524
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2021-12-15",
+      "ret": 0.018892623120910113
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2022-01-26",
+      "ret": 0.013756331906538799
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2022-03-16",
+      "ret": 0.031677670792405355
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2022-05-04",
+      "ret": -0.051348673757406926
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2022-06-15",
+      "ret": -0.0927743436037991
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2022-07-27",
+      "ret": 0.11884001947812495
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2022-09-21",
+      "ret": -0.00701318759713887
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2022-11-02",
+      "ret": -0.013886231869912447
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2022-12-14",
+      "ret": 0.008825416455513713
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2023-03-22",
+      "ret": 0.01890593224482262
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2023-05-03",
+      "ret": 0.028842380803811407
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2023-06-14",
+      "ret": -0.020642885899756935
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2023-07-26",
+      "ret": 0.0012366101213912017
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2023-09-20",
+      "ret": -0.007658284265315118
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2023-12-13",
+      "ret": 0.04309050836935113
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2024-01-31",
+      "ret": -0.00507316040561645
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2024-03-20",
+      "ret": -0.03140188247835307
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2024-06-12",
+      "ret": -0.04014168186282452
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2024-07-31",
+      "ret": -0.02204019630580012
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2024-09-18",
+      "ret": 0.08149453622297087
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2024-11-07",
+      "ret": 0.10429380486310147
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2024-12-18",
+      "ret": -0.08123013109098587
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2025-01-29",
+      "ret": 0.026338601857691213
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2025-03-19",
+      "ret": 0.0009909777669308006
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2025-05-07",
+      "ret": 0.08892236759556615
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2025-06-18",
+      "ret": -0.019076444674698823
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2025-07-30",
+      "ret": -0.019434834528544553
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2025-09-17",
+      "ret": 0.014835190923587316
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2025-10-29",
+      "ret": -0.050659947180035636
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2025-12-10",
+      "ret": 0.02109285116936932
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2026-01-28",
+      "ret": -0.042368808091172494
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2026-03-18",
+      "ret": -0.06642281870134492
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2026-04-29",
+      "ret": -0.013651540924964234
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2026-06-17",
+      "ret": -0.05137825840986532
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2026-07-29",
+      "ret": 0.016117457942810276
+    },
+    {
+      "asset": "BTC/USD",
+      "window": 3,
+      "split": "ALL",
+      "iso": "2026-09-16",
+      "ret": -0.023289346672938582
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0",
+  "providers": [
+    {
+      "name": "opencode-zen",
+      "label": "OpenCode Zen (Free)",
+      "base_url": "http://127.0.0.1:8933/v1",
+      "model": "jev-1.13-free",
+      "api_key_env": "",
+      "tier": "free",
+      "transport": "systemone",
+      "enabled": true,
+      "order": 0,
+      "price_per_million_input_tokens": 0.0
+    },
+    {
+      "name": "openrouter-typesafe",
+      "label": "OpenRouter (Typesafe/jev-1.14)",
+      "base_url": "https://openrouter.ai/api",
+      "model": "~typesafe/jev-latest",
+      "api_key_env": "OPENROUTER_API_KEY",
+      "tier": "paid",
+      "transport": "decisions",
+      "enabled": true,
+      "order": 1,
+      "price_per_million_input_tokens": 0.042
+    }
+  ],
+  "fallback_order": [
+    "opencode-zen",
+    "openrouter-typesafe"
+  ]
+}

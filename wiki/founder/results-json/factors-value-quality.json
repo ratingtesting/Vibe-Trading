@@ -1,0 +1,1076 @@
+{
+  "generatedAt": "2026-10-15T15:30:01.159Z",
+  "design": {
+    "rebalance": "quarterly (last month-end of each quarter)",
+    "pointInTime": "last fundamentals FILED on or before the quarter end (SEC filed<=asOf)",
+    "universe": "top 1000 by trailing 88d dollar volume among names with usable SEC factors",
+    "value": "(equity / shares) / price",
+    "quality": "grossProfit / assets",
+    "costs": {
+      "feePerSide": 0.0005,
+      "borrowQuarterly": 0.0025
+    },
+    "gates": "DEV t>=3 & mean>0 & n>=30 quarters; EVAL sign-consistent; trials=2",
+    "trials": 2
+  },
+  "quarters": 44,
+  "cells": [
+    {
+      "period": "2016-06-30",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 70,
+      "longRet": 0.049870951047186675,
+      "shortRet": 0.03607033455908678,
+      "grossRet": 0.013800616488099895,
+      "cost": 0.0035,
+      "netRet": 0.010300616488099896
+    },
+    {
+      "period": "2016-06-30",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 89,
+      "longRet": -0.0024112770538312657,
+      "shortRet": 0.05816363433069138,
+      "grossRet": -0.060574911384522645,
+      "cost": 0.0035,
+      "netRet": -0.06407491138452265
+    },
+    {
+      "period": "2016-09-30",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 68,
+      "longRet": 0.12863371232303214,
+      "shortRet": 0.052991719960681055,
+      "grossRet": 0.07564199236235108,
+      "cost": 0.0035,
+      "netRet": 0.07214199236235108
+    },
+    {
+      "period": "2016-09-30",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 86,
+      "longRet": 0.0962315256608907,
+      "shortRet": 0.08186833881241437,
+      "grossRet": 0.014363186848476331,
+      "cost": 0.0035,
+      "netRet": 0.010863186848476331
+    },
+    {
+      "period": "2016-12-31",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 72,
+      "longRet": 0.11545182188744438,
+      "shortRet": -0.08807588131044185,
+      "grossRet": 0.2035277031978862,
+      "cost": 0.0035,
+      "netRet": 0.2000277031978862
+    },
+    {
+      "period": "2016-12-31",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 83,
+      "longRet": 0.05016832837573251,
+      "shortRet": -0.023611028315064408,
+      "grossRet": 0.07377935669079692,
+      "cost": 0.0035,
+      "netRet": 0.07027935669079692
+    },
+    {
+      "period": "2017-03-31",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 69,
+      "longRet": 0.06851820486973491,
+      "shortRet": 0.034054545502599856,
+      "grossRet": 0.03446365936713505,
+      "cost": 0.0035,
+      "netRet": 0.030963659367135053
+    },
+    {
+      "period": "2017-03-31",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 82,
+      "longRet": 0.07044904552106024,
+      "shortRet": -0.01906079710339267,
+      "grossRet": 0.08950984262445291,
+      "cost": 0.0035,
+      "netRet": 0.08600984262445291
+    },
+    {
+      "period": "2017-06-30",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 70,
+      "longRet": 0.06677243278492759,
+      "shortRet": 0.036397059338492466,
+      "grossRet": 0.030375373446435122,
+      "cost": 0.0035,
+      "netRet": 0.026875373446435123
+    },
+    {
+      "period": "2017-06-30",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 84,
+      "longRet": 0.06370978621454475,
+      "shortRet": 0.031068118857206454,
+      "grossRet": 0.0326416673573383,
+      "cost": 0.0035,
+      "netRet": 0.029141667357338297
+    },
+    {
+      "period": "2017-09-30",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 70,
+      "longRet": 0.07635831603937138,
+      "shortRet": 0.03820376137623247,
+      "grossRet": 0.038154554663138905,
+      "cost": 0.0035,
+      "netRet": 0.0346545546631389
+    },
+    {
+      "period": "2017-09-30",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 84,
+      "longRet": 0.07856638275071424,
+      "shortRet": 0.07586567593594051,
+      "grossRet": 0.0027007068147737318,
+      "cost": 0.0035,
+      "netRet": -0.0007992931852262683
+    },
+    {
+      "period": "2017-12-31",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 70,
+      "longRet": 0.08998760044841837,
+      "shortRet": 0.06354294044610209,
+      "grossRet": 0.02644466000231628,
+      "cost": 0.0035,
+      "netRet": 0.02294466000231628
+    },
+    {
+      "period": "2017-12-31",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 84,
+      "longRet": 0.0805767203129124,
+      "shortRet": 0.04106130003036165,
+      "grossRet": 0.03951542028255074,
+      "cost": 0.0035,
+      "netRet": 0.03601542028255074
+    },
+    {
+      "period": "2018-03-31",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 66,
+      "longRet": -0.02377724692652443,
+      "shortRet": 0.003960509009031694,
+      "grossRet": -0.02773775593555612,
+      "cost": 0.0035,
+      "netRet": -0.03123775593555612
+    },
+    {
+      "period": "2018-03-31",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 79,
+      "longRet": 0.016618045099521517,
+      "shortRet": -0.06634724234873346,
+      "grossRet": 0.08296528744825497,
+      "cost": 0.0035,
+      "netRet": 0.07946528744825497
+    },
+    {
+      "period": "2018-06-30",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 66,
+      "longRet": 0.11871978471005701,
+      "shortRet": 0.06704274851521895,
+      "grossRet": 0.05167703619483806,
+      "cost": 0.0035,
+      "netRet": 0.048177036194838055
+    },
+    {
+      "period": "2018-06-30",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 80,
+      "longRet": 0.12358725480976045,
+      "shortRet": 0.03185218989404296,
+      "grossRet": 0.09173506491571748,
+      "cost": 0.0035,
+      "netRet": 0.08823506491571748
+    },
+    {
+      "period": "2018-09-30",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 66,
+      "longRet": -0.013277854797176834,
+      "shortRet": 0.07540035594201751,
+      "grossRet": -0.08867821073919434,
+      "cost": 0.0035,
+      "netRet": -0.09217821073919434
+    },
+    {
+      "period": "2018-09-30",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 78,
+      "longRet": 0.05149487865808463,
+      "shortRet": -0.030882299641524915,
+      "grossRet": 0.08237717829960954,
+      "cost": 0.0035,
+      "netRet": 0.07887717829960954
+    },
+    {
+      "period": "2018-12-31",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 73,
+      "longRet": -0.1650396180790888,
+      "shortRet": -0.2495341334765591,
+      "grossRet": 0.0844945153974703,
+      "cost": 0.0035,
+      "netRet": 0.0809945153974703
+    },
+    {
+      "period": "2018-12-31",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 84,
+      "longRet": -0.15453468399452816,
+      "shortRet": -0.2552767645811934,
+      "grossRet": 0.10074208058666526,
+      "cost": 0.0035,
+      "netRet": 0.09724208058666525
+    },
+    {
+      "period": "2019-03-31",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 74,
+      "longRet": 0.19945073224825172,
+      "shortRet": 0.27587814142760847,
+      "grossRet": -0.07642740917935675,
+      "cost": 0.0035,
+      "netRet": -0.07992740917935676
+    },
+    {
+      "period": "2019-03-31",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 79,
+      "longRet": 0.17347708162071776,
+      "shortRet": 0.16964991490368028,
+      "grossRet": 0.003827166717037478,
+      "cost": 0.0035,
+      "netRet": 0.00032716671703747783
+    },
+    {
+      "period": "2019-06-30",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 77,
+      "longRet": -0.0216723945430415,
+      "shortRet": 0.006708260306540462,
+      "grossRet": -0.028380654849581965,
+      "cost": 0.0035,
+      "netRet": -0.03188065484958197
+    },
+    {
+      "period": "2019-06-30",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 80,
+      "longRet": 0.02773655786049564,
+      "shortRet": -0.02824039051529943,
+      "grossRet": 0.05597694837579507,
+      "cost": 0.0035,
+      "netRet": 0.052476948375795064
+    },
+    {
+      "period": "2019-09-30",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 79,
+      "longRet": -0.007194149978867526,
+      "shortRet": -0.07399986272481023,
+      "grossRet": 0.0668057127459427,
+      "cost": 0.0035,
+      "netRet": 0.0633057127459427
+    },
+    {
+      "period": "2019-09-30",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 87,
+      "longRet": -0.01950547239990061,
+      "shortRet": -0.04117716938153358,
+      "grossRet": 0.021671696981632974,
+      "cost": 0.0035,
+      "netRet": 0.018171696981632974
+    },
+    {
+      "period": "2019-12-31",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 82,
+      "longRet": 0.13343110647070044,
+      "shortRet": 0.11360949456344939,
+      "grossRet": 0.019821611907251055,
+      "cost": 0.0035,
+      "netRet": 0.016321611907251055
+    },
+    {
+      "period": "2019-12-31",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 92,
+      "longRet": 0.13533968191618645,
+      "shortRet": 0.1283002604209573,
+      "grossRet": 0.007039421495229153,
+      "cost": 0.0035,
+      "netRet": 0.0035394214952291533
+    },
+    {
+      "period": "2020-03-31",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 89,
+      "longRet": -0.29390410610245404,
+      "shortRet": -0.1902588813437699,
+      "grossRet": -0.10364522475868415,
+      "cost": 0.0035,
+      "netRet": -0.10714522475868415
+    },
+    {
+      "period": "2020-03-31",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 89,
+      "longRet": -0.22639756206648332,
+      "shortRet": -0.3260611226709225,
+      "grossRet": 0.0996635606044392,
+      "cost": 0.0035,
+      "netRet": 0.0961635606044392
+    },
+    {
+      "period": "2020-06-30",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 79,
+      "longRet": 0.481484367395736,
+      "shortRet": 0.3242121780881051,
+      "grossRet": 0.15727218930763093,
+      "cost": 0.0035,
+      "netRet": 0.15377218930763092
+    },
+    {
+      "period": "2020-06-30",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 87,
+      "longRet": 0.5159365538783631,
+      "shortRet": 0.38278005223669714,
+      "grossRet": 0.13315650164166598,
+      "cost": 0.0035,
+      "netRet": 0.12965650164166598
+    },
+    {
+      "period": "2020-09-30",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 67,
+      "longRet": 0.08960174410018888,
+      "shortRet": 0.16700140869732022,
+      "grossRet": -0.07739966459713134,
+      "cost": 0.0035,
+      "netRet": -0.08089966459713134
+    },
+    {
+      "period": "2020-09-30",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 82,
+      "longRet": 0.1074753830360309,
+      "shortRet": 0.16018892917911154,
+      "grossRet": -0.052713546143080645,
+      "cost": 0.0035,
+      "netRet": -0.05621354614308065
+    },
+    {
+      "period": "2020-12-31",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 66,
+      "longRet": 0.44966225820155287,
+      "shortRet": 0.3103188984658402,
+      "grossRet": 0.13934335973571266,
+      "cost": 0.0035,
+      "netRet": 0.13584335973571265
+    },
+    {
+      "period": "2020-12-31",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 76,
+      "longRet": 0.2835581813210008,
+      "shortRet": 0.44392361852666523,
+      "grossRet": -0.16036543720566443,
+      "cost": 0.0035,
+      "netRet": -0.16386543720566443
+    },
+    {
+      "period": "2021-03-31",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 64,
+      "longRet": 0.29188368196444736,
+      "shortRet": 0.05140816561708102,
+      "grossRet": 0.24047551634736636,
+      "cost": 0.0035,
+      "netRet": 0.23697551634736636
+    },
+    {
+      "period": "2021-03-31",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 67,
+      "longRet": 0.15445810225162881,
+      "shortRet": 0.20645524425561518,
+      "grossRet": -0.05199714200398636,
+      "cost": 0.0035,
+      "netRet": -0.055497142003986366
+    },
+    {
+      "period": "2021-06-30",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 49,
+      "longRet": 0.03420136063347705,
+      "shortRet": 0.11749924724547416,
+      "grossRet": -0.08329788661199711,
+      "cost": 0.0035,
+      "netRet": -0.08679788661199711
+    },
+    {
+      "period": "2021-06-30",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 67,
+      "longRet": 0.08950432760038904,
+      "shortRet": 0.0595365623539493,
+      "grossRet": 0.029967765246439737,
+      "cost": 0.0035,
+      "netRet": 0.026467765246439737
+    },
+    {
+      "period": "2021-09-30",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 60,
+      "longRet": -0.060875885970153455,
+      "shortRet": -0.10787105594749082,
+      "grossRet": 0.04699516997733736,
+      "cost": 0.0035,
+      "netRet": 0.04349516997733736
+    },
+    {
+      "period": "2021-09-30",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 75,
+      "longRet": -0.09494279374575652,
+      "shortRet": -0.15087548904683892,
+      "grossRet": 0.0559326953010824,
+      "cost": 0.0035,
+      "netRet": 0.052432695301082397
+    },
+    {
+      "period": "2021-12-31",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 63,
+      "longRet": 0.0289021077761497,
+      "shortRet": -0.09622581995508767,
+      "grossRet": 0.12512792773123738,
+      "cost": 0.0035,
+      "netRet": 0.12162792773123737
+    },
+    {
+      "period": "2021-12-31",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 74,
+      "longRet": 0.019438293317055197,
+      "shortRet": -0.05288024475423532,
+      "grossRet": 0.07231853807129052,
+      "cost": 0.0035,
+      "netRet": 0.06881853807129051
+    },
+    {
+      "period": "2022-03-31",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 68,
+      "longRet": 0.01363327569670379,
+      "shortRet": -0.1621160077084663,
+      "grossRet": 0.17574928340517007,
+      "cost": 0.0035,
+      "netRet": 0.17224928340517007
+    },
+    {
+      "period": "2022-03-31",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 77,
+      "longRet": -0.1447571630950636,
+      "shortRet": -0.007043860267594526,
+      "grossRet": -0.13771330282746908,
+      "cost": 0.0035,
+      "netRet": -0.14121330282746908
+    },
+    {
+      "period": "2022-06-30",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 81,
+      "longRet": -0.1428294949470269,
+      "shortRet": -0.2537705108678738,
+      "grossRet": 0.11094101592084687,
+      "cost": 0.0035,
+      "netRet": 0.10744101592084687
+    },
+    {
+      "period": "2022-06-30",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 84,
+      "longRet": -0.2473440438492381,
+      "shortRet": -0.26406915914731743,
+      "grossRet": 0.016725115298079324,
+      "cost": 0.0035,
+      "netRet": 0.013225115298079324
+    },
+    {
+      "period": "2022-09-30",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 87,
+      "longRet": -0.061470171632563034,
+      "shortRet": -0.004370052953757711,
+      "grossRet": -0.05710011867880532,
+      "cost": 0.0035,
+      "netRet": -0.060600118678805326
+    },
+    {
+      "period": "2022-09-30",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 82,
+      "longRet": -0.07400503624852048,
+      "shortRet": 0.05518508493248508,
+      "grossRet": -0.12919012118100556,
+      "cost": 0.0035,
+      "netRet": -0.13269012118100557
+    },
+    {
+      "period": "2022-12-31",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 91,
+      "longRet": 0.13766042933200306,
+      "shortRet": 0.025702542486879896,
+      "grossRet": 0.11195788684512317,
+      "cost": 0.0035,
+      "netRet": 0.10845788684512317
+    },
+    {
+      "period": "2022-12-31",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 87,
+      "longRet": 0.13306259056789732,
+      "shortRet": -0.00025495413307203175,
+      "grossRet": 0.13331754470096935,
+      "cost": 0.0035,
+      "netRet": 0.12981754470096935
+    },
+    {
+      "period": "2023-03-31",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 88,
+      "longRet": 0.10971764040019588,
+      "shortRet": 0.04907270257222476,
+      "grossRet": 0.06064493782797112,
+      "cost": 0.0035,
+      "netRet": 0.057144937827971115
+    },
+    {
+      "period": "2023-03-31",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 87,
+      "longRet": 0.08452898768827401,
+      "shortRet": 0.0571774907396175,
+      "grossRet": 0.02735149694865651,
+      "cost": 0.0035,
+      "netRet": 0.02385149694865651
+    },
+    {
+      "period": "2023-06-30",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 86,
+      "longRet": 0.037612840734574465,
+      "shortRet": 0.02476207436950918,
+      "grossRet": 0.012850766365065287,
+      "cost": 0.0035,
+      "netRet": 0.009350766365065287
+    },
+    {
+      "period": "2023-06-30",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 86,
+      "longRet": 0.06364065390903574,
+      "shortRet": 0.05242463722492581,
+      "grossRet": 0.01121601668410993,
+      "cost": 0.0035,
+      "netRet": 0.007716016684109931
+    },
+    {
+      "period": "2023-09-30",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 86,
+      "longRet": -0.005819583269786194,
+      "shortRet": -0.0902679374390554,
+      "grossRet": 0.0844483541692692,
+      "cost": 0.0035,
+      "netRet": 0.0809483541692692
+    },
+    {
+      "period": "2023-09-30",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 83,
+      "longRet": -0.05311908203602966,
+      "shortRet": -0.0706768101902194,
+      "grossRet": 0.01755772815418974,
+      "cost": 0.0035,
+      "netRet": 0.01405772815418974
+    },
+    {
+      "period": "2023-12-31",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 82,
+      "longRet": 0.16067320080599917,
+      "shortRet": 0.09489992965223178,
+      "grossRet": 0.0657732711537674,
+      "cost": 0.0035,
+      "netRet": 0.06227327115376739
+    },
+    {
+      "period": "2023-12-31",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 80,
+      "longRet": 0.1478962034111857,
+      "shortRet": 0.13262678735898176,
+      "grossRet": 0.015269416052203943,
+      "cost": 0.0035,
+      "netRet": 0.011769416052203944
+    },
+    {
+      "period": "2024-03-31",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 85,
+      "longRet": -0.004876945417513611,
+      "shortRet": 0.017559622620483124,
+      "grossRet": -0.022436568037996735,
+      "cost": 0.0035,
+      "netRet": -0.025936568037996734
+    },
+    {
+      "period": "2024-03-31",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 81,
+      "longRet": 0.04944854498561057,
+      "shortRet": -0.012031975331805323,
+      "grossRet": 0.061480520317415896,
+      "cost": 0.0035,
+      "netRet": 0.05798052031741589
+    },
+    {
+      "period": "2024-06-30",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 89,
+      "longRet": -0.051533407547705315,
+      "shortRet": -0.021983979511070083,
+      "grossRet": -0.029549428036635232,
+      "cost": 0.0035,
+      "netRet": -0.033049428036635235
+    },
+    {
+      "period": "2024-06-30",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 85,
+      "longRet": -0.0669071493713366,
+      "shortRet": -0.005218333408300686,
+      "grossRet": -0.061688815963035916,
+      "cost": 0.0035,
+      "netRet": -0.06518881596303591
+    },
+    {
+      "period": "2024-09-30",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 87,
+      "longRet": 0.08883309374926343,
+      "shortRet": 0.0740375792401468,
+      "grossRet": 0.014795514509116633,
+      "cost": 0.0035,
+      "netRet": 0.011295514509116634
+    },
+    {
+      "period": "2024-09-30",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 87,
+      "longRet": 0.032648364644181076,
+      "shortRet": 0.04766146072843859,
+      "grossRet": -0.015013096084257514,
+      "cost": 0.0035,
+      "netRet": -0.018513096084257514
+    },
+    {
+      "period": "2024-12-31",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 88,
+      "longRet": -0.040747291004430544,
+      "shortRet": 0.024050280694344638,
+      "grossRet": -0.06479757169877517,
+      "cost": 0.0035,
+      "netRet": -0.06829757169877518
+    },
+    {
+      "period": "2024-12-31",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 81,
+      "longRet": 0.02824366919022201,
+      "shortRet": -0.01840702474501596,
+      "grossRet": 0.04665069393523797,
+      "cost": 0.0035,
+      "netRet": 0.04315069393523797
+    },
+    {
+      "period": "2025-03-31",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 80,
+      "longRet": -0.05988074198034814,
+      "shortRet": -0.08306581296491994,
+      "grossRet": 0.0231850709845718,
+      "cost": 0.0035,
+      "netRet": 0.0196850709845718
+    },
+    {
+      "period": "2025-03-31",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 83,
+      "longRet": -0.12215289024762369,
+      "shortRet": -0.10152953502652239,
+      "grossRet": -0.0206233552211013,
+      "cost": 0.0035,
+      "netRet": -0.0241233552211013
+    },
+    {
+      "period": "2025-06-30",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 84,
+      "longRet": 0.05518057643830167,
+      "shortRet": 0.18057721772701263,
+      "grossRet": -0.12539664128871097,
+      "cost": 0.0035,
+      "netRet": -0.12889664128871098
+    },
+    {
+      "period": "2025-06-30",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 74,
+      "longRet": 0.0613640246652768,
+      "shortRet": 0.16670054654777813,
+      "grossRet": -0.10533652188250134,
+      "cost": 0.0035,
+      "netRet": -0.10883652188250134
+    },
+    {
+      "period": "2025-09-30",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 84,
+      "longRet": 0.7970253202587557,
+      "shortRet": 0.1147579450280097,
+      "grossRet": 0.682267375230746,
+      "cost": 0.0035,
+      "netRet": 0.678767375230746
+    },
+    {
+      "period": "2025-09-30",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 77,
+      "longRet": 0.020045799134507717,
+      "shortRet": 1.0186648637423845,
+      "grossRet": -0.9986190646078767,
+      "cost": 0.0035,
+      "netRet": -1.0021190646078768
+    },
+    {
+      "period": "2025-12-31",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 85,
+      "longRet": -0.01293996249705766,
+      "shortRet": -0.03641438488834186,
+      "grossRet": 0.0234744223912842,
+      "cost": 0.0035,
+      "netRet": 0.0199744223912842
+    },
+    {
+      "period": "2025-12-31",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 74,
+      "longRet": -0.034761358401548835,
+      "shortRet": -0.0664693607820502,
+      "grossRet": 0.03170800238050136,
+      "cost": 0.0035,
+      "netRet": 0.02820800238050136
+    },
+    {
+      "period": "2026-03-31",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 90,
+      "longRet": -0.08986848082572059,
+      "shortRet": -0.11026318566340827,
+      "grossRet": 0.020394704837687683,
+      "cost": 0.0035,
+      "netRet": 0.016894704837687683
+    },
+    {
+      "period": "2026-03-31",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 73,
+      "longRet": -0.11281224406872171,
+      "shortRet": -0.049181591710719175,
+      "grossRet": -0.06363065235800254,
+      "cost": 0.0035,
+      "netRet": -0.06713065235800254
+    },
+    {
+      "period": "2026-06-30",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 93,
+      "longRet": 0.19739157684372713,
+      "shortRet": 0.31304931061278274,
+      "grossRet": -0.11565773376905561,
+      "cost": 0.0035,
+      "netRet": -0.11915773376905561
+    },
+    {
+      "period": "2026-06-30",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 77,
+      "longRet": 0.15433623708322242,
+      "shortRet": 0.2926596177515361,
+      "grossRet": -0.13832338066831368,
+      "cost": 0.0035,
+      "netRet": -0.14182338066831368
+    },
+    {
+      "period": "2026-09-30",
+      "factor": "value",
+      "nLong": 100,
+      "nShort": 92,
+      "longRet": -0.04575189180729998,
+      "shortRet": -0.04379239593812665,
+      "grossRet": -0.001959495869173329,
+      "cost": 0.0035,
+      "netRet": -0.005459495869173329
+    },
+    {
+      "period": "2026-09-30",
+      "factor": "quality",
+      "nLong": 100,
+      "nShort": 74,
+      "longRet": -0.020421460440265965,
+      "shortRet": -0.09603251605285336,
+      "grossRet": 0.0756110556125874,
+      "cost": 0.0035,
+      "netRet": 0.07211105561258739
+    }
+  ],
+  "results": {
+    "value": {
+      "dev": {
+        "t": 2.284355054679264,
+        "mean": 0.04132973554418453,
+        "n": 27,
+        "sd": 0.09401148260111068
+      },
+      "eval": {
+        "t": 0.7935899503002701,
+        "mean": 0.038369131917942154,
+        "n": 15,
+        "sd": 0.18725414664134618
+      },
+      "ci": {
+        "lo": 0.007182806586698476,
+        "hi": 0.07528313746558767,
+        "mean": 0.04132973554418453,
+        "resamples": 1000,
+        "blockSize": 4
+      },
+      "dsr": 0.7023773848994389,
+      "gateDev": false,
+      "gateEval": true,
+      "signif": {
+        "n": 42,
+        "trades": 42,
+        "mean": 0.04027237710624082,
+        "stdev": 0.13258906512161023,
+        "nominalSharpe": 5.802912054505467,
+        "harveyTStat": 1.968449156004383,
+        "skew": 2.5948086207041308,
+        "kurtosis": 10.272224258149489,
+        "deflatedSharpe": 0.6142259955211997,
+        "expectedMaxSharpe": 0,
+        "gates": [
+          {
+            "name": "minTrades",
+            "value": 42,
+            "threshold": 100,
+            "passed": false
+          },
+          {
+            "name": "nominalSharpe",
+            "value": 5.802912054505467,
+            "threshold": 1.5,
+            "passed": true
+          },
+          {
+            "name": "harveyTStat",
+            "value": 1.968449156004383,
+            "threshold": 3,
+            "passed": false
+          },
+          {
+            "name": "deflatedSharpe",
+            "value": 0.6142259955211997,
+            "threshold": 0.95,
+            "passed": false
+          }
+        ],
+        "passesAllGates": false
+      },
+      "cumDev": 1.6852136833264297,
+      "cumEval": 0.47325129074334393
+    },
+    "quality": {
+      "dev": {
+        "t": 1.3472297507105826,
+        "mean": 0.020476751316909958,
+        "n": 27,
+        "sd": 0.07897711649286482
+      },
+      "eval": {
+        "t": -1.1483739446219778,
+        "mean": -0.07792599711334575,
+        "n": 15,
+        "sd": 0.26281168296268165
+      },
+      "ci": {
+        "lo": -0.00354893464111937,
+        "hi": 0.045091673510022696,
+        "mean": 0.020476751316909958,
+        "resamples": 1000,
+        "blockSize": 4
+      },
+      "dsr": -0.6387008980293788,
+      "gateDev": false,
+      "gateEval": false,
+      "signif": {
+        "n": 42,
+        "trades": 42,
+        "mean": -0.014667087408181375,
+        "stdev": 0.17267793909518225,
+        "nominalSharpe": -1.622756867207698,
+        "harveyTStat": -0.5504674817835981,
+        "skew": -4.425889186172724,
+        "kurtosis": 22.544034912736564,
+        "deflatedSharpe": -0.513776285933584,
+        "expectedMaxSharpe": 0,
+        "gates": [
+          {
+            "name": "minTrades",
+            "value": 42,
+            "threshold": 100,
+            "passed": false
+          },
+          {
+            "name": "nominalSharpe",
+            "value": -1.622756867207698,
+            "threshold": 1.5,
+            "passed": false
+          },
+          {
+            "name": "harveyTStat",
+            "value": -0.5504674817835981,
+            "threshold": 3,
+            "passed": false
+          },
+          {
+            "name": "deflatedSharpe",
+            "value": -0.513776285933584,
+            "threshold": 0.95,
+            "passed": false
+          }
+        ],
+        "passesAllGates": false
+      },
+      "cumDev": 0.5924540622087919,
+      "cumEval": -1.001743280397252
+    }
+  },
+  "caveat": "SEC coverage is incomplete by nature (funds/ETFs and many foreign listings never file 10-K/10-Q in XBRL), so the factor universe is smaller than the price universe; the survivorship note from phase 1 applies as well."
+}

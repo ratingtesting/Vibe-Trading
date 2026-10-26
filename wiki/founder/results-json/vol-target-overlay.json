@@ -1,0 +1,44 @@
+{
+  "generatedAt": "2026-10-15T14:32:14.574Z",
+  "design": {
+    "overlay": "exposure = min(1, targetVol / trailing-6-month realized vol)",
+    "targetVol": "MEDIAN of the strategy's own realized volatilities (not a literature constant)",
+    "leverage": "capped at 1 — de-risk only",
+    "limitation": "scales the strategy's own monthly return series; cannot model position-level scaling",
+    "gate": "Sharpe improves on DEV and agrees on EVAL"
+  },
+  "targetMonthlyVol": 0.06749867643579634,
+  "results": {
+    "DEV": {
+      "base": {
+        "sharpe": 0.7967062714198776,
+        "volAnnual": 0.24659777231990074,
+        "mean": 0.01637216597711967,
+        "t": 1.9650293562934955
+      },
+      "overlay": {
+        "sharpe": 0.9132714596861808,
+        "volAnnual": 0.20388440938361832,
+        "mean": 0.015516817680419334,
+        "t": 2.2525305660642525
+      }
+    },
+    "EVAL": {
+      "base": {
+        "sharpe": 0.2780924045875054,
+        "volAnnual": 0.32373191673674834,
+        "mean": 0.007502282263920371,
+        "t": 0.5385236258370918
+      },
+      "overlay": {
+        "sharpe": 0.2971319589986968,
+        "volAnnual": 0.25999079775711664,
+        "mean": 0.00643763125493384,
+        "t": 0.575393564413969
+      }
+    }
+  },
+  "devImproves": true,
+  "evalImproves": true,
+  "verdict": "risk-adjusted improvement of an existing near-miss"
+}

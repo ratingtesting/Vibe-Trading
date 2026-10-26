@@ -1,0 +1,91 @@
+{
+  "api": "http://127.0.0.1:60893",
+  "tab": 4,
+  "trace": [
+    {
+      "action": "tabs_switch",
+      "ok": true,
+      "error": null,
+      "screenshot": "1792842430784-fsoifw.png"
+    },
+    {
+      "action": "navigate",
+      "ok": true,
+      "error": null,
+      "screenshot": "1792842447614-iutkh3.png"
+    },
+    {
+      "action": "tabs_switch",
+      "ok": true,
+      "error": null,
+      "screenshot": "1792842450044-98ueu2.png"
+    },
+    {
+      "action": "observe",
+      "ok": true,
+      "error": null,
+      "screenshot": null
+    },
+    {
+      "action": "tabs_switch",
+      "ok": true,
+      "error": null,
+      "screenshot": "1792842451442-2d16e7.png"
+    },
+    {
+      "action": "extract",
+      "ok": true,
+      "error": null,
+      "screenshot": "1792842452166-59e0bs.png"
+    },
+    {
+      "action": "tabs_switch",
+      "ok": true,
+      "error": null,
+      "screenshot": "1792842452656-t26gd7.png"
+    },
+    {
+      "action": "click",
+      "ok": true,
+      "error": null,
+      "screenshot": "1792842453963-x7uue3.png"
+    },
+    {
+      "action": "tabs_switch",
+      "ok": true,
+      "error": null,
+      "screenshot": "1792842456283-hzp44w.png"
+    },
+    {
+      "action": "evaluate",
+      "ok": true,
+      "error": null,
+      "screenshot": null
+    },
+    {
+      "action": "tabs_switch",
+      "ok": true,
+      "error": null,
+      "screenshot": "1792842456946-wul2nf.png"
+    },
+    {
+      "action": "observe",
+      "ok": true,
+      "error": null,
+      "screenshot": null
+    },
+    {
+      "action": "tabs_switch",
+      "ok": true,
+      "error": null,
+      "screenshot": "1792842457868-dsgecn.png"
+    },
+    {
+      "action": "click",
+      "ok": true,
+      "error": null,
+      "screenshot": "1792842459714-x3qsym.png"
+    }
+  ],
+  "scope": "Local project; empty Pickle tooling tab only; no external sites, provider calls, or saved configurations."
+}

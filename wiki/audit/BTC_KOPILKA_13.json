@@ -1,0 +1,4005 @@
+{
+ "date": "2026-10-24",
+ "declared_parameters": {
+  "lock_threshold": 0.3,
+  "lock_share_of_gain": 0.75,
+  "return_share_of_btc": 0.3,
+  "drawdown_trigger": 0.1,
+  "ma_window": 50,
+  "cost_per_leg": 0.001,
+  "start_capital": 100.0
+ },
+ "n_candidates": 13,
+ "n_completed": 13,
+ "sensitivity": [
+  {
+   "id": "TSMOM-154",
+   "lock_threshold": 0.3,
+   "lock_share": 0.5,
+   "return_share": 0.0,
+   "annual_pct": 78.32390302395125,
+   "max_dd_pct": -69.3096378634462,
+   "final_value": 3592.812414365969,
+   "final_btc_units": 0.03057243565218537,
+   "btc_share_pct": 70.28153033453904,
+   "delta_annual_pct": -37.9992873118632,
+   "delta_dd_pct": -4.926972128465536
+  },
+  {
+   "id": "TSMOM-154",
+   "lock_threshold": 0.3,
+   "lock_share": 0.5,
+   "return_share": 0.3,
+   "annual_pct": 80.96075898478581,
+   "max_dd_pct": -69.00939845168669,
+   "final_value": 3934.6508860575327,
+   "final_btc_units": 0.019732740919182683,
+   "btc_share_pct": 41.42160492310719,
+   "delta_annual_pct": -35.36243135102863,
+   "delta_dd_pct": -4.62673271670603
+  },
+  {
+   "id": "TSMOM-154",
+   "lock_threshold": 0.3,
+   "lock_share": 0.75,
+   "return_share": 0.0,
+   "annual_pct": 61.053749207854516,
+   "max_dd_pct": -72.36571844604278,
+   "final_value": 1912.132898159101,
+   "final_btc_units": 0.019827965359212538,
+   "btc_share_pct": 85.6457447928338,
+   "delta_annual_pct": -55.26944112795993,
+   "delta_dd_pct": -7.983052711062115
+  },
+  {
+   "id": "TSMOM-154",
+   "lock_threshold": 0.3,
+   "lock_share": 0.75,
+   "return_share": 0.3,
+   "annual_pct": 63.24721406572556,
+   "max_dd_pct": -72.12499132604418,
+   "final_value": 2079.1911074906056,
+   "final_btc_units": 0.01755025889536878,
+   "btc_share_pct": 69.7163803916194,
+   "delta_annual_pct": -53.07597627008889,
+   "delta_dd_pct": -7.742325591063519
+  },
+  {
+   "id": "TSMOM-154",
+   "lock_threshold": 0.5,
+   "lock_share": 0.5,
+   "return_share": 0.0,
+   "annual_pct": 82.27380069006436,
+   "max_dd_pct": -68.16970595351577,
+   "final_value": 4114.787455272925,
+   "final_btc_units": 0.03515384238739191,
+   "btc_share_pct": 70.56203651265385,
+   "delta_annual_pct": -34.04938964575008,
+   "delta_dd_pct": -3.787040218535111
+  },
+  {
+   "id": "TSMOM-154",
+   "lock_threshold": 0.5,
+   "lock_share": 0.5,
+   "return_share": 0.3,
+   "annual_pct": 84.4363972787819,
+   "max_dd_pct": -68.82280078503608,
+   "final_value": 4426.536675129943,
+   "final_btc_units": 0.0200044967897626,
+   "btc_share_pct": 37.325813084375966,
+   "delta_annual_pct": -31.88679305703255,
+   "delta_dd_pct": -4.440135050055417
+  },
+  {
+   "id": "TSMOM-154",
+   "lock_threshold": 0.5,
+   "lock_share": 0.75,
+   "return_share": 0.0,
+   "annual_pct": 64.86756166512484,
+   "max_dd_pct": -71.3337181631546,
+   "final_value": 2210.3123968629016,
+   "final_btc_units": 0.022963310938733713,
+   "btc_share_pct": 85.8077589308574,
+   "delta_annual_pct": -51.455628670689606,
+   "delta_dd_pct": -6.951052428173938
+  },
+  {
+   "id": "TSMOM-154",
+   "lock_threshold": 0.5,
+   "lock_share": 0.75,
+   "return_share": 0.3,
+   "annual_pct": 66.94914928644558,
+   "max_dd_pct": -72.130426282328,
+   "final_value": 2388.870707490627,
+   "final_btc_units": 0.021252543622256426,
+   "btc_share_pct": 73.47912629111656,
+   "delta_annual_pct": -49.37404104936887,
+   "delta_dd_pct": -7.74776054734734
+  },
+  {
+   "id": "TSMOM-94",
+   "lock_threshold": 0.3,
+   "lock_share": 0.5,
+   "return_share": 0.0,
+   "annual_pct": 78.99681684671576,
+   "max_dd_pct": -65.34313820688796,
+   "final_value": 3677.58507424032,
+   "final_btc_units": 0.032112429970917726,
+   "btc_share_pct": 72.12007249017825,
+   "delta_annual_pct": -34.66352177204563,
+   "delta_dd_pct": -8.46758303350655
+  },
+  {
+   "id": "TSMOM-94",
+   "lock_threshold": 0.3,
+   "lock_share": 0.5,
+   "return_share": 0.3,
+   "annual_pct": 82.33807330170472,
+   "max_dd_pct": -63.49086964156329,
+   "final_value": 4123.779578005374,
+   "final_btc_units": 0.02431690381359775,
+   "btc_share_pct": 48.70331761506807,
+   "delta_annual_pct": -31.32226531705666,
+   "delta_dd_pct": -6.615314468181886
+  },
+  {
+   "id": "TSMOM-94",
+   "lock_threshold": 0.3,
+   "lock_share": 0.75,
+   "return_share": 0.0,
+   "annual_pct": 62.586906520316,
+   "max_dd_pct": -69.32909865953995,
+   "final_value": 2027.6620438396585,
+   "final_btc_units": 0.021291531026096724,
+   "btc_share_pct": 86.72754093319948,
+   "delta_annual_pct": -51.07343209844539,
+   "delta_dd_pct": -12.453543486158544
+  },
+  {
+   "id": "TSMOM-94",
+   "lock_threshold": 0.3,
+   "lock_share": 0.75,
+   "return_share": 0.3,
+   "annual_pct": 66.00892502201197,
+   "max_dd_pct": -68.45788316176305,
+   "final_value": 2306.7769970353193,
+   "final_btc_units": 0.021055400108900387,
+   "btc_share_pct": 75.38823906547887,
+   "delta_annual_pct": -47.65141359674942,
+   "delta_dd_pct": -11.582327988381643
+  },
+  {
+   "id": "TSMOM-94",
+   "lock_threshold": 0.5,
+   "lock_share": 0.5,
+   "return_share": 0.0,
+   "annual_pct": 81.33110036569511,
+   "max_dd_pct": -64.58961454655088,
+   "final_value": 3984.77506770379,
+   "final_btc_units": 0.03418721036216167,
+   "btc_share_pct": 70.8607207547602,
+   "delta_annual_pct": -32.32923825306628,
+   "delta_dd_pct": -7.714059373169469
+  },
+  {
+   "id": "TSMOM-94",
+   "lock_threshold": 0.5,
+   "lock_share": 0.5,
+   "return_share": 0.3,
+   "annual_pct": 82.4162759934595,
+   "max_dd_pct": -63.22378805683676,
+   "final_value": 4134.742817458268,
+   "final_btc_units": 0.024003221836385,
+   "btc_share_pct": 47.947586347474655,
+   "delta_annual_pct": -31.244062625301893,
+   "delta_dd_pct": -6.348232883455353
+  },
+  {
+   "id": "TSMOM-94",
+   "lock_threshold": 0.5,
+   "lock_share": 0.75,
+   "return_share": 0.0,
+   "annual_pct": 64.65232018007502,
+   "max_dd_pct": -68.70282585444139,
+   "final_value": 2192.5054957167795,
+   "final_btc_units": 0.02280955884101737,
+   "btc_share_pct": 85.92546826127369,
+   "delta_annual_pct": -49.00801843868636,
+   "delta_dd_pct": -11.827270681059979
+  },
+  {
+   "id": "TSMOM-94",
+   "lock_threshold": 0.5,
+   "lock_share": 0.75,
+   "return_share": 0.3,
+   "annual_pct": 66.3954218763855,
+   "max_dd_pct": -68.37356834626756,
+   "final_value": 2340.2319982107892,
+   "final_btc_units": 0.019787978609414766,
+   "btc_share_pct": 69.83742718187253,
+   "delta_annual_pct": -47.26491674237589,
+   "delta_dd_pct": -11.498013172886154
+  },
+  {
+   "id": "RegimeSwitching-864",
+   "lock_threshold": 0.3,
+   "lock_share": 0.5,
+   "return_share": 0.0,
+   "annual_pct": 83.98645643206962,
+   "max_dd_pct": -64.91877489620678,
+   "final_value": 6328.040568411705,
+   "final_btc_units": 0.05840517738328932,
+   "btc_share_pct": 76.23033091998883,
+   "delta_annual_pct": -28.042938951886867,
+   "delta_dd_pct": 7.199504665963275
+  },
+  {
+   "id": "RegimeSwitching-864",
+   "lock_threshold": 0.3,
+   "lock_share": 0.5,
+   "return_share": 0.3,
+   "annual_pct": 93.27350503975076,
+   "max_dd_pct": -65.06070769113222,
+   "final_value": 8846.181143711126,
+   "final_btc_units": 0.04631133305881195,
+   "btc_share_pct": 43.23915184997369,
+   "delta_annual_pct": -18.755890344205724,
+   "delta_dd_pct": 7.057571871037837
+  },
+  {
+   "id": "RegimeSwitching-864",
+   "lock_threshold": 0.3,
+   "lock_share": 0.75,
+   "return_share": 0.0,
+   "annual_pct": 73.9660541274272,
+   "max_dd_pct": -68.52761395661462,
+   "final_value": 4323.321126278281,
+   "final_btc_units": 0.04767947812531326,
+   "btc_share_pct": 91.08769464804354,
+   "delta_annual_pct": -38.063341256529284,
+   "delta_dd_pct": 3.5906656055554436
+  },
+  {
+   "id": "RegimeSwitching-864",
+   "lock_threshold": 0.3,
+   "lock_share": 0.75,
+   "return_share": 0.3,
+   "annual_pct": 78.16063263417561,
+   "max_dd_pct": -64.90385963091134,
+   "final_value": 5084.017414015099,
+   "final_btc_units": 0.04217058832325732,
+   "btc_share_pct": 68.50911273351825,
+   "delta_annual_pct": -33.86876274978087,
+   "delta_dd_pct": 7.214419931258718
+  },
+  {
+   "id": "RegimeSwitching-864",
+   "lock_threshold": 0.5,
+   "lock_share": 0.5,
+   "return_share": 0.0,
+   "annual_pct": 86.01791928991254,
+   "max_dd_pct": -64.91953513210088,
+   "final_value": 6818.84825000343,
+   "final_btc_units": 0.06264571772876176,
+   "btc_share_pct": 75.87978230570464,
+   "delta_annual_pct": -26.011476094043942,
+   "delta_dd_pct": 7.198744430069183
+  },
+  {
+   "id": "RegimeSwitching-864",
+   "lock_threshold": 0.5,
+   "lock_share": 0.5,
+   "return_share": 0.3,
+   "annual_pct": 94.87379622321413,
+   "max_dd_pct": -65.0707313046169,
+   "final_value": 9356.58299627051,
+   "final_btc_units": 0.04771755239909123,
+   "btc_share_pct": 42.12176853578594,
+   "delta_annual_pct": -17.155599160742355,
+   "delta_dd_pct": 7.04754825755316
+  },
+  {
+   "id": "RegimeSwitching-864",
+   "lock_threshold": 0.5,
+   "lock_share": 0.75,
+   "return_share": 0.0,
+   "annual_pct": 76.0733482363857,
+   "max_dd_pct": -68.71888522570707,
+   "final_value": 4692.343199682968,
+   "final_btc_units": 0.051773696444937636,
+   "btc_share_pct": 91.13078609431162,
+   "delta_annual_pct": -35.956047147570786,
+   "delta_dd_pct": 3.39939433646299
+  },
+  {
+   "id": "RegimeSwitching-864",
+   "lock_threshold": 0.5,
+   "lock_share": 0.75,
+   "return_share": 0.3,
+   "annual_pct": 86.05408482355814,
+   "max_dd_pct": -64.90902490161557,
+   "final_value": 6827.871852621141,
+   "final_btc_units": 0.05523309644986661,
+   "btc_share_pct": 66.81281068401871,
+   "delta_annual_pct": -25.97531056039834,
+   "delta_dd_pct": 7.2092546605544925
+  },
+  {
+   "id": "RegimeSwitching-935",
+   "lock_threshold": 0.3,
+   "lock_share": 0.5,
+   "return_share": 0.0,
+   "annual_pct": 75.86119920550338,
+   "max_dd_pct": -61.121613842836034,
+   "final_value": 4654.016351315413,
+   "final_btc_units": 0.041779355932639844,
+   "btc_share_pct": 74.14460372204115,
+   "delta_annual_pct": -30.532505116585853,
+   "delta_dd_pct": -5.080035598061208
+  },
+  {
+   "id": "RegimeSwitching-935",
+   "lock_threshold": 0.3,
+   "lock_share": 0.5,
+   "return_share": 0.3,
+   "annual_pct": 81.75849130906812,
+   "max_dd_pct": -56.37568878574566,
+   "final_value": 5824.7188405516645,
+   "final_btc_units": 0.0376399800895359,
+   "btc_share_pct": 53.372817666015315,
+   "delta_annual_pct": -24.635213013021115,
+   "delta_dd_pct": -0.33411054097083337
+  },
+  {
+   "id": "RegimeSwitching-935",
+   "lock_threshold": 0.3,
+   "lock_share": 0.75,
+   "return_share": 0.0,
+   "annual_pct": 66.02339950515574,
+   "max_dd_pct": -69.15260022175002,
+   "final_value": 3145.969145483399,
+   "final_btc_units": 0.03442534451403095,
+   "btc_share_pct": 90.37941975500165,
+   "delta_annual_pct": -40.3703048169335,
+   "delta_dd_pct": -13.111021976975195
+  },
+  {
+   "id": "RegimeSwitching-935",
+   "lock_threshold": 0.3,
+   "lock_share": 0.75,
+   "return_share": 0.3,
+   "annual_pct": 68.30049245944974,
+   "max_dd_pct": -66.61222078849471,
+   "final_value": 3451.4377267561636,
+   "final_btc_units": 0.03313638277596122,
+   "btc_share_pct": 79.29590661591045,
+   "delta_annual_pct": -38.09321186263949,
+   "delta_dd_pct": -10.570642543719885
+  },
+  {
+   "id": "RegimeSwitching-935",
+   "lock_threshold": 0.5,
+   "lock_share": 0.5,
+   "return_share": 0.0,
+   "annual_pct": 76.208251936437,
+   "max_dd_pct": -60.54253902499247,
+   "final_value": 4716.854671887869,
+   "final_btc_units": 0.039679912402010714,
+   "btc_share_pct": 69.4806578229046,
+   "delta_annual_pct": -30.18545238565224,
+   "delta_dd_pct": -4.500960780217646
+  },
+  {
+   "id": "RegimeSwitching-935",
+   "lock_threshold": 0.5,
+   "lock_share": 0.5,
+   "return_share": 0.3,
+   "annual_pct": 81.6969890459527,
+   "max_dd_pct": -54.114433553477156,
+   "final_value": 5811.3242678402,
+   "final_btc_units": 0.029374807102828845,
+   "btc_share_pct": 41.74895664710473,
+   "delta_annual_pct": -24.69671527613653,
+   "delta_dd_pct": 1.92714469129767
+  },
+  {
+   "id": "RegimeSwitching-935",
+   "lock_threshold": 0.5,
+   "lock_share": 0.75,
+   "return_share": 0.0,
+   "annual_pct": 66.00508670249367,
+   "max_dd_pct": -68.82819499153501,
+   "final_value": 3143.609293069068,
+   "final_btc_units": 0.03347939261897311,
+   "btc_share_pct": 87.96192376673395,
+   "delta_annual_pct": -40.388617619595564,
+   "delta_dd_pct": -12.786616746760188
+  },
+  {
+   "id": "RegimeSwitching-935",
+   "lock_threshold": 0.5,
+   "lock_share": 0.75,
+   "return_share": 0.3,
+   "annual_pct": 68.62347322941982,
+   "max_dd_pct": -67.10853791688325,
+   "final_value": 3496.747719727765,
+   "final_btc_units": 0.03347169845412615,
+   "btc_share_pct": 79.06042825231741,
+   "delta_annual_pct": -37.77023109266942,
+   "delta_dd_pct": -11.066959672108425
+  },
+  {
+   "id": "MARegimeFilter-214",
+   "lock_threshold": 0.3,
+   "lock_share": 0.5,
+   "return_share": 0.0,
+   "annual_pct": 75.79000026930099,
+   "max_dd_pct": -74.0405413067138,
+   "final_value": 3288.1391154769267,
+   "final_btc_units": 0.031400020668181726,
+   "btc_share_pct": 78.87247388195384,
+   "delta_annual_pct": -25.791335229208755,
+   "delta_dd_pct": -1.1438556869540832
+  },
+  {
+   "id": "MARegimeFilter-214",
+   "lock_threshold": 0.3,
+   "lock_share": 0.5,
+   "return_share": 0.3,
+   "annual_pct": 73.54635089688033,
+   "max_dd_pct": -73.85751165721466,
+   "final_value": 3036.744242412324,
+   "final_btc_units": 0.01927540840856229,
+   "btc_share_pct": 52.42531932375275,
+   "delta_annual_pct": -28.034984601629418,
+   "delta_dd_pct": -0.960826037454936
+  },
+  {
+   "id": "MARegimeFilter-214",
+   "lock_threshold": 0.3,
+   "lock_share": 0.75,
+   "return_share": 0.0,
+   "annual_pct": 60.618010669381725,
+   "max_dd_pct": -75.14171345027178,
+   "final_value": 1880.3246739072176,
+   "final_btc_units": 0.0205991103903749,
+   "btc_share_pct": 90.48182102077062,
+   "delta_annual_pct": -40.96332482912802,
+   "delta_dd_pct": -2.2450278305120577
+  },
+  {
+   "id": "MARegimeFilter-214",
+   "lock_threshold": 0.3,
+   "lock_share": 0.75,
+   "return_share": 0.3,
+   "annual_pct": 62.17388306021665,
+   "max_dd_pct": -75.05169286163868,
+   "final_value": 1995.978254763205,
+   "final_btc_units": 0.01785626067176737,
+   "btc_share_pct": 73.88910808954498,
+   "delta_annual_pct": -39.40745243829309,
+   "delta_dd_pct": -2.1550072418789625
+  },
+  {
+   "id": "MARegimeFilter-214",
+   "lock_threshold": 0.5,
+   "lock_share": 0.5,
+   "return_share": 0.0,
+   "annual_pct": 79.38865798066863,
+   "max_dd_pct": -73.6812380991427,
+   "final_value": 3727.7166663504113,
+   "final_btc_units": 0.03590214518609246,
+   "btc_share_pct": 79.54689201919165,
+   "delta_annual_pct": -22.19267751784112,
+   "delta_dd_pct": -0.784552479382981
+  },
+  {
+   "id": "MARegimeFilter-214",
+   "lock_threshold": 0.5,
+   "lock_share": 0.5,
+   "return_share": 0.3,
+   "annual_pct": 75.65328404263387,
+   "max_dd_pct": -73.80719133418377,
+   "final_value": 3272.337010930659,
+   "final_btc_units": 0.020717450528119054,
+   "btc_share_pct": 52.29064497192597,
+   "delta_annual_pct": -25.928051455875874,
+   "delta_dd_pct": -0.9105057144240476
+  },
+  {
+   "id": "MARegimeFilter-214",
+   "lock_threshold": 0.5,
+   "lock_share": 0.75,
+   "return_share": 0.0,
+   "annual_pct": 63.746637925732784,
+   "max_dd_pct": -74.85728905795547,
+   "final_value": 2118.8904705897476,
+   "final_btc_units": 0.02330625108799089,
+   "btc_share_pct": 90.8467982072087,
+   "delta_annual_pct": -37.83469757277696,
+   "delta_dd_pct": -1.9606034381957471
+  },
+  {
+   "id": "MARegimeFilter-214",
+   "lock_threshold": 0.5,
+   "lock_share": 0.75,
+   "return_share": 0.3,
+   "annual_pct": 65.51711466197152,
+   "max_dd_pct": -74.63992200656106,
+   "final_value": 2264.786744515417,
+   "final_btc_units": 0.020612313659452156,
+   "btc_share_pct": 75.17010217343062,
+   "delta_annual_pct": -36.064220836538226,
+   "delta_dd_pct": -1.7432363868013425
+  },
+  {
+   "id": "RegimeSwitching-905",
+   "lock_threshold": 0.3,
+   "lock_share": 0.5,
+   "return_share": 0.0,
+   "annual_pct": 73.34354793104183,
+   "max_dd_pct": -64.23701011251435,
+   "final_value": 4219.167570815214,
+   "final_btc_units": 0.03990264267174611,
+   "btc_share_pct": 78.11251070534745,
+   "delta_annual_pct": -28.2102885733554,
+   "delta_dd_pct": 1.3656189657584292
+  },
+  {
+   "id": "RegimeSwitching-905",
+   "lock_threshold": 0.3,
+   "lock_share": 0.5,
+   "return_share": 0.3,
+   "annual_pct": 78.65201468671444,
+   "max_dd_pct": -60.575523273154495,
+   "final_value": 5180.173146657777,
+   "final_btc_units": 0.041329143450558395,
+   "btc_share_pct": 65.89581608699271,
+   "delta_annual_pct": -22.901821817682787,
+   "delta_dd_pct": 5.027105805118289
+  },
+  {
+   "id": "RegimeSwitching-905",
+   "lock_threshold": 0.3,
+   "lock_share": 0.75,
+   "return_share": 0.0,
+   "annual_pct": 64.55822019746616,
+   "max_dd_pct": -70.45431075232878,
+   "final_value": 2961.8687584414206,
+   "final_btc_units": 0.033171801928735395,
+   "btc_share_pct": 92.5015404426177,
+   "delta_annual_pct": -36.99561630693107,
+   "delta_dd_pct": -4.851681674055996
+  },
+  {
+   "id": "RegimeSwitching-905",
+   "lock_threshold": 0.3,
+   "lock_share": 0.75,
+   "return_share": 0.3,
+   "annual_pct": 69.33498114092103,
+   "max_dd_pct": -66.88286026544216,
+   "final_value": 3598.3562065820297,
+   "final_btc_units": 0.037364766192030885,
+   "btc_share_pct": 85.76376318424288,
+   "delta_annual_pct": -32.218855363476194,
+   "delta_dd_pct": -1.2802311871693774
+  },
+  {
+   "id": "RegimeSwitching-905",
+   "lock_threshold": 0.5,
+   "lock_share": 0.5,
+   "return_share": 0.0,
+   "annual_pct": 75.51402054126812,
+   "max_dd_pct": -63.507894088843116,
+   "final_value": 4591.871098892152,
+   "final_btc_units": 0.04377880347960087,
+   "btc_share_pct": 78.74444238429686,
+   "delta_annual_pct": -26.0398159631291,
+   "delta_dd_pct": 2.094734989429668
+  },
+  {
+   "id": "RegimeSwitching-905",
+   "lock_threshold": 0.5,
+   "lock_share": 0.5,
+   "return_share": 0.3,
+   "annual_pct": 82.54799880583033,
+   "max_dd_pct": -57.17574333854729,
+   "final_value": 5999.018767898259,
+   "final_btc_units": 0.04641398646105367,
+   "btc_share_pct": 63.90198708603969,
+   "delta_annual_pct": -19.005837698566893,
+   "delta_dd_pct": 8.426885739725492
+  },
+  {
+   "id": "RegimeSwitching-905",
+   "lock_threshold": 0.5,
+   "lock_share": 0.75,
+   "return_share": 0.0,
+   "annual_pct": 66.09682487361364,
+   "max_dd_pct": -70.01252995048952,
+   "final_value": 3155.4461797615013,
+   "final_btc_units": 0.03549880105567596,
+   "btc_share_pct": 92.91773628823383,
+   "delta_annual_pct": -35.45701163078358,
+   "delta_dd_pct": -4.409900872216738
+  },
+  {
+   "id": "RegimeSwitching-905",
+   "lock_threshold": 0.5,
+   "lock_share": 0.75,
+   "return_share": 0.3,
+   "annual_pct": 70.44491404047837,
+   "max_dd_pct": -66.5428926424816,
+   "final_value": 3761.889151957915,
+   "final_btc_units": 0.03959111403978674,
+   "btc_share_pct": 86.9235471228549,
+   "delta_annual_pct": -31.10892246391886,
+   "delta_dd_pct": -0.94026356420882
+  },
+  {
+   "id": "RegimeSwitching-875",
+   "lock_threshold": 0.3,
+   "lock_share": 0.5,
+   "return_share": 0.0,
+   "annual_pct": 71.69558477907844,
+   "max_dd_pct": -68.07464405315599,
+   "final_value": 3953.7139129766592,
+   "final_btc_units": 0.036361833676512766,
+   "btc_share_pct": 75.96022587898804,
+   "delta_annual_pct": -23.614433226214885,
+   "delta_dd_pct": -0.46273419781307723
+  },
+  {
+   "id": "RegimeSwitching-875",
+   "lock_threshold": 0.3,
+   "lock_share": 0.5,
+   "return_share": 0.3,
+   "annual_pct": 74.04159670112927,
+   "max_dd_pct": -64.91812767767978,
+   "final_value": 4336.108336654491,
+   "final_btc_units": 0.03137387678335555,
+   "btc_share_pct": 59.76043838630341,
+   "delta_annual_pct": -21.268421304164065,
+   "delta_dd_pct": 2.693782177663138
+  },
+  {
+   "id": "RegimeSwitching-875",
+   "lock_threshold": 0.3,
+   "lock_share": 0.75,
+   "return_share": 0.0,
+   "annual_pct": 63.88707693296585,
+   "max_dd_pct": -72.14494820149322,
+   "final_value": 2880.658770936162,
+   "final_btc_units": 0.03175003503189806,
+   "btc_share_pct": 91.03284263876235,
+   "delta_annual_pct": -31.422941072327482,
+   "delta_dd_pct": -4.533038346150306
+  },
+  {
+   "id": "RegimeSwitching-875",
+   "lock_threshold": 0.3,
+   "lock_share": 0.75,
+   "return_share": 0.3,
+   "annual_pct": 65.52289829170417,
+   "max_dd_pct": -71.17542123196144,
+   "final_value": 3082.0137364855614,
+   "final_btc_units": 0.03041842775887643,
+   "btc_share_pct": 81.51694688469465,
+   "delta_annual_pct": -29.787119713589163,
+   "delta_dd_pct": -3.5635113766185214
+  },
+  {
+   "id": "RegimeSwitching-875",
+   "lock_threshold": 0.5,
+   "lock_share": 0.5,
+   "return_share": 0.0,
+   "annual_pct": 73.40753943730311,
+   "max_dd_pct": -67.89943237987295,
+   "final_value": 4229.774519470236,
+   "final_btc_units": 0.039262516101355165,
+   "btc_share_pct": 76.66667409372799,
+   "delta_annual_pct": -21.902478567990215,
+   "delta_dd_pct": -0.2875225245300328
+  },
+  {
+   "id": "RegimeSwitching-875",
+   "lock_threshold": 0.5,
+   "lock_share": 0.5,
+   "return_share": 0.3,
+   "annual_pct": 76.57928697261025,
+   "max_dd_pct": -65.54425312377488,
+   "final_value": 4784.834349707112,
+   "final_btc_units": 0.03611423326253382,
+   "btc_share_pct": 62.33862289766983,
+   "delta_annual_pct": -18.73073103268308,
+   "delta_dd_pct": 2.067656731568036
+  },
+  {
+   "id": "RegimeSwitching-875",
+   "lock_threshold": 0.5,
+   "lock_share": 0.75,
+   "return_share": 0.0,
+   "annual_pct": 65.3182153686852,
+   "max_dd_pct": -72.09388002712107,
+   "final_value": 3056.180186645984,
+   "final_btc_units": 0.033864587458155945,
+   "btc_share_pct": 91.51926972464113,
+   "delta_annual_pct": -29.991802636608128,
+   "delta_dd_pct": -4.481970171778158
+  },
+  {
+   "id": "RegimeSwitching-875",
+   "lock_threshold": 0.5,
+   "lock_share": 0.75,
+   "return_share": 0.3,
+   "annual_pct": 66.97158418739737,
+   "max_dd_pct": -71.13178810992473,
+   "final_value": 3270.238595523004,
+   "final_btc_units": 0.03278769771541523,
+   "btc_share_pct": 82.80893422683499,
+   "delta_annual_pct": -28.33843381789596,
+   "delta_dd_pct": -3.519878254581812
+  },
+  {
+   "id": "TSMOM-4",
+   "lock_threshold": 0.3,
+   "lock_share": 0.5,
+   "return_share": 0.0,
+   "annual_pct": 68.89745579831519,
+   "max_dd_pct": -77.74767558619476,
+   "final_value": 2566.802136945263,
+   "final_btc_units": 0.020030082826435806,
+   "btc_share_pct": 64.45195058905392,
+   "delta_annual_pct": -26.1045869139777,
+   "delta_dd_pct": 4.12631387693169
+  },
+  {
+   "id": "TSMOM-4",
+   "lock_threshold": 0.3,
+   "lock_share": 0.5,
+   "return_share": 0.3,
+   "annual_pct": 70.87083646220651,
+   "max_dd_pct": -77.92157739043533,
+   "final_value": 2758.220121778469,
+   "final_btc_units": 0.008646625800181162,
+   "btc_share_pct": 25.891872189229403,
+   "delta_annual_pct": -24.13120625008638,
+   "delta_dd_pct": 3.952412072691118
+  },
+  {
+   "id": "TSMOM-4",
+   "lock_threshold": 0.3,
+   "lock_share": 0.75,
+   "return_share": 0.0,
+   "annual_pct": 57.715533705623855,
+   "max_dd_pct": -76.7885385042425,
+   "final_value": 1679.5593233737106,
+   "final_btc_units": 0.016643077450716873,
+   "btc_share_pct": 81.8434632825174,
+   "delta_annual_pct": -37.286509006669036,
+   "delta_dd_pct": 5.085450958883953
+  },
+  {
+   "id": "TSMOM-4",
+   "lock_threshold": 0.3,
+   "lock_share": 0.75,
+   "return_share": 0.3,
+   "annual_pct": 60.61855204594724,
+   "max_dd_pct": -76.88203377287573,
+   "final_value": 1880.3639164761098,
+   "final_btc_units": 0.016298483326257336,
+   "btc_share_pct": 71.58977482270987,
+   "delta_annual_pct": -34.38349066634565,
+   "delta_dd_pct": 4.99195569025072
+  },
+  {
+   "id": "TSMOM-4",
+   "lock_threshold": 0.5,
+   "lock_share": 0.5,
+   "return_share": 0.0,
+   "annual_pct": 68.83054652209447,
+   "max_dd_pct": -77.7643663976272,
+   "final_value": 2560.512514254273,
+   "final_btc_units": 0.02011271908774301,
+   "btc_share_pct": 64.87682646908421,
+   "delta_annual_pct": -26.171496190198425,
+   "delta_dd_pct": 4.10962306549925
+  },
+  {
+   "id": "TSMOM-4",
+   "lock_threshold": 0.5,
+   "lock_share": 0.5,
+   "return_share": 0.3,
+   "annual_pct": 76.60758103174577,
+   "max_dd_pct": -77.9518871349575,
+   "final_value": 3383.9793740745463,
+   "final_btc_units": 0.01529963951064825,
+   "btc_share_pct": 37.342140044193535,
+   "delta_annual_pct": -18.394461680547124,
+   "delta_dd_pct": 3.922102328168947
+  },
+  {
+   "id": "TSMOM-4",
+   "lock_threshold": 0.5,
+   "lock_share": 0.75,
+   "return_share": 0.0,
+   "annual_pct": 58.20924100393483,
+   "max_dd_pct": -76.77194650686606,
+   "final_value": 1712.379143957923,
+   "final_btc_units": 0.017221495547547476,
+   "btc_share_pct": 83.06472786008466,
+   "delta_annual_pct": -36.79280170835806,
+   "delta_dd_pct": 5.102042956260391
+  },
+  {
+   "id": "TSMOM-4",
+   "lock_threshold": 0.5,
+   "lock_share": 0.75,
+   "return_share": 0.3,
+   "annual_pct": 64.27575710317015,
+   "max_dd_pct": -77.13204007131071,
+   "final_value": 2161.641767108729,
+   "final_btc_units": 0.01921524893512753,
+   "btc_share_pct": 73.4189221643662,
+   "delta_annual_pct": -30.72628560912274,
+   "delta_dd_pct": 4.741949391815737
+  },
+  {
+   "id": "TSMOM-SOLUSDT-ddthrottle-16",
+   "lock_threshold": 0.3,
+   "lock_share": 0.5,
+   "return_share": 0.0,
+   "annual_pct": 64.54921398138379,
+   "max_dd_pct": -63.85214946234412,
+   "final_value": 2184.01824057838,
+   "final_btc_units": 0.01627131657472624,
+   "btc_share_pct": 61.53357478457949,
+   "delta_annual_pct": -28.019799534686243,
+   "delta_dd_pct": -4.632792546581868
+  },
+  {
+   "id": "TSMOM-SOLUSDT-ddthrottle-16",
+   "lock_threshold": 0.3,
+   "lock_share": 0.5,
+   "return_share": 0.3,
+   "annual_pct": 66.22517800032472,
+   "max_dd_pct": -63.34270503864508,
+   "final_value": 2325.4459786799384,
+   "final_btc_units": 0.014631779041406197,
+   "btc_share_pct": 51.968070399512015,
+   "delta_annual_pct": -26.34383551574531,
+   "delta_dd_pct": -4.123348122882824
+  },
+  {
+   "id": "TSMOM-SOLUSDT-ddthrottle-16",
+   "lock_threshold": 0.3,
+   "lock_share": 0.75,
+   "return_share": 0.0,
+   "annual_pct": 52.49591236650748,
+   "max_dd_pct": -69.10539789066485,
+   "final_value": 1363.6239630467928,
+   "final_btc_units": 0.013074672352499615,
+   "btc_share_pct": 79.19210779291286,
+   "delta_annual_pct": -40.07310114956255,
+   "delta_dd_pct": -9.886040974902592
+  },
+  {
+   "id": "TSMOM-SOLUSDT-ddthrottle-16",
+   "lock_threshold": 0.3,
+   "lock_share": 0.75,
+   "return_share": 0.3,
+   "annual_pct": 54.75644526523269,
+   "max_dd_pct": -68.7021532066008,
+   "final_value": 1493.7002894415486,
+   "final_btc_units": 0.01117581596736809,
+   "btc_share_pct": 61.7961600028503,
+   "delta_annual_pct": -37.81256825083734,
+   "delta_dd_pct": -9.482796290838543
+  },
+  {
+   "id": "TSMOM-SOLUSDT-ddthrottle-16",
+   "lock_threshold": 0.5,
+   "lock_share": 0.5,
+   "return_share": 0.0,
+   "annual_pct": 68.71014462082819,
+   "max_dd_pct": -61.87072683319467,
+   "final_value": 2549.227012859989,
+   "final_btc_units": 0.02104633702285456,
+   "btc_share_pct": 68.18890576390183,
+   "delta_annual_pct": -23.85886889524184,
+   "delta_dd_pct": -2.6513699174324117
+  },
+  {
+   "id": "TSMOM-SOLUSDT-ddthrottle-16",
+   "lock_threshold": 0.5,
+   "lock_share": 0.5,
+   "return_share": 0.3,
+   "annual_pct": 66.27328189848296,
+   "max_dd_pct": -63.02390758166854,
+   "final_value": 2329.61593548731,
+   "final_btc_units": 0.010400627775101047,
+   "btc_share_pct": 36.874058295977626,
+   "delta_annual_pct": -26.295731617587066,
+   "delta_dd_pct": -3.8045506659062838
+  },
+  {
+   "id": "TSMOM-SOLUSDT-ddthrottle-16",
+   "lock_threshold": 0.5,
+   "lock_share": 0.75,
+   "return_share": 0.0,
+   "annual_pct": 56.26128121626106,
+   "max_dd_pct": -67.28872340938263,
+   "final_value": 1585.9345566748837,
+   "final_btc_units": 0.0160952047328003,
+   "btc_share_pct": 83.8217947674696,
+   "delta_annual_pct": -36.30773229980897,
+   "delta_dd_pct": -8.069366493620372
+  },
+  {
+   "id": "TSMOM-SOLUSDT-ddthrottle-16",
+   "lock_threshold": 0.5,
+   "lock_share": 0.75,
+   "return_share": 0.3,
+   "annual_pct": 56.00189351918321,
+   "max_dd_pct": -68.70847378246754,
+   "final_value": 1569.7042124555096,
+   "final_btc_units": 0.011578305237795895,
+   "btc_share_pct": 60.92182200446522,
+   "delta_annual_pct": -36.56711999688682,
+   "delta_dd_pct": -9.489116866705281
+  },
+  {
+   "id": "RegimeSwitching-993",
+   "lock_threshold": 0.3,
+   "lock_share": 0.5,
+   "return_share": 0.0,
+   "annual_pct": 61.224904113267065,
+   "max_dd_pct": -48.69714893971635,
+   "final_value": 2576.954633271394,
+   "final_btc_units": 0.01896932774545297,
+   "btc_share_pct": 60.79822212761613,
+   "delta_annual_pct": -28.996473787123755,
+   "delta_dd_pct": 1.3593573819294065
+  },
+  {
+   "id": "RegimeSwitching-993",
+   "lock_threshold": 0.3,
+   "lock_share": 0.5,
+   "return_share": 0.3,
+   "annual_pct": 65.99919282182778,
+   "max_dd_pct": -48.74806452285082,
+   "final_value": 3142.8501080584006,
+   "final_btc_units": 0.010419150183334308,
+   "btc_share_pct": 27.381317546332244,
+   "delta_annual_pct": -24.222185078563044,
+   "delta_dd_pct": 1.308441798794938
+  },
+  {
+   "id": "RegimeSwitching-993",
+   "lock_threshold": 0.3,
+   "lock_share": 0.75,
+   "return_share": 0.0,
+   "annual_pct": 50.757035970557205,
+   "max_dd_pct": -60.6856225823954,
+   "final_value": 1632.2100409107225,
+   "final_btc_units": 0.016014909453204797,
+   "btc_share_pct": 81.03901521999866,
+   "delta_annual_pct": -39.464341929833616,
+   "delta_dd_pct": -10.629116260749647
+  },
+  {
+   "id": "RegimeSwitching-993",
+   "lock_threshold": 0.3,
+   "lock_share": 0.75,
+   "return_share": 0.3,
+   "annual_pct": 51.92397661601742,
+   "max_dd_pct": -55.404334623823836,
+   "final_value": 1720.1114204940734,
+   "final_btc_units": 0.014321006706121313,
+   "btc_share_pct": 68.7642453656917,
+   "delta_annual_pct": -38.2974012843734,
+   "delta_dd_pct": -5.34782830217808
+  },
+  {
+   "id": "RegimeSwitching-993",
+   "lock_threshold": 0.5,
+   "lock_share": 0.5,
+   "return_share": 0.0,
+   "annual_pct": 61.12746255640382,
+   "max_dd_pct": -47.087314358992714,
+   "final_value": 2566.3781513268145,
+   "final_btc_units": 0.017275128956584077,
+   "btc_share_pct": 55.596360360381716,
+   "delta_annual_pct": -29.093915343987,
+   "delta_dd_pct": 2.969191962653042
+  },
+  {
+   "id": "RegimeSwitching-993",
+   "lock_threshold": 0.5,
+   "lock_share": 0.5,
+   "return_share": 0.3,
+   "annual_pct": 64.80324589158302,
+   "max_dd_pct": -48.47698282805769,
+   "final_value": 2992.0000905522375,
+   "final_btc_units": 0.010034110877631192,
+   "btc_share_pct": 27.698930837777542,
+   "delta_annual_pct": -25.418132008807802,
+   "delta_dd_pct": 1.5795234935880629
+  },
+  {
+   "id": "RegimeSwitching-993",
+   "lock_threshold": 0.5,
+   "lock_share": 0.75,
+   "return_share": 0.0,
+   "annual_pct": 49.261890769450645,
+   "max_dd_pct": -58.414268493367146,
+   "final_value": 1525.2089876406692,
+   "final_btc_units": 0.014149754091843426,
+   "btc_share_pct": 76.62407575370132,
+   "delta_annual_pct": -40.959487130940175,
+   "delta_dd_pct": -8.35776217172139
+  },
+  {
+   "id": "RegimeSwitching-993",
+   "lock_threshold": 0.5,
+   "lock_share": 0.75,
+   "return_share": 0.3,
+   "annual_pct": 52.608708279403956,
+   "max_dd_pct": -52.81635045740312,
+   "final_value": 1773.54539273915,
+   "final_btc_units": 0.01398220850829401,
+   "btc_share_pct": 65.11472013580301,
+   "delta_annual_pct": -37.612669620986864,
+   "delta_dd_pct": -2.759844135757362
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-36",
+   "lock_threshold": 0.3,
+   "lock_share": 0.5,
+   "return_share": 0.0,
+   "annual_pct": 55.06231439877898,
+   "max_dd_pct": -53.341500736904976,
+   "final_value": 1976.8081145977462,
+   "final_btc_units": 0.01657906679126153,
+   "btc_share_pct": 69.2693765034799,
+   "delta_annual_pct": -11.436185662886018,
+   "delta_dd_pct": -12.324569320079647
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-36",
+   "lock_threshold": 0.3,
+   "lock_share": 0.5,
+   "return_share": 0.3,
+   "annual_pct": 54.89906081272802,
+   "max_dd_pct": -46.98208724004381,
+   "final_value": 1962.693194087985,
+   "final_btc_units": 0.013103890673586185,
+   "btc_share_pct": 55.14340216250846,
+   "delta_annual_pct": -11.599439248936982,
+   "delta_dd_pct": -5.965155823218481
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-36",
+   "lock_threshold": 0.3,
+   "lock_share": 0.75,
+   "return_share": 0.0,
+   "annual_pct": 51.44382084831412,
+   "max_dd_pct": -64.431427963162,
+   "final_value": 1683.4663312752346,
+   "final_btc_units": 0.017511519842622534,
+   "btc_share_pct": 85.91423314539597,
+   "delta_annual_pct": -15.05467921335088,
+   "delta_dd_pct": -23.414496546336665
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-36",
+   "lock_threshold": 0.3,
+   "lock_share": 0.75,
+   "return_share": 0.3,
+   "annual_pct": 52.51786065752191,
+   "max_dd_pct": -60.19898237908119,
+   "final_value": 1766.3755377307202,
+   "final_btc_units": 0.015390656077581374,
+   "btc_share_pct": 71.96474723926013,
+   "delta_annual_pct": -13.98063940414309,
+   "delta_dd_pct": -19.182050962255857
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-36",
+   "lock_threshold": 0.5,
+   "lock_share": 0.5,
+   "return_share": 0.0,
+   "annual_pct": 56.16758523042813,
+   "max_dd_pct": -52.2079789815009,
+   "final_value": 2074.6673483757017,
+   "final_btc_units": 0.016114705783351238,
+   "btc_share_pct": 64.15339161326703,
+   "delta_annual_pct": -10.330914831236868,
+   "delta_dd_pct": -11.191047564675571
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-36",
+   "lock_threshold": 0.5,
+   "lock_share": 0.5,
+   "return_share": 0.3,
+   "annual_pct": 57.19340204601864,
+   "max_dd_pct": -44.420119603426734,
+   "final_value": 2169.1595948996664,
+   "final_btc_units": 0.011298799638733611,
+   "btc_share_pct": 43.02159560744172,
+   "delta_annual_pct": -9.305098015646358,
+   "delta_dd_pct": -3.4031881866014047
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-36",
+   "lock_threshold": 0.5,
+   "lock_share": 0.75,
+   "return_share": 0.0,
+   "annual_pct": 53.04794485420135,
+   "max_dd_pct": -63.85500909839058,
+   "final_value": 1808.5619592501348,
+   "final_btc_units": 0.01810860604582735,
+   "btc_share_pct": 82.69844461441548,
+   "delta_annual_pct": -13.450555207463651,
+   "delta_dd_pct": -22.838077681565252
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-36",
+   "lock_threshold": 0.5,
+   "lock_share": 0.75,
+   "return_share": 0.3,
+   "annual_pct": 54.71352078887632,
+   "max_dd_pct": -62.26099752164544,
+   "final_value": 1946.7558457447667,
+   "final_btc_units": 0.017851052464258672,
+   "btc_share_pct": 75.73524792016863,
+   "delta_annual_pct": -11.784979272788675,
+   "delta_dd_pct": -21.244066104820114
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-40",
+   "lock_threshold": 0.3,
+   "lock_share": 0.5,
+   "return_share": 0.0,
+   "annual_pct": 52.529929052087,
+   "max_dd_pct": -49.576733923031135,
+   "final_value": 1767.3265703182,
+   "final_btc_units": 0.01345320552679286,
+   "btc_share_pct": 62.87162461892613,
+   "delta_annual_pct": -12.76335387878899,
+   "delta_dd_pct": -6.372297545554851
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-40",
+   "lock_threshold": 0.3,
+   "lock_share": 0.5,
+   "return_share": 0.3,
+   "annual_pct": 53.13065397393435,
+   "max_dd_pct": -43.016543996311775,
+   "final_value": 1815.221191251383,
+   "final_btc_units": 0.009373617828723023,
+   "btc_share_pct": 42.65042886560728,
+   "delta_annual_pct": -12.162628956941639,
+   "delta_dd_pct": 0.18789238116450946
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-40",
+   "lock_threshold": 0.3,
+   "lock_share": 0.75,
+   "return_share": 0.0,
+   "annual_pct": 48.31977527342903,
+   "max_dd_pct": -61.700578765972494,
+   "final_value": 1460.907229400937,
+   "final_btc_units": 0.014324125484225184,
+   "btc_share_pct": 80.9825021498952,
+   "delta_annual_pct": -16.97350765744696,
+   "delta_dd_pct": -18.49614238849621
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-40",
+   "lock_threshold": 0.3,
+   "lock_share": 0.75,
+   "return_share": 0.3,
+   "annual_pct": 48.38381117966038,
+   "max_dd_pct": -60.65668168278149,
+   "final_value": 1465.2033359717266,
+   "final_btc_units": 0.012871446144997413,
+   "btc_share_pct": 72.55630498059239,
+   "delta_annual_pct": -16.909471751215612,
+   "delta_dd_pct": -17.452245305305205
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-40",
+   "lock_threshold": 0.5,
+   "lock_share": 0.5,
+   "return_share": 0.0,
+   "annual_pct": 53.056450920202415,
+   "max_dd_pct": -46.49738627502268,
+   "final_value": 1809.2458528259594,
+   "final_btc_units": 0.013211265689950673,
+   "btc_share_pct": 60.31044784326141,
+   "delta_annual_pct": -12.236832010673574,
+   "delta_dd_pct": -3.292949897546393
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-40",
+   "lock_threshold": 0.5,
+   "lock_share": 0.5,
+   "return_share": 0.3,
+   "annual_pct": 55.088583210403556,
+   "max_dd_pct": -36.13044047533628,
+   "final_value": 1979.0873857955166,
+   "final_btc_units": 0.012539684244471903,
+   "btc_share_pct": 52.332001198570275,
+   "delta_annual_pct": -10.204699720472433,
+   "delta_dd_pct": 7.073995902140005
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-40",
+   "lock_threshold": 0.5,
+   "lock_share": 0.75,
+   "return_share": 0.0,
+   "annual_pct": 48.921887455346024,
+   "max_dd_pct": -59.49269470504544,
+   "final_value": 1501.730065976233,
+   "final_btc_units": 0.014488545984768068,
+   "btc_share_pct": 79.68537856759544,
+   "delta_annual_pct": -16.371395475529965,
+   "delta_dd_pct": -16.288258327569153
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-40",
+   "lock_threshold": 0.5,
+   "lock_share": 0.75,
+   "return_share": 0.3,
+   "annual_pct": 49.601013040865126,
+   "max_dd_pct": -60.192893176278204,
+   "final_value": 1548.9382578590485,
+   "final_btc_units": 0.014190781851564273,
+   "btc_share_pct": 75.66898868866178,
+   "delta_annual_pct": -15.692269890010863,
+   "delta_dd_pct": -16.98845679880192
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-28",
+   "lock_threshold": 0.3,
+   "lock_share": 0.5,
+   "return_share": 0.0,
+   "annual_pct": 53.96783907072511,
+   "max_dd_pct": -57.50602396432103,
+   "final_value": 1883.8122020060343,
+   "final_btc_units": 0.016262788444802296,
+   "btc_share_pct": 71.30223108767306,
+   "delta_annual_pct": -6.5195826863348785,
+   "delta_dd_pct": -15.877267358421065
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-28",
+   "lock_threshold": 0.3,
+   "lock_share": 0.5,
+   "return_share": 0.3,
+   "annual_pct": 54.58532851542173,
+   "max_dd_pct": -43.41029391299111,
+   "final_value": 1935.809100686476,
+   "final_btc_units": 0.012464870767253802,
+   "btc_share_pct": 53.18277145220398,
+   "delta_annual_pct": -5.902093241638262,
+   "delta_dd_pct": -1.781537307091142
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-28",
+   "lock_threshold": 0.3,
+   "lock_share": 0.75,
+   "return_share": 0.0,
+   "annual_pct": 51.69195467723719,
+   "max_dd_pct": -66.95900945516554,
+   "final_value": 1702.319647353838,
+   "final_btc_units": 0.01782528897804249,
+   "btc_share_pct": 86.48507774305597,
+   "delta_annual_pct": -8.7954670798228,
+   "delta_dd_pct": -25.330252849265577
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-28",
+   "lock_threshold": 0.3,
+   "lock_share": 0.75,
+   "return_share": 0.3,
+   "annual_pct": 52.13153540948441,
+   "max_dd_pct": -63.168855503133194,
+   "final_value": 1736.1614962134902,
+   "final_btc_units": 0.015255440993668665,
+   "btc_share_pct": 72.57388271744077,
+   "delta_annual_pct": -8.355886347575584,
+   "delta_dd_pct": -21.54009889723323
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-28",
+   "lock_threshold": 0.5,
+   "lock_share": 0.5,
+   "return_share": 0.0,
+   "annual_pct": 54.16453042624199,
+   "max_dd_pct": -54.237397246715666,
+   "final_value": 1900.2440617451016,
+   "final_btc_units": 0.015772264494270605,
+   "btc_share_pct": 68.55361795701516,
+   "delta_annual_pct": -6.322891330818003,
+   "delta_dd_pct": -12.6086406408157
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-28",
+   "lock_threshold": 0.5,
+   "lock_share": 0.5,
+   "return_share": 0.3,
+   "annual_pct": 54.442681172527486,
+   "max_dd_pct": -40.822682037312454,
+   "final_value": 1923.689753793975,
+   "final_btc_units": 0.012126299545377061,
+   "btc_share_pct": 52.06417280836539,
+   "delta_annual_pct": -6.044740584532505,
+   "delta_dd_pct": 0.8060745685875119
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-28",
+   "lock_threshold": 0.5,
+   "lock_share": 0.75,
+   "return_share": 0.0,
+   "annual_pct": 52.13117824302631,
+   "max_dd_pct": -64.57479354108693,
+   "final_value": 1736.1337679650903,
+   "final_btc_units": 0.017907130873886755,
+   "btc_share_pct": 85.1899838542959,
+   "delta_annual_pct": -8.356243514033679,
+   "delta_dd_pct": -22.946036935186967
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-28",
+   "lock_threshold": 0.5,
+   "lock_share": 0.75,
+   "return_share": 0.3,
+   "annual_pct": 53.25211969250816,
+   "max_dd_pct": -64.58770773862658,
+   "final_value": 1825.0387747732505,
+   "final_btc_units": 0.01675807478241496,
+   "btc_share_pct": 75.83989808496608,
+   "delta_annual_pct": -7.235302064551831,
+   "delta_dd_pct": -22.95895113272661
+  }
+ ],
+ "honest_limits": [
+  "Наложение применяется к реализованной дневной доходности стратегии, а не к повторному прогону движка со смешанным BTC-рукавом.",
+  "Отбор 13 кандидатов сделан на полном периоде: поздний срез не является неприкосновенной проверкой.",
+  "Четыре кандидата с ddthrottle построены на position_adjustment='hold': их просадка завышена, строки помечены.",
+  "Комиссия 10 bps на ногу, спред и проскальзывание взяты из уже применённой в движке модели; в оверлее учтены только переводы."
+ ],
+ "results": [
+  {
+   "id": "TSMOM-154",
+   "symbol": "SOLUSDT",
+   "scan": "archetype-scan",
+   "parameters": "{\"lookback\": 126}",
+   "risk_parameters": "{\"mode\": \"raw\"}",
+   "period_start": "2020-08-11",
+   "period_end": "2026-10-19",
+   "baseline": {
+    "annual_pct": 116.32319033581445,
+    "max_dd_pct": -64.38266573498066,
+    "t_stat": 3.3552509289790753,
+    "days": 2260
+   },
+   "baseline_final_value": 11881.870636330224,
+   "overlay": {
+    "annual_pct": 63.24721406572556,
+    "max_dd_pct": -72.12499132604418,
+    "t_stat": 2.8465620431272014,
+    "final_value": 2079.1911074906056,
+    "final_btc_units": 0.01755025889536878,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 1449.5367815668747,
+    "final_strategy_value": 629.6543259237312,
+    "final_cash": -2.842170943040401e-14,
+    "locks": 21,
+    "returns_to_asset": 4,
+    "btc_share_pct": 69.7163803916194,
+    "delta_annual_pct": -53.07597627008889,
+    "delta_dd_pct": -7.742325591063519,
+    "delta_final_value": -9802.679528839619,
+    "events": [
+     {
+      "date": "2021-02-03",
+      "event": "lock_to_btc",
+      "moved_usd": 31.59,
+      "fee_usd": 0.0631,
+      "btc_units": 0.00083806
+     },
+     {
+      "date": "2021-02-08",
+      "event": "lock_to_btc",
+      "moved_usd": 30.6833,
+      "fee_usd": 0.0613,
+      "btc_units": 0.00149837
+     },
+     {
+      "date": "2021-02-19",
+      "event": "lock_to_btc",
+      "moved_usd": 41.7462,
+      "fee_usd": 0.0834,
+      "btc_units": 0.0022436
+     },
+     {
+      "date": "2021-02-23",
+      "event": "lock_to_btc",
+      "moved_usd": 32.8518,
+      "fee_usd": 0.0656,
+      "btc_units": 0.0029142
+     },
+     {
+      "date": "2021-04-03",
+      "event": "lock_to_btc",
+      "moved_usd": 51.1736,
+      "fee_usd": 0.1022,
+      "btc_units": 0.00380937
+     },
+     {
+      "date": "2021-04-18",
+      "event": "lock_to_btc",
+      "moved_usd": 53.2843,
+      "fee_usd": 0.1065,
+      "btc_units": 0.00475644
+     },
+     {
+      "date": "2021-04-25",
+      "event": "lock_to_btc",
+      "moved_usd": 63.4729,
+      "fee_usd": 0.1268,
+      "btc_units": 0.00604746
+     },
+     {
+      "date": "2021-08-06",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.515,
+      "sold_btc_units": 0.00181424,
+      "fee_usd": 0.0777,
+      "bought_strategy_units": 0.082082
+     },
+     {
+      "date": "2021-08-13",
+      "event": "lock_to_btc",
+      "moved_usd": 54.0448,
+      "fee_usd": 0.108,
+      "btc_units": 0.00536161
+     },
+     {
+      "date": "2021-08-16",
+      "event": "lock_to_btc",
+      "moved_usd": 65.3596,
+      "fee_usd": 0.1306,
+      "btc_units": 0.00678268
+     },
+     {
+      "date": "2021-08-27",
+      "event": "lock_to_btc",
+      "moved_usd": 77.1872,
+      "fee_usd": 0.1542,
+      "btc_units": 0.00835254
+     },
+     {
+      "date": "2021-09-02",
+      "event": "lock_to_btc",
+      "moved_usd": 93.2642,
+      "fee_usd": 0.1863,
+      "btc_units": 0.01024258
+     },
+     {
+      "date": "2021-09-07",
+      "event": "lock_to_btc",
+      "moved_usd": 79.8162,
+      "fee_usd": 0.1595,
+      "btc_units": 0.01194233
+     },
+     {
+      "date": "2021-11-03",
+      "event": "lock_to_btc",
+      "moved_usd": 95.4608,
+      "fee_usd": 0.1907,
+      "btc_units": 0.01345704
+     },
+     {
+      "date": "2023-11-10",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.57,
+      "sold_btc_units": 0.00403711,
+      "fee_usd": 0.1506,
+      "bought_strategy_units": 0.024084
+     },
+     {
+      "date": "2023-11-11",
+      "event": "lock_to_btc",
+      "moved_usd": 124.4446,
+      "fee_usd": 0.2486,
+      "btc_units": 0.01276483
+     },
+     {
+      "date": "2023-12-08",
+      "event": "lock_to_btc",
+      "moved_usd": 96.7077,
+      "fee_usd": 0.1932,
+      "btc_units": 0.01494985
+     },
+     {
+      "date": "2023-12-22",
+      "event": "lock_to_btc",
+      "moved_usd": 98.6671,
+      "fee_usd": 0.1971,
+      "btc_units": 0.01718937
+     },
+     {
+      "date": "2024-03-01",
+      "event": "lock_to_btc",
+      "moved_usd": 105.5568,
+      "fee_usd": 0.2109,
+      "btc_units": 0.01887794
+     },
+     {
+      "date": "2024-03-14",
+      "event": "lock_to_btc",
+      "moved_usd": 138.3515,
+      "fee_usd": 0.2764,
+      "btc_units": 0.02081206
+     },
+     {
+      "date": "2024-05-19",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.561,
+      "sold_btc_units": 0.00624362,
+      "fee_usd": 0.4138,
+      "bought_strategy_units": 0.022881
+     },
+     {
+      "date": "2024-05-20",
+      "event": "lock_to_btc",
+      "moved_usd": 357.5372,
+      "fee_usd": 0.7144,
+      "btc_units": 0.0195627
+     },
+     {
+      "date": "2025-05-08",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.6,
+      "sold_btc_units": 0.00586881,
+      "fee_usd": 0.606,
+      "bought_strategy_units": 0.052691
+     },
+     {
+      "date": "2025-05-09",
+      "event": "lock_to_btc",
+      "moved_usd": 242.9285,
+      "fee_usd": 0.4854,
+      "btc_units": 0.01604835
+     },
+     {
+      "date": "2025-07-22",
+      "event": "lock_to_btc",
+      "moved_usd": 180.5217,
+      "fee_usd": 0.3607,
+      "btc_units": 0.01755026
+     }
+    ]
+   }
+  },
+  {
+   "id": "TSMOM-94",
+   "symbol": "SOLUSDT",
+   "scan": "archetype-scan",
+   "parameters": "{\"lookback\": 30}",
+   "risk_parameters": "{\"mode\": \"raw\"}",
+   "period_start": "2020-08-11",
+   "period_end": "2026-10-19",
+   "baseline": {
+    "annual_pct": 113.66033861876139,
+    "max_dd_pct": -56.87555517338141,
+    "t_stat": 3.336575333925214,
+    "days": 2260
+   },
+   "baseline_final_value": 11004.699728666163,
+   "overlay": {
+    "annual_pct": 66.00892502201197,
+    "max_dd_pct": -68.45788316176305,
+    "t_stat": 2.835780206185853,
+    "final_value": 2306.7769970353193,
+    "final_btc_units": 0.021055400108900387,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 1739.0385572324608,
+    "final_strategy_value": 567.7384398028586,
+    "final_cash": -2.842170943040401e-14,
+    "locks": 21,
+    "returns_to_asset": 4,
+    "btc_share_pct": 75.38823906547887,
+    "delta_annual_pct": -47.65141359674942,
+    "delta_dd_pct": -11.582327988381643,
+    "delta_final_value": -8697.922731630842,
+    "events": [
+     {
+      "date": "2021-02-01",
+      "event": "lock_to_btc",
+      "moved_usd": 22.7708,
+      "fee_usd": 0.0455,
+      "btc_units": 0.00067783
+     },
+     {
+      "date": "2021-02-04",
+      "event": "lock_to_btc",
+      "moved_usd": 31.472,
+      "fee_usd": 0.0629,
+      "btc_units": 0.00152818
+     },
+     {
+      "date": "2021-02-10",
+      "event": "lock_to_btc",
+      "moved_usd": 37.0719,
+      "fee_usd": 0.0741,
+      "btc_units": 0.00235389
+     },
+     {
+      "date": "2021-02-22",
+      "event": "lock_to_btc",
+      "moved_usd": 57.2751,
+      "fee_usd": 0.1144,
+      "btc_units": 0.0034107
+     },
+     {
+      "date": "2021-04-07",
+      "event": "lock_to_btc",
+      "moved_usd": 33.9333,
+      "fee_usd": 0.0678,
+      "btc_units": 0.00401595
+     },
+     {
+      "date": "2021-04-22",
+      "event": "lock_to_btc",
+      "moved_usd": 55.7307,
+      "fee_usd": 0.1114,
+      "btc_units": 0.00509194
+     },
+     {
+      "date": "2021-05-18",
+      "event": "lock_to_btc",
+      "moved_usd": 58.1651,
+      "fee_usd": 0.1162,
+      "btc_units": 0.00644665
+     },
+     {
+      "date": "2021-08-13",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.575,
+      "sold_btc_units": 0.001934,
+      "fee_usd": 0.0924,
+      "bought_strategy_units": 0.145196
+     },
+     {
+      "date": "2021-08-16",
+      "event": "lock_to_btc",
+      "moved_usd": 64.485,
+      "fee_usd": 0.1288,
+      "btc_units": 0.00591471
+     },
+     {
+      "date": "2021-08-27",
+      "event": "lock_to_btc",
+      "moved_usd": 68.683,
+      "fee_usd": 0.1372,
+      "btc_units": 0.00731161
+     },
+     {
+      "date": "2021-09-02",
+      "event": "lock_to_btc",
+      "moved_usd": 83.4112,
+      "fee_usd": 0.1667,
+      "btc_units": 0.00900197
+     },
+     {
+      "date": "2021-09-07",
+      "event": "lock_to_btc",
+      "moved_usd": 71.6539,
+      "fee_usd": 0.1432,
+      "btc_units": 0.0105279
+     },
+     {
+      "date": "2023-10-23",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.531,
+      "sold_btc_units": 0.00315837,
+      "fee_usd": 0.1044,
+      "bought_strategy_units": 0.033214
+     },
+     {
+      "date": "2023-10-24",
+      "event": "lock_to_btc",
+      "moved_usd": 120.4671,
+      "fee_usd": 0.2407,
+      "btc_units": 0.01091366
+     },
+     {
+      "date": "2023-11-01",
+      "event": "lock_to_btc",
+      "moved_usd": 91.2688,
+      "fee_usd": 0.1824,
+      "btc_units": 0.01348516
+     },
+     {
+      "date": "2023-11-10",
+      "event": "lock_to_btc",
+      "moved_usd": 103.2201,
+      "fee_usd": 0.2062,
+      "btc_units": 0.01624681
+     },
+     {
+      "date": "2023-12-08",
+      "event": "lock_to_btc",
+      "moved_usd": 94.6612,
+      "fee_usd": 0.1891,
+      "btc_units": 0.01838559
+     },
+     {
+      "date": "2023-12-22",
+      "event": "lock_to_btc",
+      "moved_usd": 98.8921,
+      "fee_usd": 0.1976,
+      "btc_units": 0.02063023
+     },
+     {
+      "date": "2024-03-07",
+      "event": "lock_to_btc",
+      "moved_usd": 110.4652,
+      "fee_usd": 0.2207,
+      "btc_units": 0.02228002
+     },
+     {
+      "date": "2024-03-17",
+      "event": "lock_to_btc",
+      "moved_usd": 151.4985,
+      "fee_usd": 0.3027,
+      "btc_units": 0.0244907
+     },
+     {
+      "date": "2024-05-19",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.531,
+      "sold_btc_units": 0.00734721,
+      "fee_usd": 0.4869,
+      "bought_strategy_units": 0.034304
+     },
+     {
+      "date": "2024-05-20",
+      "event": "lock_to_btc",
+      "moved_usd": 350.7029,
+      "fee_usd": 0.7007,
+      "btc_units": 0.02204228
+     },
+     {
+      "date": "2025-04-22",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.571,
+      "sold_btc_units": 0.00661268,
+      "fee_usd": 0.6179,
+      "bought_strategy_units": 0.049933
+     },
+     {
+      "date": "2025-04-23",
+      "event": "lock_to_btc",
+      "moved_usd": 372.1449,
+      "fee_usd": 0.7435,
+      "btc_units": 0.0193937
+     },
+     {
+      "date": "2025-09-12",
+      "event": "lock_to_btc",
+      "moved_usd": 193.1918,
+      "fee_usd": 0.386,
+      "btc_units": 0.0210554
+     }
+    ]
+   }
+  },
+  {
+   "id": "RegimeSwitching-864",
+   "symbol": "ZILUSDT",
+   "scan": "archetype-scan",
+   "parameters": "{\"regime_period\": 50, \"trend_lookback\": 14}",
+   "risk_parameters": "{\"mode\": \"raw\"}",
+   "period_start": "2020-01-01",
+   "period_end": "2026-10-19",
+   "baseline": {
+    "annual_pct": 112.02939538395648,
+    "max_dd_pct": -72.11827956217006,
+    "t_stat": 3.1271260410782613,
+    "days": 2483
+   },
+   "baseline_final_value": 16610.685109329963,
+   "overlay": {
+    "annual_pct": 78.16063263417561,
+    "max_dd_pct": -64.90385963091134,
+    "t_stat": 3.3391816806417998,
+    "final_value": 5084.017414015099,
+    "final_btc_units": 0.04217058832325732,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 3483.015221559304,
+    "final_strategy_value": 1601.002192455795,
+    "final_cash": -1.1368683772161603e-13,
+    "locks": 25,
+    "returns_to_asset": 6,
+    "btc_share_pct": 68.50911273351825,
+    "delta_annual_pct": -33.86876274978087,
+    "delta_dd_pct": 7.214419931258718,
+    "delta_final_value": -11526.667695314864,
+    "events": [
+     {
+      "date": "2020-03-13",
+      "event": "lock_to_btc",
+      "moved_usd": 25.6696,
+      "fee_usd": 0.0513,
+      "btc_units": 0.00459225
+     },
+     {
+      "date": "2020-05-01",
+      "event": "lock_to_btc",
+      "moved_usd": 28.9755,
+      "fee_usd": 0.0579,
+      "btc_units": 0.00786831
+     },
+     {
+      "date": "2020-05-05",
+      "event": "lock_to_btc",
+      "moved_usd": 34.3532,
+      "fee_usd": 0.0686,
+      "btc_units": 0.01166849
+     },
+     {
+      "date": "2020-05-16",
+      "event": "lock_to_btc",
+      "moved_usd": 30.7107,
+      "fee_usd": 0.0614,
+      "btc_units": 0.01493556
+     },
+     {
+      "date": "2020-05-31",
+      "event": "lock_to_btc",
+      "moved_usd": 36.8543,
+      "fee_usd": 0.0736,
+      "btc_units": 0.01882841
+     },
+     {
+      "date": "2020-06-06",
+      "event": "lock_to_btc",
+      "moved_usd": 50.0643,
+      "fee_usd": 0.1,
+      "btc_units": 0.02399732
+     },
+     {
+      "date": "2020-11-24",
+      "event": "lock_to_btc",
+      "moved_usd": 41.0897,
+      "fee_usd": 0.0821,
+      "btc_units": 0.0261376
+     },
+     {
+      "date": "2020-12-03",
+      "event": "lock_to_btc",
+      "moved_usd": 44.317,
+      "fee_usd": 0.0885,
+      "btc_units": 0.02841484
+     },
+     {
+      "date": "2020-12-18",
+      "event": "lock_to_btc",
+      "moved_usd": 44.4844,
+      "fee_usd": 0.0889,
+      "btc_units": 0.03033611
+     },
+     {
+      "date": "2020-12-23",
+      "event": "lock_to_btc",
+      "moved_usd": 49.0289,
+      "fee_usd": 0.098,
+      "btc_units": 0.03244223
+     },
+     {
+      "date": "2020-12-26",
+      "event": "lock_to_btc",
+      "moved_usd": 88.2099,
+      "fee_usd": 0.1762,
+      "btc_units": 0.03576508
+     },
+     {
+      "date": "2021-02-04",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.544,
+      "sold_btc_units": 0.01072953,
+      "fee_usd": 0.3963,
+      "bought_strategy_units": 0.22126
+     },
+     {
+      "date": "2021-02-05",
+      "event": "lock_to_btc",
+      "moved_usd": 255.4763,
+      "fee_usd": 0.5104,
+      "btc_units": 0.03169433
+     },
+     {
+      "date": "2021-02-11",
+      "event": "lock_to_btc",
+      "moved_usd": 102.3538,
+      "fee_usd": 0.2045,
+      "btc_units": 0.03382379
+     },
+     {
+      "date": "2021-03-17",
+      "event": "lock_to_btc",
+      "moved_usd": 104.5556,
+      "fee_usd": 0.2089,
+      "btc_units": 0.03559499
+     },
+     {
+      "date": "2021-08-06",
+      "event": "lock_to_btc",
+      "moved_usd": 106.8402,
+      "fee_usd": 0.2135,
+      "btc_units": 0.03808413
+     },
+     {
+      "date": "2021-08-06",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.503,
+      "sold_btc_units": 0.01142524,
+      "fee_usd": 0.4894,
+      "bought_strategy_units": 0.098086
+     },
+     {
+      "date": "2021-08-07",
+      "event": "lock_to_btc",
+      "moved_usd": 381.3796,
+      "fee_usd": 0.762,
+      "btc_units": 0.03519818
+     },
+     {
+      "date": "2021-09-05",
+      "event": "lock_to_btc",
+      "moved_usd": 172.5438,
+      "fee_usd": 0.3447,
+      "btc_units": 0.03852525
+     },
+     {
+      "date": "2022-03-26",
+      "event": "lock_to_btc",
+      "moved_usd": 209.6875,
+      "fee_usd": 0.419,
+      "btc_units": 0.04322673
+     },
+     {
+      "date": "2022-03-26",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.623,
+      "sold_btc_units": 0.01296802,
+      "fee_usd": 0.5772,
+      "bought_strategy_units": 0.056084
+     },
+     {
+      "date": "2022-03-27",
+      "event": "lock_to_btc",
+      "moved_usd": 538.7207,
+      "fee_usd": 1.0764,
+      "btc_units": 0.04174002
+     },
+     {
+      "date": "2022-03-30",
+      "event": "lock_to_btc",
+      "moved_usd": 459.6292,
+      "fee_usd": 0.9183,
+      "btc_units": 0.05148573
+     },
+     {
+      "date": "2023-11-15",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.51,
+      "sold_btc_units": 0.01544572,
+      "fee_usd": 0.5847,
+      "bought_strategy_units": 0.076113
+     },
+     {
+      "date": "2024-03-02",
+      "event": "lock_to_btc",
+      "moved_usd": 277.938,
+      "fee_usd": 0.5553,
+      "btc_units": 0.04051484
+     },
+     {
+      "date": "2024-05-28",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.533,
+      "sold_btc_units": 0.01215445,
+      "fee_usd": 0.8313,
+      "bought_strategy_units": 0.072451
+     },
+     {
+      "date": "2024-05-29",
+      "event": "lock_to_btc",
+      "moved_usd": 635.94,
+      "fee_usd": 1.2706,
+      "btc_units": 0.03774172
+     },
+     {
+      "date": "2024-12-02",
+      "event": "lock_to_btc",
+      "moved_usd": 342.947,
+      "fee_usd": 0.6852,
+      "btc_units": 0.04131287
+     },
+     {
+      "date": "2026-01-12",
+      "event": "lock_to_btc",
+      "moved_usd": 335.3392,
+      "fee_usd": 0.67,
+      "btc_units": 0.04497862
+     },
+     {
+      "date": "2026-09-21",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.521,
+      "sold_btc_units": 0.01349359,
+      "fee_usd": 1.1688,
+      "bought_strategy_units": 0.064147
+     },
+     {
+      "date": "2026-09-22",
+      "event": "lock_to_btc",
+      "moved_usd": 923.0302,
+      "fee_usd": 1.8442,
+      "btc_units": 0.04217059
+     }
+    ]
+   }
+  },
+  {
+   "id": "RegimeSwitching-935",
+   "symbol": "ADAUSDT",
+   "scan": "archetype-scan",
+   "parameters": "{\"regime_period\": 100, \"trend_lookback\": 30}",
+   "risk_parameters": "{\"mode\": \"raw\"}",
+   "period_start": "2020-01-01",
+   "period_end": "2026-10-19",
+   "baseline": {
+    "annual_pct": 106.39370432208923,
+    "max_dd_pct": -56.041578244774826,
+    "t_stat": 3.318041159103871,
+    "days": 2483
+   },
+   "baseline_final_value": 13829.230433805247,
+   "overlay": {
+    "annual_pct": 68.30049245944974,
+    "max_dd_pct": -66.61222078849471,
+    "t_stat": 3.141418041333319,
+    "final_value": 3451.4377267561636,
+    "final_btc_units": 0.03313638277596122,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 2736.84883671487,
+    "final_strategy_value": 714.5888900412937,
+    "final_cash": 0.0,
+    "locks": 22,
+    "returns_to_asset": 5,
+    "btc_share_pct": 79.29590661591045,
+    "delta_annual_pct": -38.09321186263949,
+    "delta_dd_pct": -10.570642543719885,
+    "delta_final_value": -10377.792707049084,
+    "events": [
+     {
+      "date": "2020-03-19",
+      "event": "lock_to_btc",
+      "moved_usd": 26.7966,
+      "fee_usd": 0.0535,
+      "btc_units": 0.00433974
+     },
+     {
+      "date": "2020-05-28",
+      "event": "lock_to_btc",
+      "moved_usd": 31.2447,
+      "fee_usd": 0.0624,
+      "btc_units": 0.00759607
+     },
+     {
+      "date": "2020-06-03",
+      "event": "lock_to_btc",
+      "moved_usd": 28.3241,
+      "fee_usd": 0.0566,
+      "btc_units": 0.01052043
+     },
+     {
+      "date": "2020-07-07",
+      "event": "lock_to_btc",
+      "moved_usd": 35.4559,
+      "fee_usd": 0.0708,
+      "btc_units": 0.01434279
+     },
+     {
+      "date": "2020-10-10",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.53,
+      "sold_btc_units": 0.00430284,
+      "fee_usd": 0.0486,
+      "bought_strategy_units": 0.142547
+     },
+     {
+      "date": "2020-10-11",
+      "event": "lock_to_btc",
+      "moved_usd": 37.1613,
+      "fee_usd": 0.0742,
+      "btc_units": 0.01330207
+     },
+     {
+      "date": "2020-11-22",
+      "event": "lock_to_btc",
+      "moved_usd": 39.584,
+      "fee_usd": 0.0791,
+      "btc_units": 0.01544739
+     },
+     {
+      "date": "2021-01-03",
+      "event": "lock_to_btc",
+      "moved_usd": 43.1375,
+      "fee_usd": 0.0862,
+      "btc_units": 0.01675197
+     },
+     {
+      "date": "2021-01-06",
+      "event": "lock_to_btc",
+      "moved_usd": 83.4051,
+      "fee_usd": 0.1666,
+      "btc_units": 0.01901577
+     },
+     {
+      "date": "2021-02-03",
+      "event": "lock_to_btc",
+      "moved_usd": 49.7963,
+      "fee_usd": 0.0995,
+      "btc_units": 0.02033683
+     },
+     {
+      "date": "2021-02-06",
+      "event": "lock_to_btc",
+      "moved_usd": 73.9319,
+      "fee_usd": 0.1477,
+      "btc_units": 0.02221971
+     },
+     {
+      "date": "2021-02-10",
+      "event": "lock_to_btc",
+      "moved_usd": 90.3756,
+      "fee_usd": 0.1806,
+      "btc_units": 0.02423265
+     },
+     {
+      "date": "2021-02-26",
+      "event": "lock_to_btc",
+      "moved_usd": 67.0348,
+      "fee_usd": 0.1339,
+      "btc_units": 0.02567831
+     },
+     {
+      "date": "2021-05-02",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.506,
+      "sold_btc_units": 0.00770349,
+      "fee_usd": 0.4358,
+      "bought_strategy_units": 0.125685
+     },
+     {
+      "date": "2021-05-03",
+      "event": "lock_to_btc",
+      "moved_usd": 326.2678,
+      "fee_usd": 0.6519,
+      "btc_units": 0.02367045
+     },
+     {
+      "date": "2021-05-13",
+      "event": "lock_to_btc",
+      "moved_usd": 127.4621,
+      "fee_usd": 0.2547,
+      "btc_units": 0.02623145
+     },
+     {
+      "date": "2021-08-19",
+      "event": "lock_to_btc",
+      "moved_usd": 142.0532,
+      "fee_usd": 0.2838,
+      "btc_units": 0.02926326
+     },
+     {
+      "date": "2023-12-04",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.51,
+      "sold_btc_units": 0.00877898,
+      "fee_usd": 0.3686,
+      "bought_strategy_units": 0.060253
+     },
+     {
+      "date": "2023-12-05",
+      "event": "lock_to_btc",
+      "moved_usd": 250.3249,
+      "fee_usd": 0.5001,
+      "btc_units": 0.02615268
+     },
+     {
+      "date": "2023-12-09",
+      "event": "lock_to_btc",
+      "moved_usd": 158.9262,
+      "fee_usd": 0.3175,
+      "btc_units": 0.02978104
+     },
+     {
+      "date": "2024-03-04",
+      "event": "lock_to_btc",
+      "moved_usd": 148.6257,
+      "fee_usd": 0.297,
+      "btc_units": 0.03195449
+     },
+     {
+      "date": "2024-07-15",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.506,
+      "sold_btc_units": 0.00958635,
+      "fee_usd": 0.6205,
+      "bought_strategy_units": 0.059739
+     },
+     {
+      "date": "2024-07-16",
+      "event": "lock_to_btc",
+      "moved_usd": 416.9419,
+      "fee_usd": 0.8331,
+      "btc_units": 0.02876549
+     },
+     {
+      "date": "2024-11-15",
+      "event": "lock_to_btc",
+      "moved_usd": 244.3333,
+      "fee_usd": 0.4882,
+      "btc_units": 0.03144416
+     },
+     {
+      "date": "2024-11-22",
+      "event": "lock_to_btc",
+      "moved_usd": 297.6085,
+      "fee_usd": 0.5946,
+      "btc_units": 0.03444758
+     },
+     {
+      "date": "2025-03-04",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.577,
+      "sold_btc_units": 0.01033427,
+      "fee_usd": 0.902,
+      "bought_strategy_units": 0.036334
+     },
+     {
+      "date": "2025-03-05",
+      "event": "lock_to_btc",
+      "moved_usd": 819.182,
+      "fee_usd": 1.6367,
+      "btc_units": 0.03313638
+     }
+    ]
+   }
+  },
+  {
+   "id": "MARegimeFilter-214",
+   "symbol": "SOLUSDT",
+   "scan": "archetype-scan",
+   "parameters": "{\"ma_period\": 50}",
+   "risk_parameters": "{\"mode\": \"raw\"}",
+   "period_start": "2020-08-11",
+   "period_end": "2026-10-19",
+   "baseline": {
+    "annual_pct": 101.58133549850974,
+    "max_dd_pct": -72.89668561975972,
+    "t_stat": 3.1362276485300615,
+    "days": 2260
+   },
+   "baseline_final_value": 7675.198937291854,
+   "overlay": {
+    "annual_pct": 62.17388306021665,
+    "max_dd_pct": -75.05169286163868,
+    "t_stat": 2.7537708302759305,
+    "final_value": 1995.978254763205,
+    "final_btc_units": 0.01785626067176737,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 1474.810530105798,
+    "final_strategy_value": 521.167724657407,
+    "final_cash": -5.684341886080802e-14,
+    "locks": 20,
+    "returns_to_asset": 4,
+    "btc_share_pct": 73.88910808954498,
+    "delta_annual_pct": -39.40745243829309,
+    "delta_dd_pct": -2.1550072418789625,
+    "delta_final_value": -5679.220682528649,
+    "events": [
+     {
+      "date": "2021-01-09",
+      "event": "lock_to_btc",
+      "moved_usd": 22.6195,
+      "fee_usd": 0.0452,
+      "btc_units": 0.00056312
+     },
+     {
+      "date": "2021-02-01",
+      "event": "lock_to_btc",
+      "moved_usd": 28.8017,
+      "fee_usd": 0.0575,
+      "btc_units": 0.00142047
+     },
+     {
+      "date": "2021-02-04",
+      "event": "lock_to_btc",
+      "moved_usd": 34.2655,
+      "fee_usd": 0.0685,
+      "btc_units": 0.0023463
+     },
+     {
+      "date": "2021-02-10",
+      "event": "lock_to_btc",
+      "moved_usd": 40.3625,
+      "fee_usd": 0.0806,
+      "btc_units": 0.0032453
+     },
+     {
+      "date": "2021-02-22",
+      "event": "lock_to_btc",
+      "moved_usd": 62.359,
+      "fee_usd": 0.1246,
+      "btc_units": 0.00439592
+     },
+     {
+      "date": "2021-03-29",
+      "event": "lock_to_btc",
+      "moved_usd": 37.2971,
+      "fee_usd": 0.0745,
+      "btc_units": 0.00504175
+     },
+     {
+      "date": "2021-04-06",
+      "event": "lock_to_btc",
+      "moved_usd": 42.5059,
+      "fee_usd": 0.0849,
+      "btc_units": 0.00577326
+     },
+     {
+      "date": "2021-04-22",
+      "event": "lock_to_btc",
+      "moved_usd": 78.6092,
+      "fee_usd": 0.1571,
+      "btc_units": 0.00729097
+     },
+     {
+      "date": "2021-05-18",
+      "event": "lock_to_btc",
+      "moved_usd": 70.3137,
+      "fee_usd": 0.1405,
+      "btc_units": 0.00892863
+     },
+     {
+      "date": "2021-08-13",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.55,
+      "sold_btc_units": 0.00267859,
+      "fee_usd": 0.128,
+      "bought_strategy_units": 0.118762
+     },
+     {
+      "date": "2021-08-16",
+      "event": "lock_to_btc",
+      "moved_usd": 78.8183,
+      "fee_usd": 0.1575,
+      "btc_units": 0.00796374
+     },
+     {
+      "date": "2021-08-27",
+      "event": "lock_to_btc",
+      "moved_usd": 82.7877,
+      "fee_usd": 0.1654,
+      "btc_units": 0.0096475
+     },
+     {
+      "date": "2021-09-02",
+      "event": "lock_to_btc",
+      "moved_usd": 100.5235,
+      "fee_usd": 0.2008,
+      "btc_units": 0.01168465
+     },
+     {
+      "date": "2021-09-07",
+      "event": "lock_to_btc",
+      "moved_usd": 86.3432,
+      "fee_usd": 0.1725,
+      "btc_units": 0.0135234
+     },
+     {
+      "date": "2021-11-03",
+      "event": "lock_to_btc",
+      "moved_usd": 103.4864,
+      "fee_usd": 0.2068,
+      "btc_units": 0.01516546
+     },
+     {
+      "date": "2023-11-09",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.523,
+      "sold_btc_units": 0.00454964,
+      "fee_usd": 0.167,
+      "bought_strategy_units": 0.031603
+     },
+     {
+      "date": "2023-11-10",
+      "event": "lock_to_btc",
+      "moved_usd": 198.9056,
+      "fee_usd": 0.3974,
+      "btc_units": 0.01593752
+     },
+     {
+      "date": "2023-12-08",
+      "event": "lock_to_btc",
+      "moved_usd": 107.949,
+      "fee_usd": 0.2157,
+      "btc_units": 0.01837653
+     },
+     {
+      "date": "2023-12-22",
+      "event": "lock_to_btc",
+      "moved_usd": 112.7738,
+      "fee_usd": 0.2253,
+      "btc_units": 0.02093625
+     },
+     {
+      "date": "2024-03-13",
+      "event": "lock_to_btc",
+      "moved_usd": 141.7631,
+      "fee_usd": 0.2832,
+      "btc_units": 0.02287241
+     },
+     {
+      "date": "2024-05-23",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.512,
+      "sold_btc_units": 0.00686172,
+      "fee_usd": 0.4664,
+      "bought_strategy_units": 0.032941
+     },
+     {
+      "date": "2024-05-24",
+      "event": "lock_to_btc",
+      "moved_usd": 277.3414,
+      "fee_usd": 0.5541,
+      "btc_units": 0.02004843
+     },
+     {
+      "date": "2025-04-22",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.552,
+      "sold_btc_units": 0.00601453,
+      "fee_usd": 0.562,
+      "bought_strategy_units": 0.049014
+     },
+     {
+      "date": "2025-04-23",
+      "event": "lock_to_btc",
+      "moved_usd": 358.8379,
+      "fee_usd": 0.717,
+      "btc_units": 0.01785626
+     }
+    ]
+   }
+  },
+  {
+   "id": "RegimeSwitching-905",
+   "symbol": "ADAUSDT",
+   "scan": "archetype-scan",
+   "parameters": "{\"regime_period\": 100, \"trend_lookback\": 14}",
+   "risk_parameters": "{\"mode\": \"raw\"}",
+   "period_start": "2020-01-01",
+   "period_end": "2026-10-19",
+   "baseline": {
+    "annual_pct": 101.55383650439722,
+    "max_dd_pct": -65.60262907827278,
+    "t_stat": 3.2897266228600937,
+    "days": 2483
+   },
+   "baseline_final_value": 11767.744182158965,
+   "overlay": {
+    "annual_pct": 69.33498114092103,
+    "max_dd_pct": -66.88286026544216,
+    "t_stat": 3.1983301677001243,
+    "final_value": 3598.3562065820297,
+    "final_btc_units": 0.037364766192030885,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 3086.085695538517,
+    "final_strategy_value": 512.2705110435129,
+    "final_cash": -5.684341886080802e-14,
+    "locks": 23,
+    "returns_to_asset": 4,
+    "btc_share_pct": 85.76376318424288,
+    "delta_annual_pct": -32.218855363476194,
+    "delta_dd_pct": -1.2802311871693774,
+    "delta_final_value": -8169.387975576936,
+    "events": [
+     {
+      "date": "2020-03-19",
+      "event": "lock_to_btc",
+      "moved_usd": 26.7966,
+      "fee_usd": 0.0535,
+      "btc_units": 0.00433974
+     },
+     {
+      "date": "2020-05-28",
+      "event": "lock_to_btc",
+      "moved_usd": 30.3293,
+      "fee_usd": 0.0606,
+      "btc_units": 0.00750068
+     },
+     {
+      "date": "2020-06-03",
+      "event": "lock_to_btc",
+      "moved_usd": 28.121,
+      "fee_usd": 0.0562,
+      "btc_units": 0.01040407
+     },
+     {
+      "date": "2020-07-08",
+      "event": "lock_to_btc",
+      "moved_usd": 36.5907,
+      "fee_usd": 0.0731,
+      "btc_units": 0.01427407
+     },
+     {
+      "date": "2020-10-09",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.516,
+      "sold_btc_units": 0.00428222,
+      "fee_usd": 0.0473,
+      "bought_strategy_units": 0.14454
+     },
+     {
+      "date": "2020-10-10",
+      "event": "lock_to_btc",
+      "moved_usd": 31.9915,
+      "fee_usd": 0.0639,
+      "btc_units": 0.012819
+     },
+     {
+      "date": "2020-11-21",
+      "event": "lock_to_btc",
+      "moved_usd": 42.4597,
+      "fee_usd": 0.0848,
+      "btc_units": 0.01508457
+     },
+     {
+      "date": "2020-12-28",
+      "event": "lock_to_btc",
+      "moved_usd": 37.735,
+      "fee_usd": 0.0754,
+      "btc_units": 0.01647528
+     },
+     {
+      "date": "2021-01-05",
+      "event": "lock_to_btc",
+      "moved_usd": 62.1433,
+      "fee_usd": 0.1242,
+      "btc_units": 0.01830208
+     },
+     {
+      "date": "2021-01-16",
+      "event": "lock_to_btc",
+      "moved_usd": 52.5231,
+      "fee_usd": 0.1049,
+      "btc_units": 0.01975835
+     },
+     {
+      "date": "2021-02-05",
+      "event": "lock_to_btc",
+      "moved_usd": 73.1286,
+      "fee_usd": 0.1461,
+      "btc_units": 0.02166438
+     },
+     {
+      "date": "2021-02-09",
+      "event": "lock_to_btc",
+      "moved_usd": 55.4841,
+      "fee_usd": 0.1109,
+      "btc_units": 0.02285724
+     },
+     {
+      "date": "2021-02-10",
+      "event": "lock_to_btc",
+      "moved_usd": 64.4887,
+      "fee_usd": 0.1288,
+      "btc_units": 0.0242936
+     },
+     {
+      "date": "2021-02-26",
+      "event": "lock_to_btc",
+      "moved_usd": 66.9952,
+      "fee_usd": 0.1339,
+      "btc_units": 0.02573841
+     },
+     {
+      "date": "2021-05-03",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.513,
+      "sold_btc_units": 0.00772152,
+      "fee_usd": 0.4414,
+      "bought_strategy_units": 0.171025
+     },
+     {
+      "date": "2021-05-04",
+      "event": "lock_to_btc",
+      "moved_usd": 221.1821,
+      "fee_usd": 0.4419,
+      "btc_units": 0.02216614
+     },
+     {
+      "date": "2021-05-07",
+      "event": "lock_to_btc",
+      "moved_usd": 84.9568,
+      "fee_usd": 0.1697,
+      "btc_units": 0.02364546
+     },
+     {
+      "date": "2021-05-15",
+      "event": "lock_to_btc",
+      "moved_usd": 95.1116,
+      "fee_usd": 0.19,
+      "btc_units": 0.02567531
+     },
+     {
+      "date": "2023-12-04",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.5,
+      "sold_btc_units": 0.00770259,
+      "fee_usd": 0.3234,
+      "bought_strategy_units": 0.081033
+     },
+     {
+      "date": "2023-12-05",
+      "event": "lock_to_btc",
+      "moved_usd": 259.3647,
+      "fee_usd": 0.5182,
+      "btc_units": 0.0238458
+     },
+     {
+      "date": "2023-12-09",
+      "event": "lock_to_btc",
+      "moved_usd": 142.3336,
+      "fee_usd": 0.2844,
+      "btc_units": 0.02709535
+     },
+     {
+      "date": "2024-03-01",
+      "event": "lock_to_btc",
+      "moved_usd": 140.6605,
+      "fee_usd": 0.281,
+      "btc_units": 0.02934545
+     },
+     {
+      "date": "2024-07-23",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.519,
+      "sold_btc_units": 0.00880364,
+      "fee_usd": 0.5805,
+      "bought_strategy_units": 0.081328
+     },
+     {
+      "date": "2024-07-24",
+      "event": "lock_to_btc",
+      "moved_usd": 407.7331,
+      "fee_usd": 0.8147,
+      "btc_units": 0.0267661
+     },
+     {
+      "date": "2024-11-15",
+      "event": "lock_to_btc",
+      "moved_usd": 277.6446,
+      "fee_usd": 0.5547,
+      "btc_units": 0.02980997
+     },
+     {
+      "date": "2024-11-22",
+      "event": "lock_to_btc",
+      "moved_usd": 277.5496,
+      "fee_usd": 0.5545,
+      "btc_units": 0.03261095
+     },
+     {
+      "date": "2025-03-02",
+      "event": "lock_to_btc",
+      "moved_usd": 449.0392,
+      "fee_usd": 0.8972,
+      "btc_units": 0.03736477
+     }
+    ]
+   }
+  },
+  {
+   "id": "RegimeSwitching-875",
+   "symbol": "ADAUSDT",
+   "scan": "archetype-scan",
+   "parameters": "{\"regime_period\": 50, \"trend_lookback\": 30}",
+   "risk_parameters": "{\"mode\": \"raw\"}",
+   "period_start": "2020-01-01",
+   "period_end": "2026-10-19",
+   "baseline": {
+    "annual_pct": 95.31001800529333,
+    "max_dd_pct": -67.61190985534292,
+    "t_stat": 3.1131327795989794,
+    "days": 2483
+   },
+   "baseline_final_value": 9499.99205137765,
+   "overlay": {
+    "annual_pct": 65.52289829170417,
+    "max_dd_pct": -71.17542123196144,
+    "t_stat": 3.0177674666149086,
+    "final_value": 3082.0137364855614,
+    "final_btc_units": 0.03041842775887643,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 2512.3635005499277,
+    "final_strategy_value": 569.6502359356335,
+    "final_cash": -2.842170943040401e-14,
+    "locks": 21,
+    "returns_to_asset": 4,
+    "btc_share_pct": 81.51694688469465,
+    "delta_annual_pct": -29.787119713589163,
+    "delta_dd_pct": -3.5635113766185214,
+    "delta_final_value": -6417.978314892089,
+    "events": [
+     {
+      "date": "2020-04-26",
+      "event": "lock_to_btc",
+      "moved_usd": 28.806,
+      "fee_usd": 0.0576,
+      "btc_units": 0.00373692
+     },
+     {
+      "date": "2020-05-28",
+      "event": "lock_to_btc",
+      "moved_usd": 33.3137,
+      "fee_usd": 0.0666,
+      "btc_units": 0.00720888
+     },
+     {
+      "date": "2020-06-03",
+      "event": "lock_to_btc",
+      "moved_usd": 28.6757,
+      "fee_usd": 0.0573,
+      "btc_units": 0.01016954
+     },
+     {
+      "date": "2020-07-07",
+      "event": "lock_to_btc",
+      "moved_usd": 35.8899,
+      "fee_usd": 0.0717,
+      "btc_units": 0.01403869
+     },
+     {
+      "date": "2020-10-09",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.523,
+      "sold_btc_units": 0.00421161,
+      "fee_usd": 0.0465,
+      "bought_strategy_units": 0.127472
+     },
+     {
+      "date": "2020-10-10",
+      "event": "lock_to_btc",
+      "moved_usd": 39.1573,
+      "fee_usd": 0.0782,
+      "btc_units": 0.01328748
+     },
+     {
+      "date": "2020-11-22",
+      "event": "lock_to_btc",
+      "moved_usd": 39.4478,
+      "fee_usd": 0.0788,
+      "btc_units": 0.01542542
+     },
+     {
+      "date": "2021-01-03",
+      "event": "lock_to_btc",
+      "moved_usd": 43.7192,
+      "fee_usd": 0.0874,
+      "btc_units": 0.0167476
+     },
+     {
+      "date": "2021-01-06",
+      "event": "lock_to_btc",
+      "moved_usd": 84.5299,
+      "fee_usd": 0.1689,
+      "btc_units": 0.01904193
+     },
+     {
+      "date": "2021-02-03",
+      "event": "lock_to_btc",
+      "moved_usd": 50.4679,
+      "fee_usd": 0.1008,
+      "btc_units": 0.02038081
+     },
+     {
+      "date": "2021-02-06",
+      "event": "lock_to_btc",
+      "moved_usd": 74.9289,
+      "fee_usd": 0.1497,
+      "btc_units": 0.02228907
+     },
+     {
+      "date": "2021-02-10",
+      "event": "lock_to_btc",
+      "moved_usd": 91.5944,
+      "fee_usd": 0.183,
+      "btc_units": 0.02432916
+     },
+     {
+      "date": "2021-02-26",
+      "event": "lock_to_btc",
+      "moved_usd": 67.9388,
+      "fee_usd": 0.1357,
+      "btc_units": 0.02579432
+     },
+     {
+      "date": "2021-04-30",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.521,
+      "sold_btc_units": 0.0077383,
+      "fee_usd": 0.4465,
+      "bought_strategy_units": 0.12783
+     },
+     {
+      "date": "2021-05-01",
+      "event": "lock_to_btc",
+      "moved_usd": 307.0568,
+      "fee_usd": 0.6135,
+      "btc_units": 0.02335778
+     },
+     {
+      "date": "2021-05-09",
+      "event": "lock_to_btc",
+      "moved_usd": 93.2905,
+      "fee_usd": 0.1864,
+      "btc_units": 0.02495638
+     },
+     {
+      "date": "2021-05-16",
+      "event": "lock_to_btc",
+      "moved_usd": 99.2047,
+      "fee_usd": 0.1982,
+      "btc_units": 0.0270887
+     },
+     {
+      "date": "2021-08-22",
+      "event": "lock_to_btc",
+      "moved_usd": 125.7976,
+      "fee_usd": 0.2513,
+      "btc_units": 0.02963842
+     },
+     {
+      "date": "2023-12-08",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.547,
+      "sold_btc_units": 0.00889153,
+      "fee_usd": 0.3927,
+      "bought_strategy_units": 0.065421
+     },
+     {
+      "date": "2023-12-09",
+      "event": "lock_to_btc",
+      "moved_usd": 233.1651,
+      "fee_usd": 0.4659,
+      "btc_units": 0.02607016
+     },
+     {
+      "date": "2024-07-23",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.501,
+      "sold_btc_units": 0.00782105,
+      "fee_usd": 0.5157,
+      "bought_strategy_units": 0.081521
+     },
+     {
+      "date": "2024-07-24",
+      "event": "lock_to_btc",
+      "moved_usd": 374.7762,
+      "fee_usd": 0.7488,
+      "btc_units": 0.02397029
+     },
+     {
+      "date": "2024-11-20",
+      "event": "lock_to_btc",
+      "moved_usd": 179.5899,
+      "fee_usd": 0.3588,
+      "btc_units": 0.0258712
+     },
+     {
+      "date": "2024-11-23",
+      "event": "lock_to_btc",
+      "moved_usd": 193.3232,
+      "fee_usd": 0.3863,
+      "btc_units": 0.02784655
+     },
+     {
+      "date": "2025-03-02",
+      "event": "lock_to_btc",
+      "moved_usd": 242.9361,
+      "fee_usd": 0.4854,
+      "btc_units": 0.03041843
+     }
+    ]
+   }
+  },
+  {
+   "id": "TSMOM-4",
+   "symbol": "SOLUSDT",
+   "scan": "archetype-scan",
+   "parameters": "{\"lookback\": 7}",
+   "risk_parameters": "{\"mode\": \"raw\"}",
+   "period_start": "2020-08-11",
+   "period_end": "2026-10-19",
+   "baseline": {
+    "annual_pct": 95.00204271229289,
+    "max_dd_pct": -81.87398946312645,
+    "t_stat": 3.0660331836063515,
+    "days": 2260
+   },
+   "baseline_final_value": 6249.696295011448,
+   "overlay": {
+    "annual_pct": 60.61855204594724,
+    "max_dd_pct": -76.88203377287573,
+    "t_stat": 2.8154515981383885,
+    "final_value": 1880.3639164761098,
+    "final_btc_units": 0.016298483326257336,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 1346.1482936527354,
+    "final_strategy_value": 534.2156228233745,
+    "final_cash": -2.842170943040401e-14,
+    "locks": 19,
+    "returns_to_asset": 4,
+    "btc_share_pct": 71.58977482270987,
+    "delta_annual_pct": -34.38349066634565,
+    "delta_dd_pct": 4.99195569025072,
+    "delta_final_value": -4369.332378535338,
+    "events": [
+     {
+      "date": "2020-08-28",
+      "event": "lock_to_btc",
+      "moved_usd": 29.5947,
+      "fee_usd": 0.0591,
+      "btc_units": 0.00256232
+     },
+     {
+      "date": "2021-01-01",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.517,
+      "sold_btc_units": 0.0007687,
+      "fee_usd": 0.0225,
+      "bought_strategy_units": 0.39577
+     },
+     {
+      "date": "2021-01-22",
+      "event": "lock_to_btc",
+      "moved_usd": 30.5831,
+      "fee_usd": 0.0611,
+      "btc_units": 0.00272007
+     },
+     {
+      "date": "2021-02-01",
+      "event": "lock_to_btc",
+      "moved_usd": 28.2558,
+      "fee_usd": 0.0565,
+      "btc_units": 0.00356118
+     },
+     {
+      "date": "2021-02-04",
+      "event": "lock_to_btc",
+      "moved_usd": 37.6669,
+      "fee_usd": 0.0753,
+      "btc_units": 0.00457891
+     },
+     {
+      "date": "2021-02-10",
+      "event": "lock_to_btc",
+      "moved_usd": 44.4158,
+      "fee_usd": 0.0887,
+      "btc_units": 0.00556819
+     },
+     {
+      "date": "2021-02-22",
+      "event": "lock_to_btc",
+      "moved_usd": 49.5586,
+      "fee_usd": 0.099,
+      "btc_units": 0.00648262
+     },
+     {
+      "date": "2021-04-03",
+      "event": "lock_to_btc",
+      "moved_usd": 41.5048,
+      "fee_usd": 0.0829,
+      "btc_units": 0.00720866
+     },
+     {
+      "date": "2021-04-22",
+      "event": "lock_to_btc",
+      "moved_usd": 68.2541,
+      "fee_usd": 0.1364,
+      "btc_units": 0.00852645
+     },
+     {
+      "date": "2021-05-18",
+      "event": "lock_to_btc",
+      "moved_usd": 66.307,
+      "fee_usd": 0.1325,
+      "btc_units": 0.01007079
+     },
+     {
+      "date": "2021-08-06",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.536,
+      "sold_btc_units": 0.00302124,
+      "fee_usd": 0.1294,
+      "bought_strategy_units": 0.124144
+     },
+     {
+      "date": "2021-08-07",
+      "event": "lock_to_btc",
+      "moved_usd": 61.4731,
+      "fee_usd": 0.1228,
+      "btc_units": 0.00842597
+     },
+     {
+      "date": "2021-08-15",
+      "event": "lock_to_btc",
+      "moved_usd": 67.2263,
+      "fee_usd": 0.1343,
+      "btc_units": 0.00985425
+     },
+     {
+      "date": "2021-08-18",
+      "event": "lock_to_btc",
+      "moved_usd": 73.8042,
+      "fee_usd": 0.1475,
+      "btc_units": 0.01150186
+     },
+     {
+      "date": "2021-09-02",
+      "event": "lock_to_btc",
+      "moved_usd": 111.1078,
+      "fee_usd": 0.222,
+      "btc_units": 0.0137535
+     },
+     {
+      "date": "2021-09-07",
+      "event": "lock_to_btc",
+      "moved_usd": 88.7241,
+      "fee_usd": 0.1773,
+      "btc_units": 0.01564295
+     },
+     {
+      "date": "2021-11-06",
+      "event": "lock_to_btc",
+      "moved_usd": 86.9209,
+      "fee_usd": 0.1737,
+      "btc_units": 0.01705415
+     },
+     {
+      "date": "2023-11-15",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.502,
+      "sold_btc_units": 0.00511624,
+      "fee_usd": 0.1937,
+      "bought_strategy_units": 0.050271
+     },
+     {
+      "date": "2023-12-08",
+      "event": "lock_to_btc",
+      "moved_usd": 92.654,
+      "fee_usd": 0.1851,
+      "btc_units": 0.01403134
+     },
+     {
+      "date": "2023-12-21",
+      "event": "lock_to_btc",
+      "moved_usd": 101.9525,
+      "fee_usd": 0.2037,
+      "btc_units": 0.01635109
+     },
+     {
+      "date": "2024-03-13",
+      "event": "lock_to_btc",
+      "moved_usd": 117.9314,
+      "fee_usd": 0.2356,
+      "btc_units": 0.01796177
+     },
+     {
+      "date": "2024-07-15",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.511,
+      "sold_btc_units": 0.00538853,
+      "fee_usd": 0.3488,
+      "bought_strategy_units": 0.051611
+     },
+     {
+      "date": "2024-07-16",
+      "event": "lock_to_btc",
+      "moved_usd": 242.7899,
+      "fee_usd": 0.4851,
+      "btc_units": 0.01629848
+     }
+    ]
+   }
+  },
+  {
+   "id": "TSMOM-SOLUSDT-ddthrottle-16",
+   "symbol": "SOLUSDT",
+   "scan": "risk-overlay",
+   "parameters": "{\"lookback\": 126}",
+   "risk_parameters": "{\"hard_dd\": 0.35, \"mode\": \"drawdown-throttle\", \"soft_dd\": 0.15}",
+   "period_start": "2020-08-11",
+   "period_end": "2026-10-19",
+   "baseline": {
+    "annual_pct": 92.56901351607003,
+    "max_dd_pct": -59.219356915762255,
+    "t_stat": 3.2837927408297505,
+    "days": 2260
+   },
+   "baseline_final_value": 5782.247120617017,
+   "overlay": {
+    "annual_pct": 54.75644526523269,
+    "max_dd_pct": -68.7021532066008,
+    "t_stat": 2.7658950557445663,
+    "final_value": 1493.7002894415486,
+    "final_btc_units": 0.01117581596736809,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 923.0494208263374,
+    "final_strategy_value": 570.6508686152113,
+    "final_cash": -2.842170943040401e-14,
+    "locks": 18,
+    "returns_to_asset": 4,
+    "btc_share_pct": 61.7961600028503,
+    "delta_annual_pct": -37.81256825083734,
+    "delta_dd_pct": -9.482796290838543,
+    "delta_final_value": -4288.5468311754685,
+    "events": [
+     {
+      "date": "2021-02-03",
+      "event": "lock_to_btc",
+      "moved_usd": 28.2138,
+      "fee_usd": 0.0564,
+      "btc_units": 0.00074849
+     },
+     {
+      "date": "2021-02-08",
+      "event": "lock_to_btc",
+      "moved_usd": 26.8916,
+      "fee_usd": 0.0537,
+      "btc_units": 0.00132721
+     },
+     {
+      "date": "2021-02-19",
+      "event": "lock_to_btc",
+      "moved_usd": 37.3896,
+      "fee_usd": 0.0747,
+      "btc_units": 0.00199467
+     },
+     {
+      "date": "2021-02-23",
+      "event": "lock_to_btc",
+      "moved_usd": 29.9772,
+      "fee_usd": 0.0599,
+      "btc_units": 0.00260658
+     },
+     {
+      "date": "2021-04-03",
+      "event": "lock_to_btc",
+      "moved_usd": 47.1855,
+      "fee_usd": 0.0943,
+      "btc_units": 0.00343199
+     },
+     {
+      "date": "2021-04-18",
+      "event": "lock_to_btc",
+      "moved_usd": 49.6286,
+      "fee_usd": 0.0992,
+      "btc_units": 0.00431409
+     },
+     {
+      "date": "2021-04-25",
+      "event": "lock_to_btc",
+      "moved_usd": 59.5126,
+      "fee_usd": 0.1189,
+      "btc_units": 0.00552455
+     },
+     {
+      "date": "2021-08-06",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.516,
+      "sold_btc_units": 0.00165737,
+      "fee_usd": 0.071,
+      "bought_strategy_units": 0.085787
+     },
+     {
+      "date": "2021-08-13",
+      "event": "lock_to_btc",
+      "moved_usd": 48.885,
+      "fee_usd": 0.0977,
+      "btc_units": 0.00488784
+     },
+     {
+      "date": "2021-08-16",
+      "event": "lock_to_btc",
+      "moved_usd": 61.2208,
+      "fee_usd": 0.1223,
+      "btc_units": 0.00621893
+     },
+     {
+      "date": "2021-08-27",
+      "event": "lock_to_btc",
+      "moved_usd": 72.5363,
+      "fee_usd": 0.1449,
+      "btc_units": 0.0076942
+     },
+     {
+      "date": "2021-09-02",
+      "event": "lock_to_btc",
+      "moved_usd": 87.8601,
+      "fee_usd": 0.1755,
+      "btc_units": 0.00947472
+     },
+     {
+      "date": "2021-09-07",
+      "event": "lock_to_btc",
+      "moved_usd": 75.3284,
+      "fee_usd": 0.1505,
+      "btc_units": 0.0110789
+     },
+     {
+      "date": "2021-11-03",
+      "event": "lock_to_btc",
+      "moved_usd": 90.1885,
+      "fee_usd": 0.1802,
+      "btc_units": 0.01250995
+     },
+     {
+      "date": "2023-12-04",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.504,
+      "sold_btc_units": 0.00375299,
+      "fee_usd": 0.1576,
+      "bought_strategy_units": 0.040299
+     },
+     {
+      "date": "2023-12-08",
+      "event": "lock_to_btc",
+      "moved_usd": 92.422,
+      "fee_usd": 0.1847,
+      "btc_units": 0.01084515
+     },
+     {
+      "date": "2023-12-25",
+      "event": "lock_to_btc",
+      "moved_usd": 93.4464,
+      "fee_usd": 0.1867,
+      "btc_units": 0.01298531
+     },
+     {
+      "date": "2024-03-15",
+      "event": "lock_to_btc",
+      "moved_usd": 100.4231,
+      "fee_usd": 0.2006,
+      "btc_units": 0.01442736
+     },
+     {
+      "date": "2024-07-21",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.533,
+      "sold_btc_units": 0.00432821,
+      "fee_usd": 0.295,
+      "bought_strategy_units": 0.048205
+     },
+     {
+      "date": "2024-07-22",
+      "event": "lock_to_btc",
+      "moved_usd": 152.8002,
+      "fee_usd": 0.3053,
+      "btc_units": 0.01235727
+     },
+     {
+      "date": "2025-04-25",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.505,
+      "sold_btc_units": 0.00370718,
+      "fee_usd": 0.3508,
+      "bought_strategy_units": 0.061218
+     },
+     {
+      "date": "2025-04-26",
+      "event": "lock_to_btc",
+      "moved_usd": 239.4832,
+      "fee_usd": 0.4785,
+      "btc_units": 0.01117582
+     }
+    ]
+   }
+  },
+  {
+   "id": "RegimeSwitching-993",
+   "symbol": "BNBUSDT",
+   "scan": "archetype-scan",
+   "parameters": "{\"regime_period\": 200, \"trend_lookback\": 30}",
+   "risk_parameters": "{\"mode\": \"raw\"}",
+   "period_start": "2020-01-01",
+   "period_end": "2026-10-19",
+   "baseline": {
+    "annual_pct": 90.22137790039082,
+    "max_dd_pct": -50.056506321645756,
+    "t_stat": 3.3018535105421534,
+    "days": 2483
+   },
+   "baseline_final_value": 7938.317995775992,
+   "overlay": {
+    "annual_pct": 51.92397661601742,
+    "max_dd_pct": -55.404334623823836,
+    "t_stat": 2.7059010694367567,
+    "final_value": 1720.1114204940734,
+    "final_btc_units": 0.014321006706121313,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 1182.8216377518295,
+    "final_strategy_value": 537.2897827422439,
+    "final_cash": -2.842170943040401e-14,
+    "locks": 17,
+    "returns_to_asset": 6,
+    "btc_share_pct": 68.7642453656917,
+    "delta_annual_pct": -38.2974012843734,
+    "delta_dd_pct": -5.34782830217808,
+    "delta_final_value": -6218.206575281919,
+    "events": [
+     {
+      "date": "2020-09-13",
+      "event": "lock_to_btc",
+      "moved_usd": 28.932,
+      "fee_usd": 0.0578,
+      "btc_units": 0.00279441
+     },
+     {
+      "date": "2020-09-28",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.507,
+      "sold_btc_units": 0.00083832,
+      "fee_usd": 0.009,
+      "bought_strategy_units": 0.074921
+     },
+     {
+      "date": "2020-12-19",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.538,
+      "sold_btc_units": 0.00058683,
+      "fee_usd": 0.014,
+      "bought_strategy_units": 0.143304
+     },
+     {
+      "date": "2021-02-01",
+      "event": "lock_to_btc",
+      "moved_usd": 28.7321,
+      "fee_usd": 0.0574,
+      "btc_units": 0.00222455
+     },
+     {
+      "date": "2021-02-05",
+      "event": "lock_to_btc",
+      "moved_usd": 28.3122,
+      "fee_usd": 0.0566,
+      "btc_units": 0.00296248
+     },
+     {
+      "date": "2021-02-09",
+      "event": "lock_to_btc",
+      "moved_usd": 56.8103,
+      "fee_usd": 0.1135,
+      "btc_units": 0.00418386
+     },
+     {
+      "date": "2021-02-17",
+      "event": "lock_to_btc",
+      "moved_usd": 59.7985,
+      "fee_usd": 0.1195,
+      "btc_units": 0.0053289
+     },
+     {
+      "date": "2021-02-19",
+      "event": "lock_to_btc",
+      "moved_usd": 128.1358,
+      "fee_usd": 0.256,
+      "btc_units": 0.0076163
+     },
+     {
+      "date": "2021-04-09",
+      "event": "lock_to_btc",
+      "moved_usd": 47.6557,
+      "fee_usd": 0.0952,
+      "btc_units": 0.0084343
+     },
+     {
+      "date": "2021-04-12",
+      "event": "lock_to_btc",
+      "moved_usd": 53.3034,
+      "fee_usd": 0.1065,
+      "btc_units": 0.00932299
+     },
+     {
+      "date": "2021-08-06",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.562,
+      "sold_btc_units": 0.0027969,
+      "fee_usd": 0.1198,
+      "bought_strategy_units": 0.063152
+     },
+     {
+      "date": "2021-08-07",
+      "event": "lock_to_btc",
+      "moved_usd": 131.0141,
+      "fee_usd": 0.2618,
+      "btc_units": 0.00945956
+     },
+     {
+      "date": "2021-08-23",
+      "event": "lock_to_btc",
+      "moved_usd": 85.5621,
+      "fee_usd": 0.171,
+      "btc_units": 0.01118503
+     },
+     {
+      "date": "2021-10-02",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.544,
+      "sold_btc_units": 0.00335551,
+      "fee_usd": 0.1598,
+      "bought_strategy_units": 0.066629
+     },
+     {
+      "date": "2021-10-03",
+      "event": "lock_to_btc",
+      "moved_usd": 88.9276,
+      "fee_usd": 0.1777,
+      "btc_units": 0.0096708
+     },
+     {
+      "date": "2021-11-05",
+      "event": "lock_to_btc",
+      "moved_usd": 86.7975,
+      "fee_usd": 0.1734,
+      "btc_units": 0.01109234
+     },
+     {
+      "date": "2022-03-27",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.553,
+      "sold_btc_units": 0.0033277,
+      "fee_usd": 0.1558,
+      "bought_strategy_units": 0.039777
+     },
+     {
+      "date": "2022-03-28",
+      "event": "lock_to_btc",
+      "moved_usd": 179.4368,
+      "fee_usd": 0.3585,
+      "btc_units": 0.01156493
+     },
+     {
+      "date": "2024-03-13",
+      "event": "lock_to_btc",
+      "moved_usd": 135.7413,
+      "fee_usd": 0.2712,
+      "btc_units": 0.01341884
+     },
+     {
+      "date": "2024-08-23",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.511,
+      "sold_btc_units": 0.00402565,
+      "fee_usd": 0.2578,
+      "bought_strategy_units": 0.049822
+     },
+     {
+      "date": "2024-08-24",
+      "event": "lock_to_btc",
+      "moved_usd": 157.9527,
+      "fee_usd": 0.3156,
+      "btc_units": 0.01185024
+     },
+     {
+      "date": "2025-07-27",
+      "event": "lock_to_btc",
+      "moved_usd": 131.0576,
+      "fee_usd": 0.2619,
+      "btc_units": 0.01294554
+     },
+     {
+      "date": "2025-10-03",
+      "event": "lock_to_btc",
+      "moved_usd": 168.4625,
+      "fee_usd": 0.3366,
+      "btc_units": 0.01432101
+     }
+    ]
+   }
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-36",
+   "symbol": "ADAUSDT",
+   "scan": "risk-overlay",
+   "parameters": "{\"regime_period\": 100, \"trend_lookback\": 14}",
+   "risk_parameters": "{\"hard_dd\": 0.35, \"mode\": \"drawdown-throttle\", \"soft_dd\": 0.15}",
+   "period_start": "2020-01-01",
+   "period_end": "2026-10-19",
+   "baseline": {
+    "annual_pct": 66.498500061665,
+    "max_dd_pct": -41.01693141682533,
+    "t_stat": 3.387323878462328,
+    "days": 2483
+   },
+   "baseline_final_value": 3207.7226925833606,
+   "overlay": {
+    "annual_pct": 52.51786065752191,
+    "max_dd_pct": -60.19898237908119,
+    "t_stat": 3.040170173439818,
+    "final_value": 1766.3755377307202,
+    "final_btc_units": 0.015390656077581374,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 1271.1676910240349,
+    "final_strategy_value": 495.2078467066855,
+    "final_cash": -1.4210854715202004e-14,
+    "locks": 14,
+    "returns_to_asset": 3,
+    "btc_share_pct": 71.96474723926013,
+    "delta_annual_pct": -13.98063940414309,
+    "delta_dd_pct": -19.182050962255857,
+    "delta_final_value": -1441.3471548526404,
+    "events": [
+     {
+      "date": "2020-05-30",
+      "event": "lock_to_btc",
+      "moved_usd": 31.1753,
+      "fee_usd": 0.0623,
+      "btc_units": 0.00320829
+     },
+     {
+      "date": "2020-07-07",
+      "event": "lock_to_btc",
+      "moved_usd": 31.2122,
+      "fee_usd": 0.0624,
+      "btc_units": 0.00657314
+     },
+     {
+      "date": "2020-11-22",
+      "event": "lock_to_btc",
+      "moved_usd": 31.3494,
+      "fee_usd": 0.0626,
+      "btc_units": 0.00827218
+     },
+     {
+      "date": "2021-01-03",
+      "event": "lock_to_btc",
+      "moved_usd": 36.9701,
+      "fee_usd": 0.0739,
+      "btc_units": 0.00939024
+     },
+     {
+      "date": "2021-01-06",
+      "event": "lock_to_btc",
+      "moved_usd": 66.3304,
+      "fee_usd": 0.1325,
+      "btc_units": 0.0111906
+     },
+     {
+      "date": "2021-02-05",
+      "event": "lock_to_btc",
+      "moved_usd": 65.0896,
+      "fee_usd": 0.13,
+      "btc_units": 0.0128871
+     },
+     {
+      "date": "2021-02-09",
+      "event": "lock_to_btc",
+      "moved_usd": 43.2091,
+      "fee_usd": 0.0863,
+      "btc_units": 0.01381606
+     },
+     {
+      "date": "2021-02-10",
+      "event": "lock_to_btc",
+      "moved_usd": 50.2215,
+      "fee_usd": 0.1003,
+      "btc_units": 0.01493465
+     },
+     {
+      "date": "2021-02-26",
+      "event": "lock_to_btc",
+      "moved_usd": 52.1735,
+      "fee_usd": 0.1042,
+      "btc_units": 0.01605982
+     },
+     {
+      "date": "2021-04-30",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.534,
+      "sold_btc_units": 0.00481794,
+      "fee_usd": 0.278,
+      "bought_strategy_units": 0.202923
+     },
+     {
+      "date": "2021-05-01",
+      "event": "lock_to_btc",
+      "moved_usd": 149.6686,
+      "fee_usd": 0.299,
+      "btc_units": 0.0138261
+     },
+     {
+      "date": "2021-05-13",
+      "event": "lock_to_btc",
+      "moved_usd": 88.0984,
+      "fee_usd": 0.176,
+      "btc_units": 0.0155962
+     },
+     {
+      "date": "2023-12-04",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.511,
+      "sold_btc_units": 0.00467886,
+      "fee_usd": 0.1965,
+      "bought_strategy_units": 0.100077
+     },
+     {
+      "date": "2023-12-05",
+      "event": "lock_to_btc",
+      "moved_usd": 156.6311,
+      "fee_usd": 0.3129,
+      "btc_units": 0.01446411
+     },
+     {
+      "date": "2024-08-24",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.5,
+      "sold_btc_units": 0.00433923,
+      "fee_usd": 0.2784,
+      "bought_strategy_units": 0.117334
+     },
+     {
+      "date": "2024-08-25",
+      "event": "lock_to_btc",
+      "moved_usd": 260.8801,
+      "fee_usd": 0.5212,
+      "btc_units": 0.01417905
+     },
+     {
+      "date": "2024-11-22",
+      "event": "lock_to_btc",
+      "moved_usd": 120.0579,
+      "fee_usd": 0.2399,
+      "btc_units": 0.01539066
+     }
+    ]
+   }
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-40",
+   "symbol": "ADAUSDT",
+   "scan": "risk-overlay",
+   "parameters": "{\"regime_period\": 100, \"trend_lookback\": 30}",
+   "risk_parameters": "{\"hard_dd\": 0.35, \"mode\": \"drawdown-throttle\", \"soft_dd\": 0.15}",
+   "period_start": "2020-01-01",
+   "period_end": "2026-10-19",
+   "baseline": {
+    "annual_pct": 65.29328293087599,
+    "max_dd_pct": -43.204436377476284,
+    "t_stat": 3.2466079555746035,
+    "days": 2483
+   },
+   "baseline_final_value": 3053.046058011965,
+   "overlay": {
+    "annual_pct": 48.38381117966038,
+    "max_dd_pct": -60.65668168278149,
+    "t_stat": 2.864150855997625,
+    "final_value": 1465.2033359717266,
+    "final_btc_units": 0.012871446144997413,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 1063.0974010334596,
+    "final_strategy_value": 402.10593493826707,
+    "final_cash": -1.4210854715202004e-14,
+    "locks": 14,
+    "returns_to_asset": 2,
+    "btc_share_pct": 72.55630498059239,
+    "delta_annual_pct": -16.909471751215612,
+    "delta_dd_pct": -17.452245305305205,
+    "delta_final_value": -1587.8427220402386,
+    "events": [
+     {
+      "date": "2020-06-01",
+      "event": "lock_to_btc",
+      "moved_usd": 23.575,
+      "fee_usd": 0.0471,
+      "btc_units": 0.00230648
+     },
+     {
+      "date": "2020-07-25",
+      "event": "lock_to_btc",
+      "moved_usd": 24.4644,
+      "fee_usd": 0.0489,
+      "btc_units": 0.00482344
+     },
+     {
+      "date": "2020-12-29",
+      "event": "lock_to_btc",
+      "moved_usd": 33.1841,
+      "fee_usd": 0.0663,
+      "btc_units": 0.00603278
+     },
+     {
+      "date": "2021-01-05",
+      "event": "lock_to_btc",
+      "moved_usd": 33.8363,
+      "fee_usd": 0.0676,
+      "btc_units": 0.00702745
+     },
+     {
+      "date": "2021-01-16",
+      "event": "lock_to_btc",
+      "moved_usd": 36.5606,
+      "fee_usd": 0.073,
+      "btc_units": 0.00804113
+     },
+     {
+      "date": "2021-02-05",
+      "event": "lock_to_btc",
+      "moved_usd": 60.2219,
+      "fee_usd": 0.1203,
+      "btc_units": 0.00961077
+     },
+     {
+      "date": "2021-02-09",
+      "event": "lock_to_btc",
+      "moved_usd": 39.5957,
+      "fee_usd": 0.0791,
+      "btc_units": 0.01046204
+     },
+     {
+      "date": "2021-02-10",
+      "event": "lock_to_btc",
+      "moved_usd": 45.9735,
+      "fee_usd": 0.0919,
+      "btc_units": 0.01148601
+     },
+     {
+      "date": "2021-02-26",
+      "event": "lock_to_btc",
+      "moved_usd": 47.7201,
+      "fee_usd": 0.0953,
+      "btc_units": 0.01251514
+     },
+     {
+      "date": "2021-04-30",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.565,
+      "sold_btc_units": 0.00375454,
+      "fee_usd": 0.2166,
+      "bought_strategy_units": 0.14907
+     },
+     {
+      "date": "2021-05-01",
+      "event": "lock_to_btc",
+      "moved_usd": 153.1701,
+      "fee_usd": 0.306,
+      "btc_units": 0.01140529
+     },
+     {
+      "date": "2021-05-09",
+      "event": "lock_to_btc",
+      "moved_usd": 60.7689,
+      "fee_usd": 0.1214,
+      "btc_units": 0.01244661
+     },
+     {
+      "date": "2021-05-16",
+      "event": "lock_to_btc",
+      "moved_usd": 64.6214,
+      "fee_usd": 0.1291,
+      "btc_units": 0.01383559
+     },
+     {
+      "date": "2023-12-04",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.512,
+      "sold_btc_units": 0.00415068,
+      "fee_usd": 0.1743,
+      "bought_strategy_units": 0.082543
+     },
+     {
+      "date": "2023-12-05",
+      "event": "lock_to_btc",
+      "moved_usd": 102.5341,
+      "fee_usd": 0.2049,
+      "btc_units": 0.01200671
+     },
+     {
+      "date": "2024-11-15",
+      "event": "lock_to_btc",
+      "moved_usd": 78.8765,
+      "fee_usd": 0.1576,
+      "btc_units": 0.01287145
+     }
+    ]
+   }
+  },
+  {
+   "id": "RegimeSwitching-ADAUSDT-ddthrottle-28",
+   "symbol": "ADAUSDT",
+   "scan": "risk-overlay",
+   "parameters": "{\"regime_period\": 50, \"trend_lookback\": 14}",
+   "risk_parameters": "{\"hard_dd\": 0.35, \"mode\": \"drawdown-throttle\", \"soft_dd\": 0.15}",
+   "period_start": "2020-01-01",
+   "period_end": "2026-10-19",
+   "baseline": {
+    "annual_pct": 60.48742175705999,
+    "max_dd_pct": -41.628756605899966,
+    "t_stat": 3.1873148393846393,
+    "days": 2483
+   },
+   "baseline_final_value": 2497.8229578952137,
+   "overlay": {
+    "annual_pct": 52.13153540948441,
+    "max_dd_pct": -63.168855503133194,
+    "t_stat": 2.995697780777378,
+    "final_value": 1736.1614962134902,
+    "final_btc_units": 0.015255440993668665,
+    "final_btc_price": 82593.47,
+    "final_btc_value": 1259.999808047343,
+    "final_strategy_value": 476.16168816614703,
+    "final_cash": -1.4210854715202004e-14,
+    "locks": 15,
+    "returns_to_asset": 3,
+    "btc_share_pct": 72.57388271744077,
+    "delta_annual_pct": -8.355886347575584,
+    "delta_dd_pct": -21.54009889723323,
+    "delta_final_value": -761.6614616817235,
+    "events": [
+     {
+      "date": "2020-05-28",
+      "event": "lock_to_btc",
+      "moved_usd": 22.8971,
+      "fee_usd": 0.0457,
+      "btc_units": 0.00238634
+     },
+     {
+      "date": "2020-07-06",
+      "event": "lock_to_btc",
+      "moved_usd": 29.3059,
+      "fee_usd": 0.0586,
+      "btc_units": 0.00551634
+     },
+     {
+      "date": "2020-07-25",
+      "event": "lock_to_btc",
+      "moved_usd": 33.5834,
+      "fee_usd": 0.0671,
+      "btc_units": 0.00897148
+     },
+     {
+      "date": "2020-12-29",
+      "event": "lock_to_btc",
+      "moved_usd": 38.9909,
+      "fee_usd": 0.0779,
+      "btc_units": 0.01039243
+     },
+     {
+      "date": "2021-01-05",
+      "event": "lock_to_btc",
+      "moved_usd": 37.7114,
+      "fee_usd": 0.0753,
+      "btc_units": 0.01150102
+     },
+     {
+      "date": "2021-01-16",
+      "event": "lock_to_btc",
+      "moved_usd": 40.7458,
+      "fee_usd": 0.0814,
+      "btc_units": 0.01263075
+     },
+     {
+      "date": "2021-02-05",
+      "event": "lock_to_btc",
+      "moved_usd": 56.7309,
+      "fee_usd": 0.1133,
+      "btc_units": 0.01410939
+     },
+     {
+      "date": "2021-02-09",
+      "event": "lock_to_btc",
+      "moved_usd": 43.0429,
+      "fee_usd": 0.086,
+      "btc_units": 0.01503478
+     },
+     {
+      "date": "2021-02-10",
+      "event": "lock_to_btc",
+      "moved_usd": 50.0284,
+      "fee_usd": 0.1,
+      "btc_units": 0.01614906
+     },
+     {
+      "date": "2021-02-26",
+      "event": "lock_to_btc",
+      "moved_usd": 51.9728,
+      "fee_usd": 0.1038,
+      "btc_units": 0.0172699
+     },
+     {
+      "date": "2021-04-30",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.536,
+      "sold_btc_units": 0.00518097,
+      "fee_usd": 0.2989,
+      "bought_strategy_units": 0.21355
+     },
+     {
+      "date": "2021-05-01",
+      "event": "lock_to_btc",
+      "moved_usd": 164.3453,
+      "fee_usd": 0.3284,
+      "btc_units": 0.01492658
+     },
+     {
+      "date": "2021-05-13",
+      "event": "lock_to_btc",
+      "moved_usd": 89.3268,
+      "fee_usd": 0.1785,
+      "btc_units": 0.01672135
+     },
+     {
+      "date": "2023-12-05",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.534,
+      "sold_btc_units": 0.00501641,
+      "fee_usd": 0.2211,
+      "bought_strategy_units": 0.12691
+     },
+     {
+      "date": "2023-12-06",
+      "event": "lock_to_btc",
+      "moved_usd": 142.3102,
+      "fee_usd": 0.2843,
+      "btc_units": 0.01495031
+     },
+     {
+      "date": "2024-09-26",
+      "event": "return_to_asset",
+      "recovery_ratio": 0.53,
+      "sold_btc_units": 0.00448509,
+      "fee_usd": 0.2923,
+      "bought_strategy_units": 0.150527
+     },
+     {
+      "date": "2024-09-27",
+      "event": "lock_to_btc",
+      "moved_usd": 246.3434,
+      "fee_usd": 0.4922,
+      "btc_units": 0.01420327
+     },
+     {
+      "date": "2024-11-22",
+      "event": "lock_to_btc",
+      "moved_usd": 104.26,
+      "fee_usd": 0.2083,
+      "btc_units": 0.01525544
+     }
+    ]
+   }
+  }
+ ]
+}

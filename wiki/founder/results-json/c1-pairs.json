@@ -1,0 +1,366 @@
+{
+  "generatedAt": "2026-10-15T23:27:06.535Z",
+  "design": {
+    "usableSymbols": 54,
+    "excluded": [
+      {
+        "symbol": "HYPEUSDT",
+        "reason": "only 517 hourly bars (<20000)"
+      },
+      {
+        "symbol": "SPCXBUSDT",
+        "reason": "only 3007 hourly bars (<20000)"
+      },
+      {
+        "symbol": "PUMPUSDT",
+        "reason": "only 9588 hourly bars (<20000)"
+      },
+      {
+        "symbol": "RLUSDUSDT",
+        "reason": "only 6400 hourly bars (<20000)"
+      },
+      {
+        "symbol": "SNDKBUSDT",
+        "reason": "only 3030 hourly bars (<20000)"
+      },
+      {
+        "symbol": "CRCLBUSDT",
+        "reason": "only 3030 hourly bars (<20000)"
+      },
+      {
+        "symbol": "UUSDT",
+        "reason": "only 6616 hourly bars (<20000)"
+      },
+      {
+        "symbol": "SOXLBUSDT",
+        "reason": "only 2411 hourly bars (<20000)"
+      },
+      {
+        "symbol": "XAUTUSDT",
+        "reason": "only 4882 hourly bars (<20000)"
+      },
+      {
+        "symbol": "WALUSDT",
+        "reason": "only 8897 hourly bars (<20000)"
+      },
+      {
+        "symbol": "ONDOUSDT",
+        "reason": "only 13258 hourly bars (<20000)"
+      },
+      {
+        "symbol": "KORUBUSDT",
+        "reason": "only 2051 hourly bars (<20000)"
+      },
+      {
+        "symbol": "MUBUSDT",
+        "reason": "only 3031 hourly bars (<20000)"
+      },
+      {
+        "symbol": "NVDABUSDT",
+        "reason": "only 3030 hourly bars (<20000)"
+      },
+      {
+        "symbol": "QQQBUSDT",
+        "reason": "only 2579 hourly bars (<20000)"
+      },
+      {
+        "symbol": "TRUMPUSDT",
+        "reason": "only 15232 hourly bars (<20000)"
+      },
+      {
+        "symbol": "USUALUSDT",
+        "reason": "only 16668 hourly bars (<20000)"
+      },
+      {
+        "symbol": "MSTRBUSDT",
+        "reason": "only 2747 hourly bars (<20000)"
+      },
+      {
+        "symbol": "XPLUSDT",
+        "reason": "only 9251 hourly bars (<20000)"
+      },
+      {
+        "symbol": "NILUSDT",
+        "reason": "only 13691 hourly bars (<20000)"
+      },
+      {
+        "symbol": "INTCBUSDT",
+        "reason": "only 2747 hourly bars (<20000)"
+      },
+      {
+        "symbol": "SKHYBUSDT",
+        "reason": "only 2267 hourly bars (<20000)"
+      },
+      {
+        "symbol": "ASTERUSDT",
+        "reason": "only 8988 hourly bars (<20000)"
+      },
+      {
+        "symbol": "FFUSDT",
+        "reason": "only 9155 hourly bars (<20000)"
+      },
+      {
+        "symbol": "牛来USDT",
+        "reason": "only 874 hourly bars (<20000)"
+      },
+      {
+        "symbol": "GRAMUSDT",
+        "reason": "only 2536 hourly bars (<20000)"
+      },
+      {
+        "symbol": "NXPCUSDT",
+        "reason": "only 12449 hourly bars (<20000)"
+      },
+      {
+        "symbol": "BFUSDUSDT",
+        "reason": "only 10282 hourly bars (<20000)"
+      },
+      {
+        "symbol": "ZAMAUSDT",
+        "reason": "only 6131 hourly bars (<20000)"
+      },
+      {
+        "symbol": "PENGUUSDT",
+        "reason": "only 16018 hourly bars (<20000)"
+      },
+      {
+        "symbol": "TQQQBUSDT",
+        "reason": "only 2051 hourly bars (<20000)"
+      },
+      {
+        "symbol": "OPENUSDT",
+        "reason": "only 9659 hourly bars (<20000)"
+      },
+      {
+        "symbol": "SNXXBUSDT",
+        "reason": "only 2051 hourly bars (<20000)"
+      },
+      {
+        "symbol": "MARSCOINUSDT",
+        "reason": "only 995 hourly bars (<20000)"
+      },
+      {
+        "symbol": "CHIPUSDT",
+        "reason": "only 4259 hourly bars (<20000)"
+      },
+      {
+        "symbol": "POLUSDT",
+        "reason": "only 18302 hourly bars (<20000)"
+      },
+      {
+        "symbol": "ANIMEUSDT",
+        "reason": "only 15129 hourly bars (<20000)"
+      },
+      {
+        "symbol": "AEROUSDT",
+        "reason": "only 2168 hourly bars (<20000)"
+      },
+      {
+        "symbol": "SUSDT",
+        "reason": "only 15304 hourly bars (<20000)"
+      },
+      {
+        "symbol": "RENDERUSDT",
+        "reason": "only 19480 hourly bars (<20000)"
+      },
+      {
+        "symbol": "XUSDUSDT",
+        "reason": "only 13816 hourly bars (<20000)"
+      },
+      {
+        "symbol": "PLUMEUSDT",
+        "reason": "only 10161 hourly bars (<20000)"
+      },
+      {
+        "symbol": "MEGAUSDT",
+        "reason": "only 4045 hourly bars (<20000)"
+      },
+      {
+        "symbol": "MUBARAKUSDT",
+        "reason": "only 13611 hourly bars (<20000)"
+      },
+      {
+        "symbol": "RWUSDUSDT",
+        "reason": "only 64 hourly bars (<20000)"
+      },
+      {
+        "symbol": "EPICUSDT",
+        "reason": "only 13960 hourly bars (<20000)"
+      }
+    ],
+    "pairUniverse": [
+      "BTCUSDT",
+      "ETHUSDT",
+      "SOLUSDT",
+      "ZECUSDT",
+      "NEARUSDT",
+      "XRPUSDT",
+      "DOGEUSDT",
+      "BNBUSDT",
+      "SUIUSDT",
+      "STRKUSDT",
+      "UNIUSDT",
+      "ENAUSDT",
+      "TRXUSDT",
+      "WLDUSDT",
+      "PEPEUSDT",
+      "ADAUSDT",
+      "LINKUSDT",
+      "AVAXUSDT",
+      "TAOUSDT",
+      "ZKUSDT",
+      "QNTUSDT",
+      "FILUSDT",
+      "INJUSDT",
+      "PYTHUSDT",
+      "FETUSDT",
+      "AAVEUSDT",
+      "ZROUSDT",
+      "LTCUSDT",
+      "ARBUSDT",
+      "HBARUSDT",
+      "PAXGUSDT",
+      "XLMUSDT",
+      "OPUSDT",
+      "BLURUSDT",
+      "TIAUSDT",
+      "DOTUSDT",
+      "BCHUSDT",
+      "APTUSDT",
+      "ICPUSDT",
+      "BATUSDT"
+    ],
+    "deviation": "candidate pairs drawn from the top-40 liquid usable symbols (C(40,2)=780 per formation) instead of all C(100,2)=4950, for compute cost; stricter, gates untouched",
+    "windowHours": 2160,
+    "reformHours": 720,
+    "pairsPerFormation": 20,
+    "maxPairsHeld": 5,
+    "costPerLegBp": 15,
+    "costs": "30 bp to open a pair + 30 bp to close = 60 bp per round trip (harsher reading of the pre-registration)",
+    "entryThresholds": [
+      1.5,
+      2,
+      2.5
+    ],
+    "verdictThreshold": 2,
+    "exitZ": 0.5,
+    "stopZ": 4,
+    "adfCrit5Pct": -3.34,
+    "devEnd": "2023-01-01T00:00:00.000Z",
+    "trials": 3,
+    "formations": 97,
+    "meanCointegratedPerWindow": 46.48453608247423
+  },
+  "results": {
+    "entry1.5": {
+      "dev": {
+        "n": 1526,
+        "mean": -0.0032755909709437222,
+        "sd": 0.021457499140513044,
+        "t": -5.963316066324572
+      },
+      "eval": {
+        "n": 1384,
+        "mean": -0.004778691645846188,
+        "sd": 0.018322256625999893,
+        "t": -9.702822600596054
+      },
+      "ci": {
+        "lo": -0.0047567576576462945,
+        "hi": -0.0018185143345466747
+      },
+      "sharpeDev": -2.9164665099531324,
+      "sharpeEval": -4.982834678439666,
+      "dsr": 0,
+      "roundTrips": 8620,
+      "avgHoldHours": 66.3707656612529,
+      "hitRate": 0.3715777262180974,
+      "stops": 5835,
+      "maxDrawdown": 0.9999972698561822,
+      "dailyN": 2910
+    },
+    "entry2": {
+      "dev": {
+        "n": 1526,
+        "mean": -0.0031151129927940694,
+        "sd": 0.019533672386285526,
+        "t": -6.2297005501025025
+      },
+      "eval": {
+        "n": 1384,
+        "mean": -0.00441148607697662,
+        "sd": 0.01651683515988514,
+        "t": -9.936332673147245
+      },
+      "ci": {
+        "lo": -0.004501726943155866,
+        "hi": -0.0018229732019652085
+      },
+      "sharpeDev": -3.0467466120085516,
+      "sharpeEval": -5.10275257606273,
+      "dsr": 0,
+      "roundTrips": 7690,
+      "avgHoldHours": 61.19141742522757,
+      "hitRate": 0.3613784135240572,
+      "stops": 5825,
+      "maxDrawdown": 0.9999928781909111,
+      "dailyN": 2910
+    },
+    "entry2.5": {
+      "dev": {
+        "n": 1526,
+        "mean": -0.0029960134686186786,
+        "sd": 0.017525271095771275,
+        "t": -6.678151750525777
+      },
+      "eval": {
+        "n": 1384,
+        "mean": -0.004002800091280027,
+        "sd": 0.014556878098929726,
+        "t": -10.229718920982064
+      },
+      "ci": {
+        "lo": -0.004278956251594133,
+        "hi": -0.0019166550080002259
+      },
+      "sharpeDev": -3.2660697021879503,
+      "sharpeEval": -5.253419575766385,
+      "dsr": 0,
+      "roundTrips": 7138,
+      "avgHoldHours": 52.2107032782292,
+      "hitRate": 0.34309330344634353,
+      "stops": 5806,
+      "maxDrawdown": 0.999982779843977,
+      "dailyN": 2910
+    }
+  },
+  "costStress": {
+    "dev": {
+      "n": 1526,
+      "mean": -0.0055558302621902455,
+      "sd": 0.020654489606367024,
+      "t": -10.507799278465992
+    },
+    "roundTrips": 7690
+  },
+  "verdict": {
+    "gates": {
+      "G1_dev_t3_and_positive": false,
+      "G2_n_ge_500": true,
+      "G3_eval_sign_consistent": true,
+      "G4_cost_stress_positive": false,
+      "G5_dsr_ge_095": false,
+      "G6_pairs_traded": true
+    },
+    "allPassed": false,
+    "nearMiss": false
+  },
+  "decomposition": {
+    "grossDevMean": -0.0006598342615568334,
+    "grossDevT": -1.3668072832727454,
+    "netDevMean": -0.0031151129927940694,
+    "netDevT": -6.2297005501025025,
+    "costDragPerDay": 0.002455278731237236,
+    "roundTrips": 7690
+  }
+}

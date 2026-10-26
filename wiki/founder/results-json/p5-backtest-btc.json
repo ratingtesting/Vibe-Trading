@@ -1,0 +1,3529 @@
+{
+ "phase": "p5-backtest-btc",
+ "date": "2026-10-18",
+ "runs": [
+  {
+   "strategyId": "ma-cross",
+   "finalEquity": 10000,
+   "startingCash": 10000,
+   "totalReturn": 0,
+   "maxDrawdown": 0,
+   "netMaxDrawdown": 0,
+   "sharpe": null,
+   "fees": 0,
+   "equityCurve": [
+    {
+     "bar": 0,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 1,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 2,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 3,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 4,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 5,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 6,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 7,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 8,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 9,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 10,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 11,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 12,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 13,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 14,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 15,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 16,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 17,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 18,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 19,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 20,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 21,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 22,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 23,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 24,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 25,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 26,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 27,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 28,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 29,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 30,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 31,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 32,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 33,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 34,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 35,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 36,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 37,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 38,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 39,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 40,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 41,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 42,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 43,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 44,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 45,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 46,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 47,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 48,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 49,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 50,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 51,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 52,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 53,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 54,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 55,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 56,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 57,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 58,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 59,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 60,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 61,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 62,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 63,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 64,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 65,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 66,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 67,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 68,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 69,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 70,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 71,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 72,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 73,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 74,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 75,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 76,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 77,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 78,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 79,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 80,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 81,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 82,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 83,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 84,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 85,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 86,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 87,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 88,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 89,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 90,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 91,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 92,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 93,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 94,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 95,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 96,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 97,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 98,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 99,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 100,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 101,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 102,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 103,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 104,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 105,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 106,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 107,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 108,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 109,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 110,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 111,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 112,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 113,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 114,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 115,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 116,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 117,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 118,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 119,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 120,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 121,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 122,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 123,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 124,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 125,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 126,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 127,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 128,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 129,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 130,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 131,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 132,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 133,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 134,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 135,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 136,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 137,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 138,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 139,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 140,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 141,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 142,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 143,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 144,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 145,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 146,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 147,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 148,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 149,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 150,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 151,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 152,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 153,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 154,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 155,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 156,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 157,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 158,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 159,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 160,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 161,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 162,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 163,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 164,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 165,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 166,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 167,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 168,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 169,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 170,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 171,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 172,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 173,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 174,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 175,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 176,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 177,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 178,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 179,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 180,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 181,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 182,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 183,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 184,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 185,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 186,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 187,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 188,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 189,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 190,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 191,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 192,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 193,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 194,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 195,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 196,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 197,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 198,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 199,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 200,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 201,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 202,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 203,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 204,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 205,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 206,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 207,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 208,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 209,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 210,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 211,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 212,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 213,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 214,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 215,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 216,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 217,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 218,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 219,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 220,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 221,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 222,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 223,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 224,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 225,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 226,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 227,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 228,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 229,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 230,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 231,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 232,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 233,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 234,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 235,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 236,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 237,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 238,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 239,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 240,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 241,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 242,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 243,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 244,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 245,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 246,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 247,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 248,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 249,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 250,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 251,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 252,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 253,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 254,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 255,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 256,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 257,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 258,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 259,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 260,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 261,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 262,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 263,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 264,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 265,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 266,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 267,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 268,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 269,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 270,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 271,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 272,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 273,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 274,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 275,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 276,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 277,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 278,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 279,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 280,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 281,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 282,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 283,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 284,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 285,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 286,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 287,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 288,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 289,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 290,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 291,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 292,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 293,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 294,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 295,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 296,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 297,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 298,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 299,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 300,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 301,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 302,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 303,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 304,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 305,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 306,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 307,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 308,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 309,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 310,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 311,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 312,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 313,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 314,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 315,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 316,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 317,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 318,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 319,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 320,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 321,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 322,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 323,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 324,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 325,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 326,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 327,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 328,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 329,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 330,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 331,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 332,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 333,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 334,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 335,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 336,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 337,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 338,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 339,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 340,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 341,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 342,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 343,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 344,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 345,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 346,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 347,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 348,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 349,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 350,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 351,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 352,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 353,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 354,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 355,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 356,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 357,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 358,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 359,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 360,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 361,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 362,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 363,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 364,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 365,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 366,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 367,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 368,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 369,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 370,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 371,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 372,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 373,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 374,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 375,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 376,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 377,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 378,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 379,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 380,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 381,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 382,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 383,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 384,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 385,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 386,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 387,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 388,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 389,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 390,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 391,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 392,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 393,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 394,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 395,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 396,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 397,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 398,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 399,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 400,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 401,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 402,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 403,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 404,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 405,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 406,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 407,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 408,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 409,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 410,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 411,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 412,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 413,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 414,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 415,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 416,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 417,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 418,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 419,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 420,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 421,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 422,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 423,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 424,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 425,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 426,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 427,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 428,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 429,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 430,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 431,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 432,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 433,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 434,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 435,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 436,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 437,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 438,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 439,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 440,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 441,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 442,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 443,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 444,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 445,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 446,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 447,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 448,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 449,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 450,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 451,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 452,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 453,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 454,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 455,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 456,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 457,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 458,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 459,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 460,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 461,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 462,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 463,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 464,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 465,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 466,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 467,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 468,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 469,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 470,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 471,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 472,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 473,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 474,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 475,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 476,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 477,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 478,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 479,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 480,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 481,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 482,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 483,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 484,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 485,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 486,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 487,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 488,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 489,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 490,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 491,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 492,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 493,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 494,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 495,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 496,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 497,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 498,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 499,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 500,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 501,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 502,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 503,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 504,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 505,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 506,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 507,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 508,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 509,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 510,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 511,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 512,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 513,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 514,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 515,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 516,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 517,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 518,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 519,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 520,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 521,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 522,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 523,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 524,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 525,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 526,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 527,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 528,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 529,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 530,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 531,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 532,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 533,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 534,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 535,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 536,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 537,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 538,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 539,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 540,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 541,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 542,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 543,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 544,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 545,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 546,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 547,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 548,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 549,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 550,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 551,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 552,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 553,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 554,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 555,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 556,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 557,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 558,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 559,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 560,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 561,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 562,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 563,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 564,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 565,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 566,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 567,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 568,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 569,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 570,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 571,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 572,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 573,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 574,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 575,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 576,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 577,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 578,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 579,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 580,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 581,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 582,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 583,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 584,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 585,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 586,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 587,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 588,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 589,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 590,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 591,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 592,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 593,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 594,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 595,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 596,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 597,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 598,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 599,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 600,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 601,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 602,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 603,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 604,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 605,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 606,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 607,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 608,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 609,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 610,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 611,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 612,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 613,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 614,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 615,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 616,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 617,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 618,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 619,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 620,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 621,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 622,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 623,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 624,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 625,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 626,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 627,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 628,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 629,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 630,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 631,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 632,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 633,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 634,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 635,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 636,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 637,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 638,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 639,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 640,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 641,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 642,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 643,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 644,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 645,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 646,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 647,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 648,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 649,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 650,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 651,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 652,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 653,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 654,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 655,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 656,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 657,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 658,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 659,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 660,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 661,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 662,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 663,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 664,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 665,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 666,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 667,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 668,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 669,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 670,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 671,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 672,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 673,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 674,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 675,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 676,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 677,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 678,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 679,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 680,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 681,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 682,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 683,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 684,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 685,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 686,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 687,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 688,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 689,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 690,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 691,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 692,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 693,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 694,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 695,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 696,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 697,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 698,
+     "equity": 10000,
+     "netEquity": 10000
+    },
+    {
+     "bar": 699,
+     "equity": 10000,
+     "netEquity": 10000
+    }
+   ],
+   "ledger": {
+    "lines": 0,
+    "cycles": 0,
+    "completedCycles": 0,
+    "openCycles": 0,
+    "unfilledDecisions": 0,
+    "tradedNotional": 0,
+    "costs": 0,
+    "result": 0,
+    "grossContribution": 0
+   }
+  }
+ ]
+}

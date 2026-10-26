@@ -1,0 +1,127 @@
+{
+  "generatedAt": "2026-10-16T04:44:50.747Z",
+  "design": {
+    "universe": "20 pairs",
+    "regimeProxy": "BTCUSDT",
+    "rangeShare": 0.06866666666666667,
+    "stepSigma": [
+      0.6,
+      0.8,
+      1
+    ],
+    "verdictStep": 0.8,
+    "bandSteps": 5,
+    "maxLevels": 10,
+    "costPerLeg": 0.0015,
+    "leverage": "none - long-only inventory capped at MAX_LEVELS levels",
+    "trials": 3,
+    "note": "grid active only on RANGE days; it stops when price leaves the band (reference behaviour); P&L booked per day"
+  },
+  "results": {
+    "step0.6": {
+      "dev": {
+        "n": 118,
+        "mean": 0.0006288025757160081,
+        "sd": 0.00105291729201323,
+        "t": 6.487256315492701
+      },
+      "eval": {
+        "n": 126,
+        "mean": 0.001363361534190413,
+        "sd": 0.0015264179498168718,
+        "t": 10.025887908077248
+      },
+      "sharpeDev": 11.409496673919953,
+      "dsr": 1,
+      "fills": 21616,
+      "cycles": 9646,
+      "maxDrawdown": 0.0018009840360275753,
+      "activeDays": 118,
+      "totalDays": 1616,
+      "activityRate": 0.07301980198019802,
+      "meanPerActiveDay": 0.0006288025757160081,
+      "annualizedDevActivityAdjusted": 0.016758989440648804,
+      "annualizedDevNaiveWRONG": 0.25789641164997024,
+      "finalEquity": 1.2784292889507094
+    },
+    "step0.8": {
+      "dev": {
+        "n": 115,
+        "mean": 0.0005133538405886142,
+        "sd": 0.0009491167454039233,
+        "t": 5.800241814771228
+      },
+      "eval": {
+        "n": 126,
+        "mean": 0.0012966124721938335,
+        "sd": 0.0015628986132978841,
+        "t": 9.312465171614944
+      },
+      "sharpeDev": 10.333408825613006,
+      "dsr": 1,
+      "fills": 12779,
+      "cycles": 5531,
+      "maxDrawdown": 0.0016241922889589366,
+      "activeDays": 115,
+      "totalDays": 1616,
+      "activityRate": 0.07116336633663366,
+      "meanPerActiveDay": 0.0005133538405886142,
+      "annualizedDevActivityAdjusted": 0.013334175407615766,
+      "annualizedDevNaiveWRONG": 0.20602047243740018,
+      "finalEquity": 1.2486770586306017
+    },
+    "step1": {
+      "dev": {
+        "n": 103,
+        "mean": 0.0004764309025414123,
+        "sd": 0.0008264565802373283,
+        "t": 5.850574227097696
+      },
+      "eval": {
+        "n": 125,
+        "mean": 0.001147743613888823,
+        "sd": 0.0016382383924643182,
+        "t": 7.832903786170359
+      },
+      "sharpeDev": 11.013524279718453,
+      "dsr": 1,
+      "fills": 8245,
+      "cycles": 3458,
+      "maxDrawdown": 0.0019529475979273014,
+      "activeDays": 103,
+      "totalDays": 1616,
+      "activityRate": 0.06373762376237624,
+      "meanPerActiveDay": 0.0004764309025414123,
+      "annualizedDevActivityAdjusted": 0.011083799369458166,
+      "annualizedDevNaiveWRONG": 0.189884052570245,
+      "finalEquity": 1.2119686766724542
+    }
+  },
+  "costStress": {
+    "dev": {
+      "n": 115,
+      "mean": 0.00022783210145817958,
+      "sd": 0.0007241691841607329,
+      "t": 3.373834663740759
+    },
+    "eval": {
+      "n": 126,
+      "mean": 0.00042060056743192895,
+      "sd": 0.0010031210287858251,
+      "t": 4.706540411931677
+    },
+    "fills": 12779,
+    "cycles": 5531
+  },
+  "verdict": {
+    "gates": {
+      "G1_dev_t3_positive": true,
+      "G2_n_ge_500": false,
+      "G3_eval_sign": true,
+      "G4_cost_stress_positive": true,
+      "G5_dsr": true,
+      "G6_fills": true
+    },
+    "allPassed": false
+  }
+}

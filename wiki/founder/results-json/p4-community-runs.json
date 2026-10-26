@@ -1,0 +1,257 @@
+{
+ "status": "done",
+ "date": "2026-10-18",
+ "source": "freqtrade/freqtrade-strategies rules, translated to our data",
+ "universe": 120,
+ "days": 2247,
+ "trials": 23,
+ "bar": 3,
+ "expectedByChance": 1.1500000000000001,
+ "passedCount": 0,
+ "translation": {
+  "oscillator": "RSI cross: long when RSI(lookback) < 30",
+  "volatility-band": "long when price <= SMA - 1.5*sd",
+  "breakout": "long when price > max of prior lookback days",
+  "momentum": "long when price > SMA(lookback)",
+  "mean-reversion": "long when price <= SMA - 2*sd"
+ },
+ "limitations": [
+  "The ORIGINAL freqtrade code is not executed; each rule is re-implemented as its stated signal. That is stated per family, not hidden.",
+  "Costs are charged on state changes (entry/exit), not on every bar — an approximation, and a generous one.",
+  "Each rule is run over a 120-symbol universe, so a rule that works only on one coin is averaged away.",
+  "DEV/EVAL is not split here: this is a TRIAL SCAN to count survivors against the chance baseline, not a verdict on any rule."
+ ],
+ "results": [
+  {
+   "kind": "oscillator",
+   "lookback": 7,
+   "n": 2246,
+   "annual": -0.40682640727470165,
+   "t": -3.1421955174574503,
+   "sharpe": -0.003789997851764982,
+   "maxDD": 1.1255017080070349,
+   "trades": 131547
+  },
+  {
+   "kind": "oscillator",
+   "lookback": 10,
+   "n": 2246,
+   "annual": -0.36153228919823793,
+   "t": -3.4766840936115426,
+   "sharpe": -0.003493881459233877,
+   "maxDD": 1.0824983387988187,
+   "trades": 129405
+  },
+  {
+   "kind": "oscillator",
+   "lookback": 14,
+   "n": 2246,
+   "annual": -0.4877967602980659,
+   "t": -5.321455783968042,
+   "sharpe": -0.005008490513148069,
+   "maxDD": 1.0489718548113944,
+   "trades": 127468
+  },
+  {
+   "kind": "oscillator",
+   "lookback": 21,
+   "n": 2246,
+   "annual": -0.5053790401040925,
+   "t": -6.3335784736073935,
+   "sharpe": -0.004080767645180119,
+   "maxDD": 1.2384411072779562,
+   "trades": 123421
+  },
+  {
+   "kind": "oscillator",
+   "lookback": 28,
+   "n": 2246,
+   "annual": -0.4387379799052577,
+   "t": -7.249664831375713,
+   "sharpe": -0.004679881487995076,
+   "maxDD": 0.9374980563732584,
+   "trades": 117213
+  },
+  {
+   "kind": "volatility-band",
+   "lookback": 10,
+   "n": 2246,
+   "annual": -0.36830122526146436,
+   "t": -2.5208190421754963,
+   "sharpe": -0.003642281476172584,
+   "maxDD": 1.039808030890359,
+   "trades": 131881
+  },
+  {
+   "kind": "volatility-band",
+   "lookback": 14,
+   "n": 2246,
+   "annual": -0.41672639604982814,
+   "t": -2.801435594584184,
+   "sharpe": -0.004104980176810014,
+   "maxDD": 1.0355093573789742,
+   "trades": 131303
+  },
+  {
+   "kind": "volatility-band",
+   "lookback": 20,
+   "n": 2246,
+   "annual": -0.38987950627115936,
+   "t": -2.6433357472377312,
+   "sharpe": -0.004017326926096449,
+   "maxDD": 0.9827833981891941,
+   "trades": 129985
+  },
+  {
+   "kind": "volatility-band",
+   "lookback": 30,
+   "n": 2246,
+   "annual": -0.3589164521741989,
+   "t": -2.5105570369970334,
+   "sharpe": -0.003779054899414006,
+   "maxDD": 0.9637515691349525,
+   "trades": 128205
+  },
+  {
+   "kind": "volatility-band",
+   "lookback": 40,
+   "n": 2246,
+   "annual": -0.33990801988933655,
+   "t": -2.4290326329787284,
+   "sharpe": -0.0034799388199240363,
+   "maxDD": 0.976764355577827,
+   "trades": 126555
+  },
+  {
+   "kind": "breakout",
+   "lookback": 10,
+   "n": 2246,
+   "annual": -0.24845511456172312,
+   "t": -2.715798428276799,
+   "sharpe": -0.0011887310900938058,
+   "maxDD": 2.0534081979834604,
+   "trades": 131250
+  },
+  {
+   "kind": "breakout",
+   "lookback": 20,
+   "n": 2246,
+   "annual": -0.27271254034793885,
+   "t": -3.40807240720243,
+   "sharpe": -0.001377674462842576,
+   "maxDD": 1.9447754893538196,
+   "trades": 128462
+  },
+  {
+   "kind": "breakout",
+   "lookback": 50,
+   "n": 2246,
+   "annual": -0.30090246541700866,
+   "t": -4.165201198061822,
+   "sharpe": -0.0013432295356757284,
+   "maxDD": 2.2008299372258318,
+   "trades": 121536
+  },
+  {
+   "kind": "breakout",
+   "lookback": 100,
+   "n": 2246,
+   "annual": -0.342198299073629,
+   "t": -5.0018438091826605,
+   "sharpe": -0.0017432770147260295,
+   "maxDD": 1.9285123045958965,
+   "trades": 111123
+  },
+  {
+   "kind": "breakout",
+   "lookback": 200,
+   "n": 2246,
+   "annual": -0.3167736782463192,
+   "t": -4.798121901294402,
+   "sharpe": -0.001480261905507443,
+   "maxDD": 2.1024297648414776,
+   "trades": 84378
+  },
+  {
+   "kind": "momentum",
+   "lookback": 10,
+   "n": 2246,
+   "annual": 0.07418106973287522,
+   "t": 0.4373224695914624,
+   "sharpe": 0.00010237331320675445,
+   "maxDD": 7.118972321973888,
+   "trades": 132507
+  },
+  {
+   "kind": "momentum",
+   "lookback": 50,
+   "n": 2246,
+   "annual": 0.12674311709861155,
+   "t": 0.6988692071258593,
+   "sharpe": 0.0001855222008487084,
+   "maxDD": 7.060146851878298,
+   "trades": 126888
+  },
+  {
+   "kind": "momentum",
+   "lookback": 100,
+   "n": 2246,
+   "annual": 0.04175287788585087,
+   "t": 0.21590742084828782,
+   "sharpe": 0.00005946240664863593,
+   "maxDD": 7.2520955261409314,
+   "trades": 120820
+  },
+  {
+   "kind": "momentum",
+   "lookback": 200,
+   "n": 2246,
+   "annual": -0.05393748827433668,
+   "t": -0.2657085473961608,
+   "sharpe": -0.00007335236826689339,
+   "maxDD": 7.616252365031891,
+   "trades": 107415
+  },
+  {
+   "kind": "mean-reversion",
+   "lookback": 10,
+   "n": 2246,
+   "annual": -0.367207917622472,
+   "t": -3.375076701818938,
+   "sharpe": -0.0035961701033393623,
+   "maxDD": 1.0446150565741965,
+   "trades": 130841
+  },
+  {
+   "kind": "mean-reversion",
+   "lookback": 20,
+   "n": 2246,
+   "annual": -0.38568995489538505,
+   "t": -3.5249522047801243,
+   "sharpe": -0.004021957612649702,
+   "maxDD": 0.9730961892834077,
+   "trades": 128560
+  },
+  {
+   "kind": "mean-reversion",
+   "lookback": 50,
+   "n": 2246,
+   "annual": -0.3876851682442425,
+   "t": -3.914278470319269,
+   "sharpe": -0.0032687496724199635,
+   "maxDD": 1.1860350503904642,
+   "trades": 119829
+  },
+  {
+   "kind": "mean-reversion",
+   "lookback": 100,
+   "n": 2246,
+   "annual": -0.35865720385372507,
+   "t": -4.131670410431211,
+   "sharpe": -0.003356873545652996,
+   "maxDD": 1.0684263168571555,
+   "trades": 106351
+  }
+ ],
+ "passed": []
+}

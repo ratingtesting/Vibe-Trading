@@ -1,0 +1,61 @@
+{
+ "status": "done",
+ "verdict": "КЭРРИ С БАЗИСОМ — УБЫТОК: -1.9%/год, t=-1.61 (планка 3). Funding положительный, но базис съедает его.",
+ "date": "2026-10-18",
+ "instrument": "funding-carry, FULL round trip: long spot + short perp on equal notional (net delta 0, no leverage)",
+ "data": {
+  "universe": 68,
+  "days": 900,
+  "from": "2024-04-29",
+  "to": "2026-10-15"
+ },
+ "settings": {
+  "topN": 10,
+  "lookbackDays": 30,
+  "rebalanceEveryDays": 30,
+  "feePerSide": 0.001,
+  "slipPerSide": 0.001,
+  "minFundingHistory": 90
+ },
+ "headline": {
+  "fullPeriod": {
+   "annualised": -0.019164274761074532,
+   "t": -1.613415846492663,
+   "total": -0.04651457089809685,
+   "maxDrawdown": 0.054280094126456166
+  },
+  "dev": {
+   "annualised": -0.017993942068468303,
+   "t": -1.3632936360355827
+  },
+  "eval": {
+   "annualised": -0.02189071647829419,
+   "t": -0.8786399020437048
+  },
+  "fresh12m": {
+   "annualised": -0.02453520114979014,
+   "t": -1.190352742391423,
+   "from": "2025-10-16",
+   "to": "2026-10-15"
+  },
+  "investedDays": 899,
+  "ofDays": 899
+ },
+ "fundingOnlyComparison": {
+  "annualised": 0.026077858615127954,
+  "basisCostPerYear": 0.04524213337620249
+ },
+ "gate": {
+  "tRequired": 3,
+  "devPasses": false,
+  "evalPasses": false,
+  "freshPasses": false
+ },
+ "limitations": [
+  "Funding is recorded on the day it is paid; the exact intraday price at which it is received is not modelled.",
+  "Basis is measured close-to-close; the intraday mark-to-market path of the short perp is not.",
+  "Costs are charged only on rebalance days (every 30), which understates the true cost of entering and exiting an illiquid perp.",
+  "Top-N selection is by PAST 30-day average funding through a manual past-only window; a look-ahead would inflate the result.",
+  "The EVAL half is read once, at the end, and the DEV/EVAL split is by date."
+ ]
+}

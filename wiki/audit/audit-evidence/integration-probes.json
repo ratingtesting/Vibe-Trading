@@ -1,0 +1,38 @@
+{
+  "status_hides_disabled_provider": {
+    "configured": [
+      "one",
+      "two"
+    ],
+    "returned": [
+      "one"
+    ],
+    "missing_metadata": [
+      "base_url",
+      "model",
+      "api_key_env",
+      "transport",
+      "order"
+    ]
+  },
+  "partial_update_changes_omitted_fields": {
+    "before_enabled": false,
+    "after_enabled": true,
+    "before_order": 7,
+    "after_order": 0,
+    "transport_field_editable": false
+  },
+  "response_validation_and_cost": {
+    "fixture_only": true,
+    "rejected": false,
+    "choice": "not-in-options",
+    "probability_sum": 1.6,
+    "confidence": 1.2,
+    "reported_cost": 1.44e-05,
+    "fixture_usage_cost": 0.123456,
+    "url": [
+      "https://audit.invalid/api/alpha/decisions"
+    ]
+  },
+  "scope": "Read-only probes, httpx.MockTransport fixtures, no external HTTP and no trading."
+}

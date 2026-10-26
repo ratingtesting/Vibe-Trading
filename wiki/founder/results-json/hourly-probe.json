@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-10-12T21:12:04.178Z",
+  "results": [
+    {
+      "k": "24h",
+      "flipsPerMonth": 73.8,
+      "devT": -8.57,
+      "devExcess": -5.2,
+      "evalT": -7.45,
+      "evalExcess": -4.7,
+      "verdict": "PRE-DECLARED COST-INFEASIBLE (>8 flips/mo)"
+    },
+    {
+      "k": "168h",
+      "flipsPerMonth": 26.1,
+      "devT": -2.73,
+      "devExcess": -1.6,
+      "evalT": -2.73,
+      "evalExcess": -1.6,
+      "verdict": "PRE-DECLARED COST-INFEASIBLE (>8 flips/mo)"
+    },
+    {
+      "k": "720h",
+      "flipsPerMonth": 11.3,
+      "devT": 0.11,
+      "devExcess": 0.1,
+      "evalT": -1.41,
+      "evalExcess": -0.8,
+      "verdict": "PRE-DECLARED COST-INFEASIBLE (>8 flips/mo)"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+[
+  {
+    "strategy": "vol-momentum",
+    "schedule": "OLD (what the engine assumed)",
+    "feeBps": 1,
+    "returnPct": 5.402510933177318,
+    "sharpe": 0.19885583814416985,
+    "maxDDPct": 10.853370690721048,
+    "fills": 569
+  },
+  {
+    "strategy": "vol-momentum",
+    "schedule": "MEASURED Alpaca tier-1 maker",
+    "feeBps": 15,
+    "returnPct": 1.9527874960345137,
+    "sharpe": 0.10663035909573926,
+    "maxDDPct": 10.663602616320302,
+    "fills": 356
+  },
+  {
+    "strategy": "vol-momentum",
+    "schedule": "Alpaca tier-1 taker (worst case)",
+    "feeBps": 25,
+    "returnPct": 1.1152772455247817,
+    "sharpe": 0.07537055391060576,
+    "maxDDPct": 10.263205872404999,
+    "fills": 334
+  },
+  {
+    "strategy": "ensemble",
+    "schedule": "OLD (what the engine assumed)",
+    "feeBps": 1,
+    "returnPct": -1.5229549286964406,
+    "sharpe": -0.049587492893705336,
+    "maxDDPct": 12.170207513371443,
+    "fills": 59
+  },
+  {
+    "strategy": "ensemble",
+    "schedule": "MEASURED Alpaca tier-1 maker",
+    "feeBps": 15,
+    "returnPct": -2.3502971516746074,
+    "sharpe": -0.09090119697640975,
+    "maxDDPct": 12.468735084633838,
+    "fills": 59
+  },
+  {
+    "strategy": "ensemble",
+    "schedule": "Alpaca tier-1 taker (worst case)",
+    "feeBps": 25,
+    "returnPct": -0.013992975475141112,
+    "sharpe": 0.023822300246363018,
+    "maxDDPct": 10.360372559814115,
+    "fills": 60
+  },
+  {
+    "strategy": "adx-donchian",
+    "schedule": "OLD (what the engine assumed)",
+    "feeBps": 1,
+    "returnPct": -7.344227392706248,
+    "sharpe": -0.4992951217638896,
+    "maxDDPct": 10.27232508732335,
+    "fills": 15
+  },
+  {
+    "strategy": "adx-donchian",
+    "schedule": "MEASURED Alpaca tier-1 maker",
+    "feeBps": 15,
+    "returnPct": -7.565841399631079,
+    "sharpe": -0.515577793032157,
+    "maxDDPct": 10.450700402798038,
+    "fills": 15
+  },
+  {
+    "strategy": "adx-donchian",
+    "schedule": "Alpaca tier-1 taker (worst case)",
+    "feeBps": 25,
+    "returnPct": -7.682410122343097,
+    "sharpe": -0.5241238809766839,
+    "maxDDPct": 10.544491292489214,
+    "fills": 15
+  },
+  {
+    "strategy": "rsi-mfi",
+    "schedule": "OLD (what the engine assumed)",
+    "feeBps": 1,
+    "returnPct": -6.734131611433202,
+    "sharpe": -0.2756310883534639,
+    "maxDDPct": 10.863657838430003,
+    "fills": 122
+  },
+  {
+    "strategy": "rsi-mfi",
+    "schedule": "MEASURED Alpaca tier-1 maker",
+    "feeBps": 15,
+    "returnPct": -7.322788518121726,
+    "sharpe": -0.303288794250781,
+    "maxDDPct": 11.097111820049205,
+    "fills": 122
+  },
+  {
+    "strategy": "rsi-mfi",
+    "schedule": "Alpaca tier-1 taker (worst case)",
+    "feeBps": 25,
+    "returnPct": -7.631381434612427,
+    "sharpe": -0.31782856358597655,
+    "maxDDPct": 11.21987045496858,
+    "fills": 122
+  },
+  {
+    "strategy": "vwap-reversion",
+    "schedule": "OLD (what the engine assumed)",
+    "feeBps": 1,
+    "returnPct": -7.768075437778954,
+    "sharpe": -0.3348345896256773,
+    "maxDDPct": 12.037893693816567,
+    "fills": 66
+  },
+  {
+    "strategy": "vwap-reversion",
+    "schedule": "MEASURED Alpaca tier-1 maker",
+    "feeBps": 15,
+    "returnPct": -8.571358999325728,
+    "sharpe": -0.374206916035918,
+    "maxDDPct": 12.413177615128754,
+    "fills": 66
+  },
+  {
+    "strategy": "vwap-reversion",
+    "schedule": "Alpaca tier-1 taker (worst case)",
+    "feeBps": 25,
+    "returnPct": -8.991393524389446,
+    "sharpe": -0.3948760482182269,
+    "maxDDPct": 12.610379412873954,
+    "fills": 66
+  }
+]
