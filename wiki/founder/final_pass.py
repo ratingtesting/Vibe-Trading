@@ -32,6 +32,8 @@ PY = REPO / ".venv" / "Scripts" / "python.exe"
 STEPS = [
     ("DSR по полному пулу (старые + новый 5-летний скан)",
      "honest_dsr_final.py"),
+    ("Достижим ли гейт DSR >= 0.95 при этом пуле",
+     "dsr_reachability.py"),
     ("Панель: артефакт 5-летнего скана",
      "build_scan5y_panel.py"),
     ("Копилка по новым кандидатам (порог владельца)",
@@ -42,6 +44,8 @@ STEPS = [
      "final_report.py"),
     ("Jev-судья: новые кандидаты против 13",
      "jev_judge_candidates.py --pairs 12"),
+    ("НЕЗАВИСИМАЯ перепроверка чисел (второй код, без импорта основного)",
+     "independent_check.py"),
 ]
 
 

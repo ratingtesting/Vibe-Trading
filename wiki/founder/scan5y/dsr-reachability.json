@@ -1,0 +1,40 @@
+{
+ "pool_current": 26893,
+ "pool_full_planned": 34992,
+ "trial_sharpe_std": 0.02066566584103016,
+ "best": {
+  "family": "VolatilityBreakout",
+  "symbol": "DASHUSDT",
+  "risk": "vol10",
+  "params": {
+   "atr_period": 14,
+   "quantile": 0.7
+  },
+  "annual_pct": 8.461990934759566,
+  "t_stat": 3.1375601773322694,
+  "max_dd_pct": 4.806426834885813,
+  "sharpe_per_obs": 0.07342461493242247,
+  "skew": 1.7480593809295475,
+  "kurtosis": 22.351528275101764,
+  "n_obs": 1826
+ },
+ "dsr_current_pool": {
+  "observed_sharpe": 0.07342461493242247,
+  "n_trials": 26893,
+  "expected_maximum_sharpe": 0.08464839298450463,
+  "dsr": 0.3066753034457774,
+  "survives": false
+ },
+ "dsr_full_pool": {
+  "observed_sharpe": 0.07342461493242247,
+  "n_trials": 34992,
+  "expected_maximum_sharpe": 0.08590088215464088,
+  "dsr": 0.2871657446422944,
+  "survives": false
+ },
+ "sharpe_needed_for_dsr_0_95_at_full_pool": 0.12173780657553682,
+ "gap_ratio_needed_over_best": 1.6579972082602021,
+ "pool_size_where_best_would_pass_dsr_0_95": 10,
+ "candidates_with_dsr_ge_0_95": 0,
+ "note": "Гейт DSR >= 0.95 недостижим для этого класса стратегий при пуле в десятки тысяч испытаний: он требует SR заметно выше лучшего найденного. Корректный вывод - не 'кандидатов нет', а 'гейт неприменим к пулу такого размера'."
+}
