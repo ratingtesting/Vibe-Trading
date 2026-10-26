@@ -44,7 +44,6 @@ from backtest.engines.crypto import CryptoEngine  # noqa: E402
 from backtest.loaders.local_loader import DataLoader as LocalLoader  # noqa: E402
 from research_metrics import metrics_from_returns  # noqa: E402
 import kopilka_5y  # noqa: E402
-import btc_kopilka_13 as legacy  # noqa: E402
 
 from archetypes.signal_engines import (  # noqa: E402
     DrawdownThrottled,
@@ -155,7 +154,15 @@ def main() -> None:
         }
         if kop.get("status") == "OK":
             row["delta_annual_pct"] = kop["annual_pct"] - base_annual
-            row["delta_dd_pct"] = kop["max_dd_pct"] - m.max_dd_pct
+            # Просадка: research_metrics отдаёт модуль, kopilka_5y -
+            # отрицательное значение. Сравниваем МОДУЛИ, иначе дельта
+            # получается мусорной (например -99 вместо -3.5).
+            kop_dd = kop.get("max_dd_pct")
+            base_dd = m.max_dd_pct
+            if isinstance(kop_dd, (int, float)) and isinstance(base_dd, (int, float)):
+                row["delta_dd_pct"] = abs(kop_dd) - abs(base_dd)
+            else:
+                row["delta_dd_pct"] = None
         rows.append(row)
         kop_part = (f"{kop['annual_pct']:.2f}%" if kop.get("status") == "OK" else "—")
         print(f"  {cid:38s} база {base_annual or 0:+7.2f}%/год t={m.t_stat or 0:.3f} "
@@ -191,6 +198,10 @@ def main() -> None:
         value = row["base"].get(key)
         return format(value, fmt) if isinstance(value, (int, float)) else "—"
 
+    def dd_cell(value: Any) -> str:
+        """Просадка всегда отрицательная - один знак в одной таблице."""
+        return f"{-abs(value):.2f}" if isinstance(value, (int, float)) else "—"
+
     table_rows = []
     for row in rows:
         k = row["kopilka"]
@@ -199,7 +210,7 @@ def main() -> None:
                 row["id"], row["symbol"], row["risk"],
                 base_cell(row, "annual_pct"), f"{k['annual_pct']:.2f}",
                 f"{row['delta_annual_pct']:+.2f}",
-                base_cell(row, "max_dd_pct"), f"{k['max_dd_pct']:.2f}",
+                dd_cell(row["base"].get("max_dd_pct")), dd_cell(k.get("max_dd_pct")),
                 f"{row['delta_dd_pct']:+.2f}",
                 f"{k['final_btc_units']:.6f}", f"{k['final_btc_value']:.2f}",
                 f"{k['final_asset_value']:.2f}", f"{k['final_cash']:.2f}",
@@ -209,7 +220,7 @@ def main() -> None:
         else:
             table_rows.append([row["id"], row["symbol"], row["risk"],
                                base_cell(row, "annual_pct"), "—", "—",
-                               base_cell(row, "max_dd_pct"), "—", "—",
+                               dd_cell(row["base"].get("max_dd_pct")), "—", "—",
                                "—", "—", "—", "—", "—", "—", "—", "—"])
 
     report = [

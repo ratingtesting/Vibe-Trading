@@ -185,16 +185,30 @@ def main() -> None:
     if CAND13.exists():
         payload = json.loads(CAND13.read_text(encoding="utf-8"))
         rows13 = payload.get("rows", [])
+        # Знак просадки: research_metrics отдаёт модуль (51.57), kopilka_5y -
+        # отрицательное значение (-48.06). В таблице оба приводятся к
+        # отрицательной форме, иначе "База DD" и "DD с копилкой" показывают
+        # разные знаки в одном столбце, а "Δ DD" выходит бессмысленным.
+        def _dd(value: Any) -> str:
+            if not isinstance(value, (int, float)):
+                return "—"
+            return f"{-abs(value):.2f}"
+
+        def _dd_delta(base: Any, kop: Any) -> str:
+            if not isinstance(base, (int, float)) or not isinstance(kop, (int, float)):
+                return "—"
+            return f"{abs(kop) - abs(base):+.2f}"
+
         parts.append(_table(
             ["#", "ID", "Пара", "Риск", "База %/год", "С копилкой %/год", "Δ годовой",
-             "База DD %", "DD с копилкой %", "Δ DD",
+             "База DD %", "DD с копилкой %", "Δ DD (просадка выросла)",
              "BTC накоплено, шт", "BTC в $", "Актив в $", "Кэш в $", "ВСЕГО в $",
              "Доля BTC %", "Фиксаций", "Возвратов"],
             [[str(i), r["id"], r["symbol"], r["risk"],
               f"{r['base']['annual_pct']:.2f}", f"{r['kopilka']['annual_pct']:.2f}",
               f"{r['delta_annual_pct']:+.2f}",
-              f"{r['base']['max_dd_pct']:.2f}", f"{r['kopilka']['max_dd_pct']:.2f}",
-              f"{r['delta_dd_pct']:+.2f}",
+              _dd(r['base'].get('max_dd_pct')), _dd(r['kopilka'].get('max_dd_pct')),
+              _dd_delta(r['base'].get('max_dd_pct'), r['kopilka'].get('max_dd_pct')),
               f"{r['kopilka']['final_btc_units']:.6f}",
               f"{r['kopilka']['final_btc_value']:.2f}",
               f"{r['kopilka']['final_asset_value']:.2f}",

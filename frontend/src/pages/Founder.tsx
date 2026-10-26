@@ -409,7 +409,7 @@ export function Founder() {
                       <td className="px-3 py-2">{row.risk || "—"}</td>
                       <td className="px-3 py-2 text-right">{row.t_stat.toFixed(3)}</td>
                       <td className="px-3 py-2 text-right font-mono">{row.dsr.toFixed(4)}</td>
-                      <td className="px-3 py-2 text-right">{row.max_dd_pct.toFixed(1)}%</td>
+                      <td className="px-3 py-2 text-right">{(row.max_dd_pct === 0 ? 0 : -Math.abs(row.max_dd_pct)).toFixed(1)}%</td>
                       <td className="px-3 py-2 text-right">{row.sharpe_per_obs.toFixed(5)}</td>
                     </tr>
                   ))}
@@ -463,7 +463,7 @@ export function Founder() {
                       <td className="px-3 py-2 text-right">{row.annual_pct.toFixed(2)}%</td>
                       <td className="px-3 py-2 text-right">{row.t_stat.toFixed(3)}</td>
                       <td className="px-3 py-2 text-right font-mono">{row.dsr !== null ? row.dsr.toFixed(4) : "—"}</td>
-                      <td className="px-3 py-2 text-right">{row.max_dd_pct.toFixed(2)}%</td>
+                      <td className="px-3 py-2 text-right">{(row.max_dd_pct === 0 ? 0 : -Math.abs(row.max_dd_pct)).toFixed(2)}%</td>
                     </tr>
                   ))}
                 </tbody>
@@ -646,7 +646,7 @@ export function Founder() {
                     <tr key={`${row.id}-${row.lock_threshold}-${row.lock_share}-${row.return_share}`} className="border-b border-border/50 last:border-0">
                       <td className="px-3 py-2">{row.id}</td>
                       <td className="px-3 py-2 text-right">{row.annual_pct.toFixed(2)}%</td>
-                      <td className="px-3 py-2 text-right">{row.max_dd_pct.toFixed(2)}%</td>
+                      <td className="px-3 py-2 text-right">{(row.max_dd_pct === 0 ? 0 : -Math.abs(row.max_dd_pct)).toFixed(2)}%</td>
                       <td className="px-3 py-2 text-right">${NUMBER.format(row.final_value)}</td>
                       <td className="px-3 py-2 text-right font-mono">{row.final_btc_units.toFixed(6)}</td>
                       <td className="px-3 py-2 text-right">{row.btc_share_pct.toFixed(1)}%</td>
