@@ -103,6 +103,28 @@ def main() -> None:
         files = files[:args.limit]
     print(f"пар: {len(files)}, дотягиваем до {end}")
 
+    # Проверка ДО перебора: если архива за end-дату ещё нет (Binance
+    # публикует дневные файлы с задержкой в сутки-двое), то его не будет
+    # и для остальных пар. Без этой проверки ежедневный запуск делал бы
+    # 384 бесполезных запроса и ждал бы их.
+    probe = fetch_day("BTCUSDT", end)
+    if probe is None:
+        print(f"архива за {end} ещё нет (Binance публикует с задержкой) - "
+              f"нечего дотягивать")
+        report = {
+            "date": date.today().isoformat(), "end": end.isoformat(),
+            "stats": {"pairs": len(files), "rows_added": 0, "days_added": 0,
+                      "missing_archives": len(files), "errors": 0,
+                      "already_current": 0},
+            "per_pair": {},
+            "note": f"архив за {end} ещё не опубликован - проверка не нужна",
+        }
+        out = REPO / "wiki" / "founder" / "data-update-report.json"
+        out.write_text(json.dumps(report, indent=1, ensure_ascii=False),
+                       encoding="utf-8")
+        print(f"written: {out}")
+        return
+
     stats = {"pairs": len(files), "rows_added": 0, "days_added": 0,
              "missing_archives": 0, "errors": 0, "already_current": 0}
     per_pair: dict[str, int] = {}
