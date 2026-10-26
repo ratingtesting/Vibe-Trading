@@ -188,3 +188,23 @@ agent/tests/artifacts/
 
 # Local simulated account ledgers
 /paper-trading/
+
+# Backtest run artifacts: generated output, reproducible from the scanners.
+# The compact trace (daily returns + asset close per run) IS tracked, in
+# wiki/founder/old-returns/ - 123 MB instead of 4.9 GB. Keeping the raw
+# artifacts in the repo is what made every push fail (GitHub HTTP 408
+# while packing 107k files). equity.csv stays on disk for the scripts.
+wiki/founder/scan-10k/*/artifacts/
+wiki/founder/scan-10k/*/run_card.*
+wiki/founder/freqtrade-scan/*/artifacts/
+wiki/founder/freqtrade-scan/*/run_card.*
+wiki/founder/archetype-scan/*/artifacts/
+wiki/founder/archetype-scan/*/run_card.*
+wiki/founder/risk-overlay/*/artifacts/
+wiki/founder/risk-overlay/*/run_card.*
+wiki/founder/scan5y/runs/
+wiki/founder/scan5y/returns/
+wiki/founder/last-year/*/artifacts/
+wiki/founder/last-year/*/run_card.*
+wiki/founder/candidates-13-5y/runs/*/artifacts/
+wiki/founder/candidates-13-5y/runs/*/run_card.*
